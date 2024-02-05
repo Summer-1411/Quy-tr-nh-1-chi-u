@@ -1,0 +1,591 @@
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Untitled 1</title>
+    <style type="text/css">
+        body {
+            font-family: "Times New Roman";
+            font-size: 13pt;
+            page-break-inside: avoid; 
+            page-break-after: auto;
+        }
+
+        table {
+
+            font-family: "Times New Roman";
+            font-size: 13pt;
+            line-height: 1.3;
+            width: 100%;
+        }
+
+        .table-small {
+            line-height: 1 !important;
+        }
+
+        table th {
+            font-family: "Times New Roman";
+            font-size: 13pt;
+            text-align: center;
+        }
+
+        table th,
+        table td {
+            vertical-align: top;
+            font-size: 13pt;
+        }
+
+        .tableContent {
+            font-size: 13pt;
+            width: 100%;
+            border-collapse: collapse;
+            border: 0.25pt solid gray;
+        }
+
+        .tableContent th,
+        .tableContent td {
+            border: 0.25pt solid gray;
+        }
+
+        .tableHeader {
+            width: 100%;
+            border-collapse: collapse;
+            border: 0.25pt solid white;
+        }
+
+        .tableHeader th,
+        .tableHeader td {
+            border: 0.25pt solid white;
+        }
+
+        .tableHeaderxx {
+            width: 100%;
+            border-collapse: collapse;
+            border: 0.25pt solid black;
+        }
+
+        .tableHeaderxx th {
+            border: 0.25pt solid black;
+            text-align: center;
+        }
+
+        .tableHeaderxx td {
+            border: 0.25pt solid black;
+            text-align: left;
+        }
+
+        .tableHeaderxx .tdb span {
+            font-weight: bold;
+            float: right;
+        }
+
+        .tableHeaderxx .trtablexx {
+            font-weight: bold;
+        }
+
+        .tdtablexx {
+            float: right;
+            border: 0pt !important;
+        }
+
+        .header {
+            width: 100%;
+            margin-bottom: 37.5pt;
+        }
+
+        .sectionGuide {
+            padding: 0;
+            width: 100%;
+        }
+
+        #my-div {
+            width: 7.5pt;
+            height: 7.5pt;
+            background: blue;
+            margin-left: 2.5cm;
+            margin-right: 2cm;
+            margin-bottom: 2cm;
+            margin-top: 2cm;
+        }
+
+        .pagebreak {
+            page-break-before: always;
+        }
+
+        .footer {
+            position: fixed;
+            display: block;
+            padding-top: 90em;
+        }
+
+        .sup {
+            position: relative;
+            vertical-align: baseline;
+            top: -0.5em;
+            font-size: 13pt;
+        }
+
+        .indent {
+            text-indent: 50pt;
+            line-height: 1.3;
+        }
+
+        .lineHeight16 {
+            line-height: 1.3;
+        }
+
+        .PaddingCellTable td {
+            padding: 3.75pt;
+        }
+
+        .PaddingCellTable th {
+            padding: 3.75pt;
+        }
+    </style>
+</head>
+
+<body>
+    #macro( formatFinance $value )
+    #if($value && $value != "")
+        #if($value.contains("."))
+            #set($tmp = $value.split("\."))
+            $tmp[0].replaceAll(',','.'),$tmp[1]
+        #else
+            $value.replaceAll(',','.')
+        #end
+    #end
+#end
+#macro( BangChuFinance3so $value )
+    #set($tam = '')
+    #set($t = $value.length() - 1)
+    #set($l = $value.length())
+    #set($tl = ['trăm','mươi'])
+    #set($index = 0)
+    #foreach($i in [0..$t])
+        #set($tam = $tam + $value.charAt($index) + ' ' )
+        #if($index != $t )
+            #set($thutu = 1 )
+            #if($l == 3)
+                #set($thutu = 0 )
+            #end
+            #set($tam = $tam + $tl[$thutu] + ' ' )
+            #set($l = $l - 1)
+        #end
+        #set($index = $index + 1)
+    #end
+    #set($tam = $tam.replaceAll("0 trăm 0 mươi 0", "").replaceAll("0 mươi 0", "").replaceAll("mươi 0", "mươi").replaceAll("1 mươi 5", "mười lăm").replaceAll("1 mươi", "mười").replaceAll("0 mươi", "linh").replaceAll("mươi 5", "mươi lăm") )
+    $tam.replaceAll("1", "một").replaceAll("2", "hai").replaceAll("3", "ba").replaceAll("4", "bốn").replaceAll("5", "năm").replaceAll("6", "sáu").replaceAll("7", "bảy").replaceAll("8", "tám").replaceAll("9", "chín").replaceAll("0", "không")
+    
+#end
+#macro( BangChuFinance $value )
+    #if($value.contains(","))
+        #set($tam = '')
+        #set($tam1 = '')
+        #set($tl1 = ['','nghìn','triệu','tỷ','nghìn tỷ','triệu tỷ','tỷ tỷ'])
+        #set($tmp = $value.split(","))
+        #set($size = $tmp.size() - 1)
+        #set($size1 = $tmp.size() - 1)
+        #set($index1 = 0)
+        #foreach($i in [0..$size])
+            #set($tam1 = $tmp[$index1])
+            #if($tam1 != '000')
+            #BangChuFinance3so($tam1) $tl1[$size1] 
+            #end
+            #set($size1 = $size1 - 1)
+            
+            #set($index1 = $index1 + 1)
+        #end
+    #else
+        #BangChuFinance3so($value) đồng
+    #end
+#end
+
+#macro( formatStringFinance $value )
+    #if($value.toString() != '0')
+        #if($value.contains("E"))
+            #set($tachE = $value.split("E"))
+            #set($val = 1)
+            #set($LONG_VALUE = $val.intValue())
+            #set($doubleLength = 0)
+            #set($doubleLength = $LONG_VALUE.parseInt($tachE[1]) + 1)
+            #set($boDauCham = $tachE[0].replaceAll('\.',''))
+            #set($tinhtoan = $doubleLength - $boDauCham.length())
+            #if( $tinhtoan > 0)
+                #foreach($data in [0..$tinhtoan])
+                    #set($boDauCham = $boDauCham + '0' )
+                #end
+            #end
+            #if($boDauCham.substring(${doubleLength},$boDauCham.length()) == "" )
+            #set($value = $boDauCham.substring(0,${doubleLength}))
+            #else
+            #set($value = $boDauCham.substring(0,${doubleLength}) + '.'+$boDauCham.substring(${doubleLength},$boDauCham.length()))
+            #end
+            
+        #end
+        #if($value.contains("."))
+            #set($tam = $value.toString())
+            #set($tmp = $tam.split("\."))
+            #set($valueString = $tmp[0])
+        #else
+            #set($valueString = $value.toString())
+        #end
+        #set($index1 = 0)
+        #set($index2 = 3)
+        #set($bien2 = '')
+        #set($bien1 = $valueString)
+        #set($length1 =  $bien1.length() /3)
+        #set($length =  $bien1.length() % 3)
+        #foreach($i in [0..$length1])
+            #if($i != $length1)
+                #if($length != 0 && $i == 0)
+                    #set($bien2 = $bien2 + $bien1.substring(0,$length) +'.')
+                    #set($index1 = $index1 +$length)
+                    #set($index2 = $index2 +$length)
+                #elseif(($i + 1) == $length1 && $length == 0)
+                    #set($bien2 = $bien2 + $bien1.substring($index1,$index2))
+                    #set($index1 = $index1 +3)
+                    #set($index2 = $index2 +3)
+                #else
+                    #set($bien2 = $bien2 + $bien1.substring($index1,$index2) +'.')
+                    #set($index1 = $index1 +3)
+                    #set($index2 = $index2 +3)
+                #end
+            #else
+                #set($bien2 = $bien2 + $bien1.substring($index1,$bien1.length()))
+            #end
+
+        #end
+        #if($value.contains("."))
+            #if($tmp[1] == "0")
+                $bien2
+            #else
+                $bien2,$tmp[1]
+            #end
+        
+        #else
+        $bien2
+        #end
+    #else
+        $value
+    #end
+#end
+
+
+#macro( formatStringFinancephay $value )
+    #if($value.toString() != '0')
+        #if($value.contains("E"))
+            #set($tachE = $value.split("E"))
+            #set($val = 1)
+            #set($LONG_VALUE = $val.intValue())
+            #set($doubleLength = 0)
+            #set($doubleLength = $LONG_VALUE.parseInt($tachE[1]) + 1)
+            #set($boDauCham = $tachE[0].replaceAll('\.',''))
+            #set($tinhtoan = $doubleLength - $boDauCham.length())
+            #if( $tinhtoan > 0)
+                #foreach($data in [0..$tinhtoan])
+                    #set($boDauCham = $boDauCham + '0' )
+                #end
+            #end
+            #if($boDauCham.substring(${doubleLength},$boDauCham.length()) == "" )
+            #set($value = $boDauCham.substring(0,${doubleLength}))
+            #else
+            #set($value = $boDauCham.substring(0,${doubleLength}) + '.'+$boDauCham.substring(${doubleLength},$boDauCham.length()))
+            #end
+            
+        #end
+        #if($value.contains("."))
+            #set($tam = $value.toString())
+            #set($tmp = $tam.split("\."))
+            #set($valueString = $tmp[0])
+        #else
+            #set($valueString = $value.toString())
+        #end
+        #set($index1 = 0)
+        #set($index2 = 3)
+        #set($bien2 = '')
+        #set($bien1 = $valueString)
+        #set($length1 =  $bien1.length() /3)
+        #set($length =  $bien1.length() % 3)
+        #foreach($i in [0..$length1])
+            #if($i != $length1)
+                #if($length != 0 && $i == 0)
+                    #set($bien2 = $bien2 + $bien1.substring(0,$length) +',')
+                    #set($index1 = $index1 +$length)
+                    #set($index2 = $index2 +$length)
+                #elseif(($i + 1) == $length1 && $length == 0)
+                    #set($bien2 = $bien2 + $bien1.substring($index1,$index2))
+                    #set($index1 = $index1 +3)
+                    #set($index2 = $index2 +3)
+                #else
+                    #set($bien2 = $bien2 + $bien1.substring($index1,$index2) +',')
+                    #set($index1 = $index1 +3)
+                    #set($index2 = $index2 +3)
+                #end
+            #else
+                #set($bien2 = $bien2 + $bien1.substring($index1,$bien1.length()))
+            #end
+
+        #end
+        #if($value.contains("."))
+            #if($tmp[1] == "0")
+                $bien2
+            #else
+                $bien2.$tmp[1]
+            #end
+        
+        #else
+        $bien2
+        #end
+    #else
+        $value
+    #end
+#end
+
+##Return về string format dạng finance
+#macro( Round $value)
+    #if($value.contains("."))
+        #set($tmp = $value.split("\."))
+        #set($TruocDauPhay = $tmp[0].replaceAll(",",""))
+        #set($SauDauPhay = $tmp[1])
+        #set($val = 1)
+        #set($LONG_VALUE = $val.longValue())
+        #if($LONG_VALUE.parseLong($tmp[1].substring(0,1)) >= 5)
+            #set($GiaTriTang = $LONG_VALUE.parseLong($TruocDauPhay) + 1)
+            #formatStringFinance($GiaTriTang)
+        #else
+            #formatStringFinance($TruocDauPhay)
+        #end
+    #else
+        #formatStringFinance($value.replaceAll(",",""))
+    #end
+#end
+
+
+##Return về string
+#macro( RoundReturnString $value)
+    #if($value.contains("."))
+        #set($tmp = $value.split("\."))
+        #set($TruocDauPhay = $tmp[0].replaceAll(",",""))
+        #set($SauDauPhay = $tmp[1])
+        #set($val = 1)
+        #set($LONG_VALUE = $val.longValue())
+        #if($LONG_VALUE.parseLong($tmp[1].substring(0,1)) >= 5)
+            #set($GiaTriTang = $LONG_VALUE.parseLong($TruocDauPhay) + 1)
+            $GiaTriTang
+        #else
+            $TruocDauPhay
+        #end
+    #else
+        $value.replaceAll(",","")
+    #end
+#end
+
+
+
+
+
+
+## Định nghĩa biến Long dùng để convert
+#set($val = 1)
+#set($LONG_VALUE = $val.longValue())
+
+## Định nghĩa biến Double dùng để convert
+#set($valdouble = 1.0)
+#set($DOUBLE_VALUE = $valdouble.doubleValue())
+
+
+#set($outputMap = {})
+#foreach($item in $DanhSachVatTu)
+    #set($MaVatTu = $item.MaVatTu)
+    #set($SoLuongStr = $item.SoLuongYeuCau)
+    #set($key = $item.MaVatTu + "-" + $item.LoVatTu)
+
+
+    #set($valTam = $SoLuongStr.toString())
+    #set($valLongTam = "#RoundReturnString($valTam)" )
+    #set($SoLuongYeuCau = $LONG_VALUE.parseLong($valLongTam.trim()) )
+
+    #if(!$outputMap.containsKey($key))
+        #set($outputMap[$key] = { "MaVatTu": $MaVatTu, "TenVatTuVaQuyCach": $item.TenVatTuVaQuyCach, "LoVatTu": $item.LoVatTu, "DonViTinh": $item.DonViTinh, "SoLuongYeuCau": $SoLuongYeuCau, "GhiChu": $item.GhiChu })
+    #else
+        #set($existingItem = $outputMap[$key])
+        #set($existingItem.SoLuongYeuCau = $existingItem.SoLuongYeuCau + $SoLuongYeuCau)
+    #end
+#end
+
+
+
+#set($outputArray = $outputMap.values().toArray())
+    <div class="sectionGuide" >
+        <table colspan="0" rowspan="0" class="tableHeader"
+            style="margin-top: 10pt; margin-left: 0pt; margin-right: 5pt;">
+            <tr>
+                <td width="30%" style="font-size:11pt; text-align: center;">
+                    <b>$DonVi</b>
+                    <br />
+                    <b>$DiaChi</b>
+                </td>
+                <td width="50%" style="text-align: center; font-size:13pt">
+                    <b>PHIẾU XUẤT KHO</b>
+                    <div>Ngày lập phiếu: $NgayLapPhieu</div>
+                    <div>Liên: </div>
+                </td>
+                <td width="40%" style="text-align: center; font-size:11pt">
+                    <div>Số: <b>$So</b></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="sectionGuide" >
+        <table>
+            <tr>
+                <td>
+                    <div>Họ tên người nhận hàng: <b>$HoTenNguoiNhanHang</b></div>
+                </td>
+                <td>
+                    <div>Địa chỉ (Bộ phận): <b>$DiaChiBoPhan</b></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>Lý do xuất kho: <b>$LyDoXuatKho</b></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>Diễn giải: <b>$DienGiai</b></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>Xuất tại kho: <b>$XuatTaiKho</b></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>Công trình: <b>$CongTrinh</b></div>
+                </td>
+                <td>
+                    <div>Hạng mục: <b>$HangMuc</b></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="sectionGuide" >
+        <div>
+            <table class="tableHeaderxx">
+                <tr class="PaddingCellTable">
+                    <th style="text-align: center; font-weight: bold; width:5%;">
+                        STT
+                    </th>
+                    <th style="text-align: center; font-weight: bold;width:20%">
+                        Mã vật tư
+                    </th>
+                    <th style="text-align: center; font-weight: bold;width:30%">
+                        Tên nhãn hiệu quy cách vật tư
+                    </th>
+                    <th style="text-align: center; font-weight: bold;width:20%">
+                        Lô vật tư
+                    </th>
+                    <th style="text-align: center; font-weight: bold;width:5%">
+                        ĐVT
+                    </th>
+                    <th style="text-align: center; font-weight: bold;width:20%">
+                        Số lượng yêu cầu
+                    </th>
+                </tr>
+
+                #set($index = 1)
+                #foreach($row in $outputArray)
+                <tr class="PaddingCellTable">
+                    <td style="text-align: center; font-size: 10.5pt; width: 70px">
+                        $index
+                    </td>
+                    <td style="text-align: left; font-size: 10.5pt;">
+                        $row.get("MaVatTu")
+                    </td>
+                    <td style="text-align: left; font-size: 10.5pt;">
+                        $row.get("TenVatTuVaQuyCach")
+                    </td>
+                    <td style="text-align: left; font-size: 10.5pt;">
+                        $row.get("LoVatTu")
+                    </td>
+                    <td style="text-align: left; font-size: 10.5pt; width: 100px">
+                        $row.get("DonViTinh")
+                    </td>
+                    <td style="text-align: right; font-size: 10.5pt;">
+                        #formatStringFinance($row.get("SoLuongYeuCau"))
+                    </td>
+                </tr>
+                #set($index = $index + 1)
+                #end
+            </table>
+            <div style="font-style: italic; text-align: right;">Hà nội, $NgayLapPhieu.split(" ")[0].split("/")[0]
+                tháng
+                $NgayLapPhieu.split("
+                ")[0].split(
+                "/")[1] năm $NgayLapPhieu.split(" ")[0].split("/")[2]
+            </div>
+            <table colspan="0" rowspan="0" class="tableHeader" style="margin-top: 10px;">
+                <tr>
+                    #if($IsGiamDoc.equals("1"))
+                    <th style="text-align: center; font-size: 11pt;">
+                        <p style="font-size:2pt; color: white">$ChuKy_GiamDoc</p>
+                        <b>GIÁM ĐỐC</b>
+                        
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <p style="font-size:12pt; margin-top: 30px;">$Name_GiamDoc</p>
+                    </th>
+                    #else
+                        <th>
+                        </th>
+                    #end
+                    <th style="text-align: center; font-size: 11pt;">
+                        <p style="font-size:2pt; color: white">$ChuKy_TruongPhong</p>
+                        <b>TRƯỞNG PHÒNG</b>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <p style="font-size:12pt; margin-top: 30px;">$Name_TruongPhong</p>
+                    </th>
+                    <th style="text-align: center; font-size: 11pt;">
+                        <p style="font-size:2pt; color: white">$ChuKy_ChuyenVien</p>
+                        <b>NGƯỜI LẬP PHIẾU</b>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <p style="font-size:12pt; margin-top: 30px;">$Name_ChuyenVien</p>
+                    </th>
+                    <th style="text-align: center; font-size: 11pt;">
+                        <p style="font-size:2pt; color: white">$ChuKy_ThuKho</p>
+                        <b>THỦ KHO</b>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <p style="font-size:12pt; margin-top: 30px;">$Name_ThuKho</p>
+                    </th>
+                    <th style="text-align: center; font-size: 11pt;">
+                        <p style="font-size:2pt; color: white">$ChuKy_NhanVien</p>
+                        <b>NGƯỜI NHẬN</b>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <p style="font-size:12pt; margin-top: 30px;">$Name_NhanVien</p>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>

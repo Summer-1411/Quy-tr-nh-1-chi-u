@@ -1,0 +1,1189 @@
+{
+  "individual": [
+    {
+      "name": "Người tạo yêu cầu",
+      "type": "master_data_npc_user",
+      "valuefeeder": "ticketOwner",
+      "conditions": {
+        "required": false,
+        "min-length": 1
+      },
+      "disabled": true,
+      "additionalDisplayClass": "left-info",
+      "id": -10000,
+      "position": -10000
+    },
+    {
+      "name": "Đơn vị tạo yêu cầu",
+      "type": "master_data_npc_user_account_donvi",
+      "value": "",
+      "conditions": {
+        "required": false,
+        "min-length": 1
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -9900,
+      "position": -9900
+    },
+    {
+      "name": "Số điện thoại người tạo yêu cầu",
+      "type": "text",
+      "value": "",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "left-info",
+      "id": -9800,
+      "position": -9800
+    },
+    {
+      "name": "Dự án",
+      "position": -9700,
+      "id": -9700,
+      "type": "apiweb",
+      "apiWebConfig": {
+        "apiConfig": {
+          "param": "APPROVE_DETAIL_DATA_DVI_C3_DUAN_PARAM",
+          "hostnameKey": "URL_NPC",
+          "urlFilter": "/approve-detail-data-dvi-c3/load-du-an-by-username?process=DVI",
+          "returnKey": "MT_GET_VENDOR_RP_S"
+        },
+        "searchConfig": {
+          "idField": "nameDA",
+          "minimumSearch": 0,
+          "displayField": "nameDA"
+        }
+      },
+      "conditions": {
+        "feedTo": [
+          {
+            "fieldName": "idDA",
+            "id": -9600,
+            "dataset": "INDIVIDUAL"
+          },
+          {
+            "fieldName": "wflType",
+            "id": -9599,
+            "dataset": "INDIVIDUAL"
+          },
+          {
+            "fieldName": "versionId",
+            "id": -9598,
+            "dataset": "INDIVIDUAL"
+          },
+          {
+            "fieldName": "typeData",
+            "id": -9597,
+            "dataset": "INDIVIDUAL"
+          },
+          {
+            "fieldName": "nameDA",
+            "id": -9596,
+            "dataset": "INDIVIDUAL"
+          },
+          {
+            "fieldName": "pathFileExport",
+            "id": -9500,
+            "dataset": "INDIVIDUAL"
+          },
+          {
+            "fieldName": "pathFileExport",
+            "id": -9399,
+            "dataset": "INDIVIDUAL"
+          },
+          {
+            "fieldName": "pathFileExport2",
+            "id": -9400,
+            "dataset": "INDIVIDUAL"
+          },
+          {
+            "fieldName": "pathFileExport2",
+            "id": -9398,
+            "dataset": "INDIVIDUAL"
+          },
+          {
+            "fieldName": "linkUpdateFile1",
+            "id": -9390,
+            "dataset": "INDIVIDUAL"
+          },
+          {
+            "fieldName": "linkUpdateFile2",
+            "id": -9380,
+            "dataset": "INDIVIDUAL"
+          },
+          {
+            "fieldName": "lstVanBanPhapLy",
+            "feedType": "append",
+            "id": -9300,
+            "type": "table",
+            "cols": [
+              {
+                "fieldName": "nhomHoSo",
+                "id": -9290
+              },
+              {
+                "fieldName": "tenVanBan",
+                "id": -9280
+              },
+              {
+                "fieldName": "soVanBan",
+                "id": -9270
+              },
+              {
+                "fieldName": "ngayVanBan",
+                "id": -9260
+              },
+              {
+                "fieldName": "coQuanBanHanh",
+                "id": -9250
+              },
+              {
+                "fieldName": "pathFile",
+                "id": -9220
+              },
+              {
+                "fieldName": "giaTri",
+                "id": -9240
+              },
+              {
+                "fieldName": "ghiChu",
+                "id": -9230
+              }
+            ]
+          }
+        ],
+        "required": false
+      },
+      "additionalDisplayClass": "left-info"
+    },
+    {
+      "name": "ID dự án",
+      "type": "text",
+      "value": "",
+      "display": false,
+      "additionalDisplayClass": "right-info",
+      "id": -9600,
+      "position": -9600
+    },
+    {
+      "name": "WorkFlow Type",
+      "type": "text",
+      "value": "",
+      "display": false,
+      "additionalDisplayClass": "left-info",
+      "id": -9599,
+      "position": -9599
+    },
+    {
+      "name": "VersionId",
+      "type": "text",
+      "value": "",
+      "display": false,
+      "additionalDisplayClass": "right-info",
+      "id": -9598,
+      "position": -9598
+    },
+    {
+      "name": "TypeData",
+      "type": "text",
+      "value": "",
+      "display": false,
+      "additionalDisplayClass": "right-info",
+      "id": -9597,
+      "position": -9597
+    },
+    {
+      "name": "Tên Dự án",
+      "type": "text",
+      "value": "",
+      "display": false,
+      "additionalDisplayClass": "right-info",
+      "id": -9596,
+      "position": -9596
+    },
+    {
+      "name": "Dữ liệu quyết toán chi tiết gói thầu, Mẫu 1",
+      "type": "link",
+      "value": "",
+      "disabled": true,
+      "conditions": {},
+      "additionalDisplayClass": "left-info",
+      "id": -9500,
+      "position": -9500
+    },
+    {
+      "name": "Dữ liệu quyết toán chi tiết gói thầu, Mẫu 2",
+      "type": "link",
+      "disabled": true,
+      "value": "",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -9400,
+      "position": -9400
+    },
+    {
+      "name": "Dữ liệu quyết toán chi tiết gói thầu, Mẫu 1 - text",
+      "type": "text",
+      "value": "",
+      "disabled": true,
+      "display": false,
+      "conditions": {},
+      "additionalDisplayClass": "left-info",
+      "id": -9399,
+      "position": -9399
+    },
+    {
+      "name": "Dữ liệu quyết toán chi tiết gói thầu, Mẫu 2 text",
+      "type": "text",
+      "disabled": true,
+      "display": false,
+      "value": "",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -9398,
+      "position": -9398
+    },
+    {
+      "name": "Link nhật dữ liệu quyết toán chi tiết gói thầu, Mẫu 1",
+      "type": "link",
+      "value": "",
+      "disabled": true,
+      "conditions": {},
+      "additionalDisplayClass": "left-info",
+      "id": -9390,
+      "position": -9390
+    },
+    {
+      "name": "Link nhật dữ liệu quyết toán chi tiết gói thầu, Mẫu 2",
+      "type": "link",
+      "disabled": true,
+      "value": "",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -9380,
+      "position": -9380
+    },
+    {
+      "name": "Cập nhật file Dữ liệu quyết toán gói thầu mẫu 1",
+      "position": -9370,
+      "id": -9370,
+      "type": "apiweb",
+      "apiWebConfig": {
+        "apiConfig": {
+          "param": "APPROVE_DETAIL_DATA_DVI_C3_UPDATE_FILE_1_PARAM",
+          "hostnameKey": "URL_NPC",
+          "urlFilter": "/approve-detail-data-dvi-c3/update-file-template?template=1",
+          "returnKey": "MT_GET_VENDOR_RP_S"
+        },
+        "searchConfig": {
+          "idField": "valueReturn",
+          "minimumSearch": 0,
+          "displayField": "valueReturn"
+        }
+      },
+      "conditions": {
+        "feedTo": [
+          {
+            "fieldName": "pathFile",
+            "id": -9500,
+            "dataset": "INDIVIDUAL"
+          },
+          {
+            "fieldName": "pathFile",
+            "id": -9499,
+            "dataset": "INDIVIDUAL"
+          }
+        ],
+        "required": false
+      },
+      "additionalDisplayClass": "left-info"
+    },
+    {
+      "name": "Cập nhật file Dữ liệu quyết toán gói thầu mẫu 2",
+      "position": -9360,
+      "id": -9360,
+      "type": "apiweb",
+      "apiWebConfig": {
+        "apiConfig": {
+          "param": "APPROVE_DETAIL_DATA_DVI_C3_UPDATE_FILE_2_PARAM",
+          "hostnameKey": "URL_NPC",
+          "urlFilter": "/approve-detail-data-dvi-c3/update-file-template?template=2",
+          "returnKey": "MT_GET_VENDOR_RP_S"
+        },
+        "searchConfig": {
+          "idField": "valueReturn",
+          "minimumSearch": 0,
+          "displayField": "valueReturn"
+        }
+      },
+      "conditions": {
+        "feedTo": [
+          {
+            "fieldName": "pathFile",
+            "id": -9400,
+            "dataset": "INDIVIDUAL"
+          },
+          {
+            "fieldName": "pathFile",
+            "id": -9399,
+            "dataset": "INDIVIDUAL"
+          }
+        ],
+        "required": false
+      },
+      "additionalDisplayClass": "right-info"
+    },
+    {
+      "display": false,
+      "name": "Số phòng ban liên quan",
+      "type": "select",
+      "value": "",
+      "conditions": {
+        "data": [
+          {
+            "text": "",
+            "value": ""
+          },
+          {
+            "text": "1",
+            "value": "1"
+          },
+          {
+            "text": "2",
+            "value": "2"
+          },
+          {
+            "text": "3",
+            "value": "3"
+          }
+        ],
+        "required": true
+      },
+      "additionalDisplayClass": "left-info",
+      "id": -9000,
+      "position": -9000
+    },
+    {
+      "name": "Value select 1",
+      "type": "number",
+      "value": "1",
+      "id": -8999,
+      "display": false
+    },
+    {
+      "name": "Value select 2",
+      "type": "number",
+      "value": "2",
+      "id": -8998,
+      "display": false
+    },
+    {
+      "name": "Value select 3",
+      "type": "number",
+      "value": "3",
+      "id": -8997,
+      "display": false
+    },
+    {
+      "display": false,
+      "name": "Value condition 1",
+      "dataFrom": -9000,
+      "dataFromFunc": "feederData",
+      "dataFromCondition": [
+        {
+          "conditions": {
+            "operation": "or",
+            "items": [
+              {
+                "right-element": {
+                  "infoId": -9000,
+                  "type": "number",
+                  "dataset": "INDIVIDUAL"
+                },
+                "compare-type": "number",
+                "operation": "lessOrEqual",
+                "left-element": {
+                  "infoId": -8999,
+                  "type": "number",
+                  "dataset": "INDIVIDUAL"
+                }
+              }
+            ]
+          },
+          "value": {
+            "dataset": "value",
+            "value": "1"
+          }
+        },
+        {
+          "conditions": {
+            "operation": "or",
+            "items": [
+              {
+                "right-element": {
+                  "infoId": -9000,
+                  "type": "number",
+                  "dataset": "INDIVIDUAL"
+                },
+                "compare-type": "number",
+                "operation": "greater",
+                "left-element": {
+                  "infoId": -8999,
+                  "type": "number",
+                  "dataset": "INDIVIDUAL"
+                }
+              }
+            ]
+          },
+          "value": {
+            "dataset": "value",
+            "value": "0"
+          }
+        }
+      ],
+      "id": -8996,
+      "type": "text"
+    },
+    {
+      "display": false,
+      "name": "Value condition 2",
+      "dataFrom": -9000,
+      "dataFromFunc": "feederData",
+      "dataFromCondition": [
+        {
+          "conditions": {
+            "operation": "or",
+            "items": [
+              {
+                "right-element": {
+                  "infoId": -9000,
+                  "type": "number",
+                  "dataset": "INDIVIDUAL"
+                },
+                "compare-type": "number",
+                "operation": "lessOrEqual",
+                "left-element": {
+                  "infoId": -8998,
+                  "type": "number",
+                  "dataset": "INDIVIDUAL"
+                }
+              }
+            ]
+          },
+          "value": {
+            "dataset": "value",
+            "value": "1"
+          }
+        },
+        {
+          "conditions": {
+            "operation": "or",
+            "items": [
+              {
+                "right-element": {
+                  "infoId": -9000,
+                  "type": "number",
+                  "dataset": "INDIVIDUAL"
+                },
+                "compare-type": "number",
+                "operation": "greater",
+                "left-element": {
+                  "infoId": -8998,
+                  "type": "number",
+                  "dataset": "INDIVIDUAL"
+                }
+              }
+            ]
+          },
+          "value": {
+            "dataset": "value",
+            "value": "0"
+          }
+        }
+      ],
+      "id": -8995,
+      "type": "text"
+    },
+    {
+      "display": false,
+      "name": "Value condition 3",
+      "dataFrom": -9000,
+      "dataFromFunc": "feederData",
+      "dataFromCondition": [
+        {
+          "conditions": {
+            "operation": "or",
+            "items": [
+              {
+                "right-element": {
+                  "infoId": -9000,
+                  "type": "number",
+                  "dataset": "INDIVIDUAL"
+                },
+                "compare-type": "number",
+                "operation": "lessOrEqual",
+                "left-element": {
+                  "infoId": -8997,
+                  "type": "number",
+                  "dataset": "INDIVIDUAL"
+                }
+              }
+            ]
+          },
+          "value": {
+            "dataset": "value",
+            "value": "1"
+          }
+        },
+        {
+          "conditions": {
+            "operation": "or",
+            "items": [
+              {
+                "right-element": {
+                  "infoId": -9000,
+                  "type": "number",
+                  "dataset": "INDIVIDUAL"
+                },
+                "compare-type": "number",
+                "operation": "greater",
+                "left-element": {
+                  "infoId": -8997,
+                  "type": "number",
+                  "dataset": "INDIVIDUAL"
+                }
+              }
+            ]
+          },
+          "value": {
+            "dataset": "value",
+            "value": "0"
+          }
+        }
+      ],
+      "id": -8994,
+      "type": "text"
+    },
+    {
+      "name": "Phòng ban 1",
+      "type": "apiweb",
+      "apiWebConfig": {
+        "apiConfig": {
+          "param": "APPROVE_DETAIL_DATA_DVI_C3_PHONG_BAN_PARAM",
+          "hostnameKey": "URL_NPC",
+          "urlFilter": "/evn-master-data/load-depart-by-user",
+          "returnKey": "MT_GET_VENDOR_RP_S"
+        },
+        "searchConfig": {
+          "idField": "departName",
+          "minimumSearch": 0,
+          "displayField": "departName"
+        }
+      },
+      "conditions": {
+        "displayCondition": {
+          "valueCondition": "1",
+          "idCondition": -8996,
+          "dataCondition": "INDIVIDUAL"
+        },
+        "required": true,
+        "feedTo": [
+          {
+            "fieldName": "departCode",
+            "id": -8890,
+            "dataset": "INDIVIDUAL"
+          }
+        ]
+      },
+      "additionalDisplayClass": "left-info",
+      "id": -8900,
+      "position": -8900
+    },
+    {
+      "id": -8890,
+      "name": "Mã phòng ban 1",
+      "value": "",
+      "type": "text",
+      "conditions": {},
+      "disabled": false,
+      "display": false
+    },
+    {
+      "id": -8880,
+      "position": -8880,
+      "name": "Trưởng phòng 1",
+      "apiWebConfig": {
+        "apiConfig": {
+          "param": "APPROVE_DETAIL_DATA_DVI_C3_TRUONG_PHONG_1_PARAM",
+          "hostnameKey": "URL_NPC",
+          "urlFilter": "/evn-master-data/load-by-user-list?order-approve=5&order-approve-1=3",
+          "returnKey": "MT_GET_VENDOR_RP_S"
+        },
+        "searchConfig": {
+          "idField": "fullname_username",
+          "minimumSearch": 0,
+          "displayField": "fullname_username"
+        }
+      },
+      "conditions": {
+        "displayCondition": {
+          "valueCondition": "1",
+          "idCondition": -8996,
+          "dataCondition": "INDIVIDUAL"
+        },
+        "feedTo": [
+          {
+            "fieldName": "userName",
+            "id": -8870,
+            "dataset": "INDIVIDUAL"
+          }
+        ],
+        "required": true
+      },
+      "type": "apiweb",
+      "additionalDisplayClass": "right-info"
+    },
+    {
+      "id": -8870,
+      "name": "Account trưởng phòng 1",
+      "value": "",
+      "type": "text",
+      "conditions": {},
+      "disabled": false,
+      "display": false
+    },
+    {
+      "name": "Phòng ban 2",
+      "type": "apiweb",
+      "apiWebConfig": {
+        "apiConfig": {
+          "param": "APPROVE_DETAIL_DATA_DVI_C3_PHONG_BAN_PARAM",
+          "hostnameKey": "URL_NPC",
+          "urlFilter": "/evn-master-data/load-depart-by-user",
+          "returnKey": "MT_GET_VENDOR_RP_S"
+        },
+        "searchConfig": {
+          "idField": "departName",
+          "minimumSearch": 0,
+          "displayField": "departName"
+        }
+      },
+      "conditions": {
+        "displayCondition": {
+          "valueCondition": "1",
+          "idCondition": -8995,
+          "dataCondition": "INDIVIDUAL"
+        },
+        "required": true,
+        "feedTo": [
+          {
+            "fieldName": "departCode",
+            "id": -8790,
+            "dataset": "INDIVIDUAL"
+          }
+        ]
+      },
+      "additionalDisplayClass": "left-info",
+      "id": -8800,
+      "position": -8800
+    },
+    {
+      "id": -8790,
+      "name": "Mã phòng ban 2",
+      "value": "",
+      "type": "text",
+      "conditions": {},
+      "disabled": false,
+      "display": false
+    },
+    {
+      "id": -8780,
+      "position": -8780,
+      "name": "Trưởng phòng 2",
+      "apiWebConfig": {
+        "apiConfig": {
+          "param": "APPROVE_DETAIL_DATA_DVI_C3_TRUONG_PHONG_2_PARAM",
+          "hostnameKey": "URL_NPC",
+          "urlFilter": "/evn-master-data/load-by-user-list?order-approve=5&order-approve-1=3",
+          "returnKey": "MT_GET_VENDOR_RP_S"
+        },
+        "searchConfig": {
+          "idField": "fullname_username",
+          "minimumSearch": 0,
+          "displayField": "fullname_username"
+        }
+      },
+      "conditions": {
+        "displayCondition": {
+          "valueCondition": "1",
+          "idCondition": -8995,
+          "dataCondition": "INDIVIDUAL"
+        },
+        "feedTo": [
+          {
+            "fieldName": "userName",
+            "id": -8770,
+            "dataset": "INDIVIDUAL"
+          }
+        ],
+        "required": true
+      },
+      "type": "apiweb",
+      "additionalDisplayClass": "right-info"
+    },
+    {
+      "id": -8770,
+      "name": "Account trưởng phòng 2",
+      "value": "",
+      "type": "text",
+      "conditions": {},
+      "disabled": false,
+      "display": false
+    },
+    {
+      "name": "Phòng ban 3",
+      "type": "apiweb",
+      "apiWebConfig": {
+        "apiConfig": {
+          "param": "APPROVE_DETAIL_DATA_DVI_C3_PHONG_BAN_PARAM",
+          "hostnameKey": "URL_NPC",
+          "urlFilter": "/evn-master-data/load-depart-by-user",
+          "returnKey": "MT_GET_VENDOR_RP_S"
+        },
+        "searchConfig": {
+          "idField": "departName",
+          "minimumSearch": 0,
+          "displayField": "departName"
+        }
+      },
+      "conditions": {
+        "displayCondition": {
+          "valueCondition": "1",
+          "idCondition": -8994,
+          "dataCondition": "INDIVIDUAL"
+        },
+        "required": true,
+        "feedTo": [
+          {
+            "fieldName": "departCode",
+            "id": -8690,
+            "dataset": "INDIVIDUAL"
+          }
+        ]
+      },
+      "additionalDisplayClass": "left-info",
+      "id": -8700,
+      "position": -8700
+    },
+    {
+      "id": -8690,
+      "name": "Mã phòng ban 3",
+      "value": "",
+      "type": "text",
+      "conditions": {},
+      "disabled": false,
+      "display": false
+    },
+    {
+      "id": -8680,
+      "position": -8680,
+      "name": "Trưởng phòng 3",
+      "apiWebConfig": {
+        "apiConfig": {
+          "param": "APPROVE_DETAIL_DATA_DVI_C3_TRUONG_PHONG_3_PARAM",
+          "hostnameKey": "URL_NPC",
+          "urlFilter": "/evn-master-data/load-by-user-list?order-approve=5&order-approve-1=3",
+          "returnKey": "MT_GET_VENDOR_RP_S"
+        },
+        "searchConfig": {
+          "idField": "fullname_username",
+          "minimumSearch": 0,
+          "displayField": "fullname_username"
+        }
+      },
+      "conditions": {
+        "displayCondition": {
+          "valueCondition": "1",
+          "idCondition": -8994,
+          "dataCondition": "INDIVIDUAL"
+        },
+        "feedTo": [
+          {
+            "fieldName": "userName",
+            "id": -8670,
+            "dataset": "INDIVIDUAL"
+          }
+        ],
+        "required": true
+      },
+      "type": "apiweb",
+      "additionalDisplayClass": "right-info"
+    },
+    {
+      "id": -8670,
+      "name": "Account trưởng phòng 3",
+      "value": "",
+      "type": "text",
+      "conditions": {},
+      "disabled": false,
+      "display": false
+    },
+    {
+      "name": "Lãnh đạo duyệt",
+      "type": "apiweb",
+      "apiWebConfig": {
+        "apiConfig": {
+          "param": "APPROVE_DETAIL_DATA_DVI_C3_GD_PGD_PARAM",
+          "hostnameKey": "URL_NPC",
+          "urlFilter": "/evn-master-data/load-by-user-list?order-approve=10&order-approve-1=7",
+          "returnKey": "MT_GET_VENDOR_RP_S"
+        },
+        "searchConfig": {
+          "idField": "fullname_username",
+          "minimumSearch": 0,
+          "displayField": "fullname_username"
+        }
+      },
+      "conditions": {
+        "feedTo": [
+          {
+            "fieldName": "userName",
+            "id": -8590,
+            "dataset": "INDIVIDUAL"
+          }
+        ],
+        "required": true
+      },
+      "additionalDisplayClass": "left-info",
+      "id": -8600,
+      "position": -8600
+    },
+    {
+      "id": -8590,
+      "position": -8590,
+      "name": "Tài khoản lãnh đạo duyệt",
+      "value": "",
+      "type": "text",
+      "conditions": {},
+      "disabled": false,
+      "display": false
+    },
+    {
+      "name": "Tên file ký số",
+      "type": "text",
+      "disabled": false,
+      "value": "QuyetToanChiTiet_GoiThauMau2",
+      "display": false,
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -8222,
+      "position": -8222
+    },
+    {
+      "display": false,
+      "name": "Id Du an test",
+      "type": "text",
+      "disabled": false,
+      "value": "123456",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -5999,
+      "position": -5999
+    },
+    {
+      "display": false,
+      "name": "Tên file ký số mẫu 01QTDA",
+      "type": "text",
+      "disabled": false,
+      "value": "01QTDA",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -6001,
+      "position": -6001
+    },
+    {
+      "display": false,
+      "name": "Tên file ký số mẫu 02QTDA",
+      "type": "text",
+      "disabled": false,
+      "value": "02QTDA",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -6002,
+      "position": -6002
+    },
+    {
+      "display": false,
+      "name": "Tên file ký số mẫu 03QTDA",
+      "type": "text",
+      "disabled": false,
+      "value": "03QTDA",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -6003,
+      "position": -6003
+    },
+    {
+      "display": false,
+      "name": "Tên file ký số mẫu 04QTDA",
+      "type": "text",
+      "disabled": false,
+      "value": "04QTDA",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -6004,
+      "position": -6004
+    },
+    {
+      "display": false,
+      "name": "Tên file ký số mẫu 05QTDA",
+      "type": "text",
+      "disabled": false,
+      "value": "05QTDA",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -6005,
+      "position": -6005
+    },
+    {
+      "display": false,
+      "name": "Tên file ký số mẫu 06QTDA",
+      "type": "text",
+      "disabled": false,
+      "value": "06QTDA",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -6006,
+      "position": -6006
+    },
+    {
+      "display": false,
+      "name": "Tên file ký số mẫu 07QTDA",
+      "type": "text",
+      "disabled": false,
+      "value": "07QTDA",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -6007,
+      "position": -6007
+    },
+    {
+      "display": false,
+      "name": "Tên file ký số mẫu 08QTDA",
+      "type": "text",
+      "disabled": false,
+      "value": "08QTDA",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -6008,
+      "position": -6008
+    },
+    {
+      "display": false,
+      "name": "Tên file ký số mẫu 01EVN",
+      "type": "text",
+      "disabled": false,
+      "value": "01EVN",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -6009,
+      "position": -6009
+    },
+    {
+      "display": false,
+      "name": "Tên file ký số mẫu 02EVN",
+      "type": "text",
+      "disabled": false,
+      "value": "02EVN",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -6010,
+      "position": -6010
+    },
+    {
+      "display": false,
+      "name": "Tên file ký số mẫu 03EVN",
+      "type": "text",
+      "disabled": false,
+      "value": "03EVN",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -6011,
+      "position": -6011
+    },
+    {
+      "display": false,
+      "name": "Tên file ký số mẫu 04EVN",
+      "type": "text",
+      "disabled": false,
+      "value": "04EVN",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -6012,
+      "position": -6012
+    },
+    {
+      "display": false,
+      "name": "Tên file ký số mẫu 05EVN",
+      "type": "text",
+      "disabled": false,
+      "value": "05EVN",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -6013,
+      "position": -6013
+    },
+    {
+      "display": false,
+      "name": "Tên file ký số mẫu 06EVN",
+      "type": "text",
+      "disabled": false,
+      "value": "06EVN",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -6014,
+      "position": -6014
+    },
+    {
+      "display": false,
+      "name": "Tên file ký số mẫu PL-Phân loại chi phí",
+      "type": "text",
+      "disabled": false,
+      "value": "PLCP",
+      "conditions": {
+        "required": false
+      },
+      "additionalDisplayClass": "right-info",
+      "id": -6015,
+      "position": -6015
+    }
+  ],
+  "multitable": [
+    {
+      "name": "Danh mục văn bản pháp lý, hơp đồng",
+      "id": -9300,
+      "position": -9300,
+      "columns": [
+        {
+          "name": "Loại hồ sơ",
+          "type": "text",
+          "id": -9290,
+          "position": -9290,
+          "conditions": {
+            "required": false
+          }
+        },
+        {
+          "name": "Tên văn bản",
+          "type": "text",
+          "id": -9280,
+          "position": -9280,
+          "conditions": {
+            "required": false
+          }
+        },
+        {
+          "name": "Ký hiệu văn bản",
+          "type": "text",
+          "id": -9270,
+          "position": -9270,
+          "conditions": {
+            "required": false
+          }
+        },
+        {
+          "name": "Ngày tháng năm",
+          "type": "text",
+          "id": -9260,
+          "position": -9260,
+          "conditions": {
+            "required": false
+          }
+        },
+        {
+          "name": "Cơ quan ban hành",
+          "id": -9250,
+          "position": -9250,
+          "type": "text",
+          "conditions": {
+            "required": false
+          }
+        },
+        {
+          "name": "Giá trị được duyệt",
+          "type": "finance",
+          "id": -9240,
+          "position": -9240,
+          "conditions": {
+            "required": false
+          }
+        },
+        {
+          "name": "Ghi chú",
+          "id": -9230,
+          "position": -9230,
+          "type": "textarea",
+          "conditions": {
+            "required": false
+          }
+        },
+        {
+          "name": "File đính kèm từ  IMIS",
+          "id": -9220,
+          "position": -9220,
+          "type": "link",
+          "conditions": {
+            "required": false
+          }
+        },
+        {
+          "name": "Đính kèm file",
+          "id": -9210,
+          "position": -9210,
+          "type": "upload",
+          "conditions": {
+            "required": false
+          }
+        }
+      ]
+    }
+  ]
+}

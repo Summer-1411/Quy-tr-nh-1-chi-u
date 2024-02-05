@@ -1,0 +1,4726 @@
+{
+    "relatives": [
+        {
+            "customNote": "Bước 1. Lập đề nghị",
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_CREATE_TICKET_XUAT_KHO_DTXD",
+                        "name": "TICKET_EVN_SPRO_CREATE"
+                    },
+                    "requireAuthenAPI": false
+                },
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_CREATE_TICKET_XUAT_KHO_DTXD",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "triggerOn": "update-ticket",
+                    "requireAuthenAPI": false
+                },
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "XUAT_KHO_PT_KH_DONVI_DELETE_TICKET_API_PARAM_B1",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "triggerOn": "cancel",
+                    "requireAuthenAPI": false
+                }
+            ],
+            "id": -10,
+            "type": "ticket",
+            "isDone": false,
+            "status": "Opened"
+        },
+        {
+            "summary": "Bước 2. Chuyên viên trinh file kí",
+            "owner": "",
+            "customNote": "Bước 2",
+            "print-config": {
+                "margin": "70,30,30,30",
+                "filename": "Danh sách vật tư",
+                "img-urls": [],
+                "parameters": [
+                    {
+                        "data-config": {
+                            "infoId": -9920,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonVi"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9910,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "NgayToTrinh"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9900,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TaiKho"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9880,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "KinhGui"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9920,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonViDeNghi"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9860,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LyDoCap"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9605,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_TruongPhong"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -3000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_ChuyenVien"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -3000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_TruongPhoPhongKHVT"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -3000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_GiamDoc"
+                    },
+                    {
+                        "data-config": {
+                            "column-key-mappings": [
+                                {
+                                    "columnId": -9760,
+                                    "key": "MaVatTu"
+                                },
+                                {
+                                    "columnId": -9740,
+                                    "key": "TenVatTuVaQuyCach"
+                                },
+                                {
+                                    "columnId": -9720,
+                                    "key": "DonViTinh"
+                                },
+                                {
+                                    "columnId": -9700,
+                                    "key": "SoLuong"
+                                },
+                                {
+                                    "columnId": -9680,
+                                    "key": "GhiChu"
+                                }
+                            ],
+                            "tableId": -9800,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "MULTITABLE"
+                        },
+                        "name": "DanhSachVatTu"
+                    }
+                ],
+                "landscape": true,
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45381&fileName=DeNghiCapVTTB.vm",
+                "newVersion": true
+            },
+            "sla": {
+                "res": 7.99,
+                "fix": 8
+            },
+            "id": -20,
+            "type": "phase",
+            "printable": true,
+            "isDone": false,
+            "phaseType": "Implement",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -9990,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "status": "Responding"
+        },
+        {
+            "summary": "Bước 3. Trưởng/phó phòng ký duyệt và ký số",
+            "customNote": "Bước 3",
+            "print-config": {
+                "margin": "70,30,30,30",
+                "filename": "Danh sách vật tư",
+                "img-urls": [],
+                "parameters": [
+                    {
+                        "data-config": {
+                            "infoId": -9920,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonVi"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9910,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "NgayToTrinh"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9900,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TaiKho"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9880,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "KinhGui"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9920,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonViDeNghi"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9860,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LyDoCap"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9605,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_TruongPhong"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -3000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_ChuyenVien"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -3000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_TruongPhoPhongKHVT"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -3000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_GiamDoc"
+                    },
+                    {
+                        "data-config": {
+                            "column-key-mappings": [
+                                {
+                                    "columnId": -9760,
+                                    "key": "MaVatTu"
+                                },
+                                {
+                                    "columnId": -9740,
+                                    "key": "TenVatTuVaQuyCach"
+                                },
+                                {
+                                    "columnId": -9720,
+                                    "key": "DonViTinh"
+                                },
+                                {
+                                    "columnId": -9700,
+                                    "key": "SoLuong"
+                                },
+                                {
+                                    "columnId": -9680,
+                                    "key": "GhiChu"
+                                }
+                            ],
+                            "tableId": -9800,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "MULTITABLE"
+                        },
+                        "name": "DanhSachVatTu"
+                    }
+                ],
+                "landscape": true,
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45381&fileName=DeNghiCapVTTB.vm",
+                "newVersion": true
+            },
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -30,
+            "type": "phase",
+            "printable": true,
+            "isDone": false,
+            "phaseType": "Implement",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -9600,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "status": "Responding"
+        },
+        {
+            "summary": "Bước 4. Trưởng phòng KHVT giao việc cho chuyên viên",
+            "customNote": "Bước 4",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -40,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -9500,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "status": "Responding"
+        },
+        {
+            "summary": "Bước 5. Chuyên viên KHVT duyệt và ký số",
+            "customNote": "Bước 5",
+            "print-config": {
+                "margin": "70,30,30,30",
+                "filename": "Danh sách vật tư",
+                "img-urls": [],
+                "parameters": [
+                    {
+                        "data-config": {
+                            "infoId": -9920,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonVi"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9910,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "NgayToTrinh"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9900,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TaiKho"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9880,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "KinhGui"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9920,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonViDeNghi"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9860,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LyDoCap"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9605,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_TruongPhong"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -40,
+                            "infoId": -9500,
+                            "phaseId": -50,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_ChuyenVien"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -3000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_TruongPhoPhongKHVT"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -3000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_GiamDoc"
+                    },
+                    {
+                        "data-config": {
+                            "column-key-mappings": [
+                                {
+                                    "columnId": -9760,
+                                    "key": "MaVatTu"
+                                },
+                                {
+                                    "columnId": -9740,
+                                    "key": "TenVatTuVaQuyCach"
+                                },
+                                {
+                                    "columnId": -9720,
+                                    "key": "DonViTinh"
+                                },
+                                {
+                                    "columnId": -9700,
+                                    "key": "SoLuong"
+                                },
+                                {
+                                    "columnId": -9680,
+                                    "key": "GhiChu"
+                                }
+                            ],
+                            "tableId": -9800,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "MULTITABLE"
+                        },
+                        "name": "DanhSachVatTu"
+                    }
+                ],
+                "landscape": true,
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45381&fileName=DeNghiCapVTTB.vm",
+                "newVersion": true
+            },
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -50,
+            "type": "phase",
+            "printable": true,
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "inputId": -40,
+                                "infoId": -9500,
+                                "phaseId": -50,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Bước 6. Trưởng/phó phòng KHVT duyệt và ký số",
+            "customNote": "Bước 6",
+            "print-config": {
+                "margin": "70,30,30,30",
+                "filename": "Danh sách vật tư",
+                "img-urls": [],
+                "parameters": [
+                    {
+                        "data-config": {
+                            "infoId": -9920,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonVi"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9910,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "NgayToTrinh"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9900,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TaiKho"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9880,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "KinhGui"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9920,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonViDeNghi"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9860,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LyDoCap"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9605,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_TruongPhong"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -40,
+                            "infoId": -9500,
+                            "phaseId": -50,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_ChuyenVien"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -50,
+                            "infoId": -9450,
+                            "phaseId": -60,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_TruongPhoPhongKHVT"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -3000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_GiamDoc"
+                    },
+                    {
+                        "data-config": {
+                            "column-key-mappings": [
+                                {
+                                    "columnId": -9760,
+                                    "key": "MaVatTu"
+                                },
+                                {
+                                    "columnId": -9740,
+                                    "key": "TenVatTuVaQuyCach"
+                                },
+                                {
+                                    "columnId": -9720,
+                                    "key": "DonViTinh"
+                                },
+                                {
+                                    "columnId": -9700,
+                                    "key": "SoLuong"
+                                },
+                                {
+                                    "columnId": -9680,
+                                    "key": "GhiChu"
+                                }
+                            ],
+                            "tableId": -9800,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "MULTITABLE"
+                        },
+                        "name": "DanhSachVatTu"
+                    }
+                ],
+                "landscape": true,
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45381&fileName=DeNghiCapVTTB.vm",
+                "newVersion": true
+            },
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -60,
+            "type": "phase",
+            "printable": true,
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "inputId": -50,
+                                "infoId": -9900,
+                                "phaseId": -60,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Bước 7. Giám đốc duyệt và ký số",
+            "customNote": "Bước 7",
+            "print-config": {
+                "margin": "70,30,30,30",
+                "filename": "Danh sách vật tư",
+                "img-urls": [],
+                "parameters": [
+                    {
+                        "data-config": {
+                            "infoId": -9920,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonVi"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9910,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "NgayToTrinh"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9900,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "TaiKho"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9880,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "KinhGui"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9920,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonViDeNghi"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9860,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LyDoCap"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9605,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_TruongPhong"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -40,
+                            "infoId": -9500,
+                            "phaseId": -50,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_ChuyenVien"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -50,
+                            "infoId": -9900,
+                            "phaseId": -60,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_TruongPhoPhongKHVT"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -50,
+                            "infoId": -9800,
+                            "phaseId": -60,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_GiamDoc"
+                    },
+                    {
+                        "data-config": {
+                            "column-key-mappings": [
+                                {
+                                    "columnId": -9760,
+                                    "key": "MaVatTu"
+                                },
+                                {
+                                    "columnId": -9740,
+                                    "key": "TenVatTuVaQuyCach"
+                                },
+                                {
+                                    "columnId": -9720,
+                                    "key": "DonViTinh"
+                                },
+                                {
+                                    "columnId": -9700,
+                                    "key": "SoLuong"
+                                },
+                                {
+                                    "columnId": -9680,
+                                    "key": "GhiChu"
+                                }
+                            ],
+                            "tableId": -9800,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "MULTITABLE"
+                        },
+                        "name": "DanhSachVatTu"
+                    }
+                ],
+                "landscape": true,
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45381&fileName=DeNghiCapVTTB.vm",
+                "newVersion": true
+            },
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -70,
+            "type": "phase",
+            "printable": true,
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "inputId": -50,
+                                "infoId": -9800,
+                                "phaseId": -60,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Bước 8. Chuyên viên lập phiếu xuất",
+            "customNote": "Bước 8",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -80,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "inputId": -40,
+                                "infoId": -9500,
+                                "phaseId": -50,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Bước 9. Trưởng/phó phòng KHVT duyệt",
+            "customNote": "Bước 9",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -90,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "inputId": -80,
+                                "infoId": -8700,
+                                "phaseId": -90,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Bước 10. Chuyên viên trình file kí",
+            "customNote": "Bước 10",
+            "print-config": {
+                "margin": "70,30,30,30",
+                "filename": "Phiếu xuất kho kiêm vận chuyển nội bộ",
+                "img-urls": [],
+                "parameters": [
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9975,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonVi"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -8602,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "IsGiamDoc"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9950,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DiaChi"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9900,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "NgayLapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9850,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "SoCongVan"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9820,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CanCu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9750,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Cua"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9700,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTenNguoiNhanHang"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9650,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "PhuongTienVanChuyen"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9450,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "XuatTaiKho"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9400,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CongTrinhXuat"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9350,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "NhapVaoKho"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9300,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CongTrinhNhap"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -8550,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Giatriso"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -8500,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Giatrichu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -40,
+                            "infoId": -9450,
+                            "phaseId": -50,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_VietPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -8699,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_TruongPhong"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -8599,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_GiamDoc"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -8749,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_ThuKho"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -3000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_NhanVien"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "column-key-mappings": [
+                                {
+                                    "columnId": -9760,
+                                    "key": "MaVatTu"
+                                },
+                                {
+                                    "columnId": -9740,
+                                    "key": "TenVatTuVaQuyCach"
+                                },
+                                {
+                                    "columnId": -9120,
+                                    "key": "LoVatTu"
+                                },
+                                {
+                                    "columnId": -9720,
+                                    "key": "DonViTinh"
+                                },
+                                {
+                                    "columnId": -9700,
+                                    "key": "SoLuongYeuCau"
+                                },
+                                {
+                                    "columnId": -9060,
+                                    "key": "ThucXuat"
+                                },
+                                {
+                                    "columnId": -9040,
+                                    "key": "DonGia"
+                                },
+                                {
+                                    "columnId": -9020,
+                                    "key": "ThanhTien"
+                                },
+                                {
+                                    "columnId": -9000,
+                                    "key": "No"
+                                },
+                                {
+                                    "columnId": -8980,
+                                    "key": "Co"
+                                }
+                            ],
+                            "phaseId": -90,
+                            "tableId": -9800,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "MULTITABLE"
+                        },
+                        "name": "DanhSachVatTu"
+                    }
+                ],
+                "landscape": true,
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45382&fileName=PhieuXuatKhoKiemVCNB.vm",
+                "newVersion": true
+            },
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "decisions": {
+                "textDisp": "Processes Decision",
+                "text": "Processes Decision",
+                "actions": [
+                    {
+                        "workflow": {
+                            "relationships": [
+                                -100105,
+                                -105110,
+                                -110120,
+                                -80120,
+                                -100120,
+                                -120130,
+                                -130140,
+                                -140150,
+                                -70150,
+                                -100150,
+                                -150160,
+                                -70160,
+                                -110160,
+                                -1601
+                            ],
+                            "relatives": [
+                                -1,
+                                -80,
+                                -70,
+                                -90,
+                                -100,
+                                -105,
+                                -110,
+                                -120,
+                                -130,
+                                -140,
+                                -150,
+                                -160
+                            ]
+                        },
+                        "name": "Có chọn giám đốc phê duyệt",
+                        "id": -1,
+                        "conditions": {
+                            "right-element": {
+                                "dataset": "value",
+                                "value": "0"
+                            },
+                            "compare-type": "text",
+                            "operation": "notEqual",
+                            "left-element": {
+                                "inputId": -80,
+                                "infoId": -8601,
+                                "phaseId": -90,
+                                "type": "text",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        }
+                    },
+                    {
+                        "workflow": {
+                            "relationships": [
+                                -100105,
+                                -105110,
+                                -110130,
+                                -130140,
+                                -140150,
+                                -70150,
+                                -100150,
+                                -150160,
+                                -110160,
+                                -70160,
+                                -1601
+                            ],
+                            "relatives": [
+                                -1,
+                                -80,
+                                -70,
+                                -90,
+                                -100,
+                                -105,
+                                -110,
+                                -130,
+                                -140,
+                                -150,
+                                -160
+                            ]
+                        },
+                        "name": "Không chọn giám đốc phê duyệt",
+                        "id": -2,
+                        "conditions": {
+                            "right-element": {
+                                "dataset": "value",
+                                "value": "0"
+                            },
+                            "compare-type": "text",
+                            "operation": "equal",
+                            "left-element": {
+                                "inputId": -80,
+                                "infoId": -8601,
+                                "phaseId": -90,
+                                "type": "text",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        }
+                    }
+                ],
+                "status": "unfinished"
+            },
+            "id": -100,
+            "type": "phase",
+            "isDone": false,
+            "printable": true,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "inputId": -40,
+                                "infoId": -9500,
+                                "phaseId": -50,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Bước 10.5. Chuyên viên kí số",
+            "customNote": "Bước 10.5",
+            "autocreate": true,
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -105,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "inputId": -40,
+                                "infoId": -9500,
+                                "phaseId": -50,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Bước 11. Trưởng phòng duyệt và ký số",
+            "customNote": "Bước 11",
+            "autocreate": false,
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -110,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "inputId": -80,
+                                "infoId": -8700,
+                                "phaseId": -90,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Bước 12. Giám đốc duyệt và ký số",
+            "customNote": "Bước 12",
+            "autocreate": false,
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -120,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "inputId": -80,
+                                "infoId": -8600,
+                                "phaseId": -90,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Bước 13. Đơn vị thi công giao việc cho nhân viên viên",
+            "customNote": "Bước 13",
+            "autocreate": false,
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -130,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "inputId": -80,
+                                "infoId": -8640,
+                                "phaseId": -90,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Bước 14. Nhân viên xác nhận đến kho",
+            "customNote": "Bước 14",
+            "autocreate": false,
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -140,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "inputId": -130,
+                                "infoId": -9500,
+                                "phaseId": -140,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Bước 15. Thủ kho ký số phiếu xuất và phiếu giao hàng",
+            "customNote": "Bước 15",
+            "print-config": {
+                "margin": "70,30,30,30",
+                "filename": "Phiếu xuất kho kiêm vận chuyển nội bộ",
+                "img-urls": [],
+                "parameters": [
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9975,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonVi"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -8602,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "IsGiamDoc"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9950,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DiaChi"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9900,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "NgayLapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9850,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "SoCongVan"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9820,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CanCu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9750,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Cua"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9700,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTenNguoiNhanHang"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9650,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "PhuongTienVanChuyen"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9450,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "XuatTaiKho"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9400,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CongTrinhXuat"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9350,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "NhapVaoKho"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9300,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CongTrinhNhap"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -8550,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Giatriso"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -8500,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Giatrichu"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9991,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_VietPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -8699,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_TruongPhong"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -8599,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_GiamDoc"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -8749,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_ThuKho"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -130,
+                            "infoId": -9400,
+                            "phaseId": -140,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_NhanVien"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "column-key-mappings": [
+                                {
+                                    "columnId": -9760,
+                                    "key": "MaVatTu"
+                                },
+                                {
+                                    "columnId": -9740,
+                                    "key": "TenVatTuVaQuyCach"
+                                },
+                                {
+                                    "columnId": -9120,
+                                    "key": "LoVatTu"
+                                },
+                                {
+                                    "columnId": -9720,
+                                    "key": "DonViTinh"
+                                },
+                                {
+                                    "columnId": -9700,
+                                    "key": "SoLuongYeuCau"
+                                },
+                                {
+                                    "columnId": -9060,
+                                    "key": "ThucXuat"
+                                },
+                                {
+                                    "columnId": -9040,
+                                    "key": "DonGia"
+                                },
+                                {
+                                    "columnId": -9020,
+                                    "key": "ThanhTien"
+                                },
+                                {
+                                    "columnId": -9000,
+                                    "key": "No"
+                                },
+                                {
+                                    "columnId": -8980,
+                                    "key": "Co"
+                                }
+                            ],
+                            "phaseId": -90,
+                            "tableId": -9800,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "MULTITABLE"
+                        },
+                        "name": "DanhSachVatTu"
+                    }
+                ],
+                "landscape": true,
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45382&fileName=PhieuXuatKhoKiemVCNB.vm",
+                "newVersion": true
+            },
+            "autocreate": false,
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -150,
+            "type": "phase",
+            "printable": true,
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "inputId": -80,
+                                "infoId": -8750,
+                                "phaseId": -90,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Bước 16. Nhân viên ký số phiếu xuất và phiếu giao hàng",
+            "customNote": "Bước 16",
+            "print-config": {
+                "margin": "70,30,30,30",
+                "filename": "Phiếu xuất kho kiêm vận chuyển nội bộ",
+                "img-urls": [],
+                "parameters": [
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9975,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonVi"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -8602,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "IsGiamDoc"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9950,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DiaChi"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9900,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "NgayLapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9850,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "SoCongVan"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9820,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CanCu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9750,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Cua"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9700,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTenNguoiNhanHang"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9650,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "PhuongTienVanChuyen"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9450,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "XuatTaiKho"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9400,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CongTrinhXuat"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9350,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "NhapVaoKho"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -9300,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CongTrinhNhap"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -8550,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Giatriso"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -8500,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Giatrichu"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9991,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_VietPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -8699,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_TruongPhong"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -8599,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_GiamDoc"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "infoId": -8749,
+                            "phaseId": -90,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_ThuKho"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -130,
+                            "infoId": -9400,
+                            "phaseId": -140,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen_NhanVien"
+                    },
+                    {
+                        "data-config": {
+                            "inputId": -80,
+                            "column-key-mappings": [
+                                {
+                                    "columnId": -9760,
+                                    "key": "MaVatTu"
+                                },
+                                {
+                                    "columnId": -9740,
+                                    "key": "TenVatTuVaQuyCach"
+                                },
+                                {
+                                    "columnId": -9120,
+                                    "key": "LoVatTu"
+                                },
+                                {
+                                    "columnId": -9720,
+                                    "key": "DonViTinh"
+                                },
+                                {
+                                    "columnId": -9700,
+                                    "key": "SoLuongYeuCau"
+                                },
+                                {
+                                    "columnId": -9060,
+                                    "key": "ThucXuat"
+                                },
+                                {
+                                    "columnId": -9040,
+                                    "key": "DonGia"
+                                },
+                                {
+                                    "columnId": -9020,
+                                    "key": "ThanhTien"
+                                },
+                                {
+                                    "columnId": -9000,
+                                    "key": "No"
+                                },
+                                {
+                                    "columnId": -8980,
+                                    "key": "Co"
+                                }
+                            ],
+                            "phaseId": -90,
+                            "tableId": -9800,
+                            "type": "PHASE_INPUT_DETAIL",
+                            "dataset": "MULTITABLE"
+                        },
+                        "name": "DanhSachVatTu"
+                    }
+                ],
+                "landscape": true,
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45382&fileName=PhieuXuatKhoKiemVCNB.vm",
+                "newVersion": true
+            },
+            "autocreate": false,
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -160,
+            "type": "phase",
+            "printable": true,
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "inputId": -130,
+                                "infoId": -9500,
+                                "phaseId": -140,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Kết thúc",
+            "autocreate": false,
+            "id": -1,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Close",
+            "status": "Waiting"
+        }
+    ],
+    "relationships": [
+        {
+            "customNote": "Bước 1",
+            "from": -10,
+            "id": -1020,
+            "to": -20,
+            "type": "default",
+            "status": "finished"
+        },
+        {
+            "customNote": "Bước 2",
+            "autocreate": true,
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_FINISH_BUOC2_DTXD",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -20,
+            "id": -2030,
+            "to": -30,
+            "detail": {
+                "individual": [
+                    {
+                        "display": true,
+                        "name": "Văn bản cần ký số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": false,
+                        "id": -1,
+                        "position": -1,
+                        "is-booking": true,
+                        "booking-control-id": 5,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "feederdata": {
+                                "params": {
+                                    "phaseId": -20
+                                },
+                                "type": "print_file"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "hideEmpty": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "default",
+            "status": "waiting"
+        },
+        {
+            "customNote": "Bước 3",
+            "advancedConfig": {
+                "signature_evn": {
+                    "filesToSign": [
+                        {
+                            "infoId": -1,
+                            "relaId": -2030,
+                            "dataset": "INDIVIDUAL"
+                        }
+                    ],
+                    "whereToSave": {
+                        "infoId": -1,
+                        "dataset": "INDIVIDUAL"
+                    },
+                    "suffix": " - (Trường phó phòng đã ký số)",
+                    "key": "ChuKy_TruongPhong"
+                }
+            },
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_UPDATE_TICKET_BUOC3_DTXD",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -30,
+            "id": -3040,
+            "to": -40,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "Văn bản đã ký số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "infoId": -1,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "customNote": "Bước 4",
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_FINISH_BUOC4_DTXD",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -40,
+            "id": -4050,
+            "to": -50,
+            "detail": {
+                "individual": [
+                    {
+                        "apiWebConfig": {
+                            "apiConfig": {
+                                "hostnameKey": "SPRO_EVN",
+                                "param": "B6_PARAM_CHON_CHUYEN_VIEN_BUOC4_DTXD",
+                                "urlFilter": "/common-spro/getUserByPosition",
+                                "returnKey": "MT_GET_VENDOR_RP_S"
+                            },
+                            "searchConfig": {
+                                "idField": "userName",
+                                "minimumSearch": 0,
+                                "displayField": "fullName"
+                            }
+                        },
+                        "name": "Chọn chuyên viên",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9500,
+                        "position": -9500,
+                        "type": "apiweb",
+                        "conditions": {
+                            "feedTo": [
+                                {
+                                    "fieldName": "fullName",
+                                    "id": -9450,
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
+                            "required": true
+                        }
+                    },
+                    {
+                        "display": false,
+                        "name": "Họ tên chuyên viên",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9450,
+                        "position": -9450,
+                        "type": "text"
+                    }
+                ]
+            },
+            "type": "default",
+            "status": "waiting"
+        },
+        {
+            "customNote": "Bước 5",
+            "advancedConfig": {
+                "signature_evn": {
+                    "filesToSign": [
+                        {
+                            "infoId": -1,
+                            "relaId": -3040,
+                            "dataset": "INDIVIDUAL"
+                        }
+                    ],
+                    "whereToSave": {
+                        "infoId": -1,
+                        "dataset": "INDIVIDUAL"
+                    },
+                    "suffix": " - (Chuyên viên đã ký số)",
+                    "key": "ChuKy_ChuyenVien"
+                }
+            },
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_APPROVE_BUOC5_DTXD",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -50,
+            "id": -5060,
+            "to": -60,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -10000,
+                        "position": -10000,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "apiWebConfig": {
+                            "apiConfig": {
+                                "hostnameKey": "SPRO_EVN",
+                                "param": "B6_PARAM_CHON_TRUONG_PHO_PHONG_KHVT_DTXD",
+                                "urlFilter": "/common-spro/getUserByPosition",
+                                "returnKey": "MT_GET_VENDOR_RP_S"
+                            },
+                            "searchConfig": {
+                                "idField": "userName",
+                                "minimumSearch": 0,
+                                "displayField": "fullName"
+                            }
+                        },
+                        "name": "Chọn trưởng/ phó phòng phê duyệt",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9900,
+                        "position": -9900,
+                        "type": "apiweb",
+                        "conditions": {
+                            "feedTo": [],
+                            "required": true
+                        }
+                    },
+                    {
+                        "apiWebConfig": {
+                            "apiConfig": {
+                                "hostnameKey": "SPRO_EVN",
+                                "param": "B6_PARAM_CHON_GD_PGD_DTXD",
+                                "urlFilter": "/common-spro/getUserByPosition",
+                                "returnKey": "MT_GET_VENDOR_RP_S"
+                            },
+                            "searchConfig": {
+                                "idField": "userName",
+                                "minimumSearch": 0,
+                                "displayField": "fullName"
+                            }
+                        },
+                        "name": "Chọn giám đốc/ phó giám đốc phê duyệt",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9800,
+                        "position": -9800,
+                        "type": "apiweb",
+                        "conditions": {
+                            "feedTo": [],
+                            "required": true
+                        }
+                    },
+                    {
+                        "name": "Văn bản đã ký số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "inputId": -40,
+                                        "infoId": -1,
+                                        "phaseId": -30,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "customNote": "Bước 6",
+            "advancedConfig": {
+                "signature_evn": {
+                    "filesToSign": [
+                        {
+                            "infoId": -1,
+                            "relaId": -5060,
+                            "dataset": "INDIVIDUAL"
+                        }
+                    ],
+                    "whereToSave": {
+                        "infoId": -1,
+                        "dataset": "INDIVIDUAL"
+                    },
+                    "suffix": " - (Trưởng phó phòng KHVT đã ký số)",
+                    "key": "ChuKy_TruongPhoPhongKHVT"
+                }
+            },
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_APPROVE_BUOC6_DTXD",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -60,
+            "id": -6070,
+            "to": -70,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "Văn bản đã ký số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "inputId": -60,
+                                        "infoId": -1,
+                                        "phaseId": -50,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 10,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "customNote": "Bước 7",
+            "advancedConfig": {
+                "signature_evn": {
+                    "filesToSign": [
+                        {
+                            "infoId": -1,
+                            "relaId": -6070,
+                            "dataset": "INDIVIDUAL"
+                        }
+                    ],
+                    "whereToSave": {
+                        "infoId": -1,
+                        "dataset": "INDIVIDUAL"
+                    },
+                    "suffix": " - (Giám đốc đã ký số)",
+                    "key": "ChuKy_GiamDoc"
+                }
+            },
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_APPROVE_BUOC7_DTXD",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -70,
+            "id": -7080,
+            "to": -80,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "Văn bản đã ký số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "inputId": -70,
+                                        "infoId": -1,
+                                        "phaseId": -60,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "autocreate": false,
+            "display": false,
+            "from": -70,
+            "comment": "Liên kết ẩn từ Bước 7 -> Bước 15 để xem",
+            "id": -70150,
+            "to": -150,
+            "position": 20,
+            "requestUpdateKeepData": true,
+            "relatedTo": -7080
+        },
+        {
+            "autocreate": false,
+            "display": false,
+            "from": -70,
+            "comment": "Liên kết ẩn từ Bước 7 -> Bước 16 để xem",
+            "position": 30,
+            "id": -70160,
+            "to": -160,
+            "requestUpdateKeepData": true,
+            "relatedTo": -7080
+        },
+        {
+            "autocreate": true,
+            "display": false,
+            "from": -10,
+            "comment": "Liên kết ẩn từ Bước 1 -> Bước 8 để kế thừa",
+            "position": -10,
+            "id": -1080,
+            "to": -80,
+            "requestUpdateKeepData": true
+        },
+        {
+            "customNote": "Bước 8",
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_FINISH_BUOC8_DTXD",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -80,
+            "id": -8090,
+            "to": -90,
+            "detail": {
+                "individual": [
+                    {
+                        "valuefeeder": "TicketOwner",
+                        "display": false,
+                        "name": "Người tạo yêu cầu",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -11000,
+                        "position": -11000,
+                        "type": "text",
+                        "conditions": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "display": false,
+                        "name": "Userlogin",
+                        "dataFrom": -11000,
+                        "dataFromCondition": [
+                            {
+                                "conditions": {
+                                    "operation": "else"
+                                },
+                                "value": {
+                                    "infoId": -11000,
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            }
+                        ],
+                        "additionalDisplayClass": "right-info",
+                        "id": -9990,
+                        "position": -9990,
+                        "type": "master_data_load_user_info",
+                        "conditions": {
+                            "required": true
+                        },
+                        "dataFromFunc": "feederData"
+                    },
+                    {
+                        "disable": true,
+                        "name": "Đơn vị",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9975,
+                        "position": -9975,
+                        "type": "master_data_load_user_info_donvi",
+                        "conditions": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "name": "Địa chỉ",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9950,
+                        "position": -9950,
+                        "type": "text",
+                        "conditions": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "valuefeeder": "now",
+                        "name": "Ngày lập phiếu",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9900,
+                        "position": -9900,
+                        "type": "date",
+                        "conditions": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "id": -9860,
+                        "position": -9860,
+                        "name": "Năm đưa vào vận hành",
+                        "type": "DATE",
+                        "valuefeeder": "Now",
+                        "display": true,
+                        "conditions": {
+                            "required": true,
+                            "format": {
+                                "regex": "yyyy",
+                                "text": "Nhập yyyy"
+                            }
+                        }
+                    },
+                    {
+                        "name": "Số phiếu xuất",
+                        "position": -9855,
+                        "id": -9855,
+                        "type": "apiweb",
+                        "apiWebConfig": {
+                            "apiConfig": {
+                                "param": "B6_PARAM_NUMBER_VOTE_DTXD",
+                                "hostnameKey": "SPRO_EVN",
+                                "urlFilter": "/common-spro/get-list-number-vote",
+                                "returnKey": "MT_GET_VENDOR_RP_S"
+                            },
+                            "searchConfig": {
+                                "idField": "numberVote",
+                                "minimumSearch": 0,
+                                "displayField": "numberVote"
+                            }
+                        },
+                        "conditions": {
+                            "feedTo": [],
+                            "required": false
+                        },
+                        "additionalDisplayClass": "left-info"
+                    },
+                    {
+                        "name": "Source",
+                        "position": -9850,
+                        "id": -9850,
+                        "type": "apiweb",
+                        "apiWebConfig": {
+                            "apiConfig": {
+                                "param": "B6_PARAM_GET_BY_NUMBER_VOTE_DTXD",
+                                "hostnameKey": "SPRO_EVN",
+                                "urlFilter": "/common-spro/get-warehouse-bill",
+                                "returnKey": "MT_GET_VENDOR_RP_S"
+                            },
+                            "searchConfig": {
+                                "idField": "sourceErpId",
+                                "minimumSearch": 0,
+                                "displayField": "sourceErpId"
+                            }
+                        },
+                        "conditions": {
+                            "feedTo": [
+                                {
+                                    "fieldName": "receiver",
+                                    "id": -9650,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "deliver",
+                                    "id": -9700,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "reasonId",
+                                    "id": -9600,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "reasonName",
+                                    "id": -9550,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "description",
+                                    "id": -9500,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "primaryInventoryId",
+                                    "id": -9450,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "primaryInventoryCode",
+                                    "id": -9451,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "primaryInventoryName",
+                                    "id": -9452,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "constructionId",
+                                    "id": -9400,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "constructionCode",
+                                    "id": -9401,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "constructionName",
+                                    "id": -9402,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "listTable",
+                                    "feedType": "append",
+                                    "id": -9800,
+                                    "type": "table",
+                                    "cols": [
+                                        
+                                        {
+                                            "fieldName": "materialCode",
+                                            "id": -9760
+                                        },
+                                        {
+                                            "fieldName": "materialName",
+                                            "id": -9740
+                                        },
+                                        {
+                                            "fieldName": "approveQuantity",
+                                            "id": -9060
+                                        },
+                                        {
+                                            "fieldName": "unitPrice",
+                                            "id": -9040
+                                        },
+                                        {
+                                            "fieldName": "batch",
+                                            "id": -9120
+                                        },
+                                        {
+                                            "fieldName": "amount",
+                                            "id": -9020
+                                        },
+                                        {
+                                            "fieldName": "accountDebit",
+                                            "id": -9000
+                                        },
+                                        {
+                                            "fieldName": "accountCredit",
+                                            "id": -8980
+                                        }
+                                    ]
+                                }
+                            ],
+                            "required": false
+                        },
+                        "additionalDisplayClass": "left-info"
+                    },
+                    {
+                        "name": "Căn cứ",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9820,
+                        "position": -9820,
+                        "type": "text",
+                        "value": "",
+                        "conditions": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "name": "Của",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9750,
+                        "position": -9750,
+                        "type": "text",
+                        "value": "",
+                        "conditions": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "name": "Họ và tên người nhận hàng",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9700,
+                        "position": -9700,
+                        "type": "text",
+                        "value": "",
+                        "conditions": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "name": "Phương tiện vận chuyển",
+                        "additionalDisplayClass": "right-info",
+                        "id": -9650,
+                        "position": -9650,
+                        "type": "text",
+                        "value": ""
+                    },
+                    {
+                        "name": "Id Lý do xuất kho",
+                        "additionalDisplayClass": "right-info",
+                        "id": -9600,
+                        "position": -9600,
+                        "type": "text",
+                        "display": false,
+                        "value": "",
+                        "conditions": {
+                            
+                            "required": true
+                        }
+                    },
+                    {
+                        "name": "Lý do xuất kho",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9550,
+                        "position": -9550,
+                        "type": "text",
+                        "value": "",
+                        "conditions": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "name": "Xuất tại kho (kho chính)",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9452,
+                        "position": -9452,
+                        "type": "text",
+                        "value": "",
+                        "conditions": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "name": "ID Xuất tại kho (id kho chính)",
+                        "additionalDisplayClass": "right-info",
+                        "display": false,
+                        "id": -9450,
+                        "position": -9450,
+                        "type": "text",
+                        "value": "",
+                        "conditions": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "display": false,
+                        "name": "Code kho chính",
+                        "type": "text",
+                        "value": "",
+                        "additionalDisplayClass": "right-info",
+                        "id": -9451,
+                        "position": -9451
+                    },
+                    {
+                        "apiWebConfig": {
+                            "apiConfig": {
+                                "param": "B6_PARAM_KHO_PHU_BUOC_8_KHVT_DTXD",
+                                "hostnameKey": "SPRO_EVN",
+                                "urlFilter": "/common-spro/getSecondInventory",
+                                "returnKey": "MT_GET_VENDOR_RP_S"
+                            },
+                            "searchConfig": {
+                                "idField": "codeSubInventory",
+                                "minimumSearch": 0,
+                                "displayField": "nameSubInventory"
+                            }
+                        },
+                        "display": false,
+                        "name": "Xuất tại kho (kho phụ)",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9370,
+                        "position": -9370,
+                        "type": "apiweb",
+                        "conditions": {
+                            "feedTo": [],
+                            "required": false
+                        }
+                    },
+                    {
+                        "name": "Công trình",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9402,
+                        "position": -9402,
+                        "type": "text",
+                        "value": "",
+                        "display": false,
+                        "conditions": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "name": "Code Công trình",
+                        "additionalDisplayClass": "right-info",
+                        "id": -9401,
+                        "position": -9401,
+                        "display": false,
+                        "type": "text",
+                        "value": "",
+                        "conditions": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "name": "Công trình",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9400,
+                        "position": -9400,
+                        "type": "text",
+                        "value": "",
+                        "conditions": {
+                            "required": false
+                        }
+                    },
+                    {
+                        "apiWebConfig": {
+                            "apiConfig": {
+                                "param": "B6_PARAM_KHO_CHINH_KHVT_DTXD",
+                                "hostnameKey": "SPRO_EVN",
+                                "urlFilter": "/common-spro/getPrimaryInventory",
+                                "returnKey": "MT_GET_VENDOR_RP_S"
+                            },
+                            "searchConfig": {
+                                "idField": "primaryInventoryId",
+                                "minimumSearch": 0,
+                                "displayField": "primaryInventoryName"
+                            }
+                        },
+                        "name": "Nhập vào kho (Kho chính)",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9350,
+                        "display": false,
+                        "position": -9350,
+                        "type": "apiweb",
+                        "conditions": {
+                            "feedTo": [
+                                {
+                                    "fieldName": "primaryInventoryCode",
+                                    "id": -9351,
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
+                            "required": false
+                        }
+                    },
+                    {
+                        "display": false,
+                        "name": "Code kho nhập chính",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9351,
+                        "position": -9351,
+                        "type": "text"
+                    },
+                    {
+                        "apiWebConfig": {
+                            "apiConfig": {
+                                "param": "B6_PARAM_KHO_NHAP_PHU_BUOC_8_KHVT_DTXD",
+                                "hostnameKey": "SPRO_EVN",
+                                "urlFilter": "/common-spro/getSecondInventory",
+                                "returnKey": "MT_GET_VENDOR_RP_S"
+                            },
+                            "searchConfig": {
+                                "idField": "codeSubInventory",
+                                "minimumSearch": 0,
+                                "displayField": "nameSubInventory"
+                            }
+                        },
+                        "display": false,
+                        "name": "Nhập vào kho (kho phụ)",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9290,
+                        "position": -9290,
+                        "type": "apiweb",
+                        "conditions": {
+                            "feedTo": [],
+                            "required": false
+                        }
+                    },
+                    {
+                        "apiWebConfig": {
+                            "apiConfig": {
+                                "param": "EVN_SPRO_PARAM_PICKER_FILTER_CMIS",
+                                "hostnameKey": "SPRO_EVN",
+                                "urlFilter": "/common-spro/get-cmis?type=DTXD",
+                                "returnKey": "MT_GET_VENDOR_RP_S"
+                            },
+                            "searchConfig": {
+                                "idField": "projectCode",
+                                "minimumSearch": 0,
+                                "displayField": "projectName"
+                            }
+                        },
+                        "display": false,
+                        "name": "Công trình",
+                        "additionalDisplayClass": "right-info",
+                        "id": -9300,
+                        "position": -9300,
+                        "type": "apiweb",
+                        "conditions": {
+                            "feedTo": [],
+                            "required": false
+                        }
+                    },
+                    {
+                        "display": false,
+                        "expressionConfig": {
+                            "operands": [
+                                {
+                                    "data-config": {
+                                        "operands": [
+                                            {
+                                                "data-config": {
+                                                    "columnId": -9040,
+                                                    "tableId": -9800,
+                                                    "dataset": "MULTITABLE"
+                                                },
+                                                "type": "simple"
+                                            },
+                                            {
+                                                "data-config": {
+                                                    "columnId": -9060,
+                                                    "tableId": -9800,
+                                                    "dataset": "MULTITABLE"
+                                                },
+                                                "type": "simple"
+                                            }
+                                        ],
+                                        "type": "ARITHMETIC",
+                                        "operator": "MULTIPLY"
+                                    },
+                                    "type": "expression"
+                                }
+                            ],
+                            "type": "ARITHMETIC"
+                        },
+                        "name": "Tổng cộng bằng số",
+                        "disabled": true,
+                        "additionalDisplayClass": "left-info",
+                        "id": -8801,
+                        "position": -8801,
+                        "type": "expression",
+                        "conditions": {
+                            "required": false
+                        },
+                        "value": "đồng"
+                    },
+                    {
+                        "valuefeeder": "now",
+                        "name": "Ngày tháng năm",
+                        "additionalDisplayClass": "left-info",
+                        "id": -8800,
+                        "position": -8800,
+                        "type": "date",
+                        "conditions": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "apiWebConfig": {
+                            "apiConfig": {
+                                "hostnameKey": "SPRO_EVN",
+                                "param": "B6_PARAM_CHON_THU_KHO_DTXD",
+                                "urlFilter": "/common-spro/getUserByPosition",
+                                "returnKey": "MT_GET_VENDOR_RP_S"
+                            },
+                            "searchConfig": {
+                                "idField": "userName",
+                                "minimumSearch": 0,
+                                "displayField": "fullName"
+                            }
+                        },
+                        "name": "Chọn thủ kho",
+                        "additionalDisplayClass": "right-info",
+                        "id": -8750,
+                        "position": -8750,
+                        "type": "apiweb",
+                        "conditions": {
+                            "feedTo": [
+                                {
+                                    "fieldName": "fullName",
+                                    "id": -8749,
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
+                            "required": true
+                        }
+                    },
+                    {
+                        "display": false,
+                        "name": "Họ tên thủ kho",
+                        "additionalDisplayClass": "left-info",
+                        "id": -8749,
+                        "position": -8749,
+                        "type": "text"
+                    },
+                    {
+                        "apiWebConfig": {
+                            "apiConfig": {
+                                "hostnameKey": "SPRO_EVN",
+                                "param": "B6_PARAM_CHON_TRUONG_PHO_PHONG_KHVT_DTXD",
+                                "urlFilter": "/common-spro/getUserByPosition",
+                                "returnKey": "MT_GET_VENDOR_RP_S"
+                            },
+                            "searchConfig": {
+                                "idField": "userName",
+                                "minimumSearch": 0,
+                                "displayField": "fullName"
+                            }
+                        },
+                        "name": "Chọn trưởng/phó phòng KHVT",
+                        "additionalDisplayClass": "left-info",
+                        "id": -8700,
+                        "position": -8700,
+                        "type": "apiweb",
+                        "conditions": {
+                            "feedTo": [
+                                {
+                                    "fieldName": "fullName",
+                                    "id": -8699,
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
+                            "required": true
+                        }
+                    },
+                    {
+                        "display": false,
+                        "name": "Họ tên trưởng/phó phòng KHVT",
+                        "additionalDisplayClass": "left-info",
+                        "id": -8699,
+                        "position": -8699,
+                        "type": "text"
+                    },
+                    {
+                        "apiWebConfig": {
+                            "apiConfig": {
+                                "hostnameKey": "SPRO_EVN",
+                                "param": "B6_PARAM_GET_ALL_DEPARTMENT_DTXD",
+                                "urlFilter": "/common-spro/get-all-department",
+                                "returnKey": "MT_GET_VENDOR_RP_S"
+                            },
+                            "searchConfig": {
+                                "idField": "deptId",
+                                "minimumSearch": 0,
+                                "displayField": "name"
+                            }
+                        },
+                        "name": "Chọn đơn vị thi công",
+                        "additionalDisplayClass": "left-info",
+                        "id": -8650,
+                        "position": -8650,
+                        "type": "apiweb",
+                        "conditions": {
+                            "feedTo": [],
+                            "required": true
+                        }
+                    },
+                    {
+                        "apiWebConfig": {
+                            "apiConfig": {
+                                "hostnameKey": "SPRO_EVN",
+                                "param": "B6_PARAM_CHON_TRUONG_DON_VI_THI_CONG_BUOC8_DTXD",
+                                "urlFilter": "/common-spro/getUserByPosition",
+                                "returnKey": "MT_GET_VENDOR_RP_S"
+                            },
+                            "searchConfig": {
+                                "idField": "userName",
+                                "minimumSearch": 0,
+                                "displayField": "fullName"
+                            }
+                        },
+                        "name": "Chọn trưởng đơn vị thi công",
+                        "additionalDisplayClass": "right-info",
+                        "id": -8640,
+                        "position": -8640,
+                        "type": "apiweb",
+                        "conditions": {
+                            "feedTo": [],
+                            "required": true
+                        }
+                    },
+                    {
+                        "name": "Chọn loại phê duyệt",
+                        "additionalDisplayClass": "left-info",
+                        "id": -8601,
+                        "position": -8601,
+                        "type": "select",
+                        "conditions": {
+                            "data": [
+                                {
+                                    "text": "Không có phó giám đốc, giám đốc phê duyệt",
+                                    "value": "0"
+                                },
+                                {
+                                    "text": "Có giám đốc, phó giám đốc phê duyệt",
+                                    "value": "1"
+                                }
+                            ],
+                            "min-length": 1
+                        },
+                        "value": "0"
+                    },
+                    {
+                        "disable": true,
+                        "display": false,
+                        "name": "Loại phê duyệt",
+                        "dataFrom": -8601,
+                        "dataFromCondition": [
+                            {
+                                "conditions": {
+                                    "operation": "else"
+                                },
+                                "value": {
+                                    "infoId": -8601,
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            }
+                        ],
+                        "additionalDisplayClass": "right-info",
+                        "id": -8602,
+                        "position": -8602,
+                        "type": "text",
+                        "conditions": {
+                            "required": true
+                        },
+                        "dataFromFunc": "feederData"
+                    },
+                    {
+                        "apiWebConfig": {
+                            "apiConfig": {
+                                "hostnameKey": "SPRO_EVN",
+                                "param": "B6_PARAM_CHON_GD_PGD_DTXD",
+                                "urlFilter": "/common-spro/getUserByPosition",
+                                "returnKey": "MT_GET_VENDOR_RP_S"
+                            },
+                            "searchConfig": {
+                                "idField": "userName",
+                                "minimumSearch": 0,
+                                "displayField": "fullName"
+                            }
+                        },
+                        "name": "Chọn giám đốc, phó giám đốc",
+                        "additionalDisplayClass": "left-info",
+                        "id": -8600,
+                        "position": -8600,
+                        "type": "apiweb",
+                        "conditions": {
+                            "displayCondition": {
+                                "valueCondition": "1",
+                                "idCondition": -8601,
+                                "dataCondition": "INDIVIDUAL"
+                            },
+                            "feedTo": [
+                                {
+                                    "fieldName": "fullName",
+                                    "id": -8599,
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
+                            "required": true
+                        }
+                    },
+                    {
+                        "display": false,
+                        "name": "Họ tên giám đốc",
+                        "additionalDisplayClass": "left-info",
+                        "id": -8599,
+                        "position": -8599,
+                        "type": "text"
+                    },
+                    {
+                        "expressionConfig": {
+                            "operands": [
+                                {
+                                    "data-config": {
+                                        "columnId": -9020,
+                                        "tableId": -9800,
+                                        "dataset": "MULTITABLE"
+                                    },
+                                    "type": "simple"
+                                }
+                            ],
+                            "type": "FUNCTION",
+                            "operator": "SUM"
+                        },
+                        "name": "Tổng cộng bằng số",
+                        "disabled": true,
+                        "additionalDisplayClass": "left-info",
+                        "id": -8550,
+                        "position": -8550,
+                        "type": "expression",
+                        "value": ""
+                    },
+                    {
+                        "dataFrom": -8550,
+                        "name": "Tổng cộng bằng chữ",
+                        "comment": "Loại chi phí khác",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "placeholder": "",
+                        "id": -8500,
+                        "position": -8500,
+                        "type": "text",
+                        "value": "",
+                        "dataFromFunc": "convertNumberToWords"
+                    },
+                    {
+                        "name": "Đính kèm file",
+                        "additionalDisplayClass": "left-info",
+                        "id": -8400,
+                        "position": -8400,
+                        "type": "upload",
+                        "conditions": {
+                            "required": false
+                        }
+                    },
+                    {
+                        "display": false,
+                        "name": "actionType",
+                        "id": -8450,
+                        "position": -8450,
+                        "type": "text",
+                        "value": "APPROVE"
+                    }
+                ],
+                "multitable": [
+                    {
+                        "columns": [
+                            {
+                                "name": "STT",
+                                "id": -9780,
+                                "position": -9780,
+                                "type": "number",
+                                "conditions": {
+                                    "required": true
+                                }
+                            },
+                            {
+                                "name": "Mã vật tư",
+                                "id": -9760,
+                                "position": -9760,
+                                "type": "text",
+                                "conditions": {
+                                    "required": true
+                                }
+                            },
+                            {
+                                "name": "Tên vật tư và quy cách",
+                                "id": -9740,
+                                "position": -9740,
+                                "type": "text",
+                                "conditions": {
+                                    "required": true
+                                }
+                            },
+                            {
+                                "name": "Lô vật tư",
+                                "id": -9120,
+                                "position": -9120,
+                                "type": "text",
+                                "conditions": {
+                                    "required": true
+                                }
+                            },
+                            {
+                                "name": "Đơn vị tính",
+                                "id": -9720,
+                                "position": -9720,
+                                "type": "text",
+                                "conditions": {
+                                    "required": true
+                                }
+                            },
+                            {
+                                "name": "Số lượng yêu cầu",
+                                "id": -9700,
+                                "position": -9700,
+                                "type": "finance",
+                                "conditions": {
+                                    "required": true
+                                }
+                            },
+                            {
+                                "name": "Thực xuất",
+                                "id": -9060,
+                                "position": -9060,
+                                "type": "finance",
+                                "conditions": {
+                                    "required": true
+                                }
+                            },
+                            {
+                                "apiWebConfig": {
+                                    "apiConfig": {
+                                        "param": "B6_DTXD_GET_LENGTH_BUOC8",
+                                        "hostnameKey": "SPRO_EVN",
+                                        "urlFilter": "/common-spro/get-long",
+                                        "returnKey": "MT_GET_VENDOR_RP_S"
+                                    },
+                                    "searchConfig": {
+                                        "idField": "longParagraph",
+                                        "minimumSearch": 0,
+                                        "displayField": "longParagraph"
+                                    }
+                                },
+                                "name": "Độ dài mong muốn",
+                                "id": -9692,
+                                "position": -9694,
+                                "type": "apiweb",
+                                "conditions": {
+                                    "feedTo": [],
+                                    "required": false
+                                }
+                            },
+                            {
+                                "apiWebConfig": {
+                                    "apiConfig": {
+                                        "param": "B6_DTXD_GET_NUMBER_BUOC8",
+                                        "hostnameKey": "SPRO_EVN",
+                                        "urlFilter": "/common-spro/get-number",
+                                        "returnKey": "MT_GET_VENDOR_RP_S"
+                                    },
+                                    "searchConfig": {
+                                        "idField": "number",
+                                        "minimumSearch": 0,
+                                        "displayField": "number"
+                                    }
+                                },
+                                "name": "Số lượng đoạn",
+                                "id": -9694,
+                                "position": -9692,
+                                "type": "apiweb",
+                                "conditions": {
+                                    "feedTo": [],
+                                    "required": false
+                                }
+                            },
+                            {
+                                "name": "Đơn giá",
+                                "id": -9040,
+                                "position": -9040,
+                                "type": "finance",
+                                "conditions": {
+                                    "required": false
+                                }
+                            },
+                            {
+                                "display": false,
+                                "name": "Thành tiền",
+                                "additionalDisplayClass": "left-info",
+                                "id": -9020,
+                                "position": -9020,
+                                "type": "finance",
+                                "conditions": {
+                                    "required": false
+                                }
+                            },
+                            {
+                                "name": "TK nợ",
+                                "id": -9000,
+                                "position": -9000,
+                                "type": "finance",
+                                "conditions": {
+                                    "required": false
+                                }
+                            },
+                            {
+                                "name": "TK có",
+                                "id": -8980,
+                                "position": -8980,
+                                "type": "finance",
+                                "conditions": {
+                                    "required": false
+                                }
+                            }
+                        ],
+                        "name": "Danh sách các thiết bị vật tư",
+                        "id": -9800,
+                        "position": -9800,
+                        "type": "table"
+                    }
+                ]
+            },
+            "type": "default",
+            "requestUpdateKeepData": true,
+            "status": "waiting"
+        },
+        {
+            "display": false,
+            "from": -80,
+            "comment": "Liên kết ẩn từ Bước 8 -> Bước 10 để xem",
+            "id": -80100,
+            "to": -100,
+            "requestUpdateKeepData": true,
+            "relatedTo": -8090
+        },
+        {
+            "autocreate": false,
+            "display": false,
+            "from": -80,
+            "comment": "Liên kết ẩn từ Bước 8 -> Bước 11 để xem",
+            "id": -80110,
+            "to": -110,
+            "requestUpdateKeepData": true,
+            "relatedTo": -8090
+        },
+        {
+            "autocreate": false,
+            "display": false,
+            "from": -80,
+            "comment": "Liên kết ẩn từ Bước 8 -> Bước 12 để xem",
+            "id": -80120,
+            "to": -120,
+            "requestUpdateKeepData": true,
+            "relatedTo": -8090
+        },
+        {
+            "customNote": "Bước 9",
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_APPROVE_BUOC9_DTXD",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -90,
+            "id": -90100,
+            "to": -100,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "customNote": "Bước 10",
+            "autocreate": true,
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_FINISH_BUOC10_DTXD",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -100,
+            "id": -100105,
+            "to": -105,
+            "detail": {
+                "individual": [
+                    {
+                        "display": true,
+                        "name": "Văn bản cần ký số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": false,
+                        "id": -1,
+                        "position": -1,
+                        "is-booking": true,
+                        "booking-control-id": 5,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "feederdata": {
+                                "params": {
+                                    "phaseId": -100
+                                },
+                                "type": "print_file"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "hideEmpty": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "default",
+            "status": "waiting"
+        },
+        {
+            "autocreate": false,
+            "display": false,
+            "from": -100,
+            "comment": "Liên kết ẩn từ Bước 10 -> Bước 12 để xem",
+            "id": -100120,
+            "to": -120,
+            "requestUpdateKeepData": true,
+            "relatedTo": -100105
+        },
+        {
+            "autocreate": false,
+            "display": false,
+            "from": -100,
+            "comment": "Liên kết ẩn từ Bước 10 -> Bước 15 để xem",
+            "id": -100150,
+            "to": -150,
+            "requestUpdateKeepData": true,
+            "relatedTo": -100105
+        },
+        {
+            "requestUpdateLock": true,
+            "buttonConfig": {
+                "cancel": {
+                    "enable": false,
+                    "text": "Hủy yêu cầu"
+                },
+                "requestUpdate": {
+                    "enable": false
+                }
+            },
+            "customNote": "Bước 10.5 Chuyên viên kí số",
+            "advancedConfig": {
+                "signature_evn": {
+                    "filesToSign": [
+                        {
+                            "infoId": -1,
+                            "relaId": -100105,
+                            "dataset": "INDIVIDUAL"
+                        }
+                    ],
+                    "whereToSave": {
+                        "infoId": -1,
+                        "dataset": "INDIVIDUAL"
+                    },
+                    "suffix": " - (Chuyên viên)",
+                    "key": "ChuKy_VietPhieu"
+                }
+            },
+            "autocreate": false,
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_APPROVE_BUOC10_5_DTXD",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -105,
+            "id": -105110,
+            "to": -110,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "Văn bản đã ký số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "infoId": -1,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "requestUpdateLock": true,
+            "buttonConfig": {
+                "cancel": {
+                    "enable": false,
+                    "text": "Hủy yêu cầu"
+                },
+                "requestUpdate": {
+                    "enable": false
+                }
+            },
+            "customNote": "Bước 11.1 Có chọn giám đốc phê duyệt",
+            "advancedConfig": {
+                "signature_evn": {
+                    "filesToSign": [
+                        {
+                            "infoId": -1,
+                            "relaId": -105110,
+                            "dataset": "INDIVIDUAL"
+                        }
+                    ],
+                    "whereToSave": {
+                        "infoId": -1,
+                        "dataset": "INDIVIDUAL"
+                    },
+                    "suffix": " - (Trường phó phòng đã ký số)",
+                    "key": "ChuKy_TruongPhong"
+                }
+            },
+            "autocreate": false,
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_APPROVE_BUOC11_1_DTXD",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -110,
+            "id": -110120,
+            "to": -120,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "Văn bản đã ký số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "infoId": -1,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "requestUpdateLock": true,
+            "buttonConfig": {
+                "cancel": {
+                    "enable": false,
+                    "text": "Hủy yêu cầu"
+                },
+                "requestUpdate": {
+                    "enable": false
+                }
+            },
+            "customNote": "Bước 11.2 Không chọn giám đốc phê duyệt",
+            "advancedConfig": {
+                "signature_evn": {
+                    "filesToSign": [
+                        {
+                            "infoId": -1,
+                            "relaId": -105110,
+                            "dataset": "INDIVIDUAL"
+                        }
+                    ],
+                    "whereToSave": {
+                        "infoId": -1,
+                        "dataset": "INDIVIDUAL"
+                    },
+                    "suffix": " - (Trường phó phòng đã ký số)",
+                    "key": "ChuKy_TruongPhong"
+                }
+            },
+            "autocreate": false,
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_APPROVE_BUOC11_2_DTXD",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -110,
+            "id": -110130,
+            "to": -130,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "Văn bản đã ký số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "infoId": -1,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "display": false,
+            "from": -110,
+            "comment": "Liên kết ẩn từ Bước 11 -> Bước 16 để xem",
+            "id": -110160,
+            "to": -160,
+            "requestUpdateKeepData": true
+        },
+        {
+            "requestUpdateLock": true,
+            "buttonConfig": {
+                "cancel": {
+                    "enable": false,
+                    "text": "Hủy yêu cầu"
+                },
+                "requestUpdate": {
+                    "enable": false
+                }
+            },
+            "customNote": "Bước 12",
+            "advancedConfig": {
+                "signature_evn": {
+                    "filesToSign": [
+                        {
+                            "infoId": -1,
+                            "relaId": -110120,
+                            "dataset": "INDIVIDUAL"
+                        }
+                    ],
+                    "whereToSave": {
+                        "infoId": -1,
+                        "dataset": "INDIVIDUAL"
+                    },
+                    "suffix": " - (Giám đốc đã ký số)",
+                    "key": "ChuKy_GiamDoc"
+                }
+            },
+            "autocreate": false,
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_APPROVE_BUOC12_DTXD",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -120,
+            "id": -120130,
+            "to": -130,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "Văn bản đã ký số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "inputId": -120,
+                                        "infoId": -1,
+                                        "phaseId": -110,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 10,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "requestUpdateLock": true,
+            "buttonConfig": {
+                "cancel": {
+                    "enable": false,
+                    "text": "Hủy yêu cầu"
+                },
+                "requestUpdate": {
+                    "enable": false
+                }
+            },
+            "customNote": "Bước 13",
+            "autocreate": false,
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_FINISH_BUOC13_DTXD",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -130,
+            "id": -130140,
+            "to": -140,
+            "detail": {
+                "individual": [
+                    {
+                        "apiWebConfig": {
+                            "apiConfig": {
+                                "hostnameKey": "SPRO_EVN",
+                                "param": "B6_PARAM_CHON_CHUYEN_VIEN_BUOC13_DTXD",
+                                "urlFilter": "/common-spro/getUserByPosition",
+                                "returnKey": "MT_GET_VENDOR_RP_S"
+                            },
+                            "searchConfig": {
+                                "idField": "userName",
+                                "minimumSearch": 0,
+                                "displayField": "fullName"
+                            }
+                        },
+                        "name": "Chọn chuyên viên",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9500,
+                        "position": -9500,
+                        "type": "apiweb",
+                        "conditions": {
+                            "feedTo": [
+                                {
+                                    "fieldName": "fullName",
+                                    "id": -9400,
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
+                            "required": true
+                        }
+                    },
+                    {
+                        "display": false,
+                        "name": "Họ tên chuyên viên",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9400,
+                        "position": -9400,
+                        "type": "text"
+                    }
+                ]
+            },
+            "type": "default",
+            "status": "waiting"
+        },
+        {
+            "requestUpdateLock": true,
+            "buttonConfig": {
+                "cancel": {
+                    "enable": false,
+                    "text": "Hủy yêu cầu"
+                },
+                "requestUpdate": {
+                    "enable": false
+                }
+            },
+            "customNote": "Bước 14",
+            "autocreate": false,
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_FINISH_BUOC14_DTXD",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -140,
+            "id": -140150,
+            "to": -150,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "apiWebConfig": {
+                            "apiConfig": {
+                                "param": "B6_PARAM_GET_TICKET_ID",
+                                "hostnameKey": "EVN_B6_PHIEU_GIAO_HANG",
+                                "urlFilter": "/export-report/saveFilePhieuGiaoHang/Phieu_Giao_Hang_DTXD/pdf",
+                                "returnKey": "MT_GET_VENDOR_RP_S"
+                            },
+                            "searchConfig": {
+                                "idField": "type",
+                                "minimumSearch": 0,
+                                "displayField": "type"
+                            }
+                        },
+                        "display": true,
+                        "name": "Phiếu Giao Hàng",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9700,
+                        "position": -9700,
+                        "type": "apiweb",
+                        "conditions": {
+                            "feedTo": [
+                                {
+                                    "fieldName": "name",
+                                    "id": -9240,
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
+                            "required": true
+                        },
+                        "value": ""
+                    },
+                    {
+                        "staticContent": "<p style='font-size: 12px; color: #3617FF'><i></i></p>",
+                        "display": true,
+                        "name": "Link file phiếu giao hàng",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "placeholder": "",
+                        "id": -9240,
+                        "position": -9240,
+                        "type": "link",
+                        "conditions": {
+                            "required": false,
+                            "min-length": 1,
+                            "height": 5
+                        },
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "default",
+            "status": "waiting"
+        },
+        {
+            "requestUpdateLock": true,
+            "buttonConfig": {
+                "cancel": {
+                    "enable": false,
+                    "text": "Hủy yêu cầu"
+                },
+                "requestUpdate": {
+                    "enable": false
+                }
+            },
+            "customNote": "Bước 15",
+            "advancedConfig": {
+                "signature_evn": [
+                    {
+                        "filesToSign": [
+                            {
+                                "infoId": -1,
+                                "relaId": -110130,
+                                "dataset": "INDIVIDUAL"
+                            },
+                            {
+                                "infoId": -1,
+                                "relaId": -120130,
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ],
+                        "whereToSave": {
+                            "infoId": -1,
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "suffix": " - (Thủ kho đã ký số)",
+                        "key": "ThuKho"
+                    },
+                    {
+                        "filesToSign": [
+                            {
+                                "infoId": -9240,
+                                "relaId": -140150,
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ],
+                        "whereToSave": {
+                            "infoId": -2,
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "suffix": " - (thủ kho đã ký số)",
+                        "key": "Thu_Kho"
+                    }
+                ]
+            },
+            "autocreate": false,
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_APPROVE_BUOC15_DTXD",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -150,
+            "id": -150160,
+            "to": -160,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "Văn bản đã ký số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "inputId": -130,
+                                        "infoId": -1,
+                                        "phaseId": -120,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    },
+                                    {
+                                        "inputId": -130,
+                                        "infoId": -1,
+                                        "phaseId": -110,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    },
+                    {
+                        "name": "Phiếu giao hàng đã kí số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -2,
+                        "position": -2,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "inputId": -150,
+                                        "infoId": -2,
+                                        "phaseId": -140,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "requestUpdateLock": true,
+            "buttonConfig": {
+                "cancel": {
+                    "enable": false,
+                    "text": "Hủy yêu cầu"
+                },
+                "requestUpdate": {
+                    "enable": false
+                }
+            },
+            "customNote": "Bước 16",
+            "advancedConfig": {
+                "signature_evn": [
+                    {
+                        "filesToSign": [
+                            {
+                                "infoId": -1,
+                                "relaId": -150160,
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ],
+                        "whereToSave": {
+                            "infoId": -1,
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "suffix": " - (Nhân viên đã ký số)",
+                        "key": "ChuKy_NhanVien"
+                    },
+                    {
+                        "filesToSign": [
+                            {
+                                "infoId": -2,
+                                "relaId": -150160,
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ],
+                        "whereToSave": {
+                            "infoId": -2,
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "suffix": " - (thủ kho đã ký số)",
+                        "key": "NGUOI_NHAN"
+                    }
+                ]
+            },
+            "autocreate": false,
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_APPROVE_BUOC16_DTXD",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -160,
+            "id": -1601,
+            "to": -1,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -12,
+                        "position": -12,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "Văn bản đã ký số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "inputId": -160,
+                                        "infoId": -1,
+                                        "phaseId": -150,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    },
+                    {
+                        "name": "Phiếu giao hàng đã kí số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -2,
+                        "position": -2,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "inputId": -160,
+                                        "infoId": -2,
+                                        "phaseId": -150,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        }
+    ],
+    "notification_config": {
+        "approvers_pending_mail_template": 59,
+        "ticket_response_mail_template": 47,
+        "comment_mail_template": 66,
+        "viewers_assignment_mail_template": 68,
+        "watchers_ticket_rejection_mail_template": 21,
+        "ticket_result_reject_mail_template": 54,
+        "new_performer_phase_reassignment_mail_template": 56,
+        "creator_rejected_mail_template": 65,
+        "ticket_share_mail_template": 71,
+        "ticket_creation_mail_template": 45,
+        "relationship_result_reject_mail_template": 55,
+        "creator_approved_mail_template": 67,
+        "mention_mail_template": 53,
+        "co_execute_rejection_mail_template": 69,
+        "implementation_reminder_mail_template": 63,
+        "ticket_cancellation_mail_template": 49,
+        "creator_requested_update_mail_template": 58,
+        "approval_input_finish_mail_template": 61,
+        "co_execute_request_to_update_mail_template": 70,
+        "old_performer_phase_reassignment_mail_template": 57,
+        "watchers_ticket_auto_closing_mail_template": 52,
+        "approval_reminder_no_token_mail_template": 73,
+        "watchers_ticket_creation_mail_template": 46,
+        "send_notification_mail_template": 85,
+        "watchers_ticket_cancellation_mail_template": 50,
+        "approval_reminder_mail_template": 62,
+        "confirmation_reminder_mail_template": 64,
+        "phase_input_finish_mail_template": 60,
+        "phase_finished_mail_template": 74,
+        "watchers_ticket_closing_mail_template": 51,
+        "watchers_ticket_response_mail_template": 48,
+        "phase_approve_finished_mail_template": 75
+    },
+    "display": [
+        {
+            "positions": [
+                250,
+                15
+            ],
+            "id": -10
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                0,
+                150
+            ],
+            "id": -20
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                250,
+                150
+            ],
+            "id": -30
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                500,
+                150
+            ],
+            "id": -40
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                500,
+                300
+            ],
+            "id": -50
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                250,
+                300
+            ],
+            "id": -60
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                0,
+                300
+            ],
+            "id": -70
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                0,
+                450
+            ],
+            "id": -80
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                250,
+                450
+            ],
+            "id": -90
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                500,
+                450
+            ],
+            "id": -100
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                500,
+                600
+            ],
+            "id": -105
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                250,
+                600
+            ],
+            "id": -110
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                0,
+                600
+            ],
+            "id": -120
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                0,
+                750
+            ],
+            "id": -130
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                250,
+                750
+            ],
+            "id": -140
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                500,
+                750
+            ],
+            "id": -150
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                500,
+                900
+            ],
+            "id": -160
+        },
+        {
+            "positions": [
+                250,
+                900
+            ],
+            "id": -1
+        }
+    ]
+}

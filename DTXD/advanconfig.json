@@ -1,0 +1,1320 @@
+// ******************************************************* CÁC BƯỚC CALL DATA *******************************************************
+// B6_PARAM_TRUONG_PHO_PHONG_PD_DTXD
+{
+    "orgId": "-9920",
+    "deptId": "-9980",
+    "mappingLevel": "-5300",
+    "pickerFilter": "fullName"
+}
+//B6_PARAM_GET_ALL_DEPARTMENT_DTXD
+{
+    "orgId": "-9920",
+    "pickerFilter": "name"
+}
+//B6_PARAM_TRUONG_PHONG_KHVT_DTXD
+{
+    "orgId": "-9920",
+    "mappingLevel": "-5300",
+    "deptId": "-9550",
+    "pickerFilter": "fullName"
+}
+//B6_PARAM_CHON_CHUYEN_VIEN_BUOC4_DTXD (KHVT)
+{
+    "orgId": "-9920",
+    "deptId": "-9550",
+    "mappingLevel": "-5700",
+    "pickerFilter": "fullName"
+}
+//B6_PARAM_CHON_TRUONG_PHO_PHONG_KHVT_DTXD (KHVT)
+{
+    "orgId": "-9920",
+    "deptId": "-9550",
+    "mappingLevel": "-5300",
+    "pickerFilter": "fullName"
+}
+// B6_PARAM_CHON_GD_PGD_DTXD
+{
+    "orgId": "-9920",
+    "mappingLevel": "-6000",
+    "pickerFilter": "fullName"
+}
+//B6_PARAM_CHON_THU_KHO_DTXD
+{
+    "orgId": "-9920",
+    "mappingLevel": "-5600",
+    "pickerFilter": "fullName"
+}
+//B6_PARAM_CHON_TRUONG_DON_VI_THI_CONG_BUOC8_DTXD
+{
+    "orgId": "-9920",
+    "deptId": "-8650,-80,-90",
+    "mappingLevel": "-5300",
+    "pickerFilter": "fullName"
+}
+//B6_PARAM_CHON_CHUYEN_VIEN_BUOC13_DTXD
+{
+    "orgId": "-9920",
+    "mappingLevel": "-5700",
+    "deptId": "-8650,-80,-90",
+    "pickerFilter": "fullName"
+}
+
+B6_IMPORT_DTXD_FILTER_SOURCE
+{
+    "orgId": "-9450,-80,-90",
+    "pickerFilter": "description"
+}
+
+{
+    "primaryInventoryCode": "-9901",
+    "materialCode": "-9760,-9800",
+    "availabaleQuantity": "-9698,-9800",
+    "pickerFilter": "exportQuantity"
+}
+
+
+B6_DTXD_PARAM_GET_MATERIAL_INVENTORY_QUANTITY
+{
+    "organizationId": "-9900",
+    "materialCode": "-9760,-9800"
+}
+
+
+B6_DTXD_GET_MATERIAL_REQUEST_QUANTITY
+{
+    "primaryInventoryCode": "-9901",
+    "materialCode": "-9760,-9800",
+    "availableQuantity": "-9698,-9800",
+    "pickerFilter": "exportQuantity"
+}
+
+
+B6_DTXD_GET_DESIRED_LENGTH_BUOC1
+{
+    "materialCode": "-9760,-9800",
+    "orgId": "-9920"
+}
+
+B6_DTXD_GET_NUMBER_SEGMENT_BUOC1
+{
+    "orgId": "-9920",
+    "materialCode": "-9760,-9800",
+    "length": "-9692,-9800",
+    "pickerFilter": "number"
+}
+
+
+B6_DTXD_GET_DESIRED_LENGTH
+{
+    "materialCode": "-9760,-80,-90,-9800",
+    "orgId ": "-9920"
+}
+
+B6_DTXD_GET_NUMBER_SEGMENT
+{
+    "orgId": "-9920",
+    "materialCode": "-9760,-80,-90,-9800",
+    "length": "-9692,-80,-90,-9800",
+    "pickerFilter": "number"
+}
+
+{
+    "organizationId": "-9902,-110,-120",
+    "materialCode": "-9760,-110,-120,-9800"
+}
+
+
+
+B6_DTXD_GET_LENGTH_BUOC8
+{
+    "materialCode": "-9760,-80,-90,-9800",
+    "orgId": "-9920",
+    "primaryInventory": "-9451,-80,-90"
+}
+
+B6_DTXD_GET_NUMBER_BUOC8
+{
+    "materialCode": "-9760,-80,-90,-9800",
+    "orgId": "-9920",
+    "length": "-9692,-80,-90,-9800",
+    "primaryInventory": "-9451,-80,-90"
+}
+//start
+// ******************************************************* CÁC BƯỚC DUYỆT *******************************************************
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "reason": "null",
+        "flowName": "Bước 2",
+        "approvalUser": "null",
+        "ticketType": "EXPORT_DTXD",
+        "action": "FINISH"
+    }
+},
+{
+    "status": "INPROGRESS, CLOSED",
+    "action": "FINISH, CANCEL , APPROVE"
+}
+//có 3 bước thì mình sẽ truyền FINISH, CANCEL , APPROVE vào action nhé
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": 1,
+        "reasonCancel": "null",
+        "ticketType": "EXPORT_PT_DV",
+        "flowName": "Bước 3",
+        "action": "APPROVE",
+        "reason": "(update-reason)",
+        "approvalUser": "(phase-owner,-3040)"
+    }
+}
+
+Tạo yêu cầu : REQUEST
+Sau khi nhập phiếu xuất/ phiếu nhập: : APPROVE
+//B6_PARAM_CREATE_TICKET_XUAT_KHO_DTXD
+// Bước 1
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "primaryInventory": "(-9901)",
+            "requestDate": "(-9910)",
+            "subInventory": "(-9870)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        }
+    }
+}
+
+FINISH bước 2: B6_PARAM_FINISH_BUOC2_DTXD
+
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 2",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-20)"
+    }
+}
+
+APPROVE bước 3 ĐTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "requestDate": "(-9910)",
+            "primaryInventory": "(-9901)",
+            "subInventory": "(-9870)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-30,-40)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 3",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-30)"
+    }
+}
+
+
+FINISH bước 4: B6_PARAM_FINISH_BUOC4_DTXD
+
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 4",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-40)"
+    }
+}
+
+APPROVE bước 5: B6_PARAM_APPROVE_BUOC5_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "requestDate": "(-9910)",
+            "primaryInventory": "(-9901)",
+            "subInventory": "(-9870)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-50,-60)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 5",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-50)"
+    }
+}
+
+
+APPROVE bước 6 ĐTXD: B6_PARAM_APPROVE_BUOC6_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "requestDate": "(-9910)",
+            "primaryInventory": "(-9901)",
+            "subInventory": "(-9870)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-60,-70)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 6",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-60)"
+    }
+}
+
+APPROVE bước 7 ĐTXD: B6_PARAM_APPROVE_BUOC7_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "requestDate": "(-9910)",
+            "primaryInventory": "(-9901)",
+            "subInventory": "(-9870)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 7",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-70)"
+    }
+}
+
+Bước 8: B6_PARAM_FINISH_BUOC8_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9975,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "requestDate": "(-9900,-80,-90)",
+            "numberVoteApprove": "(-9850,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "location": "(-9950,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "primaryInventory": "(-9451,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "storekeeper": "(-8750,-80,-90)",
+            "construction1": "(-9300,-80,-90)",
+            "primaryInventory1": "(-9351,-80,-90)",
+            "subInventory1": "(-9290,-80,-90)",
+            "tableData": [(t)<-9800,
+                -80,
+                -90>
+            {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 8",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-80)"
+    }
+}
+
+
+
+
+
+APPROVE bước 9: B6_PARAM_APPROVE_BUOC9_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 9",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-90)"
+    }
+}
+
+
+FINISH bước 10: B6_PARAM_FINISH_BUOC10_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "statusErp": 1,
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9975,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "requestDate": "(-9900,-80,-90)",
+            "numberVoteApprove": "(-9850,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "location": "(-9950,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "primaryInventory": "(-9451,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "storekeeper": "(-8750,-80,-90)",
+            "construction1": "(-9300,-80,-90)",
+            "primaryInventory1": "(-9351,-80,-90)",
+            "subInventory1": "(-9290,-80,-90)",
+            "tableData": [(t)<-9800,
+                -80,
+                -90>
+            {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 10",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-100)"
+    }
+}
+
+B6_PARAM_APPROVE_BUOC10_5_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "statusErp": 1,
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9975,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "requestDate": "(-9900,-80,-90)",
+            "numberVoteApprove": "(-9850,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "location": "(-9950,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "primaryInventory": "(-9451,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "storekeeper": "(-8750,-80,-90)",
+            "construction1": "(-9300,-80,-90)",
+            "primaryInventory1": "(-9351,-80,-90)",
+            "subInventory1": "(-9290,-80,-90)",
+            "tableData": [(t)<-9800,
+                -80,
+                -90>
+            {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-105,-110)",
+                    "type": "3",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 10.5",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-105)"
+    }
+}
+
+
+APPROVE bước 11.1 Có chọn giám đốc phê duyệt: B6_PARAM_APPROVE_BUOC11_1_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "statusErp": 1,
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9975,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "requestDate": "(-9900,-80,-90)",
+            "numberVoteApprove": "(-9850,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "location": "(-9950,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "primaryInventory": "(-9451,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "storekeeper": "(-8750,-80,-90)",
+            "construction1": "(-9300,-80,-90)",
+            "primaryInventory1": "(-9351,-80,-90)",
+            "subInventory1": "(-9290,-80,-90)",
+            "tableData": [(t)<-9800,
+                -80,
+                -90>
+            {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-110,-120)",
+                    "type": "3",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 11",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-110)"
+    }
+}
+
+
+APPROVE Bước 11.2 Không chọn giám đốc phê duyệt: B6_PARAM_APPROVE_BUOC11_2_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "statusErp": 1,
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9975,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "requestDate": "(-9900,-80,-90)",
+            "numberVoteApprove": "(-9850,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "location": "(-9950,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "primaryInventory": "(-9451,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "storekeeper": "(-8750,-80,-90)",
+            "construction1": "(-9300,-80,-90)",
+            "primaryInventory1": "(-9351,-80,-90)",
+            "subInventory1": "(-9290,-80,-90)",
+            "tableData": [(t)<-9800,
+                -80,
+                -90>
+            {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-110,-130)",
+                    "type": "3",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 11",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-110)"
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+APPROVE bước 12: B6_PARAM_APPROVE_BUOC12_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "statusErp": 1,
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9975,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "requestDate": "(-9900,-80,-90)",
+            "numberVoteApprove": "(-9850,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "location": "(-9950,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "primaryInventory": "(-9451,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "storekeeper": "(-8750,-80,-90)",
+            "construction1": "(-9300,-80,-90)",
+            "primaryInventory1": "(-9351,-80,-90)",
+            "subInventory1": "(-9290,-80,-90)",
+            "tableData": [(t)<-9800,
+                -80,
+                -90>
+            {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-120,-130)",
+                    "type": "3",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 12",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-120)"
+    }
+}
+
+FINISH bước 13: B6_PARAM_FINISH_BUOC13_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 13",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-130)"
+    }
+}
+
+FINISH bước 14: B6_PARAM_FINISH_BUOC14_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 14",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-140)"
+    }
+}
+
+APPROVE bước 15: B6_PARAM_APPROVE_BUOC15_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "statusErp": 1,
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9975,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "requestDate": "(-9900,-80,-90)",
+            "numberVoteApprove": "(-9850,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "location": "(-9950,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "primaryInventory": "(-9451,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "storekeeper": "(-8750,-80,-90)",
+            "construction1": "(-9300,-80,-90)",
+            "primaryInventory1": "(-9351,-80,-90)",
+            "subInventory1": "(-9290,-80,-90)",
+            "tableData": [(t)<-9800,
+                -80,
+                -90>
+            {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-150,-160)",
+                    "type": "3",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-2,-150,-160)",
+                    "type": "4",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 15",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-150)"
+    }
+}
+
+
+
+APPROVE bước 16: B6_PARAM_APPROVE_BUOC16_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "CLOSED",
+        "statusErp": 1,
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9975,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "requestDate": "(-9900,-80,-90)",
+            "numberVoteApprove": "(-9850,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "location": "(-9950,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "primaryInventory": "(-9451,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "storekeeper": "(-8750,-80,-90)",
+            "construction1": "(-9300,-80,-90)",
+            "primaryInventory1": "(-9351,-80,-90)",
+            "subInventory1": "(-9290,-80,-90)",
+            "tableData": [(t)<-9800,
+                -80,
+                -90>
+            {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-160,-1)",
+                    "type": "3",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-2,-160,-1)",
+                    "type": "4",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CLOSED",
+        "flowName": "Buoc 16",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-160)"
+    }
+}
+
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "warehouse": "(-9900)",
+            "primaryInventory": "(-9900)",
+            "subInventory": "(-9870)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        }
+    }
+}
+//Bước 8
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-10000,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "description": "(-9650,-80,-90)",
+            "location": "(-9750,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "warehouse": "(-9600,-80,-90)",
+            "primaryInventory": "(-9450,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "locator": "(-9950,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "tableData": [(t)<-9800,
+                -80,
+                -90>
+            {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)"
+                }(endt)
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 8",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-80)"
+    }
+}
+// B6_PARAM_KHO_CHINH_KHVT_DTXD
+{
+    "organizationId": "-9989",
+    "pickerFilter": "primaryInventoryCode"
+}
+// B6_PARAM_KHO_PHU_KHVT_DTXD
+{
+    "primaryInventoryId ": "-9900",
+    "pickerFilter": "nameSubInventory"
+}
+//B6_PARAM_MA_VART_TU_KHVT_DTXD
+{
+    "organizationId": "-9900",
+    "organizationCode": "-9901",
+    "subOrganizationCode": "-9870",
+    "pickerFilter": "materialCode"
+}
+// B6_PARAM_GET_MATERIAL_REQUEST_QUANTITY_DTXD
+{
+    "organizationId": "-9900",
+    "primaryInventoryCode": "-9901",
+    "materialCode": "-9760,-9800",
+    "availabaleQuantity": "-8745,-9800",
+    "pickerFilter": "exportQuantity"
+}
+
+
+B6_PARAM_NUMBER_VOTE_DTXD
+{
+    "type":"-2400",
+    "year":"-9860,-80,-90",
+    "orgId":"-9920",
+    "pickerFilter":"numberVote"
+}
+
+
+
+B6_PARAM_GET_BY_NUMBER_VOTE_DTXD
+{
+    "numberVote": "-9855,-80,-90",
+    "pickerFilter": "sourceErpId"
+}
+
+
+
+
+
+
+
+{
+    "orgId": "-9940",
+    "deptId": "-9930",
+    "mappingLevel": "-9915"
+}
+
+{
+    "orgId": "-9940",
+    "mappingLevel": "-9525,-50,-60"
+}
+
+[
+    {
+        "numberVoteApprove": "01.R10.12.0003",
+        "type": "1",
+        "requestDate": "14/04/2022 17:31:12",
+        "receiver": "",
+        "deliver": "Phòng Kế hoạch và Vật tư",
+        "orgRequestName": "Công ty Điện lực Hoàn Kiếm",
+        "orgRequestIdErp": "3002",
+        "orgRequestId": "284",
+        "location": "Phòng Kế hoạch và Vật tư",
+        "reasonId": "436",
+        "reasonName": "N12",
+        "description": "Nhập thu hồi",
+        "primaryInventoryId": "Nhập thu hồi MBA từ PA xử lý thay MBA La Văn Cầu 1 có công suất 560kVA-22/0.4kV bằng MBA có CS 750kVA-22/0.4kV, B31A3121246./.",
+        "primaryInventoryCode": "3464",
+        "primaryInventoryName": "R10",
+        "constructionId": "HKI-R10-Kho quản lý theo dõi số lượng TSCĐ",
+        "constructionCode": "",
+        "constructionName": "",
+        "typeErpId": "",
+        "typeErpName": "63251",
+        "sourceErpId": "Nhập thu hồi - TSCĐ Ko giá",
+        "sourceErpName": "41",
+        "listTable": [
+            {
+                "numberVoteApprove": "01.R10.12.0003",
+                "materialId": "665228",
+                "materialCode": "3.62.95.645.GER.00.C50",
+                "materialName": "Tủ RMU loại 4 ngăn 24kV 630A (2 CD + 2CC)",
+                "approveQuantity": 1,
+                "unitPrice": 0,
+                "batch": "R10-0001",
+                "amount": 0,
+                "accountDebit": "",
+                "accountCredit": ""
+            },
+            {
+                "numberVoteApprove": "01.R10.12.0003",
+                "materialId": "663228",
+                "materialCode": "3.62.95.643.000.00.C50",
+                "materialName": "Tủ RMU loại 3 ngăn 24kV 630A (2 CD + 1CC) TN",
+                "approveQuantity": 1,
+                "unitPrice": 0,
+                "batch": "R10-0001",
+                "amount": 0,
+                "accountDebit": "",
+                "accountCredit": ""
+            },
+            {
+                "numberVoteApprove": "01.R10.12.0003",
+                "materialId": "654721",
+                "materialCode": "3.56.90.562.VIE.00.B00",
+                "materialName": "MBA dầu 3 pha 560kVA-22±2x2,5%/0,4kV-ONAN",
+                "approveQuantity": 1,
+                "unitPrice": 0,
+                "batch": "R10-0001",
+                "amount": 0,
+                "accountDebit": "",
+                "accountCredit": ""
+            }
+        ]
+    },
+    {
+        "numberVoteApprove": "01.R10.12.0003",
+        "type": "1",
+        "requestDate": "09/08/2017 00:00:00",
+        "receiver": "",
+        "deliver": "A. Cường - Phòng Điều độ Vận hành",
+        "orgRequestName": "Công ty Điện lực Hoàn Kiếm",
+        "orgRequestIdErp": "3002",
+        "orgRequestId": "284",
+        "location": "Phòng Điều độ Vận hành",
+        "reasonId": "436",
+        "reasonName": "N12",
+        "description": "Nhập thu hồi",
+        "primaryInventoryId": "Thu hồi từ TBA cột Đồng hồ",
+        "primaryInventoryCode": "3464",
+        "primaryInventoryName": "R10",
+        "constructionId": "HKI-R10-Kho quản lý theo dõi số lượng TSCĐ",
+        "constructionCode": "",
+        "constructionName": "",
+        "typeErpId": "",
+        "typeErpName": "63251",
+        "sourceErpId": "Nhập thu hồi - TSCĐ Ko giá",
+        "sourceErpName": "41",
+        "listTable": []
+    },
+    {
+        "numberVoteApprove": "01.R10.12.0003",
+        "type": "1",
+        "requestDate": "02/11/2018 00:00:00",
+        "receiver": "",
+        "deliver": "Công ty cổ phần XLĐ Thành An",
+        "orgRequestName": "Công ty Điện lực Hoàn Kiếm",
+        "orgRequestIdErp": "3002",
+        "orgRequestId": "284",
+        "location": "Công ty cổ phần XLĐ Thành An",
+        "reasonId": "436",
+        "reasonName": "N12",
+        "description": "Nhập thu hồi",
+        "primaryInventoryId": "Thu hồi từ TBA Ga HN",
+        "primaryInventoryCode": "3464",
+        "primaryInventoryName": "R10",
+        "constructionId": "HKI-R10-Kho quản lý theo dõi số lượng TSCĐ",
+        "constructionCode": "",
+        "constructionName": "",
+        "typeErpId": "",
+        "typeErpName": "63251",
+        "sourceErpId": "Nhập thu hồi - TSCĐ Ko giá",
+        "sourceErpName": "41",
+        "listTable": []
+    }
+]
