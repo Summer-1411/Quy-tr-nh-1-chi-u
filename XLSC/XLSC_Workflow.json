@@ -3729,6 +3729,10 @@
                                         {
                                             "fieldName": "batch",
                                             "id": -9120
+                                        },
+                                        {
+                                            "fieldName": "unit",
+                                            "id": -9720
                                         }
                                     ]
                                 }

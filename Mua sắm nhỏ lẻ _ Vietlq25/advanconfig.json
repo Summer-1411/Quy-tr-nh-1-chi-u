@@ -1,0 +1,21 @@
+B6_NKMSNL_PARAM_NUMBER_VOTE
+
+{
+    "type": "-2500",
+    "year": "-8650",
+    "orgId": "-8900",
+    "pickerFilter": "numberVote"
+}
+
+
+B6_NKMSNL_PARAM_GET_BY_NUMBER_VOTE
+{
+    "numberVote": "-8550",
+    "pickerFilter": "sourceErpId"
+}
+
+B6_NKMSNL_PARAM_KE_TOAN_VAT_TU
+{
+    "depId" : "-5300",
+    "pickerFilter": "fullName"
+}
