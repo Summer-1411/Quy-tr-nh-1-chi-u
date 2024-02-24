@@ -222,7 +222,6 @@
             "position": -8505,
             "name": "Ngày lập phiếu",
             "type": "date",
-            "valuefeeder": "Now",
             "conditions": {
                 "required": true
             },
@@ -308,8 +307,13 @@
                         "dataset": "INDIVIDUAL"
                     },
                     {
-                        "fieldName": "reasonName",
+                        "fieldName": "reasonCode",
                         "id": -8100,
+                        "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "fieldName": "reasonName",
+                        "id": -8099,
                         "dataset": "INDIVIDUAL"
                     },
                     {
@@ -462,15 +466,25 @@
         },
         {
             "id": -8100,
-            "name": "Lý do nhập kho",
+            "name": "Reason Code",
             "type": "text",
+            "display": false,
             "additionalDisplayClass": "right-info",
             "position": -8100,
             "conditions": {
                 "required": true
             }
         },
-
+        {
+            "id": -8099,
+            "name": "Lý do nhập kho",
+            "type": "text",
+            "additionalDisplayClass": "right-info",
+            "position": -8099,
+            "conditions": {
+                "required": true
+            }
+        },
         {
             "name": "Diễn giải",
             "additionalDisplayClass": "left-info",
@@ -996,21 +1010,21 @@
                     }
                 },
                 {
-                    "id": -9855,
-                    "position": -6850,
-                    "name": "Độ dài mong muốn",
-                    "type": "finance",
-                    "conditions": {
-                        "required": false
-                    }
-                },
-                {
                     "id": -9850,
                     "position": -6855,
                     "name": "Số lượng đoạn",
                     "type": "finance",
                     "conditions": {
-                        "required": false
+                        "required": true
+                    }
+                },
+                {
+                    "id": -9855,
+                    "position": -6850,
+                    "name": "Độ dài mong muốn",
+                    "type": "finance",
+                    "conditions": {
+                        "required": true
                     }
                 },
                 {
