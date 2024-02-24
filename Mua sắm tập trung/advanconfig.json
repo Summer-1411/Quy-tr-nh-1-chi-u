@@ -13,7 +13,7 @@
 {
     "orgId": "-8900",
     "mappingLevel": "-2950",
-    "deptId": "-5500",
+    "deptId": "-9965",
     "pickerFilter": "fullName"
 }
 //B6_PARAM_KE_TOAN_VAT_TU_MSTT (chuyên viên phòng kế toán)
@@ -131,7 +131,7 @@ B6_PARAM_GET_BY_NUMBER_VOTE_MSTT
             "typeErp": "(-8200)",
             "sourceErp": "(-8000)",
             "construction": "(-7700)",
-            "requestDate": "(-9999)",
+            "requestDate": "(-8700)",
             "receiptNumber": "(-9000)",
             "numberVoteApprove": "(-8600)",
             "category": "(-7600)",
@@ -145,6 +145,8 @@ B6_PARAM_GET_BY_NUMBER_VOTE_MSTT
                     "unit": "(-6920)",
                     "requestQuantity": "(-6880)",
                     "approveQuantity": "(-6860)",
+                    "segmentQuantity": "(-9850)",
+                    "desirableLength": "(-9855)",
                     "batch": "(-6900)",
                     "unitPrice": "(-6840)",
                     "amount": "(-6820)",
@@ -201,7 +203,7 @@ B6_PARAM_FINISH_BUOC4_MSTT
             "typeErp": "(-8200)",
             "sourceErp": "(-8000)",
             "construction": "(-7700)",
-            "requestDate": "(-9999)",
+            "requestDate": "(-8700)",
             "receiptNumber": "(-9000)",
             "numberVoteApprove": "(-8600)",
             "category": "(-7600)",
@@ -215,6 +217,8 @@ B6_PARAM_FINISH_BUOC4_MSTT
                     "unit": "(-6920)",
                     "requestQuantity": "(-6880)",
                     "approveQuantity": "(-6860)",
+                    "segmentQuantity": "(-9850)",
+                    "desirableLength": "(-9855)",
                     "batch": "(-6900)",
                     "unitPrice": "(-6840)",
                     "amount": "(-6820)",
@@ -258,7 +262,7 @@ B6_PARAM_APPROVE_BUOC5_MSTT
             "typeErp": "(-8200)",
             "sourceErp": "(-8000)",
             "construction": "(-7700)",
-            "requestDate": "(-9999)",
+            "requestDate": "(-8700)",
             "receiptNumber": "(-9000)",
             "numberVoteApprove": "(-8600)",
             "category": "(-7600)",
@@ -272,6 +276,8 @@ B6_PARAM_APPROVE_BUOC5_MSTT
                     "unit": "(-6920)",
                     "requestQuantity": "(-6880)",
                     "approveQuantity": "(-6860)",
+                    "segmentQuantity": "(-9850)",
+                    "desirableLength": "(-9855)",
                     "batch": "(-6900)",
                     "unitPrice": "(-6840)",
                     "amount": "(-6820)",
@@ -326,7 +332,7 @@ B6_PARAM_APPROVE_BUOC6_MSTT
             "typeErp": "(-8200)",
             "sourceErp": "(-8000)",
             "construction": "(-7700)",
-            "requestDate": "(-9999)",
+            "requestDate": "(-8700)",
             "receiptNumber": "(-9000)",
             "numberVoteApprove": "(-8600)",
             "category": "(-7600)",
@@ -340,6 +346,8 @@ B6_PARAM_APPROVE_BUOC6_MSTT
                     "unit": "(-6920)",
                     "requestQuantity": "(-6880)",
                     "approveQuantity": "(-6860)",
+                    "segmentQuantity": "(-9850)",
+                    "desirableLength": "(-9855)",
                     "batch": "(-6900)",
                     "unitPrice": "(-6840)",
                     "amount": "(-6820)",
@@ -675,5 +683,358 @@ B6_PARAM_APPROVE_BUOC9_MSTT
         "flowName": "string",
         "approvalUser": "string",
         "action": "string"
+    }
+}
+
+
+
+// 1 CHIỀU
+// B6_MSTT_PARAM_CREATE_TICKET_BUOC1
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-2700)",
+        "status": "INPROGRESS",
+        "statusValidate": "1",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-8901)",
+            "reason": "(-8100)",
+            "deliver": "(-8500)",
+            "description": "(-7900)",
+            "primaryInventory": "(-7801)",
+            "location": "(-8800)",
+            "subInventory": "(-7650)",
+            "typeErp": "(-8200)",
+            "sourceErp": "(-8000)",
+            "construction": "(-7700)",
+            "requestDate": "(-8700)",
+            "receiptNumber": "(-9000)",
+            "numberVoteApprove": "(-8600)",
+            "category": "(-7600)",
+            "storekeeper": "(-5600)",
+            "contractPO": "(-9911)",
+            "tableData": [(t)<-7000>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-6960)",
+                    "materialName": "(-6940)",
+                    "unit": "(-6920)",
+                    "requestQuantity": "(-6880)",
+                    "approveQuantity": "(-6860)",
+                    "segmentQuantity": "(-9850)",
+                    "desirableLength": "(-9855)",
+                    "batch": "(-6900)",
+                    "unitPrice": "(-6840)",
+                    "amount": "(-6820)",
+                    "accountDebit": "(-6800)",
+                    "accountCredit": "(-6780)"
+                }(endt)
+            ]
+        }
+    }
+}
+
+
+
+B6_MSTT_PARAM_FINISH_BUOC2
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 2",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-40)"
+    }
+}
+
+
+B6_MSTT_PARAM_APPROVE_BUOC3
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-2700)",
+        "status": "INPROGRESS",
+        "statusErp": 1,
+        "statusValidate": "1",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-8901)",
+            "reason": "(-8100)",
+            "deliver": "(-8500)",
+            "description": "(-7900)",
+            "primaryInventory": "(-7801)",
+            "location": "(-8800)",
+            "subInventory": "(-7650)",
+            "typeErp": "(-8200)",
+            "sourceErp": "(-8000)",
+            "construction": "(-7700)",
+            "requestDate": "(-8700)",
+            "receiptNumber": "(-9000)",
+            "numberVoteApprove": "(-8600)",
+            "category": "(-7600)",
+            "storekeeper": "(-5600)",
+            "contractPO": "(-9911)",
+            "tableData": [(t)<-7000>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-6960)",
+                    "materialName": "(-6940)",
+                    "unit": "(-6920)",
+                    "requestQuantity": "(-6880)",
+                    "approveQuantity": "(-6860)",
+                    "segmentQuantity": "(-9850)",
+                    "desirableLength": "(-9855)",
+                    "batch": "(-6900)",
+                    "unitPrice": "(-6840)",
+                    "amount": "(-6820)",
+                    "accountDebit": "(-6800)",
+                    "accountCredit": "(-6780)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-50,-60)",
+                    "type": "1",
+                    "createUser": "(-10000)",
+                    "numberVote": "(-8550)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 3",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-50)"
+    }
+}
+
+B6_MSTT_PARAM_APPROVE_BUOC4
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-2700)",
+        "status": "INPROGRESS",
+        "statusErp": 1,
+        "statusValidate": "1",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-8901)",
+            "reason": "(-8100)",
+            "deliver": "(-8500)",
+            "description": "(-7900)",
+            "primaryInventory": "(-7801)",
+            "location": "(-8800)",
+            "subInventory": "(-7650)",
+            "typeErp": "(-8200)",
+            "sourceErp": "(-8000)",
+            "construction": "(-7700)",
+            "requestDate": "(-8700)",
+            "receiptNumber": "(-9000)",
+            "numberVoteApprove": "(-8600)",
+            "category": "(-7600)",
+            "storekeeper": "(-5600)",
+            "contractPO": "(-9911)",
+            "tableData": [(t)<-7000>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-6960)",
+                    "materialName": "(-6940)",
+                    "unit": "(-6920)",
+                    "requestQuantity": "(-6880)",
+                    "approveQuantity": "(-6860)",
+                    "segmentQuantity": "(-9850)",
+                    "desirableLength": "(-9855)",
+                    "batch": "(-6900)",
+                    "unitPrice": "(-6840)",
+                    "amount": "(-6820)",
+                    "accountDebit": "(-6800)",
+                    "accountCredit": "(-6780)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-60,-70)",
+                    "type": "1",
+                    "createUser": "(-10000)",
+                    "numberVote": "(-8550)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 4",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-60)"
+    }
+}
+
+B6_MSTT_PARAM_FINISH_BUOC5
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 5",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-70)"
+    }
+}
+B6_MSTT_PARAM_APPROVE_BUOC6
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-2700)",
+        "status": "INPROGRESS",
+        "statusErp": 1,
+        "statusValidate": "1",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-8901)",
+            "reason": "(-8100)",
+            "deliver": "(-8500)",
+            "description": "(-7900)",
+            "primaryInventory": "(-7801)",
+            "location": "(-8800)",
+            "subInventory": "(-7650)",
+            "typeErp": "(-8200)",
+            "sourceErp": "(-8000)",
+            "construction": "(-7700)",
+            "requestDate": "(-8700)",
+            "receiptNumber": "(-9000)",
+            "numberVoteApprove": "(-8600)",
+            "category": "(-7600)",
+            "storekeeper": "(-5600)",
+            "contractPO": "(-9911)",
+            "tableData": [(t)<-7000>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-6960)",
+                    "materialName": "(-6940)",
+                    "unit": "(-6920)",
+                    "requestQuantity": "(-6880)",
+                    "approveQuantity": "(-6860)",
+                    "segmentQuantity": "(-9850)",
+                    "desirableLength": "(-9855)",
+                    "batch": "(-6900)",
+                    "unitPrice": "(-6840)",
+                    "amount": "(-6820)",
+                    "accountDebit": "(-6800)",
+                    "accountCredit": "(-6780)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-80,-90)",
+                    "type": "1",
+                    "createUser": "(-10000)",
+                    "numberVote": "(-8550)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 6",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-80)"
+    }
+}
+
+B6_MSTT_PARAM_APPROVE_BUOC7
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-2700)",
+        "status": "CLOSED",
+        "statusErp": 1,
+        "statusValidate": "1",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-8901)",
+            "reason": "(-8100)",
+            "deliver": "(-8500)",
+            "description": "(-7900)",
+            "primaryInventory": "(-7801)",
+            "location": "(-8800)",
+            "subInventory": "(-7650)",
+            "typeErp": "(-8200)",
+            "sourceErp": "(-8000)",
+            "construction": "(-7700)",
+            "requestDate": "(-8700)",
+            "receiptNumber": "(-9000)",
+            "numberVoteApprove": "(-8600)",
+            "category": "(-7600)",
+            "storekeeper": "(-5600)",
+            "contractPO": "(-9911)",
+            "tableData": [(t)<-7000>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-6960)",
+                    "materialName": "(-6940)",
+                    "unit": "(-6920)",
+                    "requestQuantity": "(-6880)",
+                    "approveQuantity": "(-6860)",
+                    "segmentQuantity": "(-9850)",
+                    "desirableLength": "(-9855)",
+                    "batch": "(-6900)",
+                    "unitPrice": "(-6840)",
+                    "amount": "(-6820)",
+                    "accountDebit": "(-6800)",
+                    "accountCredit": "(-6780)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-90,-1)",
+                    "type": "1",
+                    "createUser": "(-10000)",
+                    "numberVote": "(-8550)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CLOSED",
+        "flowName": "Buoc 7",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-90)"
     }
 }

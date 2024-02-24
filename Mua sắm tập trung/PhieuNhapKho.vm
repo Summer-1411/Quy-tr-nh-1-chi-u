@@ -152,18 +152,19 @@
     <div class="sectionGuide" >
         <table class="tableHeader" style="margin-top: 10pt; margin-left: 0pt; margin-right: 5pt;">
             <tr>
-                <td width="40%" style="font-size:11pt;text-align: center;">
+                <td width="40%" style="font-size:11pt;text-align: left;">
+                
                     <b>$DonVi</b>
                     <br />
                     <b >$DiaChi</b>
                     <br />
                 </td>
-                <td width="40%" style="font-size:13pt">
+                <td width="20%" style="font-size:13pt; text-align: center;">
                     <b>PHIẾU NHẬP KHO</b>
                     <div>Ngày lập phiếu: $NgayLapPhieu</div>
                     <div style="margin-left: 20px; margin-top: -2px">Liên: </div>
                 </td>
-                <td width="20%" style="text-align: center; font-size:11pt">
+                <td width="40%" style="text-align: center; font-size:11pt">
                     
                 </td>
             </tr>
@@ -322,9 +323,7 @@
             <div >Tổng giá trị nhập(viết bằng chữ): $tongGiaTriNhapChu</div>
         </div>
         <div style="font-size: 10.5pt; margin-top: 10px; text-align: right;">
-            <div style="font-style: italic;">Hà Nội, ngày $NgayLapPhieu.split(" ")[0].split("/")[0] tháng $NgayLapPhieu.split("
-                ")[0].split(
-                "/")[1] năm $NgayLapPhieu.split(" ")[0].split("/")[2] </div>
+            
         </div>
         <table class="tableHeader" style="margin-top: 10px;">
             <tr>

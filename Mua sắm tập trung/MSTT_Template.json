@@ -219,23 +219,19 @@
         
         {
             "id": -8700,
-            "position": -8700,
+            "position": -8505,
             "name": "Ngày lập phiếu",
             "type": "date",
             "valuefeeder": "Now",
             "conditions": {
-                "required": true,
-                "format": {
-                    "regex": "dd/MM/yyyy",
-                    "text": "Nhập dd/MM/yyyy"
-                }
+                "required": true
             },
-            "additionalDisplayClass": "left-info"
+            "additionalDisplayClass": "right-info"
         },
         {
             "id": -8650,
             "position": -8650,
-            "name": "Năm đưa vào vận hành",
+            "name": "Năm",
             "type": "DATE",
             "valuefeeder": "Now",
             "display": true,
@@ -248,7 +244,7 @@
             }
         },
         {
-            "name": "Số phiếu xuất",
+            "name": "Số phiếu nhập kho",
             "position": -8550,
             "id": -8550,
             "type": "apiweb",
@@ -272,7 +268,7 @@
             "additionalDisplayClass": "left-info"
         },
         {
-            "name": "Source",
+            "name": "Thông tin phiếu nhập",
             "position": -8510,
             "id": -8510,
             "type": "apiweb",
@@ -284,9 +280,9 @@
                     "returnKey": "MT_GET_VENDOR_RP_S"
                 },
                 "searchConfig": {
-                    "idField": "sourceErpId",
+                    "idField": "numberVoteApprove",
                     "minimumSearch": 0,
-                    "displayField": "sourceErpId"
+                    "displayField": "numberVoteApprove"
                 }
             },
             "conditions": {
@@ -304,6 +300,11 @@
                     {
                         "fieldName": "reasonId",
                         "id": -8101,
+                        "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "fieldName": "requestDate",
+                        "id": -8700,
                         "dataset": "INDIVIDUAL"
                     },
                     {
@@ -332,13 +333,23 @@
                         "dataset": "INDIVIDUAL"
                     },
                     {
-                        "fieldName": "constructionId",
-                        "id": -7700,
+                        "fieldName": "subInventoryName",
+                        "id": -7651,
+                        "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "fieldName": "subInventoryCode",
+                        "id": -7650,
                         "dataset": "INDIVIDUAL"
                     },
                     {
                         "fieldName": "constructionCode",
-                        "id": -7702,
+                        "id": -7700,
+                        "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "fieldName": "orgRequestName",
+                        "id": -8400,
                         "dataset": "INDIVIDUAL"
                     },
                     {
@@ -412,7 +423,7 @@
             "position": -8400,
             "type": "text",
             "conditions": {
-                "required": false
+                "required": true
             }
         },
         {
@@ -503,22 +514,30 @@
             "type": "text"
         },
         {
-            "id": -7702,
-            "position": -7702,
-            "name": "constructionCode",
-            "display": false,
-            "additionalDisplayClass": "right-info",
-            "type": "text",
+            "display": true,
+            "name": "Nhập tại kho (Kho phụ)",
+            "additionalDisplayClass": "left-info",
+            "id": -7651,
+            "position": -7651,
             "conditions": {
                 "required": true
-            }
+            },
+            "type": "text"
+        },
+        {
+            "display": false,
+            "name": "subInventory (Code kho)",
+            "additionalDisplayClass": "right-info",
+            "id": -7650,
+            "position": -7650,
+            "type": "text"
         },
         {
             "id": -7701,
             "position": -7701,
-            "name": "constructionName",
-            "display": false,
-            "additionalDisplayClass": "right-info",
+            "name": "Công trình",
+            "display": true,
+            "additionalDisplayClass": "left-info",
             "type": "text",
             "conditions": {
                 "required": true
@@ -527,9 +546,9 @@
         {
             "id": -7700,
             "position": -7700,
-            "name": "Công trình",
+            "name": "Công trình (code)",
             "display": false,
-            "additionalDisplayClass": "left-info",
+            "additionalDisplayClass": "right-info",
             "type": "text",
             "conditions": {
                 "required": true
@@ -562,21 +581,6 @@
             "display": false,
             "conditions": {
                 "required": true
-            },
-            "additionalDisplayClass": "left-info"
-        },
-        {
-            "id": -6000,
-            "position": -6000,
-            "name": "Ngày tháng năm",
-            "type": "date",
-            "valuefeeder": "Now",
-            "conditions": {
-                "required": true,
-                "format": {
-                    "regex": "dd/MM/yyyy",
-                    "text": "Nhập dd/MM/yyyy"
-                }
             },
             "additionalDisplayClass": "left-info"
         },
@@ -673,6 +677,17 @@
             "id": -5600,
             "position": -5600,
             "name": "Chọn thủ kho",
+            "type": "apiweb",
+            "conditions": {
+                "feedTo": [
+                    {
+                        "id": -5599,
+                        "fieldName": "fullName",
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": true
+            },
             "apiWebConfig": {
                 "apiConfig": {
                     "hostnameKey": "SPRO_EVN",
@@ -686,18 +701,9 @@
                     "displayField": "fullName"
                 }
             },
-            "additionalDisplayClass": "left-info",
-            "type": "apiweb",
-            "conditions": {
-                "feedTo": [
-                    {
-                        "id": -5599,
-                        "fieldName": "fullName",
-                        "dataset": "INDIVIDUAL"
-                    }
-                ],
-                "required": true
-            }
+            "additionalDisplayClass": "left-info"
+            
+            
         },
         {
             "id": -5599,
@@ -707,31 +713,7 @@
             "additionalDisplayClass": "left-info",
             "type": "text"
         },
-        {
-            "id": -5500,
-            "position": -5500,
-            "name": "Chọn phòng KHVT",
-            "type": "apiweb",
-            "disable": true,
-            "conditions": {
-                "feedTo": [],
-                "required": true
-            },
-            "apiWebConfig": {
-                "apiConfig": {
-                    "hostnameKey": "SPRO_EVN",
-                    "param": "B6_PARAM_GET_ALL_DEPARTMENT_MSTT",
-                    "urlFilter": "/common-spro/get-all-department",
-                    "returnKey": "MT_GET_VENDOR_RP_S"
-                },
-                "searchConfig": {
-                    "idField": "deptId",
-                    "minimumSearch": 0,
-                    "displayField": "name"
-                }
-            },
-            "additionalDisplayClass": "left-info"
-        },
+        
         {
             "id": -5400,
             "position": -5400,
@@ -760,7 +742,7 @@
                     "displayField": "fullName"
                 }
             },
-            "additionalDisplayClass": "right-info"
+            "additionalDisplayClass": "left-info"
         },
         {
             "id": -5399,
@@ -823,7 +805,7 @@
                     "displayField": "fullName"
                 }
             },
-            "additionalDisplayClass": "right-info"
+            "additionalDisplayClass": "left-info"
         },
         {
             "id": -5201,
@@ -960,15 +942,6 @@
             "type": "table",
             "columns": [
                 {
-                    "id": -6980,
-                    "position": -6980,
-                    "name": "STT",
-                    "type": "number",
-                    "conditions": {
-                        "required": true
-                    }
-                },
-                {
                     "id": -6960,
                     "position": -6960,
                     "name": "Mã vật tư",
@@ -1023,6 +996,24 @@
                     }
                 },
                 {
+                    "id": -9855,
+                    "position": -6850,
+                    "name": "Độ dài mong muốn",
+                    "type": "finance",
+                    "conditions": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": -9850,
+                    "position": -6855,
+                    "name": "Số lượng đoạn",
+                    "type": "finance",
+                    "conditions": {
+                        "required": false
+                    }
+                },
+                {
                     "id": -6840,
                     "position": -6840,
                     "name": "Đơn giá",
@@ -1045,7 +1036,7 @@
                     "id": -6800,
                     "position": -6800,
                     "name": "Tài khoản nợ",
-                    "type": "finance",
+                    "type": "text",
                     "conditions": {
                         "required": true
                     }
@@ -1054,7 +1045,7 @@
                     "id": -6780,
                     "position": -6780,
                     "name": "Tài khoản có",
-                    "type": "finance",
+                    "type": "text",
                     "conditions": {
                         "required": true
                     }

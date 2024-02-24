@@ -39,8 +39,560 @@
             "status": "Opened"
         },
         {
-            "summary": "Bước 4. Chuyên viên phòng KHVT trình ký phiếu nhập kho",
+            "summary": "Bước 2. Chuyên viên phòng KHVT trình ký phiếu nhập kho",
             "owner": "",
+            "customNote": "Bước 2",
+            "print-config": {
+                "newVersion": true,
+                "margin": "70,30,30,30",
+                "filename": "Phiếu nhập kho",
+                "img-urls": [],
+                "parameters": [
+                    {
+                        "data-config": {
+                            "infoId": -8900,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonVi"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -8800,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DiaChi"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -8700,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "NgayLapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -8600,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "So"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -8500,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9911,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HopDong"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -8400,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonViNhap"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Receipt"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -8300,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Theo"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -8100,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LyDo"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -7900,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -7701,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CongTrinh"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -7600,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HangMuc"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -7802,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "NhapTaiKho"
+                    },
+                    
+                    
+                    {
+                        "data-config": {
+                            "infoId": -5900,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "tongThanhTien"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -5800,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "tongChiPhi"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -5700,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "tongGiaTriNhap"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -5650,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "tongGiaTriNhapChu"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -5399,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Name_VatTu"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -5201,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Name_KeToan"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9975,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Name_VietPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9975,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Name_GiaoHang"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -5599,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Name_ThuKho"
+                    },
+                    {
+                        "data-config": {
+                            "column-key-mappings": [
+                                {
+                                    "columnId": -6960,
+                                    "key": "MaVatTu"
+                                },
+                                {
+                                    "columnId": -6940,
+                                    "key": "TenVatTuVaQuyCach"
+                                },
+                                {
+                                    "columnId": -6920,
+                                    "key": "DonViTinh"
+                                },
+                                {
+                                    "columnId": -6900,
+                                    "key": "Lo"
+                                },
+                                {
+                                    "columnId": -6880,
+                                    "key": "YeuCau"
+                                },
+                                {
+                                    "columnId": -6860,
+                                    "key": "ThucNhap"
+                                },
+                                {
+                                    "columnId": -6840,
+                                    "key": "DonGia"
+                                },
+                                {
+                                    "columnId": -6820,
+                                    "key": "ThanhTien"
+                                },
+                                {
+                                    "columnId": -6800,
+                                    "key": "No"
+                                },
+                                {
+                                    "columnId": -6780,
+                                    "key": "Co"
+                                }
+                            ],
+                            "tableId": -7000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "MULTITABLE"
+                        },
+                        "name": "DanhSachVatTu"
+                    }
+                ],
+                "landscape": true,
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=46738&fileName=PhieuNhapKho.vm"
+            },
+            "sla": {
+                "res": 7.99,
+                "fix": 8
+            },
+            "id": -40,
+            "type": "phase",
+            "printable": true,
+            "isDone": false,
+            "phaseType": "Implement",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -10000,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "status": "Responding"
+        },
+        {
+            "summary": "Bước 3. Trưởng/phó phòng KHVT ký số phiếu nhập kho",
+            "customNote": "Bước 3",
+            "print-config": {
+                "newVersion": true,
+                "margin": "70,30,30,30",
+                "filename": "Phiếu nhập kho",
+                "img-urls": [],
+                "parameters": [
+                    {
+                        "data-config": {
+                            "infoId": -8900,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonVi"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -8800,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DiaChi"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -8700,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "NgayLapPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -8600,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "So"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -8500,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HoTen"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9911,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HopDong"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -8400,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DonViNhap"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Receipt"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -8300,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Theo"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -8100,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "LyDo"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -7900,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -7701,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CongTrinh"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -7600,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "HangMuc"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -7802,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "NhapTaiKho"
+                    },
+                    
+                    
+                    {
+                        "data-config": {
+                            "infoId": -5900,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "tongThanhTien"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -5800,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "tongChiPhi"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -5700,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "tongGiaTriNhap"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -5650,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "tongGiaTriNhapChu"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -5399,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Name_VatTu"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -5201,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Name_KeToan"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9975,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Name_VietPhieu"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9975,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Name_GiaoHang"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -5599,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "Name_ThuKho"
+                    },
+                    {
+                        "data-config": {
+                            "column-key-mappings": [
+                                {
+                                    "columnId": -6960,
+                                    "key": "MaVatTu"
+                                },
+                                {
+                                    "columnId": -6940,
+                                    "key": "TenVatTuVaQuyCach"
+                                },
+                                {
+                                    "columnId": -6920,
+                                    "key": "DonViTinh"
+                                },
+                                {
+                                    "columnId": -6900,
+                                    "key": "Lo"
+                                },
+                                {
+                                    "columnId": -6880,
+                                    "key": "YeuCau"
+                                },
+                                {
+                                    "columnId": -6860,
+                                    "key": "ThucNhap"
+                                },
+                                {
+                                    "columnId": -6840,
+                                    "key": "DonGia"
+                                },
+                                {
+                                    "columnId": -6820,
+                                    "key": "ThanhTien"
+                                },
+                                {
+                                    "columnId": -6800,
+                                    "key": "No"
+                                },
+                                {
+                                    "columnId": -6780,
+                                    "key": "Co"
+                                }
+                            ],
+                            "tableId": -7000,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "MULTITABLE"
+                        },
+                        "name": "DanhSachVatTu"
+                    }
+                ],
+                "landscape": true,
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=46738&fileName=PhieuNhapKho.vm"
+            },
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -50,
+            "type": "phase",
+            "printable": true,
+            "isDone": false,
+            "phaseType": "Implement",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -5400,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "status": "Responding"
+        },
+        {
+            "summary": "Bước 4. Kế toán vật tư ký số phiếu nhập kho",
             "customNote": "Bước 4",
             "print-config": {
                 "newVersion": true,
@@ -138,7 +690,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -7700,
+                            "infoId": -7701,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -154,7 +706,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -7800,
+                            "infoId": -7802,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -220,7 +772,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -8500,
+                            "infoId": -9975,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -286,17 +838,47 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45658&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=46738&fileName=PhieuNhapKho.vm"
             },
             "sla": {
-                "res": 7.99,
-                "fix": 8
+                "res": 15.99,
+                "fix": 16
             },
-            "id": -40,
+            "id": -60,
             "type": "phase",
             "printable": true,
             "isDone": false,
             "phaseType": "Implement",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -5200,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "status": "Responding"
+        },
+        {
+            "summary": "Bước 5. Người giao hàng xuống kho nhập vật tư",
+            "customNote": "Bước 5",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -70,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
             "role_config": {
                 "functions": [
                     {
@@ -312,287 +894,10 @@
                         ]
                     }
                 ]
-            },
-            "status": "Responding"
+            }
         },
         {
-            "summary": "Bước 5. Trưởng/phó phòng KHVT ký số phiếu nhập kho",
-            "customNote": "Bước 5",
-            "print-config": {
-                "newVersion": true,
-                "margin": "70,30,30,30",
-                "filename": "Phiếu nhập kho",
-                "img-urls": [],
-                "parameters": [
-                    {
-                        "data-config": {
-                            "infoId": -8900,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "DonVi"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -8800,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "DiaChi"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -8700,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "NgayLapPhieu"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -8600,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "So"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -8500,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "HoTen"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -9911,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "HopDong"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -8400,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "DonViNhap"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -9000,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "Receipt"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -8300,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "Theo"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -8100,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "LyDo"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -7900,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "DienGiai"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -7700,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "CongTrinh"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -7600,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "HangMuc"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -7800,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "NhapTaiKho"
-                    },
-                    
-                    
-                    {
-                        "data-config": {
-                            "infoId": -5900,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "tongThanhTien"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -5800,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "tongChiPhi"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -5700,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "tongGiaTriNhap"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -5650,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "tongGiaTriNhapChu"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -5399,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "Name_VatTu"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -5201,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "Name_KeToan"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -9975,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "Name_VietPhieu"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -8500,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "Name_GiaoHang"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -5599,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "Name_ThuKho"
-                    },
-                    {
-                        "data-config": {
-                            "column-key-mappings": [
-                                {
-                                    "columnId": -6960,
-                                    "key": "MaVatTu"
-                                },
-                                {
-                                    "columnId": -6940,
-                                    "key": "TenVatTuVaQuyCach"
-                                },
-                                {
-                                    "columnId": -6920,
-                                    "key": "DonViTinh"
-                                },
-                                {
-                                    "columnId": -6900,
-                                    "key": "Lo"
-                                },
-                                {
-                                    "columnId": -6880,
-                                    "key": "YeuCau"
-                                },
-                                {
-                                    "columnId": -6860,
-                                    "key": "ThucNhap"
-                                },
-                                {
-                                    "columnId": -6840,
-                                    "key": "DonGia"
-                                },
-                                {
-                                    "columnId": -6820,
-                                    "key": "ThanhTien"
-                                },
-                                {
-                                    "columnId": -6800,
-                                    "key": "No"
-                                },
-                                {
-                                    "columnId": -6780,
-                                    "key": "Co"
-                                }
-                            ],
-                            "tableId": -7000,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "MULTITABLE"
-                        },
-                        "name": "DanhSachVatTu"
-                    }
-                ],
-                "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45658&fileName=PhieuNhapKho.vm"
-            },
-            "sla": {
-                "res": 15.99,
-                "fix": 16
-            },
-            "id": -50,
-            "type": "phase",
-            "printable": true,
-            "isDone": false,
-            "phaseType": "Implement",
-            "role_config": {
-                "functions": [
-                    {
-                        "role_type_to_add": "implementer",
-                        "id": 3,
-                        "params": [
-                            {
-                                "infoId": -5400,
-                                "name": "info",
-                                "type": "INPUT",
-                                "dataset": "INDIVIDUAL"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "status": "Responding"
-        },
-        {
-            "summary": "Bước 6. Kế toán vật tư ký số phiếu nhập kho",
+            "summary": "Bước 6. Thủ kho nhận hàng, ký số phiếu nhập kho",
             "customNote": "Bước 6",
             "print-config": {
                 "newVersion": true,
@@ -690,7 +995,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -7700,
+                            "infoId": -7701,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -706,7 +1011,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -7800,
+                            "infoId": -7802,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -772,315 +1077,10 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -8500,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "Name_GiaoHang"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -5599,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "Name_ThuKho"
-                    },
-                    {
-                        "data-config": {
-                            "column-key-mappings": [
-                                {
-                                    "columnId": -6960,
-                                    "key": "MaVatTu"
-                                },
-                                {
-                                    "columnId": -6940,
-                                    "key": "TenVatTuVaQuyCach"
-                                },
-                                {
-                                    "columnId": -6920,
-                                    "key": "DonViTinh"
-                                },
-                                {
-                                    "columnId": -6900,
-                                    "key": "Lo"
-                                },
-                                {
-                                    "columnId": -6880,
-                                    "key": "YeuCau"
-                                },
-                                {
-                                    "columnId": -6860,
-                                    "key": "ThucNhap"
-                                },
-                                {
-                                    "columnId": -6840,
-                                    "key": "DonGia"
-                                },
-                                {
-                                    "columnId": -6820,
-                                    "key": "ThanhTien"
-                                },
-                                {
-                                    "columnId": -6800,
-                                    "key": "No"
-                                },
-                                {
-                                    "columnId": -6780,
-                                    "key": "Co"
-                                }
-                            ],
-                            "tableId": -7000,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "MULTITABLE"
-                        },
-                        "name": "DanhSachVatTu"
-                    }
-                ],
-                "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45658&fileName=PhieuNhapKho.vm"
-            },
-            "sla": {
-                "res": 15.99,
-                "fix": 16
-            },
-            "id": -60,
-            "type": "phase",
-            "printable": true,
-            "isDone": false,
-            "phaseType": "Implement",
-            "role_config": {
-                "functions": [
-                    {
-                        "role_type_to_add": "implementer",
-                        "id": 3,
-                        "params": [
-                            {
-                                "infoId": -5200,
-                                "name": "info",
-                                "type": "INPUT",
-                                "dataset": "INDIVIDUAL"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "status": "Responding"
-        },
-        {
-            "summary": "Bước 7. Người giao hàng xuống kho nhập vật tư",
-            "customNote": "Bước 7",
-            "sla": {
-                "res": 15.99,
-                "fix": 16
-            },
-            "id": -70,
-            "type": "phase",
-            "isDone": false,
-            "phaseType": "Implement",
-            "status": "Responding",
-            "role_config": {
-                "functions": [
-                    {
-                        "role_type_to_add": "implementer",
-                        "id": 3,
-                        "params": [
-                            {
-                                "infoId": -10000,
-                                "name": "info",
-                                "type": "INPUT",
-                                "dataset": "INDIVIDUAL"
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "summary": "Bước 8. Thủ kho nhận hàng, ký số phiếu nhập kho",
-            "customNote": "Bước 8",
-            "print-config": {
-                "newVersion": true,
-                "margin": "70,30,30,30",
-                "filename": "Phiếu nhập kho",
-                "img-urls": [],
-                "parameters": [
-                    {
-                        "data-config": {
-                            "infoId": -8900,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "DonVi"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -8800,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "DiaChi"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -8700,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "NgayLapPhieu"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -8600,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "So"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -8500,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "HoTen"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -9911,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "HopDong"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -8400,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "DonViNhap"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -9000,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "Receipt"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -8300,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "Theo"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -8100,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "LyDo"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -7900,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "DienGiai"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -7700,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "CongTrinh"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -7600,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "HangMuc"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -7800,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "NhapTaiKho"
-                    },
-                    
-                    
-                    {
-                        "data-config": {
-                            "infoId": -5900,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "tongThanhTien"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -5800,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "tongChiPhi"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -5700,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "tongGiaTriNhap"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -5650,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "tongGiaTriNhapChu"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -5399,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "Name_VatTu"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -5201,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "Name_KeToan"
-                    },
-                    {
-                        "data-config": {
                             "infoId": -9975,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
-                        "name": "Name_VietPhieu"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -8500,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
                         "name": "Name_GiaoHang"
                     },
                     {
@@ -1143,7 +1143,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45658&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=46738&fileName=PhieuNhapKho.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -1173,8 +1173,8 @@
             }
         },
         {
-            "summary": "Bước 9. Người giao hàng ký số phiếu nhập kho",
-            "customNote": "Bước 9",
+            "summary": "Bước 7. Người giao hàng ký số phiếu nhập kho",
+            "customNote": "Bước 7",
             "print-config": {
                 "newVersion": true,
                 "margin": "70,30,30,30",
@@ -1271,7 +1271,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -7700,
+                            "infoId": -7701,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -1287,7 +1287,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -7800,
+                            "infoId": -7802,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -1353,7 +1353,7 @@
                     },
                     {
                         "data-config": {
-                            "infoId": -8500,
+                            "infoId": -9975,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         },
@@ -1419,7 +1419,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45658&fileName=PhieuNhapKho.vm"
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=46738&fileName=PhieuNhapKho.vm"
             },
             "sla": {
                 "res": 15.99,
@@ -1467,13 +1467,13 @@
             "status": "finished"
         },
         {
-            "customNote": "Bước 4",
+            "customNote": "Bước 2",
             "api_config": [
                 {
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_PARAM_FINISH_BUOC4_MSTT",
+                        "param": "B6_MSTT_PARAM_FINISH_BUOC2",
                         "name": "TICKET_EVN_SPRO_UPDATE"
                     },
                     "requireAuthenAPI": false
@@ -1522,13 +1522,13 @@
                     "text": "Hủy yêu cầu"
                 }
             },
-            "customNote": "Bước 5",
+            "customNote": "Bước 3",
             "api_config": [
                 {
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_PARAM_APPROVE_BUOC5_MSTT",
+                        "param": "B6_MSTT_PARAM_APPROVE_BUOC3",
                         "name": "TICKET_EVN_SPRO_UPDATE"
                     },
                     "requireAuthenAPI": false
@@ -1611,13 +1611,13 @@
                     "text": "Hủy yêu cầu"
                 }
             },
-            "customNote": "Bước 6",
+            "customNote": "Bước 4",
             "api_config": [
                 {
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_PARAM_APPROVE_BUOC6_MSTT",
+                        "param": "B6_MSTT_PARAM_APPROVE_BUOC4",
                         "name": "TICKET_EVN_SPRO_UPDATE"
                     },
                     "requireAuthenAPI": false
@@ -1702,13 +1702,13 @@
                     "text": "Hủy yêu cầu"
                 }
             },
-            "customNote": "Bước 7",
+            "customNote": "Bước 5",
             "api_config": [
                 {
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_PARAM_FINISH_BUOC7_MSTT",
+                        "param": "B6_MSTT_PARAM_FINISH_BUOC5",
                         "name": "TICKET_EVN_SPRO_UPDATE"
                     },
                     "requireAuthenAPI": false
@@ -1743,13 +1743,13 @@
                     "text": "Hủy yêu cầu"
                 }
             },
-            "customNote": "Bước 8",
+            "customNote": "Bước 6",
             "api_config": [
                 {
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_PARAM_APPROVE_BUOC8_MSTT",
+                        "param": "B6_MSTT_PARAM_APPROVE_BUOC6",
                         "name": "TICKET_EVN_SPRO_UPDATE"
                     },
                     "requireAuthenAPI": false
@@ -1834,13 +1834,13 @@
                     "text": "Hủy yêu cầu"
                 }
             },
-            "customNote": "Bước 9",
+            "customNote": "Bước 7",
             "api_config": [
                 {
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_PARAM_APPROVE_BUOC9_MSTT",
+                        "param": "B6_MSTT_PARAM_APPROVE_BUOC7",
                         "name": "TICKET_EVN_SPRO_UPDATE"
                     },
                     "requireAuthenAPI": false
