@@ -7,7 +7,7 @@
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_PARAM_CREATE_TICKET_BUOC1_MSTT",
+                        "param": "B6_MSTT_PARAM_CREATE_TICKET_BUOC1",
                         "name": "TICKET_EVN_SPRO_CREATE"
                     },
                     "requireAuthenAPI": false
@@ -16,7 +16,7 @@
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_PARAM_CREATE_TICKET_BUOC1_MSTT",
+                        "param": "B6_MSTT_PARAM_CREATE_TICKET_BUOC1",
                         "name": "TICKET_EVN_SPRO_UPDATE"
                     },
                     "triggerOn": "update-ticket",

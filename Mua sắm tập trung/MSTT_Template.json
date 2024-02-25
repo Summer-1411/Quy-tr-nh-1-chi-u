@@ -363,7 +363,6 @@
                     },
                     {
                         "fieldName": "listTable",
-                        "feedType": "append",
                         "id": -7000,
                         "type": "table",
                         "cols": [
