@@ -1379,7 +1379,7 @@
                     {
                         "data-config": {
                             "inputId": -110,
-                            "infoId": -8500,
+                            "infoId": -8501,
                             "phaseId": -120,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1409,7 +1409,7 @@
                     {
                         "data-config": {
                             "inputId": -110,
-                            "infoId": -8000,
+                            "infoId": -8001,
                             "phaseId": -120,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1617,7 +1617,7 @@
                     {
                         "data-config": {
                             "inputId": -110,
-                            "infoId": -8500,
+                            "infoId": -8501,
                             "phaseId": -120,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1647,7 +1647,7 @@
                     {
                         "data-config": {
                             "inputId": -110,
-                            "infoId": -8000,
+                            "infoId": -8001,
                             "phaseId": -120,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1958,7 +1958,7 @@
                     {
                         "data-config": {
                             "inputId": -110,
-                            "infoId": -8500,
+                            "infoId": -8501,
                             "phaseId": -120,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1988,7 +1988,7 @@
                     {
                         "data-config": {
                             "inputId": -110,
-                            "infoId": -8000,
+                            "infoId": -8001,
                             "phaseId": -120,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -2326,7 +2326,7 @@
                     {
                         "data-config": {
                             "inputId": -110,
-                            "infoId": -8500,
+                            "infoId": -8501,
                             "phaseId": -120,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -2356,7 +2356,7 @@
                     {
                         "data-config": {
                             "inputId": -110,
-                            "infoId": -8000,
+                            "infoId": -8001,
                             "phaseId": -120,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -2565,7 +2565,7 @@
                     {
                         "data-config": {
                             "inputId": -110,
-                            "infoId": -8500,
+                            "infoId": -8501,
                             "phaseId": -120,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -2595,7 +2595,7 @@
                     {
                         "data-config": {
                             "inputId": -110,
-                            "infoId": -8000,
+                            "infoId": -8001,
                             "phaseId": -120,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -3590,7 +3590,7 @@
                     {
                         "id": -9860,
                         "position": -9860,
-                        "name": "Năm đưa vào vận hành",
+                        "name": "Năm",
                         "type": "DATE",
                         "valuefeeder": "Now",
                         "display": true,
@@ -3603,7 +3603,7 @@
                         }
                     },
                     {
-                        "name": "Số phiếu xuất",
+                        "name": "Số phiếu xuất kho",
                         "position": -9855,
                         "id": -9855,
                         "type": "apiweb",
@@ -3633,7 +3633,7 @@
                         "additionalDisplayClass": "left-info"
                     },
                     {
-                        "name": "Source",
+                        "name": "Thông tin phiếu xuất",
                         "position": -9850,
                         "id": -9850,
                         "type": "apiweb",
@@ -3645,9 +3645,9 @@
                                 "returnKey": "MT_GET_VENDOR_RP_S"
                             },
                             "searchConfig": {
-                                "idField": "sourceErpId",
+                                "idField": "numberVoteApprove",
                                 "minimumSearch": 0,
-                                "displayField": "sourceErpName"
+                                "displayField": "numberVoteApprove"
                             }
                         },
                         "conditions": {
@@ -3658,13 +3658,18 @@
                                     "dataset": "INDIVIDUAL"
                                 },
                                 {
-                                    "fieldName": "deliver",
-                                    "id": -9700,
+                                    "fieldName": "requestDate",
+                                    "id": -8800,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "reasonCode",
+                                    "id": -8500,
                                     "dataset": "INDIVIDUAL"
                                 },
                                 {
                                     "fieldName": "reasonName",
-                                    "id": -8500,
+                                    "id": -8501,
                                     "dataset": "INDIVIDUAL"
                                 },
                                 {
@@ -3688,8 +3693,18 @@
                                     "dataset": "INDIVIDUAL"
                                 },
                                 {
+                                    "fieldName": "subInventoryCode",
+                                    "id": -9871,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "subInventoryName",
+                                    "id": -9870,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
                                     "fieldName": "location",
-                                    "id": -8900,
+                                    "id": -8555,
                                     "dataset": "INDIVIDUAL"
                                 },
                                 {
@@ -3709,7 +3724,6 @@
                                 },
                                 {
                                     "fieldName": "listTable",
-                                    "feedType": "append",
                                     "id": -9800,
                                     "type": "table",
                                     "cols": [
@@ -3733,6 +3747,14 @@
                                         {
                                             "fieldName": "unit",
                                             "id": -9720
+                                        },
+                                        {
+                                            "fieldName": "segmentQuantity",
+                                            "id": -9694
+                                        },
+                                        {
+                                            "fieldName": "desirableLength",
+                                            "id": -9692
                                         }
                                     ]
                                 }
@@ -3765,9 +3787,9 @@
                     },
                     {
                         "name": "Tại kho (Kho chính)",
-                        "additionalDisplayClass": "left-info",
+                        "additionalDisplayClass": "right-info",
                         "id": -9900,
-                        "position": -9900,
+                        "position": -9850,
                         "type": "text",
                         "conditions": {
                             "required": true
@@ -3785,20 +3807,13 @@
                         "type": "text"
                     },
                     {
-                        "display": false,
+                        "display": true,
                         "name": "Tại kho (kho phụ)",
                         "additionalDisplayClass": "left-info",
                         "id": -9870,
-                        "position": -9870,
+                        "position": -9845,
                         "type": "text",
                         "conditions": {
-                            "feedTo": [
-                                {
-                                    "fieldName": "codeSubInventory",
-                                    "id": -9871,
-                                    "dataset": "INDIVIDUAL"
-                                }
-                            ],
                             "required": false
                         }
                     },
@@ -3850,7 +3865,6 @@
                         }
                     },
                     {
-                        "valuefeeder": "now",
                         "name": "Ngày lập phiếu",
                         "additionalDisplayClass": "left-info",
                         "id": -8800,
@@ -3887,10 +3901,21 @@
                         "type": "text"
                     },
                     {
-                        "name": "Lý do xuất kho",
+                        "name": "reasonCode",
                         "additionalDisplayClass": "left-info",
                         "id": -8500,
                         "position": -8500,
+                        "display": false,
+                        "type": "text",
+                        "conditions": {
+                            "required": true
+                        }
+                    },
+                    {
+                        "name": "Lý do xuất kho",
+                        "additionalDisplayClass": "left-info",
+                        "id": -8501,
+                        "position": -8501,
                         "type": "text",
                         "conditions": {
                             "required": true
@@ -4221,15 +4246,6 @@
                     {
                         "columns": [
                             {
-                                "name": "STT",
-                                "id": -9780,
-                                "position": -9780,
-                                "type": "number",
-                                "conditions": {
-                                    "required": true
-                                }
-                            },
-                            {
                                 "name": "Mã vật tư",
                                 "id": -9760,
                                 "position": -9760,
@@ -4322,48 +4338,20 @@
                                 }
                             },
                             {
-                                "apiWebConfig": {
-                                    "apiConfig": {
-                                        "param": "B6_XLSC_GET_LENGTH_BUOC11",
-                                        "hostnameKey": "SPRO_EVN",
-                                        "urlFilter": "/common-spro/get-long",
-                                        "returnKey": "MT_GET_VENDOR_RP_S"
-                                    },
-                                    "searchConfig": {
-                                        "idField": "longParagraph",
-                                        "minimumSearch": 0,
-                                        "displayField": "longParagraph"
-                                    }
-                                },
                                 "name": "Độ dài mong muốn",
                                 "id": -9692,
                                 "position": -9694,
-                                "type": "apiweb",
+                                "type": "finance",
                                 "conditions": {
-                                    "feedTo": [],
                                     "required": false
                                 }
                             },
                             {
-                                "apiWebConfig": {
-                                    "apiConfig": {
-                                        "param": "B6_XLSC_GET_NUMBER_BUOC11",
-                                        "hostnameKey": "SPRO_EVN",
-                                        "urlFilter": "/common-spro/get-number",
-                                        "returnKey": "MT_GET_VENDOR_RP_S"
-                                    },
-                                    "searchConfig": {
-                                        "idField": "number",
-                                        "minimumSearch": 0,
-                                        "displayField": "number"
-                                    }
-                                },
                                 "name": "Số lượng đoạn",
                                 "id": -9694,
                                 "position": -9692,
-                                "type": "apiweb",
+                                "type": "finance",
                                 "conditions": {
-                                    "feedTo": [],
                                     "required": false
                                 }
                             }
