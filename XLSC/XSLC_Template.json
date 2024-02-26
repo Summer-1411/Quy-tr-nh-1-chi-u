@@ -281,7 +281,7 @@
             "additionalDisplayClass": "left-info",
             "position": -9840,
             "disabled": true,
-            "value": "http://10.15.24.74:8081/sso/exportTicketRoom"
+            "value": "http://10.9.195.57:8989/qlvt/category/searchconversion?urlPathId=7931"
         },
         {
             "display": false,
@@ -558,15 +558,6 @@
             "name": "Danh sách các thiết bị vật tư",
             "type": "table",
             "columns": [
-                {
-                    "id": -9780,
-                    "position": -9780,
-                    "name": "STT",
-                    "type": "number",
-                    "conditions": {
-                        "required": true
-                    }
-                },
                 {
                     "id": -9760,
                     "position": -9760,
