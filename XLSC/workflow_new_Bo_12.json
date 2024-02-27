@@ -3293,16 +3293,6 @@
             "relatedTo": -100110
         },
         {
-            "autocreate": true,
-            "display": false,
-            "from": -10,
-            "comment": "Liên kết ẩn từ Bước 1 -> Bước 11 để kế thừa",
-            "position": -10,
-            "id": -10110,
-            "to": -110,
-            "requestUpdateKeepData": true
-        },
-        {
             "customNote": "Bước 11",
             "api_config": [
                 {
