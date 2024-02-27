@@ -565,16 +565,6 @@
                         <p style="font-size:12pt; margin-top: 30px;">$Name_ChuyenVien</p>
                     </th>
                     <th style="text-align: center; font-size: 11pt;">
-                        <p style="font-size:2pt; color: white">$ChuKy_ThuKho</p>
-                        <b>THỦ KHO</b>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <p style="font-size:12pt; margin-top: 30px;">$Name_ThuKho</p>
-                    </th>
-                    <th style="text-align: center; font-size: 11pt;">
                         <p style="font-size:2pt; color: white">$ChuKy_NhanVien</p>
                         <b>NGƯỜI NHẬN</b>
                         <br />
