@@ -324,12 +324,7 @@
                 </tr>
             </table>
             <div style="font-style: normal; text-align: left; margin-top: 20px;">Tổng giá trị xuất(viết bằng chữ ): $Giatrichu</div>
-            <div style="font-style: italic; text-align: right;">Hà nội, ngày $NgayLapPhieu.split(" ")[0].split("/")[0]
-                tháng
-                $NgayLapPhieu.split("
-                ")[0].split(
-                "/")[1] năm $NgayLapPhieu.split(" ")[0].split("/")[2]
-            </div>
+            
             <table colspan="0" rowspan="0" class="tableHeader">
                 <tr>
                     <th style="text-align: center; font-size: 11pt;">

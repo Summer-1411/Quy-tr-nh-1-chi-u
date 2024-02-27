@@ -868,39 +868,8 @@
             }
         },
         {
-            "summary": "Bước 9. Trưởng/phó phòng KHVT duyệt",
+            "summary": "Bước 9. Chuyên viên trình file kí",
             "customNote": "Bước 9",
-            "sla": {
-                "res": 15.99,
-                "fix": 16
-            },
-            "id": -90,
-            "type": "phase",
-            "isDone": false,
-            "phaseType": "Implement",
-            "status": "Responding",
-            "role_config": {
-                "functions": [
-                    {
-                        "role_type_to_add": "implementer",
-                        "id": 3,
-                        "params": [
-                            {
-                                "inputId": -80,
-                                "infoId": -8700,
-                                "phaseId": -90,
-                                "name": "info",
-                                "type": "INPUT",
-                                "dataset": "INDIVIDUAL"
-                            }
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "summary": "Bước 10. Chuyên viên trình file kí",
-            "customNote": "Bước 10",
             "print-config": {
                 "margin": "70,30,30,30",
                 "filename": "Phiếu xuất kho kiêm vận chuyển nội bộ",
@@ -1009,7 +978,7 @@
                     {
                         "data-config": {
                             "inputId": -80,
-                            "infoId": -9400,
+                            "infoId": -9402,
                             "phaseId": -90,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1172,16 +1141,14 @@
                     {
                         "workflow": {
                             "relationships": [
-                                -100105,
+                                -90105,
                                 -105110,
                                 -110120,
                                 -80120,
-                                -100120,
                                 -120130,
                                 -130140,
                                 -140150,
                                 -70150,
-                                -100150,
                                 -150160,
                                 -70160,
                                 -110160,
@@ -1192,7 +1159,6 @@
                                 -80,
                                 -70,
                                 -90,
-                                -100,
                                 -105,
                                 -110,
                                 -120,
@@ -1223,13 +1189,12 @@
                     {
                         "workflow": {
                             "relationships": [
-                                -100105,
+                                -90105,
                                 -105110,
                                 -110130,
                                 -130140,
                                 -140150,
                                 -70150,
-                                -100150,
                                 -150160,
                                 -110160,
                                 -70160,
@@ -1240,7 +1205,6 @@
                                 -80,
                                 -70,
                                 -90,
-                                -100,
                                 -105,
                                 -110,
                                 -130,
@@ -1270,7 +1234,7 @@
                 ],
                 "status": "unfinished"
             },
-            "id": -100,
+            "id": -90,
             "type": "phase",
             "isDone": false,
             "printable": true,
@@ -1296,8 +1260,8 @@
             }
         },
         {
-            "summary": "Bước 10.5. Chuyên viên kí số",
-            "customNote": "Bước 10.5",
+            "summary": "Bước 10. Chuyên viên kí số",
+            "customNote": "Bước 10",
             "autocreate": true,
             "sla": {
                 "res": 15.99,
@@ -1566,7 +1530,7 @@
                     {
                         "data-config": {
                             "inputId": -80,
-                            "infoId": -9400,
+                            "infoId": -9402,
                             "phaseId": -90,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1859,7 +1823,7 @@
                     {
                         "data-config": {
                             "inputId": -80,
-                            "infoId": -9400,
+                            "infoId": -9402,
                             "phaseId": -90,
                             "type": "PHASE_INPUT_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -2575,16 +2539,6 @@
             "relatedTo": -7080
         },
         {
-            "autocreate": true,
-            "display": false,
-            "from": -10,
-            "comment": "Liên kết ẩn từ Bước 1 -> Bước 8 để kế thừa",
-            "position": -10,
-            "id": -1080,
-            "to": -80,
-            "requestUpdateKeepData": true
-        },
-        {
             "customNote": "Bước 8",
             "api_config": [
                 {
@@ -2662,34 +2616,30 @@
                     },
                     {
                         "name": "Ngày lập phiếu",
-                        "additionalDisplayClass": "left-info",
+                        "additionalDisplayClass": "right-info",
                         "id": -9900,
-                        "position": -9900,
+                        "position": -9840,
                         "type": "date",
                         "conditions": {
                             "required": true
                         }
                     },
                     {
-                        "id": -9860,
-                        "position": -9860,
-                        "name": "Năm",
-                        "type": "DATE",
                         "valuefeeder": "Now",
                         "display": true,
+                        "name": "Năm",
+                        "id": -9860,
+                        "position": -9860,
+                        "type": "DATE",
                         "conditions": {
-                            "required": true,
                             "format": {
                                 "regex": "yyyy",
                                 "text": "Nhập yyyy"
-                            }
+                            },
+                            "required": true
                         }
                     },
                     {
-                        "name": "Số phiếu xuất",
-                        "position": -9855,
-                        "id": -9855,
-                        "type": "apiweb",
                         "apiWebConfig": {
                             "apiConfig": {
                                 "param": "B6_PARAM_NUMBER_VOTE_DTXD",
@@ -2703,17 +2653,17 @@
                                 "displayField": "numberVote"
                             }
                         },
+                        "name": "Số phiếu xuất",
+                        "additionalDisplayClass": "left-info",
+                        "position": -9855,
+                        "id": -9855,
+                        "type": "apiweb",
                         "conditions": {
                             "feedTo": [],
                             "required": false
-                        },
-                        "additionalDisplayClass": "left-info"
+                        }
                     },
                     {
-                        "name": "Thông tin phiếu xuất",
-                        "position": -9850,
-                        "id": -9850,
-                        "type": "apiweb",
                         "apiWebConfig": {
                             "apiConfig": {
                                 "param": "B6_PARAM_GET_BY_NUMBER_VOTE_DTXD",
@@ -2727,11 +2677,21 @@
                                 "displayField": "numberVoteApprove"
                             }
                         },
+                        "name": "Thông tin phiếu xuất",
+                        "additionalDisplayClass": "left-info",
+                        "position": -9850,
+                        "id": -9850,
+                        "type": "apiweb",
                         "conditions": {
                             "feedTo": [
                                 {
                                     "fieldName": "receiver",
                                     "id": -9650,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "deliveryNoteNumber",
+                                    "id": -9675,
                                     "dataset": "INDIVIDUAL"
                                 },
                                 {
@@ -2751,6 +2711,11 @@
                                 },
                                 {
                                     "fieldName": "reasonName",
+                                    "id": -9551,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "reasonCode",
                                     "id": -9550,
                                     "dataset": "INDIVIDUAL"
                                 },
@@ -2774,7 +2739,6 @@
                                     "id": -9452,
                                     "dataset": "INDIVIDUAL"
                                 },
-
                                 {
                                     "fieldName": "subInventoryCode",
                                     "id": -9370,
@@ -2785,8 +2749,6 @@
                                     "id": -9371,
                                     "dataset": "INDIVIDUAL"
                                 },
-
-
                                 {
                                     "fieldName": "idPrimaryInventory1",
                                     "id": -9350,
@@ -2804,12 +2766,12 @@
                                 },
                                 {
                                     "fieldName": "constructionId",
-                                    "id": -9400,
+                                    "id": -9401,
                                     "dataset": "INDIVIDUAL"
                                 },
                                 {
                                     "fieldName": "constructionCode",
-                                    "id": -9401,
+                                    "id": -9400,
                                     "dataset": "INDIVIDUAL"
                                 },
                                 {
@@ -2823,7 +2785,6 @@
                                     "id": -9800,
                                     "type": "table",
                                     "cols": [
-                                        
                                         {
                                             "fieldName": "materialCode",
                                             "id": -9760
@@ -2835,6 +2796,10 @@
                                         {
                                             "fieldName": "approveQuantity",
                                             "id": -9060
+                                        },
+                                        {
+                                            "fieldName": "approveQuantity",
+                                            "id": -9700
                                         },
                                         {
                                             "fieldName": "unitPrice",
@@ -2859,13 +2824,20 @@
                                         {
                                             "fieldName": "unit",
                                             "id": -9720
+                                        },
+                                        {
+                                            "fieldName": "segmentQuantity",
+                                            "id": -9694
+                                        },
+                                        {
+                                            "fieldName": "desirableLength",
+                                            "id": -9692
                                         }
                                     ]
                                 }
                             ],
                             "required": false
-                        },
-                        "additionalDisplayClass": "left-info"
+                        }
                     },
                     {
                         "name": "Căn cứ",
@@ -2873,10 +2845,10 @@
                         "id": -9820,
                         "position": -9820,
                         "type": "text",
-                        "value": "",
                         "conditions": {
                             "required": true
-                        }
+                        },
+                        "value": ""
                     },
                     {
                         "name": "Của",
@@ -2884,10 +2856,10 @@
                         "id": -9750,
                         "position": -9750,
                         "type": "text",
-                        "value": "",
                         "conditions": {
                             "required": true
-                        }
+                        },
+                        "value": ""
                     },
                     {
                         "name": "Họ và tên người nhận hàng",
@@ -2895,40 +2867,58 @@
                         "id": -9700,
                         "position": -9700,
                         "type": "text",
-                        "value": "",
                         "conditions": {
                             "required": true
-                        }
+                        },
+                        "value": ""
                     },
-                    
+                    {
+                        "name": "receiptNumber",
+                        "additionalDisplayClass": "right-info",
+                        "id": -9675,
+                        "display": false,
+                        "position": -9675,
+                        "type": "text",
+                        "value": ""
+                    },
                     {
                         "name": "Phương tiện vận chuyển",
-                        "additionalDisplayClass": "right-info",
+                        "additionalDisplayClass": "left-info",
                         "id": -9650,
                         "position": -9650,
                         "type": "text",
                         "value": ""
                     },
                     {
+                        "display": false,
                         "name": "Id Lý do xuất kho",
                         "additionalDisplayClass": "right-info",
                         "id": -9600,
                         "position": -9600,
                         "type": "text",
-                        "display": false,
-                        "value": "",
                         "conditions": {
-                            
                             "required": true
-                        }
+                        },
+                        "value": ""
+                    },
+                    {
+                        "name": "Reason code",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9550,
+                        "display": false,
+                        "position": -9550,
+                        "type": "text",
+                        "conditions": {
+                            "required": true
+                        },
+                        "value": ""
                     },
                     {
                         "name": "Lý do xuất kho",
                         "additionalDisplayClass": "left-info",
-                        "id": -9550,
-                        "position": -9550,
+                        "id": -9551,
+                        "position": -9551,
                         "type": "text",
-                        "value": "",
                         "conditions": {
                             "required": true
                         }
@@ -2939,15 +2929,15 @@
                         "id": -9452,
                         "position": -9452,
                         "type": "text",
-                        "value": "",
                         "conditions": {
                             "required": true
-                        }
+                        },
+                        "value": ""
                     },
                     {
+                        "display": false,
                         "name": "ID Xuất tại kho (id kho chính)",
                         "additionalDisplayClass": "right-info",
-                        "display": false,
                         "id": -9450,
                         "position": -9450,
                         "type": "text",
@@ -2958,11 +2948,11 @@
                     {
                         "display": false,
                         "name": "Code kho chính",
-                        "type": "text",
-                        "value": "",
                         "additionalDisplayClass": "right-info",
                         "id": -9451,
-                        "position": -9451
+                        "position": -9451,
+                        "type": "text",
+                        "value": ""
                     },
                     {
                         "display": false,
@@ -2992,40 +2982,40 @@
                         "id": -9402,
                         "position": -9402,
                         "type": "text",
-                        "value": "",
-                        "display": false,
                         "conditions": {
                             "required": true
-                        }
+                        },
+                        "value": ""
                     },
                     {
-                        "name": "Code Công trình",
+                        "display": false,
+                        "name": "Id công trình",
                         "additionalDisplayClass": "right-info",
                         "id": -9401,
                         "position": -9401,
-                        "display": false,
                         "type": "text",
-                        "value": "",
                         "conditions": {
                             "required": true
-                        }
+                        },
+                        "value": ""
                     },
                     {
-                        "name": "Công trình",
-                        "additionalDisplayClass": "left-info",
+                        "display": false,
+                        "name": "Code công trình",
+                        "additionalDisplayClass": "right-info",
                         "id": -9400,
                         "position": -9400,
                         "type": "text",
-                        "value": "",
                         "conditions": {
                             "required": false
-                        }
+                        },
+                        "value": ""
                     },
                     {
+                        "display": false,
                         "name": "idPrimaryInventory1",
                         "additionalDisplayClass": "left-info",
                         "id": -9350,
-                        "display": false,
                         "position": -9350,
                         "type": "text",
                         "conditions": {
@@ -3046,6 +3036,9 @@
                         "additionalDisplayClass": "left-info",
                         "id": -9352,
                         "position": -9352,
+                        "conditions": {
+                            "required": true
+                        },
                         "type": "text"
                     },
                     {
@@ -3078,7 +3071,7 @@
                         "name": "Công trình",
                         "additionalDisplayClass": "right-info",
                         "id": -9300,
-                        "position": -9300,
+                        "position": -9352,
                         "type": "text",
                         "conditions": {
                             "required": false
@@ -3128,6 +3121,7 @@
                         "value": "đồng"
                     },
                     {
+                        "display": false,
                         "valuefeeder": "now",
                         "name": "Ngày tháng năm",
                         "additionalDisplayClass": "left-info",
@@ -3153,7 +3147,7 @@
                             }
                         },
                         "name": "Chọn thủ kho",
-                        "additionalDisplayClass": "right-info",
+                        "additionalDisplayClass": "left-info",
                         "id": -8750,
                         "position": -8750,
                         "type": "apiweb",
@@ -3269,7 +3263,6 @@
                         "position": -8601,
                         "type": "select",
                         "conditions": {
-                            "preventupdate": true,
                             "data": [
                                 {
                                     "text": "Không có phó giám đốc, giám đốc phê duyệt",
@@ -3280,6 +3273,7 @@
                                     "value": "1"
                                 }
                             ],
+                            "preventupdate": true,
                             "min-length": 1
                         },
                         "value": "0"
@@ -3411,15 +3405,6 @@
                     {
                         "columns": [
                             {
-                                "name": "STT",
-                                "id": -9780,
-                                "position": -9780,
-                                "type": "number",
-                                "conditions": {
-                                    "required": true
-                                }
-                            },
-                            {
                                 "name": "Mã vật tư",
                                 "id": -9760,
                                 "position": -9760,
@@ -3541,8 +3526,17 @@
             "requestUpdateKeepData": true,
             "status": "waiting"
         },
-       
-      
+        
+        {
+            "autocreate": false,
+            "display": false,
+            "from": -80,
+            "comment": "Liên kết ẩn từ Bước 8 -> Bước 11 để xem",
+            "id": -80110,
+            "to": -110,
+            "requestUpdateKeepData": true,
+            "relatedTo": -8090
+        },
         {
             "customNote": "Bước 9",
             "api_config": [
@@ -3550,49 +3544,14 @@
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_PARAM_APPROVE_BUOC9_DTXD",
+                        "param": "B6_PARAM_FINISH_BUOC9_DTXD_1_CHIEU",
                         "name": "TICKET_EVN_SPRO_UPDATE"
                     },
                     "requireAuthenAPI": false
                 }
             ],
             "from": -90,
-            "id": -90100,
-            "to": -100,
-            "detail": {
-                "individual": [
-                    {
-                        "name": "Ghi chú",
-                        "additionalDisplayClass": "left-info",
-                        "id": -12,
-                        "position": -12,
-                        "type": "textarea",
-                        "conditions": {
-                            "max-length": 1000,
-                            "height": 5
-                        }
-                    }
-                ]
-            },
-            "type": "approval",
-            "status": "waiting"
-        },
-        {
-            "customNote": "Bước 10",
-            "autocreate": true,
-            "api_config": [
-                {
-                    "executeAPI": {
-                        "paramType": "regex",
-                        "number": 0,
-                        "param": "B6_PARAM_FINISH_BUOC10_DTXD",
-                        "name": "TICKET_EVN_SPRO_UPDATE"
-                    },
-                    "requireAuthenAPI": false
-                }
-            ],
-            "from": -100,
-            "id": -100105,
+            "id": -90105,
             "to": -105,
             "detail": {
                 "individual": [
@@ -3609,7 +3568,7 @@
                             "filetype": "all/*",
                             "feederdata": {
                                 "params": {
-                                    "phaseId": -100
+                                    "phaseId": -90
                                 },
                                 "type": "print_file"
                             },
@@ -3626,26 +3585,8 @@
             "type": "default",
             "status": "waiting"
         },
-       {
-            "autocreate": false,
-            "display": false,
-            "from": -100,
-            "comment": "Liên kết ẩn từ Bước 10 -> Bước 12 để xem",
-            "id": -100120,
-            "to": -120,
-            "requestUpdateKeepData": true,
-            "relatedTo": -100105
-        },
-        {
-            "autocreate": false,
-            "display": false,
-            "from": -100,
-            "comment": "Liên kết ẩn từ Bước 10 -> Bước 15 để xem",
-            "id": -100150,
-            "to": -150,
-            "requestUpdateKeepData": true,
-            "relatedTo": -100105
-        },
+
+
         {
             "requestUpdateLock": true,
             "buttonConfig": {
@@ -3657,13 +3598,13 @@
                     "enable": false
                 }
             },
-            "customNote": "Bước 10.5 Chuyên viên kí số",
+            "customNote": "Bước 10 Chuyên viên kí số",
             "advancedConfig": {
                 "signature_evn": {
                     "filesToSign": [
                         {
                             "infoId": -1,
-                            "relaId": -100105,
+                            "relaId": -90105,
                             "dataset": "INDIVIDUAL"
                         }
                     ],
@@ -3681,7 +3622,7 @@
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_PARAM_APPROVE_BUOC10_5_DTXD",
+                        "param": "B6_PARAM_APPROVE_BUOC10_DTXD_1_CHIEU",
                         "name": "TICKET_EVN_SPRO_UPDATE"
                     },
                     "requireAuthenAPI": false
@@ -3925,7 +3866,7 @@
             "type": "approval",
             "status": "waiting"
         },
-       {
+        {
             "display": false,
             "from": -110,
             "comment": "Liên kết ẩn từ Bước 11 -> Bước 16 để xem",
@@ -4610,7 +4551,7 @@
                 500,
                 450
             ],
-            "id": -100
+            "id": -105
         },
         {
             "image": "/images/workflowimage/User_male.png",
@@ -4618,20 +4559,12 @@
                 500,
                 600
             ],
-            "id": -105
-        },
-        {
-            "image": "/images/workflowimage/User_male.png",
-            "positions": [
-                250,
-                600
-            ],
             "id": -110
         },
         {
             "image": "/images/workflowimage/User_male.png",
             "positions": [
-                0,
+                250,
                 600
             ],
             "id": -120
@@ -4640,14 +4573,14 @@
             "image": "/images/workflowimage/User_male.png",
             "positions": [
                 0,
-                750
+                600
             ],
             "id": -130
         },
         {
             "image": "/images/workflowimage/User_male.png",
             "positions": [
-                250,
+                0,
                 750
             ],
             "id": -140
@@ -4655,7 +4588,7 @@
         {
             "image": "/images/workflowimage/User_male.png",
             "positions": [
-                500,
+                250,
                 750
             ],
             "id": -150
@@ -4664,16 +4597,17 @@
             "image": "/images/workflowimage/User_male.png",
             "positions": [
                 500,
-                900
+                750
             ],
             "id": -160
         },
         {
             "positions": [
-                250,
+                500,
                 900
             ],
             "id": -1
         }
+        
     ]
 }
