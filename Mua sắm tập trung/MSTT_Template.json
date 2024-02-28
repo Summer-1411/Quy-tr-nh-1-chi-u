@@ -945,6 +945,15 @@
             "type": "text",
             "value": "2",
             "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -2000,
+            "position": -2000,
+            "name": "ERP_ID TỔNG CÔNG TY",
+            "display": false,
+            "type": "text",
+            "value": "3001",
+            "additionalDisplayClass": "right-info"
         }
     ],
     "multitable": [
@@ -1014,7 +1023,7 @@
                     "name": "Số lượng đoạn",
                     "type": "finance",
                     "conditions": {
-                        "required": true
+                        "required": false
                     }
                 },
                 {
@@ -1023,7 +1032,7 @@
                     "name": "Độ dài mong muốn",
                     "type": "finance",
                     "conditions": {
-                        "required": true
+                        "required": false
                     }
                 },
                 {

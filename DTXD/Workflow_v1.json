@@ -2695,6 +2695,11 @@
                                     "dataset": "INDIVIDUAL"
                                 },
                                 {
+                                    "fieldName": "deliveryNoteNumber",
+                                    "id": -9670,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
                                     "fieldName": "requestDate",
                                     "id": -9900,
                                     "dataset": "INDIVIDUAL"
@@ -2781,7 +2786,6 @@
                                 },
                                 {
                                     "fieldName": "listTable",
-                                    "feedType": "append",
                                     "id": -9800,
                                     "type": "table",
                                     "cols": [
@@ -2878,6 +2882,15 @@
                         "id": -9675,
                         "display": false,
                         "position": -9675,
+                        "type": "text",
+                        "value": ""
+                    },
+                    {
+                        "name": "deliveryNoteNumber",
+                        "additionalDisplayClass": "right-info",
+                        "id": -9670,
+                        "display": false,
+                        "position": -9670,
                         "type": "text",
                         "value": ""
                     },
