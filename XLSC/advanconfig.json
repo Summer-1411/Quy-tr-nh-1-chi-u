@@ -606,6 +606,7 @@ B6_PARAM_CREATE_TICKET_XUAT_KHO_XLSC
             "requestDate": "(-8800,-110,-130)",
             "numberVoteApprove": "(-8700,-110,-130)",
             "receiptNumber": "(-8750,-110,-130)",
+            "numberDeliveryNote": "(-8750,-110,-130)",
             "constructor": "(-5700,-110,-130)",
             "tableData": [(t)<-9800,-110,-130>
                 {
@@ -667,6 +668,7 @@ B6_PARAM_FINISH_BUOC13_XLSC_V1
             "requestDate": "(-8800,-110,-130)",
             "numberVoteApprove": "(-8700,-110,-130)",
             "receiptNumber": "(-8750,-110,-130)",
+            "numberDeliveryNote": "(-8750,-110,-130)",
             "constructor": "(-5700,-110,-130)",
             "tableData": [(t)<-9800,-110,-130>
                 {
@@ -720,6 +722,7 @@ B6_PARAM_FINISH_BUOC13_5_XLSC_V1
             "requestDate": "(-8800,-110,-130)",
             "numberVoteApprove": "(-8700,-110,-130)",
             "receiptNumber": "(-8750,-110,-130)",
+            "numberDeliveryNote": "(-8750,-110,-130)",
             "constructor": "(-5700,-110,-130)",
             "tableData": [(t)<-9800,-110,-130>
                 {
@@ -829,6 +832,7 @@ B6_PARAM_FINISH_BUOC13_5_XLSC_V1
             "requestDate": "(-8800,-110,-130)",
             "numberVoteApprove": "(-8700,-110,-130)",
             "receiptNumber": "(-8750,-110,-130)",
+            "numberDeliveryNote": "(-8750,-110,-130)",
             "constructor": "(-5700,-110,-130)",
             "tableData": [(t)<-9800,-110,-130>
                 {
@@ -896,6 +900,7 @@ B6_PARAM_FINISH_BUOC13_5_XLSC_V1
             "requestDate": "(-8800,-110,-130)",
             "numberVoteApprove": "(-8700,-110,-130)",
             "receiptNumber": "(-8750,-110,-130)",
+            "numberDeliveryNote": "(-8750,-110,-130)",
             "constructor": "(-5700,-110,-130)",
             "tableData": [(t)<-9800,-110,-130>
                 {
@@ -972,6 +977,7 @@ B6_PARAM_FINISH_BUOC13_5_XLSC_V1
             "requestDate": "(-8800,-110,-130)",
             "numberVoteApprove": "(-8700,-110,-130)",
             "receiptNumber": "(-8750,-110,-130)",
+            "numberDeliveryNote": "(-8750,-110,-130)",
             "constructor": "(-5700,-110,-130)",
             "tableData": [(t)<-9800,-110,-130>
                 {
@@ -1068,6 +1074,7 @@ B6_PARAM_FINISH_BUOC17_XLSC_V1
             "requestDate": "(-8800,-110,-130)",
             "numberVoteApprove": "(-8700,-110,-130)",
             "receiptNumber": "(-8750,-110,-130)",
+            "numberDeliveryNote": "(-8750,-110,-130)",
             "constructor": "(-5700,-110,-130)",
             "tableData": [(t)<-9800,-110,-130>
                 {
@@ -1153,6 +1160,7 @@ B6_PARAM_APPROVE_BUOC19_XLSC_V1
             "requestDate": "(-8800,-110,-130)",
             "numberVoteApprove": "(-8700,-110,-130)",
             "receiptNumber": "(-8750,-110,-130)",
+            "numberDeliveryNote": "(-8750,-110,-130)",
             "constructor": "(-5700,-110,-130)",
             "tableData": [(t)<-9800,-110,-130>
                 {

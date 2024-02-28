@@ -1,0 +1,213 @@
+// B6_NKBH_V1_PARAM_NUMBER_VOTE
+{
+    "type": "-2500",
+    "year": "-9860,-60,-70",
+    "orgId": "-9920",
+    "pickerFilter": "numberVote"
+}
+
+
+B6_NKBH_V1_PARAM_GET_BY_NUMBER_VOTE
+{
+    "numberVote": "-9855,-60,-70",
+    "year": "-9860,-60,-70",
+    "pickerFilter": "sourceErpId"
+}
+
+
+{
+    "ticket": {
+        "ticketCode": 0,
+        "orgId": 0,
+        "requestSubject": "string",
+        "type": "string",
+        "statusErp": "string",
+        "statusDelivery": "string",
+        "status": "string",
+        "createDate": "2024-02-23",
+        "createUser": "string",
+        "actionType": "string",
+        "statusValidate": "string",
+        "tranDate": "2024-02-23",
+        "erpDate": "2024-02-23T07:58:31.150Z",
+        "deptId": 0,
+        "createTicketDate": "2024-02-23T07:58:31.150Z",
+        "typeImportProcess": "string",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": 0,
+            "orgRequest": "string",
+            "reason": "string",
+            "receiver": "string",
+            "deliver": "string",
+            "description": "string",
+            "location": "string",
+            "construction": "string",
+            "primaryInventory": "string",
+            "type": "string",
+            "subInventory": "string",
+            "locator": "string",
+            "typeErp": "string",
+            "sourceErp": "string",
+            "receiptDate": "2024-02-23",
+            "cmis": "string",
+            "staff": "string",
+            "orgIdTransfer": "string",
+            "orgIdReceiveTransfer": "string",
+            "constructionTransfer": "string",
+            "constructionReceiveTransfer": "string",
+            "requestDate": "2024-02-23",
+            "numberVoteApprove": "string",
+            "receiptNumber": "string",
+            "addressOrg": "string",
+            "category": "string",
+            "storekeeper": "string",
+            "oldTicketId": "string",
+            "contractPO": "string",
+            "numberDeliveryNote": "string",
+            "primaryInventory1": "string",
+            "subInventory1": "string",
+            "construction1": "string",
+            "constructor": "string",
+            "tableData": [
+                {
+                    "id": 0,
+                    "ixfId": 0,
+                    "ticketCode": 0,
+                    "materialCode": "string",
+                    "materialName": "string",
+                    "producer": "string",
+                    "unit": "string",
+                    "requestQuantity": 0,
+                    "approveQuantity": 0,
+                    "batch": "string",
+                    "unitPrice": 0,
+                    "amount": 0,
+                    "accountDebit": "string",
+                    "accountCredit": "string",
+                    "description": "string",
+                    "inventory": 0,
+                    "requestDispense": 0,
+                    "transfer": 0,
+                    "dispenseImmediately": 0,
+                    "transferOrg": "string",
+                    "willDispense": 0,
+                    "funds": 0,
+                    "quantitySent": 0,
+                    "finalProduct": 0,
+                    "insurance": 0,
+                    "repairable": 0,
+                    "clearance": 0,
+                    "total": 0,
+                    "qualityEvaluation": "string",
+                    "issuedQuantity": 0,
+                    "usedQuantity": 0,
+                    "redundantQuantity": 0,
+                    "difference": 0,
+                    "segmentQuantity": 0,
+                    "desirableLength": 0,
+                    "numberTicketOld": "string",
+                    "note": "string"
+                }
+            ]
+        },
+        "listMaterial": [
+            {
+                "orgId": 0,
+                "materialCodeFmis": "string",
+                "materialNameFmis": "string",
+                "unit": "string",
+                "productionCode": "string",
+                "accessoryCode": "string",
+                "qualityCode": "string",
+                "materialCode": "string",
+                "note": "string"
+            }
+        ],
+        "capitalAdvance": {
+            "ticketId": 0,
+            "company": "string",
+            "cmisCode": "string",
+            "cmisName": "string",
+            "type": "string",
+            "listTable": [
+                {
+                    "materialName": "string",
+                    "materialCode": "string",
+                    "unit": "string",
+                    "estimates": 0,
+                    "grantImmediately": 0,
+                    "willGrant": 0,
+                    "buyingUnit": "string",
+                    "estimatedUnitPrice": 0,
+                    "totalEstimate": 0,
+                    "evnGrant": 0,
+                    "orgBuy": 0
+                }
+            ]
+        },
+        "deliveryReceiptAsset": {
+            "ticketId": 0,
+            "deliver": "string",
+            "deliverPosition": "string",
+            "receiver": "string",
+            "receiverPosition": "string",
+            "orgDeliver": 0,
+            "orgReceiver": 0,
+            "numberReport": "string",
+            "linkFile": "string",
+            "listAssets": [
+                {
+                    "draId": 0,
+                    "ticketId": 0,
+                    "assetCode": "string",
+                    "assetName": "string",
+                    "deviceNumber": "string",
+                    "source": "string",
+                    "qrCode": "string",
+                    "unit": "string",
+                    "quantity": 0,
+                    "manufactureCountry": "string",
+                    "manufactureYear": 0,
+                    "yearOperation": 0,
+                    "statusDevice": "string",
+                    "capitalSource": 0,
+                    "originalPrice": 0,
+                    "depreciation": 0,
+                    "remainPrice": 0,
+                    "note": "string"
+                }
+            ],
+            "listDocument": [
+                {
+                    "draId": 0,
+                    "ticketId": 0,
+                    "name": "string",
+                    "unit": "string",
+                    "quantity": 0,
+                    "value": "string",
+                    "note": "string"
+                }
+            ]
+        },
+        "noteInfo": {
+            "ticketId": 0,
+            "files": [
+                {
+                    "link": "string",
+                    "type": "string",
+                    "numberVote": "string",
+                    "createUser": "string"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": 0,
+        "status": "string",
+        "reason": "string",
+        "flowName": "string",
+        "approvalUser": "string",
+        "action": "string"
+    }
+}
