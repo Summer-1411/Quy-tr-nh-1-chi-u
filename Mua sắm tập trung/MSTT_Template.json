@@ -164,7 +164,7 @@
             "additionalDisplayClass": "right-info",
             "position": -9000,
             "conditions": {
-                "required": true,
+                "required": false,
                 "feedTo": []
             },
             "apiWebConfig": {
@@ -232,7 +232,6 @@
             "position": -8650,
             "name": "Năm",
             "type": "DATE",
-            "valuefeeder": "Now",
             "display": true,
             "conditions": {
                 "required": true,
@@ -377,6 +376,10 @@
                             {
                                 "fieldName": "approveQuantity",
                                 "id": -6860
+                            },
+                            {
+                                "fieldName": "approveQuantity",
+                                "id": -6880
                             },
                             {
                                 "fieldName": "unitPrice",
@@ -547,13 +550,13 @@
         },
         {
             "id": -7701,
-            "position": -7701,
+            "position": -7610,
             "name": "Công trình",
             "display": true,
             "additionalDisplayClass": "left-info",
             "type": "text",
             "conditions": {
-                "required": true
+                "required": false
             }
         },
         {
@@ -564,7 +567,7 @@
             "additionalDisplayClass": "right-info",
             "type": "text",
             "conditions": {
-                "required": true
+                "required": false
             }
         },
         {
@@ -634,7 +637,7 @@
             "position": -5800,
             "name": "Tổng chi phí",
             "type": "finance",
-            "value": "",
+            "value": "0",
             "conditions": {
                 "required": false
             },
@@ -996,7 +999,7 @@
                     "position": -6900,
                     "type": "text",
                     "conditions": {
-                        "required": true
+                        "required": false
                     }
                 },
                 {
