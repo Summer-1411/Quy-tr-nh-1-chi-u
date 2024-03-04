@@ -159,6 +159,7 @@
         },
         {
             "id": -9000,
+            "display": false,
             "name": "Mã phiếu giao hàng",
             "type": "apiweb",
             "additionalDisplayClass": "right-info",
@@ -179,8 +180,7 @@
                     "minimumSearch": 0,
                     "displayField": "deliveryCode"
                 }
-            },
-            "display": true
+            }
         },
         {
             "id": -8900,

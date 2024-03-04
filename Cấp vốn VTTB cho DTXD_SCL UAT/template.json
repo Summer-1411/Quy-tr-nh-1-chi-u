@@ -1,0 +1,1010 @@
+{
+    "individual": [
+        {
+            "id": -10000,
+            "name": "Requestor",
+            "valuefeeder": "TicketOwner",
+            "value": "",
+            "display": false,
+            "additionalDisplayClass": "left-info",
+            "position": -10000,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9999,
+            "position": -9999,
+            "name": "Ngày lập đề nghị",
+            "type": "DATE",
+            "valuefeeder": "Now",
+            "display": false,
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9991,
+            "position": -9991,
+            "name": "Họ tên người lập yêu cầu",
+            "type": "master_data_load_user_info_hovatennguoiyeucau",
+            "display": false,
+            "disabled": true,
+            "conditions": {
+                "required": false
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9990,
+            "position": -9990,
+            "name": "Userlogin",
+            "display": false,
+            "type": "master_data_load_user_info",
+            "conditions": {
+                "required": true
+            },
+            "dataFrom": -10000,
+            "dataFromFunc": "feederData",
+            "dataFromCondition": [
+                {
+                    "conditions": {
+                        "operation": "else"
+                    },
+                    "value": {
+                        "dataset": "INDIVIDUAL",
+                        "infoId": -10000
+                    }
+                }
+            ],
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9989,
+            "position": -9989,
+            "name": "ERP_ID",
+            "type": "master_data_load_user_info_erp_id",
+            "display": false,
+            "disabled": false,
+            "conditions": {
+                "required": false
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9985,
+            "position": -9985,
+            "name": "Người tạo yêu cầu",
+            "type": "master_data_load_user_info_nguoiyeucau",
+            "display": true,
+            "disabled": true,
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9980,
+            "name": "Phòng ban",
+            "additionalDisplayClass": "left-info",
+            "position": -9980,
+            "type": "master_data_load_user_info_department",
+            "display": true,
+            "disable": true,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9960,
+            "name": "Số điện thoại người tạo yêu cầu",
+            "type": "text",
+            "additionalDisplayClass": "left-info",
+            "position": -9960,
+            "display": true,
+            "conditions": {
+                "required": true,
+                "min-length": 1
+            }
+        },
+        {
+            "name": "Thông tin đề nghị",
+            "type": "SPLITTER",
+            "collapse": false,
+            "id": -9950,
+            "position": -9950
+        },
+        {
+            "id": -9920,
+            "name": "Mã Đơn vị",
+            "type": "master_data_load_user_info_donvi",
+            "display": false,
+            "disable": true,
+            "conditions": {
+                "required": true
+            },
+            "position": -9920,
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9915,
+            "position": -9915,
+            "name": "Đơn vị",
+            "type": "master_data_load_user_info_don_vi_van_chuyennn",
+            "display": true,
+            "disable": true,
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9910,
+            "name": "Ngày tháng năm",
+            "type": "date",
+            "valuefeeder": "Now",
+            "conditions": {
+                "required": true,
+                "format": {
+                    "regex": "dd/MM/yyyy",
+                    "text": "Nhập dd/MM/yyyy"
+                }
+            },
+            "additionalDisplayClass": "right-info",
+            "position": -9910
+        },
+        {
+            "name": "Cấp vốn bằng VTTB cho",
+            "additionalDisplayClass": "left-info",
+            "id": -9800,
+            "position": -9800,
+            "type": "select",
+            "conditions": {
+                "data": [
+                    {
+                        "text": "Đầu tư xây dựng",
+                        "value": "DTXD"
+                    },
+                    {
+                        "text": "Sửa chữa lớn",
+                        "value": "SCL"
+                    }
+                ],
+                "required": true,
+                "min-length": 1
+            }
+        },
+        {
+            "id": -9799,
+            "position": -9799,
+            "name": "Loại cấp vốn",
+            "type": "text",
+            "disable": true,
+            "display": false,
+            "conditions": {
+                "required": true
+            },
+            "dataFrom": -9800,
+            "dataFromFunc": "feederData",
+            "dataFromCondition": [
+                {
+                    "conditions": {
+                        "operation": "else"
+                    },
+                    "value": {
+                        "dataset": "INDIVIDUAL",
+                        "infoId": -9800
+                    }
+                }
+            ],
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9700,
+            "position": -9700,
+            "name": "Mã công trình",
+            "type": "apiweb",
+            "apiWebConfig": {
+                "apiConfig": {
+                    "param": "EVN_SPRO_PARAM_PICKER_FILTER_CMIS",
+                    "hostnameKey": "SPRO_EVN",
+                    "urlFilter": "/common-spro/get-cmis?type=KHAC",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "projectCode",
+                    "minimumSearch": 0,
+                    "displayField": "projectCode"
+                }
+            },
+            "conditions": {
+                "feedTo": [
+                    {
+                        "fieldName": "projectName",
+                        "id": -9600,
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": true
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "name": "Tên công trình",
+            "id": -9600,
+            "position": -9600,
+            "type": "text",
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "name": "Căn cứ",
+            "additionalDisplayClass": "left-info",
+            "id": -9500,
+            "position": -9500,
+            "type": "textarea",
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9450,
+            "position": -9450,
+            "name": "Hồ sơ đính kèm",
+            "type": "upload",
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "name": "Kính đề nghị",
+            "additionalDisplayClass": "left-info",
+            "id": -9400,
+            "position": -9400,
+            "type": "text",
+            "display": false,
+            "conditions": {
+                "required": false
+            }
+        },
+        {
+            "name": "Số",
+            "additionalDisplayClass": "right-info",
+            "id": -9350,
+            "display": false,
+            "position": -9350,
+            "type": "text",
+            "conditions": {
+                "required": false
+            }
+        },
+        {
+            "id": -6000,
+            "position": -6000,
+            "name": "Chọn trưởng/ phó phòng",
+            "type": "apiweb",
+            "additionalDisplayClass": "left-info",
+            "conditions": {
+                "feedTo": [
+                    {
+                        "id": -5999,
+                        "fieldName": "fullName",
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": true
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_CHON_TRUONG_PHO_PHONG_DTXD_SCL",
+                    "urlFilter": "/common-spro/getUserByPosition",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "userName",
+                    "minimumSearch": 0,
+                    "displayField": "fullName"
+                }
+            }
+        },
+        {
+            "display": false,
+            "name": "Họ tên trưởng phòng",
+            "additionalDisplayClass": "right-info",
+            "id": -5999,
+            "position": -5999,
+            "type": "text"
+        },
+        {
+            "id": -5900,
+            "position": -5900,
+            "name": "Chọn giám đốc/phó giám đốc",
+            "type": "apiweb",
+            "conditions": {
+                "feedTo": [
+                    {
+                        "id": -5899,
+                        "fieldName": "fullName",
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": true
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_CHON_GIAM_DOC_DTXD_SCL",
+                    "urlFilter": "/common-spro/getUserByPosition",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "userName",
+                    "minimumSearch": 0,
+                    "displayField": "fullName"
+                }
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "display": false,
+            "name": "Họ tên giám đốc/ phó giám đốc",
+            "additionalDisplayClass": "right-info",
+            "id": -5899,
+            "position": -5899,
+            "type": "text"
+        },
+        {
+            "id": -5800,
+            "position": -5800,
+            "type": "apiweb",
+            "display": false,
+            "name": "Chọn phòng Thư ký TGĐ/PTGĐ",
+            "conditions": {
+                "feedTo": [],
+                "required": false
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_GET_DEPARTMENT_OF_BAN_DTXD_SCL",
+                    "urlFilter": "/common-spro/get-all-department",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "deptId",
+                    "minimumSearch": 0,
+                    "displayField": "name"
+                }
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -5700,
+            "position": -5700,
+            "name": "Chọn Thư ký TGĐ/PTGĐ",
+            "type": "apiweb",
+            "display": false,
+            "conditions": {
+                "feedTo": [
+                    {
+                        "id": -5699,
+                        "fieldName": "fullName",
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": false
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_CHON_THUKY_TONG_GIAM_DOC_DTXD_SCL",
+                    "urlFilter": "/common-spro/get-usser-by-department",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "userName",
+                    "minimumSearch": 0,
+                    "displayField": "fullName"
+                }
+            },
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "display": false,
+            "name": "Họ tên Thư ký TGĐ/PTGĐ",
+            "additionalDisplayClass": "left-info",
+            "id": -5699,
+            "position": -5699,
+            "type": "text"
+        },
+        {
+            "id": -5600,
+            "position": -5600,
+            "name": "Chọn TGĐ/PTGĐ",
+            "type": "apiweb",
+            "display": false,
+            "conditions": {
+                "feedTo": [
+                    {
+                        "id": -5599,
+                        "fieldName": "fullName",
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": false
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_CHON_TONG_GIAM_DOC_DTXD_SCL",
+                    "urlFilter": "/common-spro/get-all-user-by-org-id",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "userName",
+                    "minimumSearch": 0,
+                    "displayField": "fullName"
+                }
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "display": false,
+            "name": "Họ tên TGĐ/PTGĐ",
+            "additionalDisplayClass": "right-info",
+            "id": -5599,
+            "position": -5599,
+            "type": "text"
+        },
+        {
+            "id": -5400,
+            "position": -5400,
+            "type": "apiweb",
+            "disable": true,
+            "name": "Chọn Ban vật tư",
+            "conditions": {
+                "feedTo": [],
+                "required": true
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_GET_DEPARTMENT_OF_BAN_DTXD_SCL",
+                    "urlFilter": "/common-spro/get-all-department",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "deptId",
+                    "minimumSearch": 0,
+                    "displayField": "name"
+                }
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -5350,
+            "position": -5350,
+            "name": "Chọn Trưởng Ban vật tư",
+            "type": "apiweb",
+            "conditions": {
+                "feedTo": [
+                    {
+                        "id": -5349,
+                        "fieldName": "fullName",
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": true
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_CHON_TRUONG_BAN_VAT_TU_DTXD_SCL",
+                    "urlFilter": "/common-spro/getUserByPosition",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "userName",
+                    "minimumSearch": 0,
+                    "displayField": "fullName"
+                }
+            },
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "display": false,
+            "name": "Họ tên trưởng ban vật tư",
+            "additionalDisplayClass": "left-info",
+            "id": -5349,
+            "position": -5349,
+            "type": "text"
+        },
+        {
+            "id": -9520,
+            "position": -9520,
+            "name": "Id Position trưởng ban vật tư",
+            "type": "text",
+            "value": "5389",
+            "disabled": true,
+            "display": false,
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9515,
+            "position": -9515,
+            "name": "Position Trưởng ban",
+            "display": false,
+            "type": "master_data_load_phong_ban",
+            "dataFrom": -9520,
+            "dataFromFunc": "feederData",
+            "dataFromCondition": [
+                {
+                    "conditions": {
+                        "operation": "else"
+                    },
+                    "value": {
+                        "dataset": "INDIVIDUAL",
+                        "infoId": -9520
+                    }
+                }
+            ],
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9512,
+            "position": -9512,
+            "name": "Fullname Trưởng ban vật tư",
+            "display": false,
+            "type": "master_data_load_phong_ban_account_truong_ban_vat_tuy",
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9510,
+            "position": -9510,
+            "name": "Username Trưởng ban vật tư",
+            "display": false,
+            "type": "master_data_load_phong_ban_username_truong_ban_vat_tu",
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9507,
+            "position": -9507,
+            "name": "Ban vật tư",
+            "display": false,
+            "type": "master_data_load_phong_ban_phong_ban_vat_tu",
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9506,
+            "position": -9506,
+            "name": "Id ban vật tư",
+            "type": "number",
+            "disable": true,
+            "display": false,
+            "conditions": {
+                "required": true
+            },
+            "dataFrom": -9507,
+            "dataFromFunc": "feederData",
+            "dataFromCondition": [
+                {
+                    "conditions": {
+                        "operation": "else"
+                    },
+                    "value": {
+                        "dataset": "INDIVIDUAL",
+                        "infoId": -9507
+                    }
+                }
+            ],
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9505,
+            "position": -9505,
+            "name": "Phân Quyền Trưởng ban (role config)",
+            "display": false,
+            "type": "text",
+            "dataFrom": -9510,
+            "dataFromFunc": "feederData",
+            "dataFromCondition": [
+                {
+                    "conditions": {
+                        "operation": "else"
+                    },
+                    "value": {
+                        "dataset": "INDIVIDUAL",
+                        "infoId": -9510
+                    }
+                }
+            ],
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -4900,
+            "position": -4900,
+            "type": "expression",
+            "name": "Tổng dự toán",
+            "expressionConfig": {
+                "type": "ARITHMETIC",
+                "operands": [
+                    {
+                        "type": "expression",
+                        "data-config": {
+                            "type": "FUNCTION",
+                            "operands": [
+                                {
+                                    "type": "simple",
+                                    "data-config": {
+                                        "columnId": -6900,
+                                        "tableId": -7000,
+                                        "dataset": "MULTITABLE"
+                                    }
+                                }
+                            ],
+                            "operator": "SUM"
+                        }
+                    }
+                ],
+                "operator": "ADD"
+            },
+            "disabled": true,
+            "display": false,
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -4800,
+            "position": -4800,
+            "type": "expression",
+            "name": "Tổng đơn giá dự toán",
+            "expressionConfig": {
+                "type": "ARITHMETIC",
+                "operands": [
+                    {
+                        "type": "expression",
+                        "data-config": {
+                            "type": "FUNCTION",
+                            "operands": [
+                                {
+                                    "type": "simple",
+                                    "data-config": {
+                                        "columnId": -6800,
+                                        "tableId": -7000,
+                                        "dataset": "MULTITABLE"
+                                    }
+                                }
+                            ],
+                            "operator": "SUM"
+                        }
+                    }
+                ],
+                "operator": "ADD"
+            },
+            "disabled": true,
+            "display": false,
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -4700,
+            "position": -4700,
+            "type": "expression",
+            "name": "Tổng thành tiền dự toán",
+            "expressionConfig": {
+                "type": "ARITHMETIC",
+                "operands": [
+                    {
+                        "type": "expression",
+                        "data-config": {
+                            "type": "FUNCTION",
+                            "operands": [
+                                {
+                                    "type": "simple",
+                                    "data-config": {
+                                        "columnId": -6780,
+                                        "tableId": -7000,
+                                        "dataset": "MULTITABLE"
+                                    }
+                                }
+                            ],
+                            "operator": "SUM"
+                        }
+                    }
+                ],
+                "operator": "ADD"
+            },
+            "disabled": true,
+            "display": false,
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -4500,
+            "position": -4500,
+            "name": "Empty value",
+            "display": false,
+            "type": "text",
+            "value": "",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -1000,
+            "position": -1000,
+            "name": "Lập phiếu chưa đến bước 6",
+            "display": false,
+            "type": "text",
+            "value": "0",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -1001,
+            "position": -1001,
+            "name": "Lập phiếu đã qua bước 6",
+            "display": false,
+            "type": "text",
+            "value": "1",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -100,
+            "position": -100,
+            "name": "mappinglevel_Giám đốc",
+            "display": false,
+            "type": "number",
+            "value": "0",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -276,
+            "position": -276,
+            "name": "ID đơn vị tổng công ty",
+            "display": false,
+            "type": "number",
+            "value": "276",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -1,
+            "position": -1,
+            "name": "mappinglevel_Trưởng phòng",
+            "display": false,
+            "type": "number",
+            "value": "1",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -2,
+            "position": -2,
+            "name": "mappinglevel_Phó phòng",
+            "display": false,
+            "type": "number",
+            "value": "2",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -3,
+            "position": -3,
+            "name": "mappinglevel_Chuyên viên",
+            "display": false,
+            "type": "number",
+            "value": "3",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -4,
+            "position": -4,
+            "name": "mappinglevel_Thủ kho",
+            "display": false,
+            "type": "number",
+            "value": "4",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -5,
+            "position": -5,
+            "name": "mappinglevel_Trưởng/Phó phòng",
+            "display": false,
+            "type": "number",
+            "value": "5",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -6,
+            "position": -6,
+            "name": "mappinglevel_Trưởng/Phó phòng KHVT",
+            "display": false,
+            "type": "number",
+            "value": "6",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -7,
+            "position": -7,
+            "name": "mappinglevel_Trưởng phòng KHVT",
+            "display": false,
+            "type": "number",
+            "value": "7",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -200,
+            "position": -200,
+            "name": "type",
+            "display": false,
+            "type": "text",
+            "value": "PROVICE_VTTB",
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -300,
+            "position": -300,
+            "name": "actionType APPROVE",
+            "display": false,
+            "type": "text",
+            "value": "APPROVE",
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -400,
+            "position": -400,
+            "name": "actionType REQUEST",
+            "display": false,
+            "type": "text",
+            "value": "REQUEST",
+            "additionalDisplayClass": "left-info"
+        }
+    ],
+    "multitable": [
+        {
+            "id": -7000,
+            "position": -7000,
+            "name": "Danh sách vật tư thiết bị",
+            "type": "table",
+            "columns": [
+                {
+                    "id": -6960,
+                    "position": -6960,
+                    "name": "Mã vật tư",
+                    "type": "apiweb",
+                    "conditions": {
+                        "required": false,
+                        "feedTo": [
+                            {
+                                "fieldName": "materialName",
+                                "id": -6940,
+                                "dataset": "TABLE"
+                            },
+                            {
+                                "fieldName": "unit",
+                                "id": -6920,
+                                "dataset": "TABLE"
+                            }
+                        ]
+                    },
+                    "apiWebConfig": {
+                        "apiConfig": {
+                            "param": "B6_PARAM_MA_VAT_TU_DTXD_SCL",
+                            "hostnameKey": "SPRO_EVN",
+                            "urlFilter": "/common-spro/getMaterialCode",
+                            "returnKey": "MT_GET_VENDOR_RP_S"
+                        },
+                        "searchConfig": {
+                            "idField": "materialCode",
+                            "minimumSearch": 0,
+                            "displayField": "materialCode"
+                        }
+                    }
+                },
+                {
+                    "id": -6940,
+                    "position": -6940,
+                    "name": "Tên vật tư",
+                    "type": "text",
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": -6920,
+                    "position": -6920,
+                    "name": "Đơn vị tính",
+                    "type": "text",
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": -6900,
+                    "position": -6900,
+                    "name": "Số lượng dự toán",
+                    "type": "finance",
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                
+                {
+                    "id": -6800,
+                    "position": -6800,
+                    "name": "Đơn giá dự toán",
+                    "type": "finance",
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": -6780,
+                    "position": -6780,
+                    "name": "Thành tiền dự toán",
+                    "display": true,
+                    "expressionConfig": {
+                        "operands": [
+                            {
+                                "data-config": {
+                                    "operands": [
+                                        {
+                                            "data-config": {
+                                                "columnId": -6900,
+                                                "tableId": -7000,
+                                                "dataset": "MULTITABLE"
+                                            },
+                                            "type": "simple"
+                                        },
+                                        {
+                                            "data-config": {
+                                                "columnId": -6800,
+                                                "tableId": -7000,
+                                                "dataset": "MULTITABLE"
+                                            },
+                                            "type": "simple"
+                                        }
+                                    ],
+                                    "type": "ARITHMETIC",
+                                    "operator": "MULTIPLY"
+                                },
+                                "type": "expression"
+                            }
+                        ],
+                        "type": "ARITHMETIC"
+                    },
+                    "disabled": true,
+                    "type": "expression",
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": -6600,
+                    "position": -6600,
+                    "name": "Empty Value",
+                    "type": "text",
+                    "display": false,
+                    "conditions": {
+                        "required": false
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1766,7 +1766,6 @@
                                 -80150,
                                 -70100,
                                 -100150,
-                                -110190,
                                 -130135,
                                 -135140,
                                 -140150,
@@ -1814,7 +1813,6 @@
                         "workflow": {
                             "relationships": [
                                 -70100,
-                                -110190,
                                 -130135,
                                 -135140,
                                 -140160,
@@ -3336,7 +3334,6 @@
                         }
                     },
                     {
-                        "valuefeeder": "Now",
                         "display": true,
                         "name": "Năm",
                         "id": -9860,
@@ -4085,17 +4082,6 @@
             "status": "waiting"
         },
         {
-            "autocreate": false,
-            "display": false,
-            "from": -110,
-            "comment": "Liên kết ẩn từ Bước 11 -> Bước 19 để xem",
-            "id": -110190,
-            "to": -190,
-            "position": 20,
-            "requestUpdateKeepData": true,
-            "relatedTo": -110130
-        },
-        {
             "customNote": "Bước 13",
             "api_config": [
                 {
@@ -4434,9 +4420,6 @@
                 "cancel": {
                     "enable": false,
                     "text": "Hủy yêu cầu"
-                },
-                "requestUpdate": {
-                    "enable": false
                 }
             },
             "customNote": "Bước 15",
@@ -4529,9 +4512,6 @@
                 "cancel": {
                     "enable": false,
                     "text": "Hủy yêu cầu"
-                },
-                "requestUpdate": {
-                    "enable": false
                 }
             },
             "customNote": "Bước 16",
