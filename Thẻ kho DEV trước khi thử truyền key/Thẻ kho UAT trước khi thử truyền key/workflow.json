@@ -198,6 +198,7 @@
                         "suffix": " - (Thủ kho đã ký số)",
                         "key": {
                             "infoId": -2000,
+                            "relaId": -1020,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         }
@@ -289,6 +290,7 @@
                         "suffix": " - (KHVT đã ký số)",
                         "key": {
                             "infoId": -1800,
+                            "relaId": -1020,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         }
@@ -379,6 +381,7 @@
                         "suffix": " - (kế toán chuyên viên đã ký số)",
                         "key": {
                             "infoId": -1600,
+                            "relaId": -1020,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         }
@@ -469,6 +472,7 @@
                         "suffix": " - (kế toán trưởng đã ký số)",
                         "key": {
                             "infoId": -1400,
+                            "relaId": -1020,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
                         }

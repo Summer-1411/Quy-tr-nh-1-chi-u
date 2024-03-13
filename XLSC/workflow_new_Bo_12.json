@@ -175,7 +175,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45907&fileName=XLSC_DeNghiCapVTTB.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=50546&fileName=XLSC_DeNghiCapVTTB.vm",
                 "newVersion": true
             },
             "sla": {
@@ -341,7 +341,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45907&fileName=XLSC_DeNghiCapVTTB.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=50546&fileName=XLSC_DeNghiCapVTTB.vm",
                 "newVersion": true
             },
             "sla": {
@@ -536,7 +536,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45907&fileName=XLSC_DeNghiCapVTTB.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=50546&fileName=XLSC_DeNghiCapVTTB.vm",
                 "newVersion": true
             },
             "sla": {
@@ -704,7 +704,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45907&fileName=XLSC_DeNghiCapVTTB.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=50546&fileName=XLSC_DeNghiCapVTTB.vm",
                 "newVersion": true
             },
             "sla": {
@@ -901,7 +901,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45907&fileName=XLSC_DeNghiCapVTTB.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=50546&fileName=XLSC_DeNghiCapVTTB.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1069,7 +1069,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45907&fileName=XLSC_DeNghiCapVTTB.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=50546&fileName=XLSC_DeNghiCapVTTB.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1237,7 +1237,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=45907&fileName=XLSC_DeNghiCapVTTB.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=50546&fileName=XLSC_DeNghiCapVTTB.vm",
                 "newVersion": true
             },
             "sla": {
@@ -4051,9 +4051,9 @@
                             },
                             {
                                 "name": "Độ dài mong muốn",
+                                "disabled": true,
                                 "id": -9692,
                                 "position": -9694,
-                                "disabled": true,
                                 "type": "text",
                                 "conditions": {
                                     "required": false
@@ -4061,9 +4061,9 @@
                             },
                             {
                                 "name": "Số lượng đoạn",
+                                "disabled": true,
                                 "id": -9694,
                                 "position": -9692,
-                                "disabled": true,
                                 "type": "text",
                                 "conditions": {
                                     "required": false

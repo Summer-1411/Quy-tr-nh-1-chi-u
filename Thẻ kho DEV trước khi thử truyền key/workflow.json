@@ -196,11 +196,7 @@
                             "dataset": "INDIVIDUAL"
                         },
                         "suffix": " - (Thủ kho đã ký số)",
-                        "key": {
-                            "infoId": -2000,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        }
+                        "key": "Thu_Kho"
                     }
                 ]
             },
@@ -287,11 +283,7 @@
                             "dataset": "INDIVIDUAL"
                         },
                         "suffix": " - (KHVT đã ký số)",
-                        "key": {
-                            "infoId": -1800,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        }
+                        "key": "Phong_Ke_Hoach_Vat_Tu"
                     }
                 ]
             },
@@ -377,11 +369,7 @@
                             "dataset": "INDIVIDUAL"
                         },
                         "suffix": " - (kế toán chuyên viên đã ký số)",
-                        "key": {
-                            "infoId": -1600,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        }
+                        "key": "Phong_Tai_Chinh_Ke_Toan"
                     }
                 ]
             },
@@ -467,11 +455,7 @@
                             "dataset": "INDIVIDUAL"
                         },
                         "suffix": " - (kế toán trưởng đã ký số)",
-                        "key": {
-                            "infoId": -1400,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        }
+                        "key": "Phong_Tai_Chinh_Ke_Toan_2"
                     }
                 ]
             },

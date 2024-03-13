@@ -441,7 +441,7 @@
             "id": -2000,
             "position": -2000,
             "name": "Key thủ kho",
-            "display": true,
+            "display": false,
             "type": "text",
             "value": "",
             "additionalDisplayClass": "left-info"
@@ -450,7 +450,7 @@
             "id": -1800,
             "position": -1800,
             "name": "Key trưởng phó phòng",
-            "display": true,
+            "display": false,
             "type": "text",
             "value": "",
             "additionalDisplayClass": "left-info"
@@ -459,7 +459,7 @@
             "id": -1600,
             "position": -1600,
             "name": "Key chuyên viên kế toán",
-            "display": true,
+            "display": false,
             "type": "text",
             "value": "",
             "additionalDisplayClass": "left-info"
@@ -468,9 +468,9 @@
             "id": -1400,
             "position": -1400,
             "name": "Key kế toán trưởng",
-            "display": true,
+            "display": false,
             "type": "text",
-            "value": "",
+            "value": "ThuKho1,Thukho2,Thukho4",
             "additionalDisplayClass": "left-info"
         }
         
