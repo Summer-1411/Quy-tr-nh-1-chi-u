@@ -1,0 +1,15 @@
+EVN_B6_URL_REPORT_TEMPLATE: http://10.15.24.77:7999
+
+
+B6_PARAM_GET_FILE_IMPORT_BY_REPORT_MSTT
+{
+    "tckt": "-5200",
+    "storekeeper": "-5600",
+    "khvt": "-5400",
+    "deliver": "-10000",
+    "ticketId": "-0",
+    "userCreate": "-10000"
+}
+
+GET
+/export-report/saveFileImport
