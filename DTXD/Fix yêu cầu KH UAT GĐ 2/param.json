@@ -1,0 +1,1986 @@
+GĐ 2 UAT
+B6_PARAM_FINISH_BUOC2_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 2",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-20)"
+    }
+}
+
+B6_PARAM_CHON_TRUONG_DON_VI_THI_CONG_BUOC8_DTXD_UAT_2
+{
+    "orgId": "-9920",
+    "deptId": "-5400,-80,-90",
+    "mappingLevel": "-5300",
+    "pickerFilter": "fullName"
+}
+
+B6_PARAM_CHON_CHUYEN_VIEN_BUOC13_DTXD_UAT_2
+{
+    "orgId":"-9920",
+    "mappingLevel":"-5700",
+    "deptId": "-5400,-80,-90",
+    "pickerFilter": "fullName"
+}
+
+
+B6_PARAM_GET_FILE_EXPORT_DTXD
+{
+    "ticketId":"-0",
+    "isHeadOrg": "-5200,-80,-90",
+    "keyGiamDoc":"-2300",
+    "keyThuKho":"-2200",
+    "keyNguoiNhan":"-2100",
+    "keyNguoiLapPhieu":"-2000",
+    "keyKHVT":"-1900",
+    "headOrg": "-5000,-80,-90",
+    "khvt":"-5600,-80,-90",
+    "storekeeper":"-5800,-80,-90",
+    "userCreate":"-9500,-40,-50"
+}
+
+B6_PARAM_GET_FILE_GIAO_HANG_DTXD
+{
+    "ticketId":"-0",
+    "keyThuKho":"-2200",
+    "keyNguoiNhan":"-2100"
+}
+
+
+B6_PARAM_CREATE_TICKET_XUAT_KHO_DTXD_UAT_2
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "deptId": "(-9980)",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "primaryInventory": "(-9901)",
+            "requestDate": "(-9910)",
+            "subInventory": "(-9870)",
+            "description": "(-9865)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        }
+    }
+}
+B6_PARAM_FINISH_BUOC2_DTXD_UAT_2
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 2",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-20)"
+    }
+}
+
+B6_PARAM_APPROVE_BUOC2_5_DTXD_UAT_2
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 2.5",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-25)"
+    }
+}
+
+B6_PARAM_UPDATE_TICKET_BUOC3_DTXD_UAT_2
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "actionType": "REQUEST",
+        "deptId": "(-9980)",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "requestDate": "(-9910)",
+            "primaryInventory": "(-9901)",
+            "subInventory": "(-9870)",
+            "description": "(-9865)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-30,-40)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 3",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-30)"
+    }
+}
+B6_PARAM_FINISH_BUOC4_DTXD_UAT_2
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 4",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-40)"
+    }
+}
+
+B6_PARAM_APPROVE_BUOC5_DTXD_UAT_2
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "actionType": "REQUEST",
+        "deptId": "(-9980)",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "requestDate": "(-9910)",
+            "primaryInventory": "(-9901)",
+            "subInventory": "(-9870)",
+            "description": "(-9865)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-50,-60)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 5",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-50)"
+    }
+}
+
+B6_PARAM_APPROVE_BUOC6_DTXD_UAT_2
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "actionType": "REQUEST",
+        "deptId": "(-9980)",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "requestDate": "(-9910)",
+            "primaryInventory": "(-9901)",
+            "subInventory": "(-9870)",
+            "description": "(-9865)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-60,-70)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 6",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-60)"
+    }
+}
+B6_PARAM_APPROVE_BUOC7_DTXD_UAT_2
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "actionType": "REQUEST",
+        "deptId": "(-9980)",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "requestDate": "(-9910)",
+            "primaryInventory": "(-9901)",
+            "subInventory": "(-9870)",
+            "description": "(-9865)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 7",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-70)"
+    }
+}
+B6_PARAM_FINISH_BUOC8_DTXD_UAT_2
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "actionType": "APPROVE",
+        "storekeeper": "(-5800,-80,-90)",
+        "infoVote": [(t)<-9000,-80,-90>
+            {
+                "numberVoteApprove": "(-8990)",
+                "ticketCode": "(-0)",
+                "orgRequest": "(-8965)",
+                "reason": "(-8955)",
+                "receiver": "(-8970)",
+                "description": "(-8860)",
+                "location": "(-8962)",
+                "type": "2",
+                "construction": "(-8915)",
+                "primaryInventory": "(-8945)",
+                "subInventory": "(-8925)",
+                "requestDate": "(-8980)",
+                "numberDeliveryNote": "(-8985)",
+                "primaryInventory1": "(-8900)",
+                "construction1": "(-8870)"
+            }(endt)
+        ],
+        "infoItem": [(t)<-8000,-80,-90>
+            {
+                "numberVoteApprove": "(-7995)",
+                "materialCode": "(-7990)",
+                "materialName": "(-7980)",
+                "unit": "(-7960)",
+                "requestQuantity": "(-7950)",
+                "approveQuantity": "(-7940)",
+                "batch": "(-7970)",
+                "unitPrice": "(-7910)",
+                "amount": "(-7900)",
+                "accountDebit": "(-7890)",
+                "accountCredit": "(-7880)",
+                "segmentQuantity": "(-7930)",
+                "desirableLength": "(-7920)"
+            }(endt)
+        ]
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 8",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-80)"
+    }
+}
+
+B6_PARAM_FINISH_BUOC9_DTXD_UAT_2
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "storekeeper": "(-5800,-80,-90)",
+        "infoVote": [(t)<-9000,-80,-90>
+            {
+                "numberVoteApprove": "(-8990)",
+                "ticketCode": "(-0)",
+                "orgRequest": "(-8965)",
+                "reason": "(-8955)",
+                "receiver": "(-8970)",
+                "description": "(-8860)",
+                "location": "(-8962)",
+                "type": "2",
+                "construction": "(-8915)",
+                "primaryInventory": "(-8945)",
+                "subInventory": "(-8925)",
+                "requestDate": "(-8980)",
+                "numberDeliveryNote": "(-8985)",
+                "primaryInventory1": "(-8900)",
+                "construction1": "(-8870)"
+            }(endt)
+        ],
+        "infoItem": [(t)<-8000,-80,-90>
+            {
+                "numberVoteApprove": "(-7995)",
+                "materialCode": "(-7990)",
+                "materialName": "(-7980)",
+                "unit": "(-7960)",
+                "requestQuantity": "(-7950)",
+                "approveQuantity": "(-7940)",
+                "batch": "(-7970)",
+                "unitPrice": "(-7910)",
+                "amount": "(-7900)",
+                "accountDebit": "(-7890)",
+                "accountCredit": "(-7880)",
+                "segmentQuantity": "(-7930)",
+                "desirableLength": "(-7920)"
+            }(endt)
+        ]
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 9",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-90)"
+    }
+}
+
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "storekeeper": "(-5800,-80,-90)",
+        "infoVote": [(t)<-9000,-80,-90>
+            {
+                "numberVoteApprove": "(-8990)",
+                "ticketCode": "(-0)",
+                "orgRequest": "(-8965)",
+                "reason": "(-8955)",
+                "receiver": "(-8970)",
+                "description": "(-8860)",
+                "location": "(-8962)",
+                "type": "2",
+                "construction": "(-8915)",
+                "primaryInventory": "(-8945)",
+                "subInventory": "(-8925)",
+                "requestDate": "(-8980)",
+                "numberDeliveryNote": "(-8985)",
+                "primaryInventory1": "(-8900)",
+                "construction1": "(-8870)"
+            }(endt)
+        ],
+        "infoItem": [(t)<-8000,-80,-90>
+            {
+                "numberVoteApprove": "(-7995)",
+                "materialCode": "(-7990)",
+                "materialName": "(-7980)",
+                "unit": "(-7960)",
+                "requestQuantity": "(-7950)",
+                "approveQuantity": "(-7940)",
+                "batch": "(-7970)",
+                "unitPrice": "(-7910)",
+                "amount": "(-7900)",
+                "accountDebit": "(-7890)",
+                "accountCredit": "(-7880)",
+                "segmentQuantity": "(-7930)",
+                "desirableLength": "(-7920)"
+            }(endt)
+        ],
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-105,-110)",
+                    "type": "3",
+                    "numberVote": "(-9850,-80,-90)",
+                    "createUser": "(-9500,-40,-50)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        },
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 10",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-105)"
+    }
+}
+
+
+B6_PARAM_APPROVE_BUOC10_DTXD_UAT_2
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "storekeeper": "(-5800,-80,-90)",
+        "infoVote": [(t)<-9000,-80,-90>
+            {
+                "numberVoteApprove": "(-8990)",
+                "ticketCode": "(-0)",
+                "orgRequest": "(-8965)",
+                "reason": "(-8955)",
+                "receiver": "(-8970)",
+                "description": "(-8860)",
+                "location": "(-8962)",
+                "type": "2",
+                "construction": "(-8915)",
+                "primaryInventory": "(-8945)",
+                "subInventory": "(-8925)",
+                "requestDate": "(-8980)",
+                "numberDeliveryNote": "(-8985)",
+                "primaryInventory1": "(-8900)",
+                "construction1": "(-8870)"
+            }(endt)
+        ],
+        "infoItem": [(t)<-8000,-80,-90>
+            {
+                "numberVoteApprove": "(-7995)",
+                "materialCode": "(-7990)",
+                "materialName": "(-7980)",
+                "unit": "(-7960)",
+                "requestQuantity": "(-7950)",
+                "approveQuantity": "(-7940)",
+                "batch": "(-7970)",
+                "unitPrice": "(-7910)",
+                "amount": "(-7900)",
+                "accountDebit": "(-7890)",
+                "accountCredit": "(-7880)",
+                "segmentQuantity": "(-7930)",
+                "desirableLength": "(-7920)"
+            }(endt)
+        ],
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-105,-110)",
+                    "type": "3",
+                    "numberVote": "(-9850,-80,-90)",
+                    "createUser": "(-9500,-40,-50)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 10",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-105)"
+    }
+}
+
+
+B6_PARAM_APPROVE_BUOC11_1_DTXD_UAT_2
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "storekeeper": "(-5800,-80,-90)",
+        "infoVote": [(t)<-9000,-80,-90>
+            {
+                "numberVoteApprove": "(-8990)",
+                "ticketCode": "(-0)",
+                "orgRequest": "(-8965)",
+                "reason": "(-8955)",
+                "receiver": "(-8970)",
+                "description": "(-8860)",
+                "location": "(-8962)",
+                "type": "2",
+                "construction": "(-8915)",
+                "primaryInventory": "(-8945)",
+                "subInventory": "(-8925)",
+                "requestDate": "(-8980)",
+                "numberDeliveryNote": "(-8985)",
+                "primaryInventory1": "(-8900)",
+                "construction1": "(-8870)"
+            }(endt)
+        ],
+        "infoItem": [(t)<-8000,-80,-90>
+            {
+                "numberVoteApprove": "(-7995)",
+                "materialCode": "(-7990)",
+                "materialName": "(-7980)",
+                "unit": "(-7960)",
+                "requestQuantity": "(-7950)",
+                "approveQuantity": "(-7940)",
+                "batch": "(-7970)",
+                "unitPrice": "(-7910)",
+                "amount": "(-7900)",
+                "accountDebit": "(-7890)",
+                "accountCredit": "(-7880)",
+                "segmentQuantity": "(-7930)",
+                "desirableLength": "(-7920)"
+            }(endt)
+        ],
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-110,-120)",
+                    "type": "3",
+                    "numberVote": "(-9850,-80,-90)",
+                    "createUser": "(-9500,-40,-50)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 11",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-110)"
+    }
+}
+B6_PARAM_APPROVE_BUOC11_2_DTXD_UAT_2
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "storekeeper": "(-5800,-80,-90)",
+        "infoVote": [(t)<-9000,-80,-90>
+            {
+                "numberVoteApprove": "(-8990)",
+                "ticketCode": "(-0)",
+                "orgRequest": "(-8965)",
+                "reason": "(-8955)",
+                "receiver": "(-8970)",
+                "description": "(-8860)",
+                "location": "(-8962)",
+                "type": "2",
+                "construction": "(-8915)",
+                "primaryInventory": "(-8945)",
+                "subInventory": "(-8925)",
+                "requestDate": "(-8980)",
+                "numberDeliveryNote": "(-8985)",
+                "primaryInventory1": "(-8900)",
+                "construction1": "(-8870)"
+            }(endt)
+        ],
+        "infoItem": [(t)<-8000,-80,-90>
+            {
+                "numberVoteApprove": "(-7995)",
+                "materialCode": "(-7990)",
+                "materialName": "(-7980)",
+                "unit": "(-7960)",
+                "requestQuantity": "(-7950)",
+                "approveQuantity": "(-7940)",
+                "batch": "(-7970)",
+                "unitPrice": "(-7910)",
+                "amount": "(-7900)",
+                "accountDebit": "(-7890)",
+                "accountCredit": "(-7880)",
+                "segmentQuantity": "(-7930)",
+                "desirableLength": "(-7920)"
+            }(endt)
+        ],
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-110,-130)",
+                    "type": "3",
+                    "numberVote": "(-9850,-80,-90)",
+                    "createUser": "(-9500,-40,-50)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 11",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-110)"
+    }
+}
+B6_PARAM_APPROVE_BUOC12_DTXD_UAT_2
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "storekeeper": "(-5800,-80,-90)",
+        "infoVote": [(t)<-9000,-80,-90>
+            {
+                "numberVoteApprove": "(-8990)",
+                "ticketCode": "(-0)",
+                "orgRequest": "(-8965)",
+                "reason": "(-8955)",
+                "receiver": "(-8970)",
+                "description": "(-8860)",
+                "location": "(-8962)",
+                "type": "2",
+                "construction": "(-8915)",
+                "primaryInventory": "(-8945)",
+                "subInventory": "(-8925)",
+                "requestDate": "(-8980)",
+                "numberDeliveryNote": "(-8985)",
+                "primaryInventory1": "(-8900)",
+                "construction1": "(-8870)"
+            }(endt)
+        ],
+        "infoItem": [(t)<-8000,-80,-90>
+            {
+                "numberVoteApprove": "(-7995)",
+                "materialCode": "(-7990)",
+                "materialName": "(-7980)",
+                "unit": "(-7960)",
+                "requestQuantity": "(-7950)",
+                "approveQuantity": "(-7940)",
+                "batch": "(-7970)",
+                "unitPrice": "(-7910)",
+                "amount": "(-7900)",
+                "accountDebit": "(-7890)",
+                "accountCredit": "(-7880)",
+                "segmentQuantity": "(-7930)",
+                "desirableLength": "(-7920)"
+            }(endt)
+        ],
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-120,-130)",
+                    "type": "3",
+                    "numberVote": "(-9850,-80,-90)",
+                    "createUser": "(-9500,-40,-50)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 12",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-120)"
+    }
+}
+B6_PARAM_FINISH_BUOC13_DTXD_UAT_2
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 13",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-130)"
+    }
+}
+
+
+B6_PARAM_FINISH_BUOC14_DTXD_UAT_2
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 14",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-140)"
+    }
+}
+
+B6_PARAM_APPROVE_BUOC15_DTXD_UAT_2
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "storekeeper": "(-5800,-80,-90)",
+        "infoVote": [(t)<-9000,-80,-90>
+            {
+                "numberVoteApprove": "(-8990)",
+                "ticketCode": "(-0)",
+                "orgRequest": "(-8965)",
+                "reason": "(-8955)",
+                "receiver": "(-8970)",
+                "description": "(-8860)",
+                "location": "(-8962)",
+                "type": "2",
+                "construction": "(-8915)",
+                "primaryInventory": "(-8945)",
+                "subInventory": "(-8925)",
+                "requestDate": "(-8980)",
+                "numberDeliveryNote": "(-8985)",
+                "primaryInventory1": "(-8900)",
+                "construction1": "(-8870)"
+            }(endt)
+        ],
+        "infoItem": [(t)<-8000,-80,-90>
+            {
+                "numberVoteApprove": "(-7995)",
+                "materialCode": "(-7990)",
+                "materialName": "(-7980)",
+                "unit": "(-7960)",
+                "requestQuantity": "(-7950)",
+                "approveQuantity": "(-7940)",
+                "batch": "(-7970)",
+                "unitPrice": "(-7910)",
+                "amount": "(-7900)",
+                "accountDebit": "(-7890)",
+                "accountCredit": "(-7880)",
+                "segmentQuantity": "(-7930)",
+                "desirableLength": "(-7920)"
+            }(endt)
+        ],
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-150,-160)",
+                    "type": "3",
+                    "numberVote": "(-9850,-80,-90)",
+                    "createUser": "(-9500,-40,-50)"
+                },
+                {
+                    "link": "(-2,-150,-160)",
+                    "type": "4",
+                    "createUser": "(-9500,-130,-140)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 15",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-150)"
+    }
+}
+B6_PARAM_APPROVE_BUOC16_DTXD_UAT_2
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "CLOSED",
+        "statusErp": 1,
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "storekeeper": "(-5800,-80,-90)",
+        "infoVote": [(t)<-9000,-80,-90>
+            {
+                "numberVoteApprove": "(-8990)",
+                "ticketCode": "(-0)",
+                "orgRequest": "(-8965)",
+                "reason": "(-8955)",
+                "receiver": "(-8970)",
+                "description": "(-8860)",
+                "location": "(-8962)",
+                "type": "2",
+                "construction": "(-8915)",
+                "primaryInventory": "(-8945)",
+                "subInventory": "(-8925)",
+                "requestDate": "(-8980)",
+                "numberDeliveryNote": "(-8985)",
+                "primaryInventory1": "(-8900)",
+                "construction1": "(-8870)"
+            }(endt)
+        ],
+        "infoItem": [(t)<-8000,-80,-90>
+            {
+                "numberVoteApprove": "(-7995)",
+                "materialCode": "(-7990)",
+                "materialName": "(-7980)",
+                "unit": "(-7960)",
+                "requestQuantity": "(-7950)",
+                "approveQuantity": "(-7940)",
+                "batch": "(-7970)",
+                "unitPrice": "(-7910)",
+                "amount": "(-7900)",
+                "accountDebit": "(-7890)",
+                "accountCredit": "(-7880)",
+                "segmentQuantity": "(-7930)",
+                "desirableLength": "(-7920)"
+            }(endt)
+        ],
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-160,-1)",
+                    "type": "3",
+                    "numberVote": "(-9850,-80,-90)",
+                    "createUser": "(-9500,-40,-50)"
+                },
+                {
+                    "link": "(-2,-160,-1)",
+                    "type": "4",
+                    "createUser": "(-9500,-130,-140)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CLOSED",
+        "flowName": "Buoc 16",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-160)"
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+B6_PARAM_KHO_CHINH_KHVT_DTXD
+{
+    "organizationId": "-9989",
+    "pickerFilter": "primaryInventoryName"
+}
+
+B6_DTXD_PARAM_GET_MATERIAL_INVENTORY_QUANTITY
+{
+    "organizationId": "-9900",
+    "materialCode": "-9760,-9800"
+}
+
+B6_DTXD_GET_MATERIAL_REQUEST_QUANTITY
+{
+    "primaryInventoryCode": "-9901",
+    "materialCode": "-9760,-9800",
+    "availableQuantity": "-9698,-9800",
+    "pickerFilter": "exportQuantity"
+}
+B6_PARAM_KHO_PHU_KHVT_DTXD
+{
+    "primaryInventoryId": "-9900",
+    "pickerFilter": "nameSubInventory"
+}
+EVN_SPRO_PARAM_PICKER_FILTER_REASON
+{
+    "pickerFilter": "reasonDescription"
+}
+B6_PARAM_TRUONG_PHO_PHONG_PD_DTXD
+{
+    "orgId": "-9920",
+    "deptId": "-9980",
+    "mappingLevel": "-5300",
+    "pickerFilter": "fullName"
+}
+
+B6_PARAM_GET_ALL_DEPARTMENT_DTXD
+{
+    "orgId": "-9920",
+    "pickerFilter": "name"
+}
+
+B6_PARAM_TRUONG_PHONG_KHVT_DTXD
+{
+    "orgId": "-9920",
+    "mappingLevel": "-5300",
+    "deptId": "-9550",
+    "pickerFilter": "fullName"
+}
+
+
+B6_PARAM_CHON_CHUYEN_VIEN_BUOC4_DTXD
+{
+    "orgId": "-9920",
+    "deptId": "-9550",
+    "mappingLevel": "-5700",
+    "pickerFilter": "fullName"
+}
+
+B6_PARAM_CHON_TRUONG_PHO_PHONG_KHVT_DTXD
+{
+    "orgId": "-9920",
+    "deptId": "-9550",
+    "mappingLevel": "-5300",
+    "pickerFilter": "fullName"
+}
+B6_PARAM_CHON_GD_PGD_DTXD
+{
+    "orgId": "-9920",
+    "mappingLevel": "-6000",
+    "pickerFilter": "fullName"
+}
+B6_PARAM_NUMBER_VOTE_DTXD
+{
+    "type": "-2400",
+    "year": "-9860,-80,-90",
+    "orgId": "-9920",
+    "pickerFilter": "numberVote"
+}
+
+B6_PARAM_GET_BY_NUMBER_VOTE_DTXD
+{
+    "numberVote": "-9855,-80,-90",
+    "year": "-9860,-80,-90",
+    "ticketId": "-0",
+    "pickerFilter": "sourceErpId"
+}
+
+B6_PARAM_KHO_NHAP_PHU_BUOC_8_KHVT_DTXD
+{
+    "primaryInventoryId": "-9350,-80,-90",
+    "pickerFilter": "nameSubInventory"
+}
+B6_PARAM_CHON_THU_KHO_DTXD
+{
+    "orgId": "-9920",
+    "mappingLevel": "-5600",
+    "pickerFilter": "fullName"
+}
+
+B6_PARAM_CHON_TRUONG_PHO_PHONG_KHVT_DTXD
+{
+    "orgId": "-9920",
+    "deptId": "-9550",
+    "mappingLevel": "-5300",
+    "pickerFilter": "fullName"
+}
+B6_PARAM_GET_ALL_DEPARTMENT_DTXD
+{
+    "orgId": "-9920",
+    "pickerFilter": "name"
+}
+
+B6_PARAM_CHON_TRUONG_DON_VI_THI_CONG_BUOC8_DTXD
+{
+    "orgId": "-9920",
+    "deptId": "-8650,-80,-90",
+    "mappingLevel": "-5300",
+    "pickerFilter": "fullName"
+}
+B6_PARAM_CHON_CHUYEN_VIEN_BUOC13_DTXD
+{
+    "orgId": "-9920",
+    "mappingLevel": "-5700",
+    "deptId": "-8650,-80,-90",
+    "pickerFilter": "fullName"
+}
+
+B6_PARAM_GET_TICKET_ID
+{
+    "ticketId": "-0"
+}
+
+
+B6_PARAM_CREATE_TICKET_XUAT_KHO_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "primaryInventory": "(-9901)",
+            "requestDate": "(-9910)",
+            "subInventory": "(-9870)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        }
+    }
+}
+
+B6_PARAM_APPROVE_BUOC2_5_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 2.5",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-25)"
+    }
+}
+
+B6_PARAM_UPDATE_TICKET_BUOC3_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "requestDate": "(-9910)",
+            "primaryInventory": "(-9901)",
+            "subInventory": "(-9870)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-30,-40)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 3",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-30)"
+    }
+}
+B6_PARAM_FINISH_BUOC4_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 4",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-40)"
+    }
+}
+
+B6_PARAM_APPROVE_BUOC5_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "requestDate": "(-9910)",
+            "primaryInventory": "(-9901)",
+            "subInventory": "(-9870)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-50,-60)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 5",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-50)"
+    }
+}
+
+B6_PARAM_APPROVE_BUOC6_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "requestDate": "(-9910)",
+            "primaryInventory": "(-9901)",
+            "subInventory": "(-9870)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-60,-70)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 6",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-60)"
+    }
+}
+B6_PARAM_APPROVE_BUOC7_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "requestDate": "(-9910)",
+            "primaryInventory": "(-9901)",
+            "subInventory": "(-9870)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 7",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-70)"
+    }
+}
+B6_PARAM_FINISH_BUOC8_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9975,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "requestDate": "(-9900,-80,-90)",
+            "numberVoteApprove": "(-9850,-80,-90)",
+            "numberDeliveryNote": "(-9670,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "location": "(-9950,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "primaryInventory": "(-9451,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "storekeeper": "(-8750,-80,-90)",
+            "construction1": "(-9300,-80,-90)",
+            "primaryInventory1": "(-9351,-80,-90)",
+            "subInventory1": "(-9290,-80,-90)",
+            "tableData": [(t)<-9800,
+                -80,
+                -90>
+            {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 8",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-80)"
+    }
+}
+B6_PARAM_FINISH_BUOC9_DTXD_1_CHIEU
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9975,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "requestDate": "(-9900,-80,-90)",
+            "numberVoteApprove": "(-9850,-80,-90)",
+            "numberDeliveryNote": "(-9670,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "location": "(-9950,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "primaryInventory": "(-9451,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "storekeeper": "(-8750,-80,-90)",
+            "construction1": "(-9300,-80,-90)",
+            "primaryInventory1": "(-9351,-80,-90)",
+            "subInventory1": "(-9290,-80,-90)",
+            "tableData": [(t)<-9800,
+                -80,
+                -90>
+            {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 9",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-90)"
+    }
+}
+B6_PARAM_APPROVE_BUOC10_DTXD_1_CHIEU
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9975,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "requestDate": "(-9900,-80,-90)",
+            "numberVoteApprove": "(-9850,-80,-90)",
+            "numberDeliveryNote": "(-9670,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "location": "(-9950,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "primaryInventory": "(-9451,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "storekeeper": "(-8750,-80,-90)",
+            "construction1": "(-9300,-80,-90)",
+            "primaryInventory1": "(-9351,-80,-90)",
+            "subInventory1": "(-9290,-80,-90)",
+            "tableData": [(t)<-9800,
+                -80,
+                -90>
+            {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-105,-110)",
+                    "type": "3",
+                    "numberVote": "(-9850,-80,-90)",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 10",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-105)"
+    }
+}
+B6_PARAM_APPROVE_BUOC11_1_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9975,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "requestDate": "(-9900,-80,-90)",
+            "numberVoteApprove": "(-9850,-80,-90)",
+            "numberDeliveryNote": "(-9670,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "location": "(-9950,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "primaryInventory": "(-9451,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "storekeeper": "(-8750,-80,-90)",
+            "construction1": "(-9300,-80,-90)",
+            "primaryInventory1": "(-9351,-80,-90)",
+            "subInventory1": "(-9290,-80,-90)",
+            "tableData": [(t)<-9800,
+                -80,
+                -90>
+            {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-110,-120)",
+                    "type": "3",
+                    "numberVote": "(-9850,-80,-90)",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 11",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-110)"
+    }
+}
+B6_PARAM_APPROVE_BUOC11_2_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9975,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "requestDate": "(-9900,-80,-90)",
+            "numberVoteApprove": "(-9850,-80,-90)",
+            "numberDeliveryNote": "(-9670,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "location": "(-9950,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "primaryInventory": "(-9451,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "storekeeper": "(-8750,-80,-90)",
+            "construction1": "(-9300,-80,-90)",
+            "primaryInventory1": "(-9351,-80,-90)",
+            "subInventory1": "(-9290,-80,-90)",
+            "tableData": [(t)<-9800,
+                -80,
+                -90>
+                {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-110,-130)",
+                    "type": "3",
+                    "numberVote": "(-9850,-80,-90)",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 11",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-110)"
+    }
+}
+B6_PARAM_APPROVE_BUOC12_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9975,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "requestDate": "(-9900,-80,-90)",
+            "numberVoteApprove": "(-9850,-80,-90)",
+            "numberDeliveryNote": "(-9670,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "location": "(-9950,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "primaryInventory": "(-9451,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "storekeeper": "(-8750,-80,-90)",
+            "construction1": "(-9300,-80,-90)",
+            "primaryInventory1": "(-9351,-80,-90)",
+            "subInventory1": "(-9290,-80,-90)",
+            "tableData": [(t)<-9800,
+                -80,
+                -90>
+            {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-120,-130)",
+                    "type": "3",
+                    "numberVote": "(-9850,-80,-90)",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 12",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-120)"
+    }
+}
+B6_PARAM_FINISH_BUOC13_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 13",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-130)"
+    }
+}
+
+
+B6_PARAM_FINISH_BUOC14_DTXD
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 14",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-140)"
+    }
+}
+
+B6_PARAM_APPROVE_BUOC15_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9975,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "requestDate": "(-9900,-80,-90)",
+            "numberVoteApprove": "(-9850,-80,-90)",
+            "numberDeliveryNote": "(-9670,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "location": "(-9950,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "primaryInventory": "(-9451,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "storekeeper": "(-8750,-80,-90)",
+            "construction1": "(-9300,-80,-90)",
+            "primaryInventory1": "(-9351,-80,-90)",
+            "subInventory1": "(-9290,-80,-90)",
+            "tableData": [(t)<-9800,
+                -80,
+                -90>
+            {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-150,-160)",
+                    "type": "3",
+                    "numberVote": "(-9850,-80,-90)",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-2,-150,-160)",
+                    "type": "4",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 15",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-150)"
+    }
+}
+B6_PARAM_APPROVE_BUOC16_DTXD
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_DTXD",
+        "status": "CLOSED",
+        "statusErp": 1,
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "statusDelivery": "1",
+        "actionType": "APPROVE",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9975,-80,-90)",
+            "receiver": "(-9700,-80,-90)",
+            "reason": "(-9550,-80,-90)",
+            "requestDate": "(-9900,-80,-90)",
+            "numberVoteApprove": "(-9850,-80,-90)",
+            "numberDeliveryNote": "(-9670,-80,-90)",
+            "deliver": "(-9650,-80,-90)",
+            "location": "(-9950,-80,-90)",
+            "construction": "(-9400,-80,-90)",
+            "primaryInventory": "(-9451,-80,-90)",
+            "subInventory": "(-9370,-80,-90)",
+            "orgCode": "(-9975,-80,-90)",
+            "typeErp": "(-9600,-80,-90)",
+            "sourceErp": "(-9500,-80,-90)",
+            "storekeeper": "(-8750,-80,-90)",
+            "construction1": "(-9300,-80,-90)",
+            "primaryInventory1": "(-9351,-80,-90)",
+            "subInventory1": "(-9290,-80,-90)",
+            "tableData": [(t)<-9800,
+                -80,
+                -90>
+            {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9060)",
+                    "batch": "(-9120)",
+                    "unitPrice": "(-9040)",
+                    "amount": "(-9020)",
+                    "accountDebit": "(-9000)",
+                    "accountCredit": "(-8980)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-160,-1)",
+                    "type": "3",
+                    "numberVote": "(-9850,-80,-90)",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-2,-160,-1)",
+                    "type": "4",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-70,-80)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CLOSED",
+        "flowName": "Buoc 16",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-160)"
+    }
+}
