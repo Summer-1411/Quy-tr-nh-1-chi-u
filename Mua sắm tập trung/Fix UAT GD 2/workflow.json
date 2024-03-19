@@ -7,7 +7,7 @@
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_MSTT_PARAM_CREATE_TICKET_BUOC1",
+                        "param": "B6_MSTT_PARAM_CREATE_TICKET_BUOC1_UAT_2",
                         "name": "TICKET_EVN_SPRO_CREATE"
                     },
                     "requireAuthenAPI": false
@@ -16,7 +16,7 @@
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_MSTT_PARAM_CREATE_TICKET_BUOC1",
+                        "param": "B6_MSTT_PARAM_CREATE_TICKET_BUOC1_UAT_2",
                         "name": "TICKET_EVN_SPRO_UPDATE"
                     },
                     "triggerOn": "update-ticket",
@@ -240,7 +240,7 @@
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_MSTT_PARAM_FINISH_BUOC2",
+                        "param": "B6_MSTT_PARAM_FINISH_BUOC2_UAT_2",
                         "name": "TICKET_EVN_SPRO_UPDATE"
                     },
                     "requireAuthenAPI": false
@@ -277,6 +277,31 @@
                                     "fieldName": "name",
                                     "id": -1,
                                     "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "keySignThuKho",
+                                    "id": -2200,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "keySignNguoiGiaoHang",
+                                    "id": -2100,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "keySignLapPhieu",
+                                    "id": -2000,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "keySignKHVT",
+                                    "id": -1900,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "keySignTCKT",
+                                    "id": -1800,
+                                    "dataset": "INDIVIDUAL"
                                 }
                             ],
                             "required": true
@@ -299,6 +324,51 @@
                             "height": 5
                         },
                         "value": ""
+                    },
+                    {
+                        "id": -2200,
+                        "position": -2200,
+                        "name": "Key thủ kho",
+                        "display": false,
+                        "type": "text",
+                        "value": "",
+                        "additionalDisplayClass": "right-info"
+                    },
+                    {
+                        "id": -2100,
+                        "position": -2100,
+                        "name": "Key người giao hàng",
+                        "display": false,
+                        "type": "text",
+                        "value": "",
+                        "additionalDisplayClass": "right-info"
+                    },
+                    {
+                        "id": -2000,
+                        "position": -2000,
+                        "name": "Key người lập phiếu",
+                        "display": false,
+                        "type": "text",
+                        "value": "",
+                        "additionalDisplayClass": "right-info"
+                    },
+                    {
+                        "id": -1900,
+                        "position": -1900,
+                        "name": "Key KHVT",
+                        "display": false,
+                        "type": "text",
+                        "value": "",
+                        "additionalDisplayClass": "right-info"
+                    },
+                    {
+                        "id": -1800,
+                        "position": -1800,
+                        "name": "Key TCKT",
+                        "display": false,
+                        "type": "text",
+                        "value": "",
+                        "additionalDisplayClass": "right-info"
                     }
                 ]
             },
@@ -328,7 +398,11 @@
                         "dataset": "INDIVIDUAL"
                     },
                     "suffix": " - (Người lập)",
-                    "key": "nguoi_lap"
+                    "key": {
+                        "infoId": -2000,
+                        "relaId": -4050,
+                        "dataset": "INDIVIDUAL"
+                    }
                 }
             },
             "api_config": [
@@ -336,7 +410,7 @@
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_MSTT_PARAM_APPROVE_BUOC3",
+                        "param": "B6_MSTT_PARAM_APPROVE_BUOC3_UAT_2",
                         "name": "TICKET_EVN_SPRO_UPDATE"
                     },
                     "requireAuthenAPI": false
@@ -419,7 +493,11 @@
                         "dataset": "INDIVIDUAL"
                     },
                     "suffix": " - (KHVT)",
-                    "key": "khvt"
+                    "key": {
+                        "infoId": -1900,
+                        "relaId": -4050,
+                        "dataset": "INDIVIDUAL"
+                    }
                 }
             },
             "api_config": [
@@ -427,7 +505,7 @@
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_MSTT_PARAM_APPROVE_BUOC4",
+                        "param": "B6_MSTT_PARAM_APPROVE_BUOC4_UAT_2",
                         "name": "TICKET_EVN_SPRO_UPDATE"
                     },
                     "requireAuthenAPI": false
@@ -510,7 +588,11 @@
                         "dataset": "INDIVIDUAL"
                     },
                     "suffix": " - (TCKT)",
-                    "key": "tckt"
+                    "key": {
+                        "infoId": -1800,
+                        "relaId": -4050,
+                        "dataset": "INDIVIDUAL"
+                    }
                 }
             },
             "api_config": [
@@ -518,7 +600,7 @@
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_MSTT_PARAM_FINISH_BUOC5",
+                        "param": "B6_MSTT_PARAM_FINISH_BUOC5_UAT_2",
                         "name": "TICKET_EVN_SPRO_UPDATE"
                     },
                     "requireAuthenAPI": false
@@ -601,7 +683,11 @@
                         "dataset": "INDIVIDUAL"
                     },
                     "suffix": " - (Giao hàng)",
-                    "key": "giao_hang"
+                    "key": {
+                        "infoId": -2100,
+                        "relaId": -4050,
+                        "dataset": "INDIVIDUAL"
+                    }
                 }
             },
             "api_config": [
@@ -609,7 +695,7 @@
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_MSTT_PARAM_APPROVE_BUOC6",
+                        "param": "B6_MSTT_PARAM_APPROVE_BUOC6_UAT_2",
                         "name": "TICKET_EVN_SPRO_UPDATE"
                     },
                     "requireAuthenAPI": false
@@ -692,7 +778,11 @@
                         "dataset": "INDIVIDUAL"
                     },
                     "suffix": " - (Thủ kho)",
-                    "key": "thu_kho"
+                    "key": {
+                        "infoId": -2200,
+                        "relaId": -4050,
+                        "dataset": "INDIVIDUAL"
+                    }
                 }
             },
             "api_config": [
@@ -700,7 +790,7 @@
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_MSTT_PARAM_APPROVE_BUOC7",
+                        "param": "B6_MSTT_PARAM_APPROVE_BUOC7_UAT_2",
                         "name": "TICKET_EVN_SPRO_UPDATE"
                     },
                     "requireAuthenAPI": false

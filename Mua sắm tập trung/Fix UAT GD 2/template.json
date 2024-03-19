@@ -144,21 +144,10 @@
             "additionalDisplayClass": "right-info",
             "id": -8800,
             "position": -8800,
-            "type": "text",
+            "type": "master_data_load_user_info_diachidonvi",
             "conditions": {
                 "required": true
             }
-        },
-        
-        {
-            "id": -8700,
-            "position": -8505,
-            "name": "Ngày lập phiếu",
-            "type": "date",
-            "conditions": {
-                "required": true
-            },
-            "additionalDisplayClass": "right-info"
         },
         {
             "id": -8650,
@@ -194,6 +183,7 @@
             },
             "conditions": {
                 "feedTo": [],
+                "multiple": true,
                 "required": true
             },
             "additionalDisplayClass": "left-info"
@@ -207,7 +197,7 @@
                 "apiConfig": {
                     "param": "B6_PARAM_GET_BY_NUMBER_VOTE_MSTT",
                     "hostnameKey": "SPRO_EVN",
-                    "urlFilter": "/common-spro/get-warehouse-bill",
+                    "urlFilter": "/common-spro/get-many-export-bill",
                     "returnKey": "MT_GET_VENDOR_RP_S"
                 },
                 "searchConfig": {
@@ -219,124 +209,137 @@
             "conditions": {
                 "feedTo": [
                     {
-                        "fieldName": "receiver",
-                        "id": -9650,
-                        "dataset": "INDIVIDUAL"
+                        "fieldName": "infoVote",
+                        "id": -8000,
+                        "type": "table",
+                        "cols": [
+                            {
+                                "fieldName": "numberVoteApprove",
+                                "id": -7990
+                            },
+                            {
+                                "fieldName": "deliveryNoteNumber",
+                                "id": -7985
+                            },
+                            {
+                                "fieldName": "requestDate",
+                                "id": -7980
+                            },
+                            {
+                                "fieldName": "deliver",
+                                "id": -7970
+                            },
+                            {
+                                "fieldName": "orgRequestId",
+                                "id": -7965
+                            },
+                            {
+                                "fieldName": "orgAddress",
+                                "id": -7967
+                            },
+                            {
+                                "fieldName": "location",
+                                "id": -7962
+                            },
+                            {
+                                "fieldName": "reasonName",
+                                "id": -7960
+                            },
+                            {
+                                "fieldName": "reasonCode",
+                                "id": -7955
+                            },
+                            
+                            {
+                                "fieldName": "primaryInventoryId",
+                                "id": -7940
+                            },
+                            {
+                                "fieldName": "primaryInventoryCode",
+                                "id": -7945
+                            },
+                            {
+                                "fieldName": "primaryInventoryName",
+                                "id": -7950
+                            },
+                            {
+                                "fieldName": "subInventoryCode",
+                                "id": -7925
+                            },
+                            {
+                                "fieldName": "subInventoryName",
+                                "id": -7930
+                            },
+                            {
+                                "fieldName": "constructionName",
+                                "id": -7920
+                            },
+                            {
+                                "fieldName": "constructionCode",
+                                "id": -7915
+                            },
+                            {
+                                "fieldName": "description",
+                                "id": -7860
+                            }
+                        ]
                     },
                     {
-                        "fieldName": "deliver",
-                        "id": -8500,
-                        "dataset": "INDIVIDUAL"
-                    },
-                    {
-                        "fieldName": "reasonId",
-                        "id": -8101,
-                        "dataset": "INDIVIDUAL"
-                    },
-                    {
-                        "fieldName": "requestDate",
-                        "id": -8700,
-                        "dataset": "INDIVIDUAL"
-                    },
-                    {
-                        "fieldName": "reasonCode",
-                        "id": -8100,
-                        "dataset": "INDIVIDUAL"
-                    },
-                    {
-                        "fieldName": "reasonName",
-                        "id": -8099,
-                        "dataset": "INDIVIDUAL"
-                    },
-                    {
-                        "fieldName": "description",
-                        "id": -7900,
-                        "dataset": "INDIVIDUAL"
-                    },
-                    {
-                        "fieldName": "primaryInventoryId",
-                        "id": -7800,
-                        "dataset": "INDIVIDUAL"
-                    },
-                    {
-                        "fieldName": "primaryInventoryCode",
-                        "id": -7801,
-                        "dataset": "INDIVIDUAL"
-                    },
-                    {
-                        "fieldName": "primaryInventoryName",
-                        "id": -7802,
-                        "dataset": "INDIVIDUAL"
-                    },
-                    {
-                        "fieldName": "subInventoryName",
-                        "id": -7651,
-                        "dataset": "INDIVIDUAL"
-                    },
-                    {
-                        "fieldName": "subInventoryCode",
-                        "id": -7650,
-                        "dataset": "INDIVIDUAL"
-                    },
-                    {
-                        "fieldName": "constructionCode",
-                        "id": -7700,
-                        "dataset": "INDIVIDUAL"
-                    },
-                    {
-                        "fieldName": "orgRequestName",
-                        "id": -8400,
-                        "dataset": "INDIVIDUAL"
-                    },
-                    {
-                        "fieldName": "constructionName",
-                        "id": -7701,
-                        "dataset": "INDIVIDUAL"
-                    },
-                    {
-                        "fieldName": "listTable",
+                        "fieldName": "infoItem",
                         "id": -7000,
                         "type": "table",
                         "cols": [
                             {
+                                "fieldName": "numberVoteApprove",
+                                "id": -6995
+                            },
+                            {
                                 "fieldName": "materialCode",
-                                "id": -6960
+                                "id": -6990
                             },
                             {
                                 "fieldName": "materialName",
-                                "id": -6940
-                            },
-                            {
-                                "fieldName": "approveQuantity",
-                                "id": -6860
-                            },
-                            {
-                                "fieldName": "approveQuantity",
-                                "id": -6880
+                                "id": -6980
                             },
                             {
                                 "fieldName": "unitPrice",
-                                "id": -6840
+                                "id": -6910
                             },
                             {
                                 "fieldName": "batch",
-                                "id": -6900
+                                "id": -6970
+                            },
+                            {
+                                "fieldName": "approveQuantity",
+                                "id": -6950
+                            },
+                            {
+                                "fieldName": "approveQuantity",
+                                "id": -6940
+                            },
+                            {
+                                "fieldName": "segmentQuantity",
+                                "id": -6930
+                            },
+                            {
+                                "fieldName": "desirableLength",
+                                "id": -6920
                             },
                             {
                                 "fieldName": "amount",
-                                "id": -6820
+                                "id": -6900
                             },
                             {
                                 "fieldName": "accountDebit",
-                                "id": -6800
+                                "id": -6890
                             },
                             {
                                 "fieldName": "accountCredit",
-                                "id": -6780
+                                "id": -6880
                             },
                             {
                                 "fieldName": "unit",
-                                "id": -6920
+                                "id": -6960
                             }
                         ]
                     }
@@ -345,191 +348,16 @@
             },
             "additionalDisplayClass": "left-info"
         },
-        {
-            "name": "Họ tên người giao hàng",
-            "additionalDisplayClass": "left-info",
-            "id": -8500,
-            "position": -8500,
-            "type": "text",
-            "conditions": {
-                "required": true
-            }
-        },
-        {
-            "name": "Đơn vị nhập",
-            "additionalDisplayClass": "left-info",
-            "id": -8400,
-            "position": -8400,
-            "type": "text",
-            "conditions": {
-                "required": true
-            }
-        },
-        {
-            "name": "Theo",
-            "additionalDisplayClass": "right-info",
-            "id": -8300,
-            "position": -8300,
-            "type": "text",
-            "conditions": {
-                "required": false
-            }
-        },
-        {
-            "apiWebConfig": {
-                "apiConfig": {
-                    "hostnameKey": "SPRO_EVN",
-                    "urlFilter": "/common-spro/get-type-erp",
-                    "returnKey": "MT_GET_VENDOR_RP_S"
-                },
-                "searchConfig": {
-                    "idField": "typeName",
-                    "minimumSearch": 0,
-                    "displayField": "typeName"
-                }
-            },
-            "name": "Type trên ERP",
-            "additionalDisplayClass": "left-info",
-            "id": -8200,
-            "position": -8200,
-            "display": false,
-            "type": "apiweb",
-            "conditions": {
-                "feedTo": [],
-                "required": false
-            }
-        },
-        {
-            "id": -8100,
-            "name": "Reason Code",
-            "type": "text",
-            "display": false,
-            "additionalDisplayClass": "right-info",
-            "position": -8100,
-            "conditions": {
-                "required": true
-            }
-        },
-        {
-            "id": -8099,
-            "name": "Lý do nhập kho",
-            "type": "text",
-            "additionalDisplayClass": "right-info",
-            "position": -8099,
-            "conditions": {
-                "required": true
-            }
-        },
-        {
-            "name": "Diễn giải",
-            "additionalDisplayClass": "left-info",
-            "id": -7900,
-            "position": -7900,
-            "type": "textarea",
-            "conditions": {
-                "max-length": 1000,
-                "height": 5,
-                "required": true
-            }
-        },
-        {
-            "display": true,
-            "name": "Nhập tại kho",
-            "additionalDisplayClass": "left-info",
-            "id": -7802,
-            "position": -7802,
-            "conditions": {
-                "required": true
-            },
-            "type": "text"
-        },
-        {
-            "id": -7800,
-            "position": -7800,
-            "name": "primaryInventoryId (id kho)",
-            "type": "text",
-            "additionalDisplayClass": "left-info",
-            "conditions": {
-                "required": true
-            },
-            "display": false
-        },
-        {
-            "display": false,
-            "name": "primaryInventoryCode (Code kho)",
-            "additionalDisplayClass": "left-info",
-            "id": -7801,
-            "position": -7801,
-            "type": "text"
-        },
-        {
-            "display": true,
-            "name": "Nhập tại kho (Kho phụ)",
-            "additionalDisplayClass": "left-info",
-            "id": -7651,
-            "position": -7651,
-            "conditions": {
-                "required": true
-            },
-            "type": "text"
-        },
-        {
-            "display": false,
-            "name": "subInventory (Code kho)",
-            "additionalDisplayClass": "right-info",
-            "id": -7650,
-            "position": -7650,
-            "type": "text"
-        },
-        {
-            "id": -7701,
-            "position": -7610,
-            "name": "Công trình",
-            "display": true,
-            "additionalDisplayClass": "left-info",
-            "type": "text",
-            "conditions": {
-                "required": false
-            }
-        },
-        {
-            "id": -7700,
-            "position": -7700,
-            "name": "Công trình (code)",
-            "display": false,
-            "additionalDisplayClass": "right-info",
-            "type": "text",
-            "conditions": {
-                "required": false
-            }
-        },
-        {
-            "id": -7600,
-            "position": -7600,
-            "name": "Hạng mục",
-            "additionalDisplayClass": "left-info",
-            "display": true,
-            "type": "text",
-            "value": ""
-        },
+        
+        
+        
         {
             "id": -7550,
             "position": -7550,
-            "name": "Đính kèm file",
+            "name": "File đính kèm",
             "type": "upload",
             "conditions": {
                 "required": false
-            },
-            "additionalDisplayClass": "left-info"
-        },
-        {
-            "id": -6001,
-            "position": -6001,
-            "name": "Từ -7000 đến -6000 là dành cho bảng",
-            "type": "text",
-            "display": false,
-            "conditions": {
-                "required": true
             },
             "additionalDisplayClass": "left-info"
         },
@@ -890,9 +718,224 @@
             "type": "text",
             "value": "3001",
             "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -1300,
+            "position": -1300,
+            "name": "Prefix key giám đốc",
+            "display": false,
+            "type": "text",
+            "value": "GIAM_DOC_",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -1200,
+            "position": -1200,
+            "name": "Prefix key thủ kho",
+            "display": false,
+            "type": "text",
+            "value": "THU_KHO_",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -1100,
+            "position": -1100,
+            "name": "Prefix key người giao hàng",
+            "display": false,
+            "type": "text",
+            "value": "NGUOI_GIAO_HANG_",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -1000,
+            "position": -1000,
+            "name": "Prefix key người lập phiếu",
+            "display": false,
+            "type": "text",
+            "value": "NGUOI_LAP_PHIEU_",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -900,
+            "position": -900,
+            "name": "Prefix key KHVT",
+            "display": false,
+            "type": "text",
+            "value": "PHONG_KHVT_",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -800,
+            "position": -800,
+            "name": "Prefix key PHONG_TCKT_",
+            "display": false,
+            "type": "text",
+            "value": "PHONG_TCKT_",
+            "additionalDisplayClass": "right-info"
         }
     ],
     "multitable": [
+        {
+            "id": -8000,
+            "position": -8000,
+            "name": "Thông tin xuất kho",
+            "type": "table",
+            "columns": [
+                {
+                    "id": -7990,
+                    "name": "Số phiếu xuất",
+                    "type": "text",
+                    "position": -7990,
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": -7985,
+                    "name": "Mã phiếu giao hàng",
+                    "type": "text",
+                    "position": -7985,
+                    "display": true,
+                    "conditions": {
+                        "required": false
+                    }
+                },
+                {
+                    "id": -7980,
+                    "name": "Ngày lập phiếu",
+                    "type": "date",
+                    "position": -7980,
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "Họ và tên người giao hàng",
+                    "id": -7970,
+                    "position": -7970,
+                    "type": "text",
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "Đơn vị nhập",
+                    "id": -7967,
+                    "position": -7967,
+                    "display": false,
+                    "type": "text",
+                    "conditions": {
+                        "required": false
+                    }
+                },
+                {
+                    "name": "orgRequestId",
+                    "id": -7965,
+                    "position": -7965,
+                    "display": false,
+                    "type": "text",
+                    "conditions": {
+                        "required": false
+                    }
+                },
+                {
+                    "name": "Đơn vị nhập",
+                    "id": -7964,
+                    "position": -7964,
+                    "display": true,
+                    "type": "text",
+                    "conditions": {
+                        "required": false
+                    }
+                },
+                {
+                    "name": "Địa chỉ",
+                    "id": -7962,
+                    "position": -7962,
+                    "type": "text",
+                    "conditions": {
+                        "required": false
+                    }
+                },
+                {
+                    "name": "Lý do nhập kho",
+                    "id": -7960,
+                    "position": -7960,
+                    "type": "text",
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "reason code (code lý do nhập kho)",
+                    "id": -7955,
+                    "position": -7955,
+                    "type": "text",
+                    "display": false
+                },
+                {
+                    "id": -7950,
+                    "name": "Nhập tại kho",
+                    "type": "text",
+                    "position": -7950,
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": -7945,
+                    "name": "Code kho Nhập chính (PRIMARY_CODE)",
+                    "type": "text",
+                    "position": -7945,
+                    "display": false
+                },
+                {
+                    "id": -7940,
+                    "name": "Id kho Nhập chính (PRIMARY_ID)",
+                    "type": "text",
+                    "position": -7940,
+                    "display": false
+                },
+                {
+                    "id": -7930,
+                    "name": "Nhập tại kho phụ",
+                    "type": "text",
+                    "position": -7930
+                },
+                {
+                    "id": -7925,
+                    "name": "Code kho phụ Nhập (SECONDARY_CODE)",
+                    "type": "text",
+                    "position": -7925,
+                    "display": false
+                },
+                {
+                    "name": "Công trình",
+                    "id": -7920,
+                    "position": -7920,
+                    "type": "text",
+                    "display": true,
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "name": "Code công trình nhập",
+                    "id": -7915,
+                    "position": -7915,
+                    "type": "text",
+                    "display": false
+                },
+                {
+                    "name": "Diễn giải",
+                    "id": -7860,
+                    "position": -7860,
+                    "type": "text",
+                    "display": true
+                }
+                
+            ]
+        },
         {
             "id": -7000,
             "position": -7000,
@@ -900,8 +943,17 @@
             "type": "table",
             "columns": [
                 {
-                    "id": -6960,
-                    "position": -6960,
+                    "id": -6995,
+                    "position": -6995,
+                    "name": "Số phiếu nhập",
+                    "type": "text",
+                    "conditions": {
+                        "required": true
+                    }
+                },
+                {
+                    "id": -6990,
+                    "position": -6990,
                     "name": "Mã vật tư",
                     "type": "text",
                     "conditions": {
@@ -909,8 +961,8 @@
                     }
                 },
                 {
-                    "id": -6940,
-                    "position": -6940,
+                    "id": -6980,
+                    "position": -6980,
                     "name": "Tên vật tư và quy cách",
                     "type": "text",
                     "conditions": {
@@ -918,8 +970,8 @@
                     }
                 },
                 {
-                    "id": -6920,
-                    "position": -6920,
+                    "id": -6960,
+                    "position": -6960,
                     "name": "Đơn vị tính",
                     "type": "text",
                     "conditions": {
@@ -928,16 +980,16 @@
                 },
                 {
                     "name": "Lô vật tư",
-                    "id": -6900,
-                    "position": -6900,
+                    "id": -6970,
+                    "position": -6970,
                     "type": "text",
                     "conditions": {
                         "required": false
                     }
                 },
                 {
-                    "id": -6880,
-                    "position": -6880,
+                    "id": -6950,
+                    "position": -6950,
                     "name": "Số lượng yêu cầu",
                     "type": "finance",
                     "conditions": {
@@ -945,8 +997,8 @@
                     }
                 },
                 {
-                    "id": -6860,
-                    "position": -6860,
+                    "id": -6940,
+                    "position": -6940,
                     "name": "Số lượng thực nhập",
                     "type": "finance",
                     "conditions": {
@@ -954,8 +1006,8 @@
                     }
                 },
                 {
-                    "id": -9850,
-                    "position": -6855,
+                    "id": -6930,
+                    "position": -6930,
                     "name": "Số lượng đoạn",
                     "type": "finance",
                     "conditions": {
@@ -963,8 +1015,8 @@
                     }
                 },
                 {
-                    "id": -9855,
-                    "position": -6850,
+                    "id": -6920,
+                    "position": -6920,
                     "name": "Độ dài mong muốn",
                     "type": "finance",
                     "conditions": {
@@ -972,8 +1024,8 @@
                     }
                 },
                 {
-                    "id": -6840,
-                    "position": -6840,
+                    "id": -6910,
+                    "position": -6910,
                     "name": "Đơn giá",
                     "type": "finance",
                     "conditions": {
@@ -981,8 +1033,8 @@
                     }
                 },
                 {
-                    "id": -6820,
-                    "position": -6820,
+                    "id": -6900,
+                    "position": -6900,
                     "display": true,
                     "name": "Thành tiền",
                     "type": "finance",
@@ -991,8 +1043,8 @@
                     }
                 },
                 {
-                    "id": -6800,
-                    "position": -6800,
+                    "id": -6890,
+                    "position": -6890,
                     "name": "Tài khoản nợ",
                     "type": "text",
                     "conditions": {
@@ -1000,8 +1052,8 @@
                     }
                 },
                 {
-                    "id": -6780,
-                    "position": -6780,
+                    "id": -6880,
+                    "position": -6880,
                     "name": "Tài khoản có",
                     "type": "text",
                     "conditions": {
