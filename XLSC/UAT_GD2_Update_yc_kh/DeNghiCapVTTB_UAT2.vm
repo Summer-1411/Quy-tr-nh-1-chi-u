@@ -407,13 +407,11 @@
             style="margin-top: 10pt; margin-left: 0pt; margin-right: 5pt;">
             <tr>
                 <th width="40%" style="text-align: center; font-size:10pt">
-                    <span style="font-weight: normal;">TỔNG CÔNG TY</span>
+                    <span style="font-weight: normal;text-transform: uppercase;">$DonViDeNghi</span>
                     <br />
-                    <span style="font-weight: normal;">ĐIỆN LỰC TP HÀ NỘI </span>
+                    <b style="border-bottom: 1px solid black;text-transform: uppercase;">$PhongBan</b>
                     <br />
-                    <b style="border-bottom: 1px solid black;">$DonViDeNghi</b>
-                    <br />
-                    <div style="font-weight: normal;">Số: $SoToTrinh/ĐN - $DonViDeNghi</div>
+                    <div style="font-weight: normal;">Số: $SoToTrinh</div>
                 </th>
                 <th width="60%" style="text-align: center; font-size:10pt">
                     <span style="text-align: center;">
@@ -438,8 +436,10 @@
         <div>
             <table class="tableHeader">
                 <tr>
-                    <td style="text-align: center; font-size:13pt; font-weight: bold;">
-                        <b>ĐỀ NGHỊ CẤP VẬT TƯ THIẾT BỊ</b>
+                    <td style="text-align: center; font-size:13pt;">
+                        <b style="font-weight: bold;">ĐỀ NGHỊ</b>
+                        <br />
+                        <span>V/v cấp VTTB</span>
                     </td>
                 </tr>
                 <tr>
@@ -525,7 +525,7 @@
                     <th style="text-align: center">
                         <p style="font-size:2pt; color: white">$ChuKy_TPPKHVT</p>
                         <span style="font-size:2pt; color: white">$Small*ChuKy_ChuyenVienKHVT</span>
-                        <b>TRƯỞNG/PHÓ PHÒNG KHVT</b>
+                        <b>PHÒNG KHVT</b>
                         <br />
                         <br />
                         <br />
@@ -536,7 +536,7 @@
                     <th style="text-align: center">
                         <p style="font-size:2pt; color: white">$ChuKy_TPPKT</p>
                         <span style="font-size:2pt; color: white">$Small*ChuKy_ChuyenVienKT</span>
-                        <b>TRƯỞNG/PHÓ PHÒNG KT</b>
+                        <b>PHÒNG KT</b>
                         <br />
                         <br />
                         <br />

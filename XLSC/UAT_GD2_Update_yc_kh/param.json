@@ -1,4 +1,12 @@
 UAT GD 2 Start
+
+EVN_SPRO_PARAM_PICKER_FILTER_CREAT_NUMBER_VOTE_DE_NGHI_XLSC_1_CHIEU
+{
+    "warehouseCode":"-9994",
+    "type":"-9995",
+    "pickerFilter": "numberVote"
+}
+
 B6_PARAM_MA_VAT_TU_XLSC_UAT_2
 {
     "erpId":"9989",
@@ -120,7 +128,7 @@ B6_PARAM_FINISH_BUOC11_XLSC_UAT_2
                 "materialName": "(-7980)",
                 "unit": "(-7960)",
                 "requestQuantity": "(-7950)",
-                "approveQuantity": "(-7940)",
+                "approveQuantity": "(-7950)",
                 "batch": "(-7970)",
                 "unitPrice": "(-7910)",
                 "amount": "(-7900)",
@@ -176,7 +184,7 @@ B6_PARAM_FINISH_BUOC13_XLSC_UAT_2
                 "materialName": "(-7980)",
                 "unit": "(-7960)",
                 "requestQuantity": "(-7950)",
-                "approveQuantity": "(-7940)",
+                "approveQuantity": "(-7950)",
                 "batch": "(-7970)",
                 "unitPrice": "(-7910)",
                 "amount": "(-7900)",
@@ -232,7 +240,7 @@ B6_PARAM_FINISH_BUOC13_5_XLSC_UAT_2
                 "materialName": "(-7980)",
                 "unit": "(-7960)",
                 "requestQuantity": "(-7950)",
-                "approveQuantity": "(-7940)",
+                "approveQuantity": "(-7950)",
                 "batch": "(-7970)",
                 "unitPrice": "(-7910)",
                 "amount": "(-7900)",
@@ -304,7 +312,7 @@ B6_PARAM_APPROVE_BUOC14_1_XLSC_UAT_2
                 "materialName": "(-7980)",
                 "unit": "(-7960)",
                 "requestQuantity": "(-7950)",
-                "approveQuantity": "(-7940)",
+                "approveQuantity": "(-7950)",
                 "batch": "(-7970)",
                 "unitPrice": "(-7910)",
                 "amount": "(-7900)",
@@ -376,7 +384,7 @@ B6_PARAM_APPROVE_BUOC14_2_XLSC_UAT_2
                 "materialName": "(-7980)",
                 "unit": "(-7960)",
                 "requestQuantity": "(-7950)",
-                "approveQuantity": "(-7940)",
+                "approveQuantity": "(-7950)",
                 "batch": "(-7970)",
                 "unitPrice": "(-7910)",
                 "amount": "(-7900)",
@@ -448,7 +456,7 @@ B6_PARAM_APPROVE_BUOC15_XLSC_UAT_2
                 "materialName": "(-7980)",
                 "unit": "(-7960)",
                 "requestQuantity": "(-7950)",
-                "approveQuantity": "(-7940)",
+                "approveQuantity": "(-7950)",
                 "batch": "(-7970)",
                 "unitPrice": "(-7910)",
                 "amount": "(-7900)",
@@ -540,7 +548,7 @@ B6_PARAM_APPROVE_BUOC18_XLSC_UAT_2
                 "materialName": "(-7980)",
                 "unit": "(-7960)",
                 "requestQuantity": "(-7950)",
-                "approveQuantity": "(-7940)",
+                "approveQuantity": "(-7950)",
                 "batch": "(-7970)",
                 "unitPrice": "(-7910)",
                 "amount": "(-7900)",
@@ -618,7 +626,7 @@ B6_PARAM_APPROVE_BUOC19_XLSC_UAT_2
                 "materialName": "(-7980)",
                 "unit": "(-7960)",
                 "requestQuantity": "(-7950)",
-                "approveQuantity": "(-7940)",
+                "approveQuantity": "(-7950)",
                 "batch": "(-7970)",
                 "unitPrice": "(-7910)",
                 "amount": "(-7900)",
