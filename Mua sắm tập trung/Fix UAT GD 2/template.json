@@ -139,21 +139,13 @@
             "position": -8901,
             "additionalDisplayClass": "left-info"
         },
-        {
-            "name": "Địa chỉ",
-            "additionalDisplayClass": "right-info",
-            "id": -8800,
-            "position": -8800,
-            "type": "master_data_load_user_info_diachidonvi",
-            "conditions": {
-                "required": true
-            }
-        },
+        
         {
             "id": -8650,
             "position": -8650,
             "name": "Năm",
             "type": "DATE",
+            "valuefeeder": "Now",
             "display": true,
             "conditions": {
                 "required": true,
@@ -218,10 +210,6 @@
                                 "id": -7990
                             },
                             {
-                                "fieldName": "deliveryNoteNumber",
-                                "id": -7985
-                            },
-                            {
                                 "fieldName": "requestDate",
                                 "id": -7980
                             },
@@ -279,7 +267,11 @@
                                 "id": -7915
                             },
                             {
-                                "fieldName": "description",
+                                "fieldName": "category",
+                                "id": -7870
+                            },
+                            {
+                                "fieldName": "description",  
                                 "id": -7860
                             }
                         ]
@@ -786,18 +778,9 @@
                     "name": "Số phiếu xuất",
                     "type": "text",
                     "position": -7990,
+                    "disabled": true,
                     "conditions": {
                         "required": true
-                    }
-                },
-                {
-                    "id": -7985,
-                    "name": "Mã phiếu giao hàng",
-                    "type": "text",
-                    "position": -7985,
-                    "display": true,
-                    "conditions": {
-                        "required": false
                     }
                 },
                 {
@@ -805,6 +788,7 @@
                     "name": "Ngày lập phiếu",
                     "type": "date",
                     "position": -7980,
+                    "disabled": true,
                     "conditions": {
                         "required": true
                     }
@@ -814,6 +798,7 @@
                     "id": -7970,
                     "position": -7970,
                     "type": "text",
+                    "disabled": true,
                     "conditions": {
                         "required": true
                     }
@@ -834,25 +819,28 @@
                     "position": -7965,
                     "display": false,
                     "type": "text",
-                    "conditions": {
-                        "required": false
-                    }
-                },
-                {
-                    "name": "Đơn vị nhập",
-                    "id": -7964,
-                    "position": -7964,
-                    "display": true,
-                    "type": "text",
+                    "disabled": true,
                     "conditions": {
                         "required": false
                     }
                 },
                 {
                     "name": "Địa chỉ",
+                    "id": -7964,
+                    "position": -7964,
+                    "display": true,
+                    "type": "text",
+                    "disabled": true,
+                    "conditions": {
+                        "required": false
+                    }
+                },
+                {
+                    "name": "Đơn vị nhập",
                     "id": -7962,
                     "position": -7962,
                     "type": "text",
+                    "disabled": true,
                     "conditions": {
                         "required": false
                     }
@@ -862,6 +850,7 @@
                     "id": -7960,
                     "position": -7960,
                     "type": "text",
+                    "disabled": true,
                     "conditions": {
                         "required": true
                     }
@@ -878,6 +867,7 @@
                     "name": "Nhập tại kho",
                     "type": "text",
                     "position": -7950,
+                    "disabled": true,
                     "conditions": {
                         "required": true
                     }
@@ -900,6 +890,7 @@
                     "id": -7930,
                     "name": "Nhập tại kho phụ",
                     "type": "text",
+                    "disabled": true,
                     "position": -7930
                 },
                 {
@@ -915,8 +906,9 @@
                     "position": -7920,
                     "type": "text",
                     "display": true,
+                    "disabled": true,
                     "conditions": {
-                        "required": true
+                        "required": false
                     }
                 },
                 {
@@ -924,12 +916,25 @@
                     "id": -7915,
                     "position": -7915,
                     "type": "text",
+                    "disabled": true,
                     "display": false
+                },
+                {
+                    "name": "Hạng mục",
+                    "id": -7870,
+                    "position": -7870,
+                    "type": "text",
+                    "disabled": true,
+                    "display": true,
+                    "conditions": {
+                        "required": false
+                    }
                 },
                 {
                     "name": "Diễn giải",
                     "id": -7860,
                     "position": -7860,
+                    "disabled": true,
                     "type": "text",
                     "display": true
                 }
@@ -947,6 +952,7 @@
                     "position": -6995,
                     "name": "Số phiếu nhập",
                     "type": "text",
+                    "disabled": true,
                     "conditions": {
                         "required": true
                     }
@@ -956,6 +962,7 @@
                     "position": -6990,
                     "name": "Mã vật tư",
                     "type": "text",
+                    "disabled": true,
                     "conditions": {
                         "required": true
                     }
@@ -965,6 +972,7 @@
                     "position": -6980,
                     "name": "Tên vật tư và quy cách",
                     "type": "text",
+                    "disabled": true,
                     "conditions": {
                         "required": true
                     }
@@ -974,6 +982,7 @@
                     "position": -6960,
                     "name": "Đơn vị tính",
                     "type": "text",
+                    "disabled": true,
                     "conditions": {
                         "required": true
                     }
@@ -983,6 +992,7 @@
                     "id": -6970,
                     "position": -6970,
                     "type": "text",
+                    "disabled": true,
                     "conditions": {
                         "required": false
                     }
@@ -992,6 +1002,7 @@
                     "position": -6950,
                     "name": "Số lượng yêu cầu",
                     "type": "finance",
+                    "disabled": true,
                     "conditions": {
                         "required": true
                     }
@@ -1001,6 +1012,7 @@
                     "position": -6940,
                     "name": "Số lượng thực nhập",
                     "type": "finance",
+                    "disabled": true,
                     "conditions": {
                         "required": true
                     }
@@ -1028,6 +1040,7 @@
                     "position": -6910,
                     "name": "Đơn giá",
                     "type": "finance",
+                    "disabled": true,
                     "conditions": {
                         "required": true
                     }
@@ -1038,6 +1051,7 @@
                     "display": true,
                     "name": "Thành tiền",
                     "type": "finance",
+                    "disabled": true,
                     "conditions": {
                         "required": true
                     }
@@ -1047,6 +1061,7 @@
                     "position": -6890,
                     "name": "Tài khoản nợ",
                     "type": "text",
+                    "disabled": true,
                     "conditions": {
                         "required": true
                     }
@@ -1056,6 +1071,7 @@
                     "position": -6880,
                     "name": "Tài khoản có",
                     "type": "text",
+                    "disabled": true,
                     "conditions": {
                         "required": true
                     }

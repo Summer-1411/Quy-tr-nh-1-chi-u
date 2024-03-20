@@ -106,7 +106,7 @@ B6_MSTT_PARAM_CREATE_TICKET_BUOC1_UAT_2
                 "primaryInventory": "(-7945)",
                 "subInventory": "(-7925)",
                 "requestDate": "(-7980)",
-                "numberDeliveryNote": "(-7985)",
+                "category": "(-7870)",
                 "addressOrg": "(-7967)"
             }(endt)
         ],
@@ -175,7 +175,7 @@ B6_MSTT_PARAM_APPROVE_BUOC3_UAT_2
                 "primaryInventory": "(-7945)",
                 "subInventory": "(-7925)",
                 "requestDate": "(-7980)",
-                "numberDeliveryNote": "(-7985)",
+                "category": "(-7870)",
                 "addressOrg": "(-7967)"
             }(endt)
         ],
@@ -243,7 +243,7 @@ B6_MSTT_PARAM_APPROVE_BUOC4_UAT_2
                 "primaryInventory": "(-7945)",
                 "subInventory": "(-7925)",
                 "requestDate": "(-7980)",
-                "numberDeliveryNote": "(-7985)",
+                "category": "(-7870)",
                 "addressOrg": "(-7967)"
             }(endt)
         ],
@@ -321,7 +321,7 @@ B6_MSTT_PARAM_APPROVE_BUOC6_UAT_2
                 "primaryInventory": "(-7945)",
                 "subInventory": "(-7925)",
                 "requestDate": "(-7980)",
-                "numberDeliveryNote": "(-7985)",
+                "category": "(-7870)",
                 "addressOrg": "(-7967)"
             }(endt)
         ],
@@ -390,7 +390,7 @@ B6_MSTT_PARAM_APPROVE_BUOC7_UAT_2
                 "primaryInventory": "(-7945)",
                 "subInventory": "(-7925)",
                 "requestDate": "(-7980)",
-                "numberDeliveryNote": "(-7985)",
+                "category": "(-7870)",
                 "addressOrg": "(-7967)"
             }(endt)
         ],
