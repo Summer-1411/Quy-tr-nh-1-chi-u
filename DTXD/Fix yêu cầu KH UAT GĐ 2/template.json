@@ -310,6 +310,7 @@
             "additionalDisplayClass": "right-info",
             "position": -9850,
             "conditions": {
+                "required": true,
                 "feedTo": []
             }
         },
@@ -421,7 +422,7 @@
             "additionalDisplayClass": "right-info"
         },
         {
-            "display": true,
+            "display": false,
             "name": "Chức vụ trưởng phòng được chọn",
             "additionalDisplayClass": "left-info",
             "id": -9455,

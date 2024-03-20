@@ -1717,6 +1717,7 @@
             "status": "finished"
         },
         {
+            "requestUpdateUnlock": true,
             "customNote": "Bước 1.5 Chuyên viên KHVT duyệt",
             "autocreate": true,
             "api_config": [
@@ -1959,9 +1960,11 @@
                 ]
             },
             "type": "default",
+            "requestUpdateKeepData": true,
             "status": "waiting"
         },
         {
+            "requestUpdateUnlock": true,
             "customNote": "Bước 2",
             "autocreate": true,
             "api_config": [
@@ -2011,6 +2014,7 @@
             "status": "waiting"
         },
         {
+            "requestUpdateUnlock": true,
             "customNote": "Bước 2.5",
             "advancedConfig": {
                 "signature_evn": {
@@ -2095,6 +2099,7 @@
             "status": "waiting"
         },
         {
+            "requestUpdateUnlock": true,
             "customNote": "Bước 3",
             "advancedConfig": {
                 "signature_evn": {
@@ -2179,6 +2184,7 @@
             "status": "waiting"
         },
         {
+            "requestUpdateUnlock": true,
             "customNote": "Bước 4",
             "api_config": [
                 {
@@ -2240,6 +2246,7 @@
             "status": "waiting"
         },
         {
+            "requestUpdateUnlock": true,
             "customNote": "Bước 5",
             "advancedConfig": {
                 "signature_evn": {
@@ -2372,6 +2379,7 @@
             "status": "waiting"
         },
         {
+            "requestUpdateUnlock": true,
             "customNote": "Bước 6",
             "advancedConfig": {
                 "signature_evn": {
@@ -2456,6 +2464,7 @@
             "status": "waiting"
         },
         {
+            "requestUpdateUnlock": true,
             "customNote": "Bước 7",
             "advancedConfig": {
                 "signature_evn": {
@@ -2562,6 +2571,7 @@
             "relatedTo": -7080
         },
         {
+            "requestUpdateUnlock": true,
             "customNote": "Bước 8",
             "api_config": [
                 {
@@ -2925,10 +2935,23 @@
                                     "fieldName": "fullName",
                                     "id": -5500,
                                     "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "positionName",
+                                    "id": -5550,
+                                    "dataset": "INDIVIDUAL"
                                 }
                             ],
                             "required": true
                         }
+                    },
+                    {
+                        "display": false,
+                        "name": "Chức vụ người được chọn ở 5600",
+                        "additionalDisplayClass": "left-info",
+                        "id": -5550,
+                        "position": -5550,
+                        "type": "text"
                     },
                     {
                         "display": false,
@@ -3107,6 +3130,7 @@
                                 "id": -8990,
                                 "name": "Số phiếu xuất",
                                 "type": "text",
+                                "disabled": true,
                                 "position": -8990,
                                 "conditions": {
                                     "required": true
@@ -3118,6 +3142,7 @@
                                 "type": "text",
                                 "position": -8985,
                                 "display": false,
+                                "disabled": true,
                                 "conditions": {
                                     "required": false
                                 }
@@ -3127,6 +3152,7 @@
                                 "name": "Ngày lập phiếu",
                                 "type": "date",
                                 "position": -8980,
+                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
@@ -3137,7 +3163,7 @@
                                 "position": -8970,
                                 "type": "text",
                                 "conditions": {
-                                    "required": true
+                                    "required": false
                                 }
                             },
                             {
@@ -3145,6 +3171,7 @@
                                 "id": -8965,
                                 "position": -8965,
                                 "display": false,
+                                "disabled": true,
                                 "type": "text",
                                 "conditions": {
                                     "required": false
@@ -3155,6 +3182,7 @@
                                 "id": -8962,
                                 "position": -8962,
                                 "type": "text",
+                                "disabled": true,
                                 "conditions": {
                                     "required": false
                                 }
@@ -3164,6 +3192,7 @@
                                 "id": -8961,
                                 "display": false,
                                 "position": -8961,
+                                "disabled": true,
                                 "type": "text",
                                 "conditions": {
                                     "required": false
@@ -3174,6 +3203,7 @@
                                 "id": -8960,
                                 "position": -8960,
                                 "type": "text",
+                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
@@ -3182,6 +3212,7 @@
                                 "name": "reason code (code lý do xuất kho)",
                                 "id": -8955,
                                 "position": -8955,
+                                "disabled": true,
                                 "type": "text",
                                 "display": false
                             },
@@ -3190,6 +3221,7 @@
                                 "name": "Xuất tại kho",
                                 "type": "text",
                                 "position": -8950,
+                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
@@ -3212,6 +3244,7 @@
                                 "id": -8930,
                                 "name": "Xuất tại kho phụ",
                                 "type": "text",
+                                "disabled": true,
                                 "position": -8930
                             },
                             {
@@ -3219,6 +3252,7 @@
                                 "name": "Code kho phụ xuất (SECONDARY_CODE)",
                                 "type": "text",
                                 "position": -8925,
+                                "disabled": true,
                                 "display": false
                             },
                             {
@@ -3227,6 +3261,7 @@
                                 "position": -8920,
                                 "type": "text",
                                 "display": true,
+                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
@@ -3235,6 +3270,7 @@
                                 "name": "Code công trình xuất",
                                 "id": -8915,
                                 "position": -8915,
+                                "disabled": true,
                                 "type": "text",
                                 "display": false
                             },
@@ -3243,6 +3279,7 @@
                                 "name": "Nhập tại kho",
                                 "type": "text",
                                 "position": -8910,
+                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
@@ -3252,6 +3289,7 @@
                                 "name": "Code kho nhập chính (codePrimaryInventory1)",
                                 "type": "text",
                                 "position": -8900,
+                                "disabled": true,
                                 "display": false
                             },
                             {
@@ -3259,12 +3297,14 @@
                                 "name": "Id kho nhập (idPrimaryInventory1)",
                                 "type": "text",
                                 "position": -8890,
+                                "disabled": true,
                                 "display": false
                             },
                             {
                                 "name": "Công trình nhập",
                                 "id": -8880,
                                 "position": -8880,
+                                "disabled": true,
                                 "type": "text",
                                 "display": true
                             },
@@ -3272,6 +3312,7 @@
                                 "name": "Code công trình nhập",
                                 "id": -8870,
                                 "position": -8870,
+                                "disabled": true,
                                 "type": "text",
                                 "display": false
                             },
@@ -3279,6 +3320,7 @@
                                 "name": "Diễn giải",
                                 "id": -8860,
                                 "position": -8860,
+                                "disabled": true,
                                 "type": "text",
                                 "display": true
                             }
@@ -3296,6 +3338,7 @@
                                 "name": "Số phiếu xuất",
                                 "type": "text",
                                 "position": -7995,
+                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
@@ -3305,6 +3348,7 @@
                                 "id": -7990,
                                 "position": -7990,
                                 "type": "text",
+                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
@@ -3314,6 +3358,7 @@
                                 "id": -7980,
                                 "position": -7980,
                                 "type": "text",
+                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
@@ -3323,6 +3368,7 @@
                                 "id": -7970,
                                 "position": -7970,
                                 "type": "text",
+                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
@@ -3332,6 +3378,7 @@
                                 "id": -7960,
                                 "position": -7960,
                                 "type": "text",
+                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
@@ -3341,6 +3388,7 @@
                                 "id": -7950,
                                 "position": -7950,
                                 "type": "finance",
+                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
@@ -3350,24 +3398,27 @@
                                 "id": -7940,
                                 "position": -7940,
                                 "type": "finance",
+                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
                             },
                             {
-                                "name": "Độ dài mong muốn",
+                                "name": "Số lượng đoạn",
                                 "id": -7930,
-                                "position": -7930,
+                                "position": -7920,
                                 "type": "finance",
+                                "disabled": true,
                                 "conditions": {
                                     "required": false
                                 }
                             },
                             {
-                                "name": "Số lượng đoạn",
+                                "name": "Độ dài mong muốn",
                                 "id": -7920,
-                                "position": -7920,
+                                "position": -7930,
                                 "type": "finance",
+                                "disabled": true,
                                 "conditions": {
                                     "required": false
                                 }
@@ -3377,6 +3428,7 @@
                                 "id": -7910,
                                 "position": -7910,
                                 "type": "finance",
+                                "disabled": true,
                                 "conditions": {
                                     "required": false
                                 }
@@ -3388,6 +3440,7 @@
                                 "id": -7900,
                                 "position": -7900,
                                 "type": "finance",
+                                "disabled": true,
                                 "conditions": {
                                     "required": false
                                 }
@@ -3396,7 +3449,8 @@
                                 "name": "TK nợ",
                                 "id": -7890,
                                 "position": -7890,
-                                "type": "finance",
+                                "type": "text",
+                                "disabled": true,
                                 "conditions": {
                                     "required": false
                                 }
@@ -3405,7 +3459,8 @@
                                 "name": "TK có",
                                 "id": -7880,
                                 "position": -7880,
-                                "type": "finance",
+                                "type": "text",
+                                "disabled": true,
                                 "conditions": {
                                     "required": false
                                 }
@@ -3430,6 +3485,7 @@
             "relatedTo": -8090
         },
         {
+            "requestUpdateUnlock": true,
             "customNote": "Bước 9",
             "api_config": [
                 {
@@ -3572,7 +3628,7 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -3669,7 +3725,7 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -3763,7 +3819,7 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -3865,7 +3921,7 @@
             "requestUpdateKeepData": true
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -3961,7 +4017,7 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -4033,7 +4089,7 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -4155,7 +4211,7 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -4303,7 +4359,7 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,

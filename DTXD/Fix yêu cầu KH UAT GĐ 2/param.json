@@ -56,6 +56,7 @@ B6_PARAM_GET_FILE_EXPORT_DTXD
     "headOrg": "-5000,-80,-90",
     "khvt":"-5600,-80,-90",
     "storekeeper":"-5800,-80,-90",
+    "position": "-5550,-80,-90",
     "userCreate":"-9500,-40,-50"
 }
 
