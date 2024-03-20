@@ -25,6 +25,29 @@
             "additionalDisplayClass": "left-info"
         },
         {
+            "display": false,
+            "name": "SortName kho",
+            "disabled": true,
+            "additionalDisplayClass": "left-info",
+            "id": -9994,
+            "position": -9994,
+            "type": "master_data_load_user_info_shortnameorg",
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "display": false,
+            "id": -9995,
+            "name": "Type số",
+            "value": "REQUEST",
+            "type": "text",
+            "position": -9995,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
             "id": -9991,
             "position": -9991,
             "name": "Họ tên người lập yêu cầu",
@@ -172,7 +195,7 @@
             "additionalDisplayClass": "left-info",
             "position": -9900,
             "conditions": {
-                "required": true,
+                "required": false,
                 "feedTo": [
                     {
                         "id": -9901,
@@ -236,7 +259,7 @@
             "id": -9865,
             "name": "Diễn giải",
             "type": "textarea",
-            "value": "Giám đốc công ty",
+            "value": "",
             "additionalDisplayClass": "right-info",
             "position": -9865,
             "conditions": {
@@ -268,6 +291,29 @@
             }
         },
         {
+            "apiWebConfig": {
+                "apiConfig": {
+                    "param": "EVN_SPRO_PARAM_PICKER_FILTER_CREAT_NUMBER_VOTE_DE_NGHI_DTXD_1_CHIEU",
+                    "hostnameKey": "SPRO_EVN",
+                    "urlFilter": "/common-spro/create-number-vote",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "numberVote",
+                    "minimumSearch": 0,
+                    "displayField": "numberVote"
+                    }
+            },
+            "id": -9850,
+            "name": "Số đề nghị",
+            "type": "apiweb",
+            "additionalDisplayClass": "right-info",
+            "position": -9850,
+            "conditions": {
+                "feedTo": []
+            }
+        },
+        {
             "id": -9840,
             "name": "Tra cứu tồn kho",
             "type": "link",
@@ -295,6 +341,11 @@
                     {
                         "id": -9605,
                         "fieldName": "fullName",
+                        "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "id": -9455,
+                        "fieldName": "positionName",
                         "dataset": "INDIVIDUAL"
                     }
                 ],
@@ -370,6 +421,14 @@
             "additionalDisplayClass": "right-info"
         },
         {
+            "display": true,
+            "name": "Chức vụ trưởng phòng được chọn",
+            "additionalDisplayClass": "left-info",
+            "id": -9455,
+            "position": -9455,
+            "type": "text"
+        },
+        {
             "display": false,
             "name": "Họ tên trưởng phòng KHVT",
             "additionalDisplayClass": "left-info",
@@ -378,10 +437,35 @@
             "type": "text"
         },
         {
+            "id": -9425,
+            "position": -9425,
+            "name": "Chọn chuyên viên KHVT",
+            "type": "apiweb",
+            "conditions": {
+                "feedTo": [],
+                "required": true
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_CHUYEN_VIEN_PHONG_KHVT_DTXD",
+                    "urlFilter": "/common-spro/getUserByPosition",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "userName",
+                    "minimumSearch": 0,
+                    "displayField": "fullName"
+                }
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
             "id": -9400,
             "position": -9400,
             "name": "Đính kèm file",
             "type": "upload",
+            "staticContent": "<p style='font-size: 14px; color: red; font-style: italic'>Người dùng đính kèm các hồ sơ liên quan</p>",
             "conditions": {
                 "required": false
             },
@@ -643,52 +727,6 @@
                     }
                 },
                 {
-                    "id": -9698,
-                    "position": -9698,
-                    "name": "Số lượng tồn kho",
-                    "type": "apiweb",
-                    "conditions": {
-                        "required": true,
-                        "feedTo": []
-                    },
-                    "apiWebConfig": {
-                        "apiConfig": {
-                            "param": "B6_DTXD_PARAM_GET_MATERIAL_INVENTORY_QUANTITY",
-                            "hostnameKey": "SPRO_EVN",
-                            "urlFilter": "/common-spro/get-material-inventory-info",
-                            "returnKey": "MT_GET_VENDOR_RP_S"
-                        },
-                        "searchConfig": {
-                            "idField": "availableQuantity",
-                            "minimumSearch": 0,
-                            "displayField": "availableQuantity"
-                        }
-                    }
-                },
-                {
-                    "id": -9696,
-                    "position": -9696,
-                    "name": "Số lượng có thể xuất",
-                    "type": "apiweb",
-                    "conditions": {
-                        "required": true,
-                        "feedTo": []
-                    }, 
-                    "apiWebConfig": {
-                        "apiConfig": {
-                            "param": "B6_DTXD_GET_MATERIAL_REQUEST_QUANTITY",
-                            "hostnameKey": "SPRO_EVN",
-                            "urlFilter": "/common-spro/get-material-available-export",
-                            "returnKey": "MT_GET_VENDOR_RP_S"
-                        },
-                        "searchConfig": {
-                            "idField": "exportQuantity",
-                            "minimumSearch": 0,
-                            "displayField": "exportQuantity"
-                        }
-                    }
-                },
-                {
                     "id": -9692,
                     "position": -9694,
                     "name": "Độ dài mong muốn",
@@ -714,6 +752,15 @@
                     "conditions": {
                         "required": false
                     }
+                },
+                {
+                    "id": -1111,
+                    "position": -1111,
+                    "name": "String empty",
+                    "display": false,
+                    "type": "text",
+                    "value": "",
+                    "additionalDisplayClass": "right-info"
                 }
             ]
         }

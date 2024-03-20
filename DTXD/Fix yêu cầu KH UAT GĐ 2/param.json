@@ -1,4 +1,21 @@
 GĐ 2 UAT
+
+EVN_SPRO_PARAM_PICKER_FILTER_CREAT_NUMBER_VOTE_DE_NGHI_DTXD_1_CHIEU
+{
+    "warehouseCode":"-9994",
+    "type":"-9995",
+    "pickerFilter": "numberVote"
+}
+B6_PARAM_MA_VART_TU_KHVT_DTXD
+{
+    "erpId":"9989",
+    "organizationId": "-9900",
+    "pickerFilter": "materialCode",
+    "materialCode": "query"
+}
+
+
+
 B6_PARAM_FINISH_BUOC2_DTXD
 {
     "approval": {
@@ -70,6 +87,7 @@ B6_PARAM_CREATE_TICKET_XUAT_KHO_DTXD_UAT_2
             "requestDate": "(-9910)",
             "subInventory": "(-9870)",
             "description": "(-9865)",
+            "numberVoteApprove": "(-9850)",
             "tableData": [(t)<-9800>
 		        {
                     "ticketCode": "(-0)",
@@ -85,6 +103,55 @@ B6_PARAM_CREATE_TICKET_XUAT_KHO_DTXD_UAT_2
         }
     }
 }
+
+B6_PARAM_FINISH_BUOC1_5_DTXD_UAT_2
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "deptId": "(-9980)",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "primaryInventory": "(-9901)",
+            "requestDate": "(-9910)",
+            "subInventory": "(-9870)",
+            "description": "(-9865)",
+            "numberVoteApprove": "(-9850)",
+            "tableData": [(t)<-9800,-15,-20>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)",
+                    "newMaterialCode":  "(-9690)",
+                    "newMaterialName":  "(-9688)",
+                    "newUnit":  "(-9686)",
+                    "newRequestQuantity":  "(-9684)"
+                }(endt)
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 1.5",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-15)"
+    }
+}
+
 B6_PARAM_FINISH_BUOC2_DTXD_UAT_2
 {
     "approval": {
@@ -98,6 +165,56 @@ B6_PARAM_FINISH_BUOC2_DTXD_UAT_2
 
 B6_PARAM_APPROVE_BUOC2_5_DTXD_UAT_2
 {
+    
+}
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "EXPORT_DTXD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "actionType": "REQUEST",
+        "deptId": "(-9980)",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "reason": "(-9860)",
+            "requestDate": "(-9910)",
+            "primaryInventory": "(-9901)",
+            "subInventory": "(-9870)",
+            "description": "(-9865)",
+            "numberVoteApprove": "(-9850)",
+            "tableData": [(t)<-9800,-15,-20>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "description": "(-9680)",
+                    "segmentQuantity": "(-9694)",
+                    "desirableLength": "(-9692)",
+                    "newMaterialCode":  "(-9690)",
+                    "newMaterialName":  "(-9688)",
+                    "newUnit":  "(-9686)",
+                    "newRequestQuantity":  "(-9684)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-25,-30)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
     "approval": {
         "ticketCode": "(-0)",
         "status": "INPROGRESS",
@@ -127,7 +244,8 @@ B6_PARAM_UPDATE_TICKET_BUOC3_DTXD_UAT_2
             "primaryInventory": "(-9901)",
             "subInventory": "(-9870)",
             "description": "(-9865)",
-            "tableData": [(t)<-9800>
+            "numberVoteApprove": "(-9850)",
+            "tableData": [(t)<-9800,-15,-20>
 		        {
                     "ticketCode": "(-0)",
                     "materialCode": "(-9760)",
@@ -136,7 +254,11 @@ B6_PARAM_UPDATE_TICKET_BUOC3_DTXD_UAT_2
                     "requestQuantity": "(-9700)",
                     "description": "(-9680)",
                     "segmentQuantity": "(-9694)",
-                    "desirableLength": "(-9692)"
+                    "desirableLength": "(-9692)",
+                    "newMaterialCode":  "(-9690)",
+                    "newMaterialName":  "(-9688)",
+                    "newUnit":  "(-9686)",
+                    "newRequestQuantity":  "(-9684)"
                 }(endt)
             ]
         },
@@ -190,7 +312,8 @@ B6_PARAM_APPROVE_BUOC5_DTXD_UAT_2
             "primaryInventory": "(-9901)",
             "subInventory": "(-9870)",
             "description": "(-9865)",
-            "tableData": [(t)<-9800>
+            "numberVoteApprove": "(-9850)",
+            "tableData": [(t)<-9800,-15,-20>
 		        {
                     "ticketCode": "(-0)",
                     "materialCode": "(-9760)",
@@ -199,7 +322,11 @@ B6_PARAM_APPROVE_BUOC5_DTXD_UAT_2
                     "requestQuantity": "(-9700)",
                     "description": "(-9680)",
                     "segmentQuantity": "(-9694)",
-                    "desirableLength": "(-9692)"
+                    "desirableLength": "(-9692)",
+                    "newMaterialCode":  "(-9690)",
+                    "newMaterialName":  "(-9688)",
+                    "newUnit":  "(-9686)",
+                    "newRequestQuantity":  "(-9684)"
                 }(endt)
             ]
         },
@@ -243,7 +370,8 @@ B6_PARAM_APPROVE_BUOC6_DTXD_UAT_2
             "primaryInventory": "(-9901)",
             "subInventory": "(-9870)",
             "description": "(-9865)",
-            "tableData": [(t)<-9800>
+            "numberVoteApprove": "(-9850)",
+            "tableData": [(t)<-9800,-15,-20>
 		        {
                     "ticketCode": "(-0)",
                     "materialCode": "(-9760)",
@@ -252,7 +380,11 @@ B6_PARAM_APPROVE_BUOC6_DTXD_UAT_2
                     "requestQuantity": "(-9700)",
                     "description": "(-9680)",
                     "segmentQuantity": "(-9694)",
-                    "desirableLength": "(-9692)"
+                    "desirableLength": "(-9692)",
+                    "newMaterialCode":  "(-9690)",
+                    "newMaterialName":  "(-9688)",
+                    "newUnit":  "(-9686)",
+                    "newRequestQuantity":  "(-9684)"
                 }(endt)
             ]
         },
@@ -295,7 +427,8 @@ B6_PARAM_APPROVE_BUOC7_DTXD_UAT_2
             "primaryInventory": "(-9901)",
             "subInventory": "(-9870)",
             "description": "(-9865)",
-            "tableData": [(t)<-9800>
+            "numberVoteApprove": "(-9850)",
+            "tableData": [(t)<-9800,-15,-20>
 		        {
                     "ticketCode": "(-0)",
                     "materialCode": "(-9760)",
@@ -304,7 +437,11 @@ B6_PARAM_APPROVE_BUOC7_DTXD_UAT_2
                     "requestQuantity": "(-9700)",
                     "description": "(-9680)",
                     "segmentQuantity": "(-9694)",
-                    "desirableLength": "(-9692)"
+                    "desirableLength": "(-9692)",
+                    "newMaterialCode":  "(-9690)",
+                    "newMaterialName":  "(-9688)",
+                    "newUnit":  "(-9686)",
+                    "newRequestQuantity":  "(-9684)"
                 }(endt)
             ]
         },
@@ -346,6 +483,7 @@ B6_PARAM_FINISH_BUOC8_DTXD_UAT_2
                 "receiver": "(-8970)",
                 "description": "(-8860)",
                 "location": "(-8962)",
+                "addressOrg": "(-8961)",
                 "type": "2",
                 "construction": "(-8915)",
                 "primaryInventory": "(-8945)",
@@ -402,6 +540,7 @@ B6_PARAM_FINISH_BUOC9_DTXD_UAT_2
                 "reason": "(-8955)",
                 "receiver": "(-8970)",
                 "description": "(-8860)",
+                "addressOrg": "(-8961)",
                 "location": "(-8962)",
                 "type": "2",
                 "construction": "(-8915)",
@@ -459,6 +598,7 @@ B6_PARAM_FINISH_BUOC9_DTXD_UAT_2
                 "receiver": "(-8970)",
                 "description": "(-8860)",
                 "location": "(-8962)",
+                "addressOrg": "(-8961)",
                 "type": "2",
                 "construction": "(-8915)",
                 "primaryInventory": "(-8945)",
@@ -533,6 +673,7 @@ B6_PARAM_APPROVE_BUOC10_DTXD_UAT_2
                 "receiver": "(-8970)",
                 "description": "(-8860)",
                 "location": "(-8962)",
+                "addressOrg": "(-8961)",
                 "type": "2",
                 "construction": "(-8915)",
                 "primaryInventory": "(-8945)",
@@ -607,6 +748,7 @@ B6_PARAM_APPROVE_BUOC11_1_DTXD_UAT_2
                 "receiver": "(-8970)",
                 "description": "(-8860)",
                 "location": "(-8962)",
+                "addressOrg": "(-8961)",
                 "type": "2",
                 "construction": "(-8915)",
                 "primaryInventory": "(-8945)",
@@ -679,6 +821,7 @@ B6_PARAM_APPROVE_BUOC11_2_DTXD_UAT_2
                 "receiver": "(-8970)",
                 "description": "(-8860)",
                 "location": "(-8962)",
+                "addressOrg": "(-8961)",
                 "type": "2",
                 "construction": "(-8915)",
                 "primaryInventory": "(-8945)",
@@ -750,6 +893,7 @@ B6_PARAM_APPROVE_BUOC12_DTXD_UAT_2
                 "reason": "(-8955)",
                 "receiver": "(-8970)",
                 "description": "(-8860)",
+                "addressOrg": "(-8961)",
                 "location": "(-8962)",
                 "type": "2",
                 "construction": "(-8915)",
@@ -845,6 +989,7 @@ B6_PARAM_APPROVE_BUOC15_DTXD_UAT_2
                 "reason": "(-8955)",
                 "receiver": "(-8970)",
                 "description": "(-8860)",
+                "addressOrg": "(-8961)",
                 "location": "(-8962)",
                 "type": "2",
                 "construction": "(-8915)",
@@ -883,11 +1028,6 @@ B6_PARAM_APPROVE_BUOC15_DTXD_UAT_2
                     "createUser": "(-9500,-40,-50)"
                 },
                 {
-                    "link": "(-2,-150,-160)",
-                    "type": "4",
-                    "createUser": "(-9500,-130,-140)"
-                },
-                {
                     "link": "(-1,-70,-80)",
                     "type": "1",
                     "createUser": "(-10000)"
@@ -924,6 +1064,7 @@ B6_PARAM_APPROVE_BUOC16_DTXD_UAT_2
                 "receiver": "(-8970)",
                 "description": "(-8860)",
                 "location": "(-8962)",
+                "addressOrg": "(-8961)",
                 "type": "2",
                 "construction": "(-8915)",
                 "primaryInventory": "(-8945)",
@@ -959,11 +1100,6 @@ B6_PARAM_APPROVE_BUOC16_DTXD_UAT_2
                     "type": "3",
                     "numberVote": "(-9850,-80,-90)",
                     "createUser": "(-9500,-40,-50)"
-                },
-                {
-                    "link": "(-2,-160,-1)",
-                    "type": "4",
-                    "createUser": "(-9500,-130,-140)"
                 },
                 {
                     "link": "(-1,-70,-80)",
@@ -1049,6 +1185,13 @@ B6_PARAM_TRUONG_PHONG_KHVT_DTXD
     "pickerFilter": "fullName"
 }
 
+B6_PARAM_CHUYEN_VIEN_PHONG_KHVT_DTXD
+{
+    "orgId": "-9920",
+    "mappingLevel": "-5700",
+    "deptId": "-9550",
+    "pickerFilter": "fullName"
+}
 
 B6_PARAM_CHON_CHUYEN_VIEN_BUOC4_DTXD
 {
