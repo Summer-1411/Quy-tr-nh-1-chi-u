@@ -1,0 +1,1273 @@
+{
+    "individual": [
+        {
+            "id": -10000,
+            "name": "Requestor",
+            "valuefeeder": "TicketOwner",
+            "type": "text",
+            "display": false,
+            "additionalDisplayClass": "left-info",
+            "position": -10000,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9999,
+            "position": -9999,
+            "name": "Ngày lập đề nghị",
+            "type": "DATE",
+            "valuefeeder": "Now",
+            "display": false,
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9991,
+            "position": -9991,
+            "name": "Họ tên người lập yêu cầu",
+            "type": "master_data_load_user_info_hovatennguoiyeucau",
+            "display": false,
+            "disabled": true,
+            "conditions": {
+                "required": false
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9990,
+            "position": -9990,
+            "name": "Userlogin",
+            "display": false,
+            "type": "master_data_load_user_info",
+            "conditions": {
+                "required": true
+            },
+            "dataFrom": -10000,
+            "dataFromFunc": "feederData",
+            "dataFromCondition": [
+                {
+                    "conditions": {
+                        "operation": "else"
+                    },
+                    "value": {
+                        "dataset": "INDIVIDUAL",
+                        "infoId": -10000
+                    }
+                }
+            ],
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -9989,
+            "position": -9989,
+            "name": "ERP_ID",
+            "type": "master_data_load_user_info_erp_id",
+            "display": false,
+            "disabled": false,
+            "conditions": {
+                "required": false
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9985,
+            "position": -9985,
+            "name": "Người tạo yêu cầu",
+            "type": "master_data_load_user_info_nguoiyeucau",
+            "display": true,
+            "disabled": true,
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9980,
+            "name": "Phòng ban",
+            "additionalDisplayClass": "left-info",
+            "position": -9980,
+            "type": "master_data_load_user_info_department",
+            "display": true,
+            "disable": true,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "id": -9960,
+            "name": "Số điện thoại người tạo yêu cầu",
+            "type": "text",
+            "additionalDisplayClass": "left-info",
+            "position": -9960,
+            "display": true,
+            "conditions": {
+                "required": true,
+                "min-length": 1
+            }
+        },
+        {
+            "name": "Thông tin báo cáo",
+            "type": "SPLITTER",
+            "collapse": false,
+            "id": -9950,
+            "position": -9950
+        },
+        {
+            "id": -9920,
+            "name": "Đơn vị yêu cầu",
+            "type": "master_data_load_user_info_donvi",
+            "display": true,
+            "disable": true,
+            "conditions": {
+                "required": true
+            },
+            "position": -9920,
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -8800,
+            "name": "Tên đơn vị Org Name",
+            "type": "master_data_load_user_info_name_don_vi",
+            "display": false,
+            "conditions": {
+                "required": true
+            },
+            "position": -8800,
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -8700,
+            "name": "Tên phòng ban Dept Name",
+            "type": "master_data_load_user_info_name_phong_ban",
+            "display": false,
+            "conditions": {
+                "required": true
+            },
+            "position": -8700,
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9900,
+            "name": "Loại báo cáo",
+            "type": "apiweb",
+            "additionalDisplayClass": "left-info",
+            "position": -9900,
+            "conditions": {
+                "required": true,
+                "feedTo": []
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "urlFilter": "/app-param/get-by-type?type=TYPE_TICKET_REPORT",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "code",
+                    "minimumSearch": 0,
+                    "displayField": "name"
+                }
+            },
+            "display": true
+        },
+        {
+            "name": "Điều kiện hiển thị theo loại báo cáo",
+            "type": "select",
+            "dataFrom": -9900,
+            "dataFromFunc": "feederData",
+            "display":false,
+            "disabled": true,
+            "dataFromCondition": [
+                {
+                    "conditions": {
+                        "operation": "or",
+                        "items": [
+                            {
+                                "operation": "equal",
+                                "compare-type": "text",
+                                "left-element": {
+                                    "dataset": "INDIVIDUAL",
+                                    "infoId": -9900
+                                },
+                                "right-element": {
+                                    "dataset": "value",
+                                    "value": "Bao_Cao_Chi_Tiet_Thanh_Xu_Ly_Toan_Cong_Ty"
+                                }
+                            }
+                            
+                        ]
+                    },
+                    "value": {
+                        "dataset": "value",
+                        "value": "Bao_Cao_Chi_Tiet_Thanh_Xu_Ly_Toan_Cong_Ty"
+                    }
+                },
+                {
+                    "conditions": {
+                        "operation": "or",
+                        "items": [
+                            {
+                                "operation": "equal",
+                                "compare-type": "text",
+                                "left-element": {
+                                    "dataset": "INDIVIDUAL",
+                                    "infoId": -9900
+                                },
+                                "right-element": {
+                                    "dataset": "value",
+                                    "value": "Bao_Cao_Chi_Tiet_VTTB_Dieu_Chuyen_Theo_Thang"
+                                }
+                            }
+                        ]
+                    },
+                    "value": {
+                        "dataset": "value",
+                        "value": "Bao_Cao_Chi_Tiet_VTTB_Dieu_Chuyen_Theo_Thang"
+                    }
+                },
+                {
+                    "conditions": {
+                        "operation": "or",
+                        "items": [
+                            {
+                                "operation": "equal",
+                                "compare-type": "text",
+                                "left-element": {
+                                    "dataset": "INDIVIDUAL",
+                                    "infoId": -9900
+                                },
+                                "right-element": {
+                                    "dataset": "value",
+                                    "value": "Bao_Cao_Chi_Tiet_VTTB_Dieu_Chuyen_Noi_Bo_Theo_Thang"
+                                }
+                            }
+                        ]
+                    },
+                    "value": {
+                        "dataset": "value",
+                        "value": "Bao_Cao_Chi_Tiet_VTTB_Dieu_Chuyen_Noi_Bo_Theo_Thang"
+                    }
+                }
+            ],
+            "conditions": {
+                "required": true,
+                "min-length": 1,
+                "data": [
+                    {
+                        "text": "Bao_Cao_Chi_Tiet_Thanh_Xu_Ly_Toan_Cong_Ty",
+                        "value": "Bao_Cao_Chi_Tiet_Thanh_Xu_Ly_Toan_Cong_Ty"
+                    },
+                    {
+                        "text": "Bao_Cao_Chi_Tiet_VTTB_Dieu_Chuyen_Theo_Thang",
+                        "value": "Bao_Cao_Chi_Tiet_VTTB_Dieu_Chuyen_Theo_Thang"
+                    },
+                    {
+                        "text": "Bao_Cao_Chi_Tiet_VTTB_Dieu_Chuyen_Noi_Bo_Theo_Thang",
+                        "value": "Bao_Cao_Chi_Tiet_VTTB_Dieu_Chuyen_Noi_Bo_Theo_Thang"
+                    }
+                ]
+            },
+            "position": -9850,
+            "additionalDisplayClass": "left-info",
+            "id": -9850
+        },
+        {
+            "id": -9800,
+            "name": "Tháng báo cáo",
+            "type": "date",
+            "position": -9800,
+            "conditions": {
+                "required": true,
+                "displayCondition": {
+                    "valueCondition": "Bao_Cao_Chi_Tiet_VTTB_Dieu_Chuyen_Noi_Bo_Theo_Thang",
+                    "idCondition": -9850,
+                    "dataCondition": "INDIVIDUAL"
+                },
+                "format": {
+                    "regex": "MM/yyyy",
+                    "text": "Nhập yyyy"
+                }
+            }
+        },
+
+        
+
+        {
+            "id": -9790,
+            "position": -9790,
+            "name": "Từ ngày",
+            "type": "DATE",
+            "valuefeeder": "Now",
+            "additionalDisplayClass": "left-info",
+            "conditions": {
+                "displayCondition": {
+                    "valueCondition": "Bao_Cao_Chi_Tiet_VTTB_Dieu_Chuyen_Theo_Thang",
+                    "idCondition": -9850,
+                    "dataCondition": "INDIVIDUAL"
+                },
+                "required": true
+            }
+        },
+        {
+            "id": -9780,
+            "position": -9780,
+            "name": "Đến ngày",
+            "type": "DATE",
+            "valuefeeder": "Now",
+            "additionalDisplayClass": "right-info",
+            "display": true,
+            "conditions": {
+                "displayCondition": {
+                    "valueCondition": "Bao_Cao_Chi_Tiet_VTTB_Dieu_Chuyen_Theo_Thang",
+                    "idCondition": -9850,
+                    "dataCondition": "INDIVIDUAL"
+                },
+                "required": true
+            }
+        },
+        {
+            "name": "Đơn vị điều chuyển",
+            "additionalDisplayClass": "left-info",
+            "id": -9770,
+            "position": -9770,
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "urlFilter": "/common-spro/get-all-organization",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "orgId",
+                    "minimumSearch": 0,
+                    "displayField": "orgName"
+                }
+            },
+            "type": "apiweb",
+            "conditions": {
+                "displayCondition": {
+                    "valueCondition": "Bao_Cao_Chi_Tiet_VTTB_Dieu_Chuyen_Theo_Thang",
+                    "idCondition": -9850,
+                    "dataCondition": "INDIVIDUAL"
+                },
+                "feedTo": [
+                    {
+                        "fieldName": "orgName",
+                        "id": -9765,
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": true
+            }
+        },
+        {
+            "name": "Name đơn vị điều chuyển",
+            "id": -9765,
+            "position": -9765,
+            "type": "text",
+            "display": false,
+            "conditions": {
+                "required": false
+            }
+        },
+        {
+            "name": "Đơn vị nhận điều chuyển",
+            "additionalDisplayClass": "left-info",
+            "id": -9760,
+            "position": -9760,
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "urlFilter": "/common-spro/get-all-organization",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "orgId",
+                    "minimumSearch": 0,
+                    "displayField": "orgName"
+                }
+            },
+            "type": "apiweb",
+            "conditions": {
+                "displayCondition": {
+                    "valueCondition": "Bao_Cao_Chi_Tiet_VTTB_Dieu_Chuyen_Theo_Thang",
+                    "idCondition": -9850,
+                    "dataCondition": "INDIVIDUAL"
+                },
+                "feedTo": [
+                    {
+                        "fieldName": "orgName",
+                        "id": -9755,
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": true
+            }
+        },
+        {
+            "name": "Name đơn vị nhận điều chuyển",
+            "id": -9755,
+            "position": -9755,
+            "type": "text",
+            "display": false,
+            "conditions": {
+                "required": false
+            }
+        },
+        {
+            "apiWebConfig": {
+                "apiConfig": {
+                    "param": "EVN_SPRO_PARAM_PICKER_FILTER_CMIS",
+                    "hostnameKey": "SPRO_EVN",
+                    "urlFilter": "/common-spro/get-cmis",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "projectCode",
+                    "minimumSearch": 0,
+                    "displayField": "projectName"
+                }
+            },
+            "name": "Công trình điều chuyển",
+            "additionalDisplayClass": "left-info",
+            "id": -9750,
+            "position": -9750,
+            "type": "apiweb",
+            "conditions": {
+                "feedTo": [
+                    {
+                        "fieldName": "projectName",
+                        "id": -9740,
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "displayCondition": {
+                    "valueCondition": "Bao_Cao_Chi_Tiet_VTTB_Dieu_Chuyen_Theo_Thang",
+                    "idCondition": -9850,
+                    "dataCondition": "INDIVIDUAL"
+                },
+                "required": true
+            }
+        },
+        {
+            "name": "Tên công trình điều chuyển",
+            "id": -9740,
+            "position": -9740,
+            "type": "text",
+            "display": false,
+            "conditions": {
+                "required": false
+            }
+        },
+
+
+
+        {
+            "id": -9700,
+            "position": -9700,
+            "name": "Ngày báo cáo",
+            "type": "DATE",
+            "valuefeeder": "Now",
+            "display": true,
+            "conditions": {
+                "displayCondition": {
+                    "valueCondition": "Bao_Cao_Chi_Tiet_Thanh_Xu_Ly_Toan_Cong_Ty",
+                    "idCondition": -9850,
+                    "dataCondition": "INDIVIDUAL"
+                },
+                "required": true
+            }
+        },
+        {
+            "id": -9600,
+            "position": -9600,
+            "name": "Ngày kiểm kê",
+            "type": "DATE",
+            "valuefeeder": "Now",
+            "display": true,
+            "conditions": {
+                "displayCondition": {
+                    "valueCondition": "Bao_Cao_Chi_Tiet_Thanh_Xu_Ly_Toan_Cong_Ty",
+                    "idCondition": -9850,
+                    "dataCondition": "INDIVIDUAL"
+                },
+                "required": true
+            }
+        },
+        {
+            "name": "Chọn số người phê duyệt",
+            "additionalDisplayClass": "left-info",
+            "id": -9500,
+            "position": -9500,
+            "type": "select",
+            "conditions": {
+                "data": [
+                    {
+                        "text": "1",
+                        "value": "1"
+                    },
+                    {
+                        "text": "2",
+                        "value": "2"
+                    },
+                    {
+                        "text": "3",
+                        "value": "3"
+                    },
+                    {
+                        "text": "4",
+                        "value": "4"
+                    },
+                    {
+                        "text": "5",
+                        "value": "5"
+                    }
+                ],
+                "preventupdate": true,
+                "required": false,
+                "min-length": 1
+            },
+            "value": "1"
+        },
+        {
+            "name": "Điều kiện người duyệt thứ 2",
+            "type": "select",
+            "dataFrom": -9500,
+            "dataFromFunc": "feederData",
+            "display":false,
+            "dataFromCondition": [
+                {
+                    "conditions": {
+                        "operation": "or",
+                        "items": [
+                            {
+                                "operation": "less",
+                                "compare-type": "number",
+                                "left-element": {
+                                    "dataset": "INDIVIDUAL",
+                                    "infoId": -9500
+                                },
+                                "right-element": {
+                                    "dataset": "value",
+                                    "value": "2"
+                                }
+                            }
+                            
+                        ]
+                    },
+                    "value": {
+                        "dataset": "value",
+                        "value": "1 người"
+                    }
+                },
+                {
+                    "conditions": {
+                        "operation": "and",
+                        "items": [
+                            {
+                                "operation": "greaterOrEqual",
+                                "compare-type": "number",
+                                "left-element": {
+                                    "dataset": "INDIVIDUAL",
+                                    "infoId": -9500
+                                },
+                                "right-element": {
+                                    "dataset": "value",
+                                    "value": "2"
+                                }
+                            },
+                            {
+                                "operation": "lessOrEqual",
+                                "compare-type": "number",
+                                "left-element": {
+                                    "dataset": "INDIVIDUAL",
+                                    "infoId": -9500
+                                },
+                                "right-element": {
+                                    "dataset": "value",
+                                    "value": "5"
+                                }
+                            }
+                        ]
+                    },
+                    "value": {
+                        "dataset": "value",
+                        "value": "Từ 2 người đến 5 người"
+                    }
+                }
+            ],
+            "conditions": {
+                "required": true,
+                "min-length": 1,
+                "data": [
+                    {
+                        "text": "1 người",
+                        "value": "1 người"
+                    },
+                    {
+                        "text": "Từ 2 người đến 5 người",
+                        "value": "Từ 2 người đến 5 người"
+                    }
+                ]
+            },
+            "position": -9300,
+            "additionalDisplayClass": "left-info",
+            "id": -9300
+        },
+        {
+            "name": "Điều kiện người duyệt thứ 3",
+            "type": "select",
+            "dataFrom": -9500,
+            "dataFromFunc": "feederData",
+            "display":false,
+            "dataFromCondition": [
+                {
+                    "conditions": {
+                        "operation": "or",
+                        "items": [
+                            {
+                                "operation": "less",
+                                "compare-type": "number",
+                                "left-element": {
+                                    "dataset": "INDIVIDUAL",
+                                    "infoId": -9500
+                                },
+                                "right-element": {
+                                    "dataset": "value",
+                                    "value": "3"
+                                }
+                            }
+                            
+                        ]
+                    },
+                    "value": {
+                        "dataset": "value",
+                        "value": "2 người"
+                    }
+                },
+                {
+                    "conditions": {
+                        "operation": "and",
+                        "items": [
+                            {
+                                "operation": "greaterOrEqual",
+                                "compare-type": "number",
+                                "left-element": {
+                                    "dataset": "INDIVIDUAL",
+                                    "infoId": -9500
+                                },
+                                "right-element": {
+                                    "dataset": "value",
+                                    "value": "3"
+                                }
+                            },
+                            {
+                                "operation": "lessOrEqual",
+                                "compare-type": "number",
+                                "left-element": {
+                                    "dataset": "INDIVIDUAL",
+                                    "infoId": -9500
+                                },
+                                "right-element": {
+                                    "dataset": "value",
+                                    "value": "5"
+                                }
+                            }
+                        ]
+                    },
+                    "value": {
+                        "dataset": "value",
+                        "value": "Từ 3 người đến 5 người"
+                    }
+                }
+            ],
+            "conditions": {
+                "required": true,
+                "min-length": 1,
+                "data": [
+                    {
+                        "text": "2 người",
+                        "value": "2 người"
+                    },
+                    {
+                        "text": "Từ 3 người đến 5 người",
+                        "value": "Từ 3 người đến 5 người"
+                    }
+                ]
+            },
+            "position": -9200,
+            "additionalDisplayClass": "right-info",
+            "id": -9200
+        },
+        {
+            "name": "Điều kiện người duyệt thứ 4",
+            "type": "select",
+            "dataFrom": -9500,
+            "dataFromFunc": "feederData",
+            "display":false,
+            "dataFromCondition": [
+                {
+                    "conditions": {
+                        "operation": "or",
+                        "items": [
+                            {
+                                "operation": "less",
+                                "compare-type": "number",
+                                "left-element": {
+                                    "dataset": "INDIVIDUAL",
+                                    "infoId": -9500
+                                },
+                                "right-element": {
+                                    "dataset": "value",
+                                    "value": "4"
+                                }
+                            }
+                            
+                        ]
+                    },
+                    "value": {
+                        "dataset": "value",
+                        "value": "3 người"
+                    }
+                },
+                {
+                    "conditions": {
+                        "operation": "and",
+                        "items": [
+                            {
+                                "operation": "greaterOrEqual",
+                                "compare-type": "number",
+                                "left-element": {
+                                    "dataset": "INDIVIDUAL",
+                                    "infoId": -9500
+                                },
+                                "right-element": {
+                                    "dataset": "value",
+                                    "value": "4"
+                                }
+                            },
+                            {
+                                "operation": "lessOrEqual",
+                                "compare-type": "number",
+                                "left-element": {
+                                    "dataset": "INDIVIDUAL",
+                                    "infoId": -9500
+                                },
+                                "right-element": {
+                                    "dataset": "value",
+                                    "value": "5"
+                                }
+                            }
+                        ]
+                    },
+                    "value": {
+                        "dataset": "value",
+                        "value": "Từ 4 người đến 5 người"
+                    }
+                }
+            ],
+            "conditions": {
+                "required": true,
+                "min-length": 1,
+                "data": [
+                    {
+                        "text": "3 người",
+                        "value": "3 người"
+                    },
+                    {
+                        "text": "Từ 4 người đến 5 người",
+                        "value": "Từ 4 người đến 5 người"
+                    }
+                ]
+            },
+            "position": -9100,
+            "additionalDisplayClass": "left-info",
+            "id": -9100
+        },
+
+        {
+            "name": "Điều kiện người duyệt thứ 5",
+            "type": "select",
+            "dataFrom": -9500,
+            "dataFromFunc": "feederData",
+            "display":false,
+            "dataFromCondition": [
+                {
+                    "conditions": {
+                        "operation": "or",
+                        "items": [
+                            {
+                                "operation": "less",
+                                "compare-type": "number",
+                                "left-element": {
+                                    "dataset": "INDIVIDUAL",
+                                    "infoId": -9500
+                                },
+                                "right-element": {
+                                    "dataset": "value",
+                                    "value": "5"
+                                }
+                            }
+                            
+                        ]
+                    },
+                    "value": {
+                        "dataset": "value",
+                        "value": "4 người"
+                    }
+                },
+                {
+                    "conditions": {
+                        "operation": "or",
+                        "items": [
+                            {
+                                "operation": "equal",
+                                "compare-type": "number",
+                                "left-element": {
+                                    "dataset": "INDIVIDUAL",
+                                    "infoId": -9500
+                                },
+                                "right-element": {
+                                    "dataset": "value",
+                                    "value": "5"
+                                }
+                            }
+                        ]
+                    },
+                    "value": {
+                        "dataset": "value",
+                        "value": "5 người"
+                    }
+                }
+            ],
+            "conditions": {
+                "required": true,
+                "min-length": 1,
+                "data": [
+                    {
+                        "text": "4 người",
+                        "value": "4 người"
+                    },
+                    {
+                        "text": "5 người",
+                        "value": "5 người"
+                    }
+                ]
+            },
+            "position": -9000,
+            "additionalDisplayClass": "right-info",
+            "id": -9000
+        },
+
+        {
+            "disable": true,
+            "display": false,
+            "name": "Số người phê duyệt",
+            "dataFrom": -9500,
+            "dataFromCondition": [
+                {
+                    "conditions": {
+                        "operation": "else"
+                    },
+                    "value": {
+                        "infoId": -9500,
+                        "dataset": "INDIVIDUAL"
+                    }
+                }
+            ],
+            "additionalDisplayClass": "right-info",
+            "id": -9400,
+            "position": -9400,
+            "type": "text",
+            "conditions": {
+                "required": true
+            },
+            "dataFromFunc": "feederData"
+        },
+        {
+            "name": "Người xem xét 1",
+            "additionalDisplayClass": "left-info",
+            "id": -8500,
+            "position": -8500,
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_CHON_NGUOI_DUYET_PDBC",
+                    "urlFilter": "/common-spro/get-user-by-org",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "userName",
+                    "minimumSearch": 0,
+                    "displayField": "fullName"
+                }
+            },
+            "type": "apiweb",
+            "conditions": {
+                "displayCondition": {
+                    "valueCondition": "1",
+                    "idCondition": -5570,
+                    "dataCondition": "INDIVIDUAL"
+                },
+                "feedTo": [
+                    {
+                        "id": -8499,
+                        "fieldName": "fullName",
+                        "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "id": -8498,
+                        "fieldName": "position",
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": true
+            }
+        },
+        {
+            "id": -8499,
+            "position": -8499,
+            "name": "Họ tên Người xem xét 1",
+            "display": false,
+            "additionalDisplayClass": "left-info",
+            "type": "text"
+        },
+        {
+            "id": -8498,
+            "position": -8498,
+            "name": "Chức vụ Người xem xét 1",
+            "display": false,
+            "additionalDisplayClass": "left-info",
+            "type": "text"
+        },
+        {
+            "name": "Người xem xét 2",
+            "additionalDisplayClass": "right-info",
+            "id": -8400,
+            "position": -8500,
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_CHON_NGUOI_DUYET_PDBC",
+                    "urlFilter": "/common-spro/get-user-by-org",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "userName",
+                    "minimumSearch": 0,
+                    "displayField": "fullName"
+                }
+            },
+            "type": "apiweb",
+            "conditions": {
+                "displayCondition": {
+                    "valueCondition": "Từ 2 người đến 5 người",
+                    "idCondition": -9300,
+                    "dataCondition": "INDIVIDUAL"
+                },
+                "feedTo": [
+                    {
+                        "id": -8399,
+                        "fieldName": "fullName",
+                        "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "id": -8398,
+                        "fieldName": "position",
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": true
+            }
+        },
+        {
+            "id": -8399,
+            "position": -8399,
+            "name": "Họ tên Người xem xét 2",
+            "display": false,
+            "additionalDisplayClass": "left-info",
+            "type": "text"
+        },
+        {
+            "id": -8398,
+            "position": -8398,
+            "name": "Chức vụ Người xem xét 2",
+            "display": false,
+            "additionalDisplayClass": "left-info",
+            "type": "text"
+        },
+        {
+            "name": "Người xem xét 3",
+            "additionalDisplayClass": "left-info",
+            "id": -8300,
+            "position": -8300,
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_CHON_NGUOI_DUYET_PDBC",
+                    "urlFilter": "/common-spro/get-user-by-org",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "userName",
+                    "minimumSearch": 0,
+                    "displayField": "fullName"
+                }
+            },
+            "type": "apiweb",
+            "conditions": {
+                "displayCondition": {
+                    "valueCondition": "Từ 3 người đến 5 người",
+                    "idCondition": -9200,
+                    "dataCondition": "INDIVIDUAL"
+                },
+                "feedTo": [
+                    {
+                        "id": -8299,
+                        "fieldName": "fullName",
+                        "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "id": -8298,
+                        "fieldName": "position",
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": true
+            }
+        },
+        {
+            "id": -8299,
+            "position": -8299,
+            "name": "Họ tên Người xem xét 3",
+            "display": false,
+            "additionalDisplayClass": "left-info",
+            "type": "text"
+        },
+        {
+            "id": -8298,
+            "position": -8298,
+            "name": "Chức vụ Người xem xét 3",
+            "display": false,
+            "additionalDisplayClass": "left-info",
+            "type": "text"
+        },
+        {
+            "name": "Người xem xét 4",
+            "additionalDisplayClass": "right-info",
+            "id": -8200,
+            "position": -8300,
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_CHON_NGUOI_DUYET_PDBC",
+                    "urlFilter": "/common-spro/get-user-by-org",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "userName",
+                    "minimumSearch": 0,
+                    "displayField": "fullName"
+                }
+            },
+            "type": "apiweb",
+            "conditions": {
+                "displayCondition": {
+                    "valueCondition": "Từ 4 người đến 5 người",
+                    "idCondition": -9100,
+                    "dataCondition": "INDIVIDUAL"
+                },
+                "feedTo": [
+                    {
+                        "id": -8199,
+                        "fieldName": "fullName",
+                        "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "id": -8198,
+                        "fieldName": "position",
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": true
+            }
+        },
+        {
+            "id": -8199,
+            "position": -8199,
+            "name": "Họ tên Người xem xét 4",
+            "display": false,
+            "additionalDisplayClass": "left-info",
+            "type": "text"
+        },
+        {
+            "id": -8198,
+            "position": -8198,
+            "name": "Chức vụ Người xem xét 4",
+            "display": false,
+            "additionalDisplayClass": "left-info",
+            "type": "text"
+        },
+        {
+            "name": "Người xem xét 5",
+            "additionalDisplayClass": "left-info",
+            "id": -8100,
+            "position": -8100,
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_CHON_NGUOI_DUYET_PDBC",
+                    "urlFilter": "/common-spro/get-user-by-org",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "userName",
+                    "minimumSearch": 0,
+                    "displayField": "fullName"
+                }
+            },
+            "type": "apiweb",
+            "conditions": {
+                "displayCondition": {
+                    "valueCondition": "5 người",
+                    "idCondition": -9000,
+                    "dataCondition": "INDIVIDUAL"
+                },
+                "feedTo": [
+                    {
+                        "id": -8099,
+                        "fieldName": "fullName",
+                        "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "id": -8098,
+                        "fieldName": "position",
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": true
+            }
+        },
+        {
+            "id": -8099,
+            "position": -8099,
+            "name": "Họ tên Người xem xét 5",
+            "display": false,
+            "additionalDisplayClass": "left-info",
+            "type": "text"
+        },
+        {
+            "id": -8098,
+            "position": -8098,
+            "name": "Chức vụ Người xem xét 5",
+            "display": false,
+            "additionalDisplayClass": "left-info",
+            "type": "text"
+        },
+        {
+            "apiWebConfig": {
+                "apiConfig": {
+                    "param": "B6_PARAM_GET_FILE_BAO_CAO_PDBC",
+                    "hostnameKey": "EVN_B6_URL_REPORT_TEMPLATE",
+                    "urlFilter": "/export-report/saveFileExport",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "name",
+                    "minimumSearch": 0,
+                    "displayField": "type"
+                }
+            },
+            "display": true,
+            "name": "File báo cáo",
+            "additionalDisplayClass": "left-info",
+            "id": -8000,
+            "position": -8000,
+            "type": "apiweb",
+            "conditions": {
+                "feedTo": [
+                    {
+                        "fieldName": "name",
+                        "id": -1,
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": false
+            },
+            "value": ""
+        },
+        {
+            "staticContent": "<p style='font-size: 12px; color: #3617FF'><i></i></p>",
+            "display": true,
+            "name": "Link file báo cáo",
+            "additionalDisplayClass": "left-info",
+            "disabled": true,
+            "placeholder": "",
+            "id": -1,
+            "position": -1,
+            "type": "link",
+            "conditions": {
+                "required": false,
+                "min-length": 1,
+                "height": 5
+            },
+            "value": ""
+        },
+        {
+            "id": -3000,
+            "position": -3000,
+            "name": "String empty",
+            "display": false,
+            "type": "text",
+            "value": "",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -2999,
+            "position": -2999,
+            "name": "docType template print",
+            "display": false,
+            "type": "text",
+            "value": "pdf",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -2000,
+            "position": -2000,
+            "name": "Key thủ kho",
+            "display": false,
+            "type": "text",
+            "value": "",
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -1800,
+            "position": -1800,
+            "name": "Key trưởng phó phòng",
+            "display": false,
+            "type": "text",
+            "value": "",
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -1600,
+            "position": -1600,
+            "name": "Key chuyên viên kế toán",
+            "display": false,
+            "type": "text",
+            "value": "",
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -1400,
+            "position": -1400,
+            "name": "Key kế toán trưởng",
+            "display": false,
+            "type": "text",
+            "value": "ThuKho1,Thukho2,Thukho4",
+            "additionalDisplayClass": "left-info"
+        }
+    ]
+}

@@ -1,0 +1,375 @@
+/common-spro/get-user-by-org
+
+B6_PARAM_CHON_NGUOI_DUYET_PDBC
+{
+    "orgId": "-9920",
+    "pickerFilter": "fullName"
+}
+
+B6_PARAM_GET_FILE_BAO_CAO_PDBC
+{
+    "docType": "-2999",
+    "reportCode": "-9900",
+    "type": "-9900",
+    "orgId": "-9920",
+    "orgName": "-8800",
+    "deptName": "-8700",
+    "createdDate": "-9700",
+    "countApprove": "-9500",
+    "physicalDate": "-9600",
+    "monthYear": "-9800",
+    "fromDate": "-9790",
+    "toDate": "-9780",
+    "maDonViDC": "-9770",
+    "maDonViNDC": "-9760",
+    "projectCode": "-9750",
+    "tenDonViDC": "-9765",
+    "tenDonViNhanDC": "-9755",
+    "tenCongTrinh": "-9740",
+    "position1": "-8498",
+    "position2": "-8398",
+    "position3": "-8298",
+    "position4": "-8198",
+    "position5": "-8098",
+    "fullname1": "-8499",
+    "fullname2": "-8399",
+    "fullname3": "-8299",
+    "fullname4": "-8199",
+    "fullname5": "-8099"
+}
+
+EVN_SPRO_PARAM_PICKER_FILTER_CMIS
+{
+    
+    "docType": "pdf",
+    "orgName": "Công ty Điện lực Hoàn Kiếm",
+    
+
+}
+
+{
+    "orgId": "-9989",
+    "pickerFilter": "projectName"
+}
+
+master_data_load_user_info_name_don_vi
+
+master_data_load_user_info_name_phong_ban
+
+
+B6_PARAM_PDBC_CREATE_TICKET
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-9900)",
+        "status": "INPROGRESS",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "deptId": "(-9980)",
+        "actionType": "REQUEST"
+    }
+}
+
+B6_PARAM_PDBC_BUOC2
+
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-9900)",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "createDate": "(-9999)",
+        "deptId": "(-9980)",
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-20,-30)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS ",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 2",
+        "approvalUser": "(phase-owner,-20)",
+        "action": "APPROVE"
+    }
+}
+
+B6_PARAM_PDBC_BUOC2_END
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-9900)",
+        "status": "CLOSED",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "createDate": "(-9999)",
+        "deptId": "(-9980)",
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-20,-1)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CLOSED ",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 2",
+        "approvalUser": "(phase-owner,-20)",
+        "action": "APPROVE"
+    }
+}
+
+B6_PARAM_PDBC_BUOC3
+
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-9900)",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "createDate": "(-9999)",
+        "deptId": "(-9980)",
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-30,-40)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS ",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 3",
+        "approvalUser": "(phase-owner,-30)",
+        "action": "APPROVE"
+    }
+}
+
+
+B6_PARAM_PDBC_BUOC3_END
+
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-9900)",
+        "status": "CLOSED",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "createDate": "(-9999)",
+        "deptId": "(-9980)",
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-30,-1)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CLOSED ",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 3",
+        "approvalUser": "(phase-owner,-30)",
+        "action": "APPROVE"
+    }
+}
+
+
+B6_PARAM_PDBC_BUOC4
+
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-9900)",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "createDate": "(-9999)",
+        "deptId": "(-9980)",
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-40,-50)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS ",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 4",
+        "approvalUser": "(phase-owner,-40)",
+        "action": "APPROVE"
+    }
+}
+
+
+B6_PARAM_PDBC_BUOC4_END
+
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-9900)",
+        "status": "CLOSED",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "createDate": "(-9999)",
+        "deptId": "(-9980)",
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-40,-1)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CLOSED ",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 4",
+        "approvalUser": "(phase-owner,-40)",
+        "action": "APPROVE"
+    }
+}
+
+
+B6_PARAM_PDBC_BUOC5
+
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-9900)",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "createDate": "(-9999)",
+        "deptId": "(-9980)",
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-50,-60)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS ",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 5",
+        "approvalUser": "(phase-owner,-50)",
+        "action": "APPROVE"
+    }
+}
+
+
+B6_PARAM_PDBC_BUOC5_END
+
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-9900)",
+        "status": "CLOSED",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "createDate": "(-9999)",
+        "deptId": "(-9980)",
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-50,-1)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CLOSED ",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 5",
+        "approvalUser": "(phase-owner,-50)",
+        "action": "APPROVE"
+    }
+}
+
+
+
+B6_PARAM_PDBC_BUOC6_END
+
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "(-9900)",
+        "status": "CLOSED",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "createDate": "(-9999)",
+        "deptId": "(-9980)",
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-60,-1)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CLOSED ",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 6",
+        "approvalUser": "(phase-owner,-60)",
+        "action": "APPROVE"
+    }
+}
