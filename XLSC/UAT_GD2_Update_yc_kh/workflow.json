@@ -57,6 +57,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9875,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -192,7 +200,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=51848&fileName=DeNghiCapVTTB_UAT2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52739&fileName=DeNghiCapVTTB_UAT2.vm",
                 "newVersion": true
             },
             "sla": {
@@ -240,6 +248,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9875,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -375,7 +391,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=51848&fileName=DeNghiCapVTTB_UAT2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52739&fileName=DeNghiCapVTTB_UAT2.vm",
                 "newVersion": true
             },
             "sla": {
@@ -423,6 +439,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9875,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -558,7 +582,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=51848&fileName=DeNghiCapVTTB_UAT2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52739&fileName=DeNghiCapVTTB_UAT2.vm",
                 "newVersion": true
             },
             "sla": {
@@ -635,6 +659,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9875,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -770,7 +802,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=51848&fileName=DeNghiCapVTTB_UAT2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52739&fileName=DeNghiCapVTTB_UAT2.vm",
                 "newVersion": true
             },
             "sla": {
@@ -820,6 +852,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9875,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -955,7 +995,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=51848&fileName=DeNghiCapVTTB_UAT2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52739&fileName=DeNghiCapVTTB_UAT2.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1034,6 +1074,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9875,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1169,7 +1217,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=51848&fileName=DeNghiCapVTTB_UAT2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52739&fileName=DeNghiCapVTTB_UAT2.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1219,6 +1267,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9875,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1354,7 +1410,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=51848&fileName=DeNghiCapVTTB_UAT2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52739&fileName=DeNghiCapVTTB_UAT2.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1404,6 +1460,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9875,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9910,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1539,7 +1603,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=51848&fileName=DeNghiCapVTTB_UAT2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52739&fileName=DeNghiCapVTTB_UAT2.vm",
                 "newVersion": true
             },
             "sla": {
@@ -2028,7 +2092,7 @@
             "status": "waiting"
         },
         {
-            "customNote": "Bước 2.5 Small*",
+            "customNote": "Bước 2.5",
             "advancedConfig": {
                 "signature_evn": {
                     "filesToSign": [
@@ -2267,7 +2331,7 @@
                         "dataset": "INDIVIDUAL"
                     },
                     "suffix": " - (Chuyên viên KT)",
-                    "key": "ChuKy_ChuyenVienKT"
+                    "key": "Small*ChuKy_ChuyenVienKT"
                 }
             },
             "api_config": [
@@ -2542,7 +2606,7 @@
                         "dataset": "INDIVIDUAL"
                     },
                     "suffix": " - (Chuyên viên KHVT)",
-                    "key": "ChuKy_ChuyenVienKHVT"
+                    "key": "Small*ChuKy_ChuyenVienKHVT"
                 }
             },
             "api_config": [
@@ -2849,6 +2913,7 @@
             "relatedTo": -100110
         },
         {
+            
             "customNote": "Bước 11",
             "api_config": [
                 {
@@ -3387,7 +3452,7 @@
                                 "disabled": true,
                                 "type": "text",
                                 "conditions": {
-                                    "required": true
+                                    "required": false
                                 }
                             },
                             {
@@ -3661,6 +3726,7 @@
             "status": "waiting"
         },
         {
+            "requestUpdateUnlock": true,
             "customNote": "Bước 13",
             "api_config": [
                 {
@@ -3814,7 +3880,7 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -3910,7 +3976,7 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -4006,7 +4072,7 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -4102,7 +4168,7 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -4198,7 +4264,7 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -4253,7 +4319,7 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -4372,7 +4438,7 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -4470,7 +4536,7 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,

@@ -406,14 +406,14 @@
         <table colspan="0" rowspan="0" class="tableHeader"
             style="margin-top: 10pt; margin-left: 0pt; margin-right: 5pt;">
             <tr>
-                <th width="40%" style="text-align: center; font-size:10pt">
+                <th width="40%" style="text-align: center; font-size:11pt">
                     <span style="font-weight: normal;text-transform: uppercase;">$DonViDeNghi</span>
                     <br />
                     <b style="border-bottom: 1px solid black;text-transform: uppercase;">$PhongBan</b>
                     <br />
                     <div style="font-weight: normal;">Số: $SoToTrinh</div>
                 </th>
-                <th width="60%" style="text-align: center; font-size:10pt">
+                <th width="60%" style="text-align: center; font-size:11pt">
                     <span style="text-align: center;">
                         <b>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</b>
                         <br />
@@ -443,20 +443,23 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="font-size:10pt; font-weight: normal;">
+                    <td style="font-size:11pt; font-weight: normal;">
                         <div style="margin-left: 300px;">Tại kho: Kho của $DonViDeNghi </div>
                     </td>
                 </tr>
                 <tr>
-                    <td style="font-size:10pt; font-weight: normal;">
+                    <td style="font-size:11pt; font-weight: normal;">
                         <div style="margin-left: 300px;">Kính gửi: $KinhGui</div>
                     </td>
                 </tr>
             </table>
-            <div style="padding-top: 15pt; font-size: 10pt;">
+            <div style="padding-top: 15pt; font-size: 11pt;">
                 <div>Tên đơn vị đề nghị: $PhongBan</div>
                 <div>Lý do cấp:
                     $LyDoCap
+                </div>
+                <div>Diễn giải:
+                    $DienGiai
                 </div>
                 <div>Đề nghị cấp danh sách vật tư thiết bị như sau:</div>
             </div>
@@ -486,22 +489,22 @@
                 #set($index = 1)
                 #foreach($row in $outputArray)
                 <tr class="PaddingCellTable">
-                    <td style="text-align: center; font-size: 9pt;">
+                    <td style="text-align: center; font-size: 11pt;">
                         $index
                     </td>
-                    <td style="text-align: left; font-size: 9pt;">
+                    <td style="text-align: left; font-size: 11pt;">
                         $row.get("MaVatTu")
                     </td>
-                    <td style="text-align: left; font-size: 9pt;">
+                    <td style="text-align: left; font-size: 11pt;">
                         $row.get("TenVatTuVaQuyCach")
                     </td>
-                    <td style="text-align: left; font-size: 9pt;">
+                    <td style="text-align: left; font-size: 11pt;">
                         $row.get("DonViTinh")
                     </td>
-                    <td style="text-align: right; font-size: 9pt;">
+                    <td style="text-align: right; font-size: 11pt;">
                         #formatStringFinance($row.get("SoLuong"))
                     </td>
-                    <td style="text-align: left; font-size: 9pt;">
+                    <td style="text-align: left; font-size: 11pt;">
                         $row.get("GhiChu")
                     </td>
                 </tr>
@@ -510,6 +513,21 @@
                 
             </table>
             <table colspan="0" rowspan="0" class="tableHeader" style="margin-top: 20pt;">
+                <tr >
+                    <th></th>
+                    <th style="text-align: right;">
+                        <span style="font-size:2pt; color: white">$Small*ChuKy_ChuyenVienKHVT</span>
+                    </th>
+                    <th style="text-align: right;">
+                        <span style="font-size:2pt; color: white">$Small*ChuKy_ChuyenVienKT</span>
+                    </th>
+                    
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th colspan="5"> <div style="line-height: 15px; color: white;">shfshfh</div></th>
+                </tr>
                 <tr>
                     <th style="text-align: center">
                         <p style="font-size:2pt; color: white">$ChuKy_GiamDoc</p>
@@ -520,29 +538,29 @@
                         <br />
                         <br />
                         <br />
-                        <p style="font-size:9pt; margin-top: 30px;">$Name_GiamDoc</p>
+                        <p style="font-size:11pt; margin-top: 30px;">$Name_GiamDoc</p>
                     </th>
                     <th style="text-align: center">
                         <p style="font-size:2pt; color: white">$ChuKy_TPPKHVT</p>
-                        <span style="font-size:2pt; color: white">$Small*ChuKy_ChuyenVienKHVT</span>
+                        
                         <b>PHÒNG KHVT</b>
                         <br />
                         <br />
                         <br />
                         <br />
                         <br />
-                        <p style="font-size:9pt; margin-top: 30px;">$Name_TPPKHVT</p>
+                        <p style="font-size:11pt; margin-top: 30px;">$Name_TPPKHVT</p>
                     </th>
                     <th style="text-align: center">
                         <p style="font-size:2pt; color: white">$ChuKy_TPPKT</p>
-                        <span style="font-size:2pt; color: white">$Small*ChuKy_ChuyenVienKT</span>
+                        
                         <b>PHÒNG KT</b>
                         <br />
                         <br />
                         <br />
                         <br />
                         <br />
-                        <p style="font-size:9pt; margin-top: 30px;">$Name_TPPKT</p>
+                        <p style="font-size:11pt; margin-top: 30px;">$Name_TPPKT</p>
                     </th>
                     <th style="text-align: center">
                         <p style="font-size:2pt; color: white">$ChuKy_DoiTruong</p>
@@ -553,7 +571,7 @@
                         <br />
                         <br />
                         <br />
-                        <p style="font-size:9pt; margin-top: 30px;">$Name_DoiTruong</p>
+                        <p style="font-size:11pt; margin-top: 30px;">$Name_DoiTruong</p>
                     </th>
                     <th style="text-align: center">
                         <p style="font-size:2pt; color: white">$ChuKy_NguoiLap</p>
@@ -564,7 +582,7 @@
                         <br />
                         <br />
                         <br />
-                        <p style="font-size:9pt; margin-top: 30px;">$Name_NguoiLap</p>
+                        <p style="font-size:11pt; margin-top: 30px;">$Name_NguoiLap</p>
                     </th>
                 </tr>
             </table>
