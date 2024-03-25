@@ -219,7 +219,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=51721&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52798&fileName=DeNghiCapVTTB_UAT_2.vm",
                 "newVersion": true
             },
             "printable": true,
@@ -424,7 +424,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=51721&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52798&fileName=DeNghiCapVTTB_UAT_2.vm",
                 "newVersion": true
             },
             "printable": true,
@@ -633,7 +633,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=51721&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52798&fileName=DeNghiCapVTTB_UAT_2.vm",
                 "newVersion": true
             },
             "sla": {
@@ -783,7 +783,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=51721&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52798&fileName=DeNghiCapVTTB_UAT_2.vm",
                 "newVersion": true
             },
             "sla": {
@@ -964,7 +964,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=51721&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52798&fileName=DeNghiCapVTTB_UAT_2.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1120,7 +1120,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=51721&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52798&fileName=DeNghiCapVTTB_UAT_2.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1278,7 +1278,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=51721&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52798&fileName=DeNghiCapVTTB_UAT_2.vm",
                 "newVersion": true
             },
             "sla": {
@@ -2262,7 +2262,7 @@
                         "dataset": "INDIVIDUAL"
                     },
                     "suffix": " - (Chuyên viên đã ký số)",
-                    "key": "ChuKy_ChuyenVien"
+                    "key": "Small*ChuKy_ChuyenVien"
                 }
             },
             "api_config": [

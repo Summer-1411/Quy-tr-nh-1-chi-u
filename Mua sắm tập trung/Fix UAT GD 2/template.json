@@ -344,8 +344,8 @@
         
         
         {
-            "id": -7550,
-            "position": -7550,
+            "id": -8100,
+            "position": -8100,
             "name": "File đính kèm",
             "type": "upload",
             "conditions": {
@@ -391,6 +391,7 @@
             "name": "Tổng chi phí",
             "type": "finance",
             "value": "0",
+            "display": false,
             "conditions": {
                 "required": false
             },
@@ -770,12 +771,12 @@
         {
             "id": -8000,
             "position": -8000,
-            "name": "Thông tin xuất kho",
+            "name": "Thông tin nhập kho",
             "type": "table",
             "columns": [
                 {
                     "id": -7990,
-                    "name": "Số phiếu xuất",
+                    "name": "Số phiếu nhập",
                     "type": "text",
                     "position": -7990,
                     "disabled": true,
@@ -804,13 +805,14 @@
                     }
                 },
                 {
-                    "name": "Đơn vị nhập",
+                    "name": "Địa chỉ",
                     "id": -7967,
                     "position": -7967,
-                    "display": false,
+                    "display": true,
+                    "disabled": true,
                     "type": "text",
                     "conditions": {
-                        "required": false
+                        "required": true
                     }
                 },
                 {
@@ -828,12 +830,10 @@
                     "name": "Địa chỉ",
                     "id": -7964,
                     "position": -7964,
-                    "display": true,
+                    "display": false,
                     "type": "text",
-                    "disabled": true,
-                    "conditions": {
-                        "required": false
-                    }
+                    "disabled": true
+                    
                 },
                 {
                     "name": "Đơn vị nhập",
@@ -891,7 +891,10 @@
                     "name": "Nhập tại kho phụ",
                     "type": "text",
                     "disabled": true,
-                    "position": -7930
+                    "position": -7930,
+                    "conditions": {
+                        "required": true
+                    }
                 },
                 {
                     "id": -7925,
@@ -936,7 +939,10 @@
                     "position": -7860,
                     "disabled": true,
                     "type": "text",
-                    "display": true
+                    "display": true,
+                    "conditions": {
+                        "required": true
+                    }
                 }
                 
             ]
