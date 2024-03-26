@@ -104,6 +104,18 @@
             "additionalDisplayClass": "left-info"
         },
         {
+            "id": -9919,
+            "name": "Tên phòng ban user",
+            "type": "master_data_load_user_info_name_phong_ban",
+            "display": false,
+            "disable": true,
+            "conditions": {
+                "required": true
+            },
+            "position": -9919,
+            "additionalDisplayClass": "left-info"
+        },
+        {
             "id": -9915,
             "position": -9915,
             "name": "Ngày lập đề nghị",
@@ -162,6 +174,11 @@
             "position": -9820,
             "conditions": {
                 "feedTo": [
+                    {
+                        "id": -9815,
+                        "fieldName": "name",
+                        "dataset": "INDIVIDUAL"
+                    }
                 ],
                 "required": true
             },
@@ -176,6 +193,61 @@
                     "minimumSearch": 0,
                     "displayField": "name"
                 }
+            }
+        },
+        {
+            "display": false,
+            "name": "Loại nhập kho đã chọn",
+            "additionalDisplayClass": "right-info",
+            "id": -9815,
+            "position": -9815,
+            "type": "text"
+        },
+        {
+            "apiWebConfig": {
+                "apiConfig": {
+                    "param": "EVN_SPRO_PARAM_PICKER_FILTER_CREAT_NUMBER_VOTE_DE_NGHI_NKBH",
+                    "hostnameKey": "SPRO_EVN",
+                    "urlFilter": "/common-spro/create-number-vote",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "numberVote",
+                    "minimumSearch": 0,
+                    "displayField": "numberVote"
+                    }
+            },
+            "id": -9810,
+            "name": "Số tờ trình",
+            "type": "apiweb",
+            "additionalDisplayClass": "right-info",
+            "position": -9810,
+            "conditions": {
+                "required": true,
+                "feedTo": []
+            }
+        },
+        {
+            "display": false,
+            "id": -9809,
+            "name": "Type số",
+            "value": "REQUEST",
+            "type": "text",
+            "position": -9809,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "display": false,
+            "name": "SortName kho",
+            "disabled": true,
+            "additionalDisplayClass": "left-info",
+            "id": -9808,
+            "position": -9808,
+            "type": "master_data_load_user_info_shortnameorg",
+            "conditions": {
+                "required": true
             }
         },
         {
@@ -461,6 +533,51 @@
             "position": -3500,
             "type": "text",
             "value": "01"
+        },
+        {
+            "id": -2300,
+            "position": -2300,
+            "name": "Prefix key giám đốc",
+            "display": false,
+            "type": "text",
+            "value": "GIAM_DOC_",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -2200,
+            "position": -2200,
+            "name": "Prefix key thủ kho",
+            "display": false,
+            "type": "text",
+            "value": "THU_KHO_",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -2100,
+            "position": -2100,
+            "name": "Prefix key người giao hàng",
+            "display": false,
+            "type": "text",
+            "value": "NGUOI_GIAO_HANG_",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -2000,
+            "position": -2000,
+            "name": "Prefix key người lập phiếu",
+            "display": false,
+            "type": "text",
+            "value": "NGUOI_LAP_PHIEU_",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -1900,
+            "position": -1900,
+            "name": "Prefix key KHVT",
+            "display": false,
+            "type": "text",
+            "value": "PHONG_KHVT_",
+            "additionalDisplayClass": "right-info"
         }
     ],
     "multitable": [

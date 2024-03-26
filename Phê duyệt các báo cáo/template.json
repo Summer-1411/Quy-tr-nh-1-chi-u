@@ -1192,11 +1192,26 @@
                         "fieldName": "name",
                         "id": -1,
                         "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "fieldName": "requestId",
+                        "id": -7000,
+                        "dataset": "INDIVIDUAL"
                     }
                 ],
                 "required": false
             },
             "value": ""
+        },
+        {
+            "name": "requestId",
+            "id": -7000,
+            "position": -7000,
+            "type": "text",
+            "display": false,
+            "conditions": {
+                "required": false
+            }
         },
         {
             "staticContent": "<p style='font-size: 12px; color: #3617FF'><i></i></p>",

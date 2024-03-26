@@ -67,6 +67,7 @@ B6_PARAM_PDBC_CREATE_TICKET
         "createDate": "(-9999)",
         "createUser": "(-10000)",
         "deptId": "(-9980)",
+        "requestId": "(-7000)",
         "actionType": "REQUEST"
     }
 }
@@ -83,6 +84,7 @@ B6_PARAM_PDBC_BUOC2
         "actionType": "REQUEST",
         "createDate": "(-9999)",
         "deptId": "(-9980)",
+        "requestId": "(-7000)",
         "noteInfo": {
             "ticketId": "(-0)",
             "files": [
@@ -115,6 +117,7 @@ B6_PARAM_PDBC_BUOC2_END
         "actionType": "REQUEST",
         "createDate": "(-9999)",
         "deptId": "(-9980)",
+        "requestId": "(-7000)",
         "noteInfo": {
             "ticketId": "(-0)",
             "files": [
@@ -148,6 +151,7 @@ B6_PARAM_PDBC_BUOC3
         "actionType": "REQUEST",
         "createDate": "(-9999)",
         "deptId": "(-9980)",
+        "requestId": "(-7000)",
         "noteInfo": {
             "ticketId": "(-0)",
             "files": [
@@ -182,6 +186,7 @@ B6_PARAM_PDBC_BUOC3_END
         "actionType": "REQUEST",
         "createDate": "(-9999)",
         "deptId": "(-9980)",
+        "requestId": "(-7000)",
         "noteInfo": {
             "ticketId": "(-0)",
             "files": [
@@ -216,6 +221,7 @@ B6_PARAM_PDBC_BUOC4
         "actionType": "REQUEST",
         "createDate": "(-9999)",
         "deptId": "(-9980)",
+        "requestId": "(-7000)",
         "noteInfo": {
             "ticketId": "(-0)",
             "files": [
@@ -250,6 +256,7 @@ B6_PARAM_PDBC_BUOC4_END
         "actionType": "REQUEST",
         "createDate": "(-9999)",
         "deptId": "(-9980)",
+        "requestId": "(-7000)",
         "noteInfo": {
             "ticketId": "(-0)",
             "files": [
@@ -284,6 +291,7 @@ B6_PARAM_PDBC_BUOC5
         "actionType": "REQUEST",
         "createDate": "(-9999)",
         "deptId": "(-9980)",
+        "requestId": "(-7000)",
         "noteInfo": {
             "ticketId": "(-0)",
             "files": [
@@ -318,6 +326,7 @@ B6_PARAM_PDBC_BUOC5_END
         "actionType": "REQUEST",
         "createDate": "(-9999)",
         "deptId": "(-9980)",
+        "requestId": "(-7000)",
         "noteInfo": {
             "ticketId": "(-0)",
             "files": [
@@ -353,6 +362,7 @@ B6_PARAM_PDBC_BUOC6_END
         "actionType": "REQUEST",
         "createDate": "(-9999)",
         "deptId": "(-9980)",
+        "requestId": "(-7000)",
         "noteInfo": {
             "ticketId": "(-0)",
             "files": [
