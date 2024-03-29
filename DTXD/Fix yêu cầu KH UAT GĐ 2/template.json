@@ -642,6 +642,24 @@
             "type": "text",
             "value": "PHONG_KHVT_",
             "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -100,
+            "position": -100,
+            "name": "Bước duyệt 1",
+            "display": false,
+            "type": "text",
+            "value": "1",
+            "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -200,
+            "position": -200,
+            "name": "Bước duyệt n",
+            "display": false,
+            "type": "text",
+            "value": "2",
+            "additionalDisplayClass": "right-info"
         }
     ],
     "multitable": [

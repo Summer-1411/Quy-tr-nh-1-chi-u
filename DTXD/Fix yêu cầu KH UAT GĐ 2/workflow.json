@@ -173,6 +173,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -100,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "buocDuyet"
+                    },
+                    {
+                        "data-config": {
                             "column-key-mappings": [
                                 {
                                     "columnId": -9760,
@@ -219,7 +227,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52798&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54063&fileName=DeNghiCapVTTB_UAT_2.vm",
                 "newVersion": true
             },
             "printable": true,
@@ -376,6 +384,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -200,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "buocDuyet"
+                    },
+                    {
+                        "data-config": {
                             "column-key-mappings": [
                                 {
                                     "columnId": -9760,
@@ -424,7 +440,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52798&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54063&fileName=DeNghiCapVTTB_UAT_2.vm",
                 "newVersion": true
             },
             "printable": true,
@@ -585,6 +601,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -200,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "buocDuyet"
+                    },
+                    {
+                        "data-config": {
                             "column-key-mappings": [
                                 {
                                     "columnId": -9760,
@@ -633,7 +657,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52798&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54063&fileName=DeNghiCapVTTB_UAT_2.vm",
                 "newVersion": true
             },
             "sla": {
@@ -753,6 +777,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -200,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "buocDuyet"
+                    },
+                    {
+                        "data-config": {
                             "column-key-mappings": [
                                 {
                                     "columnId": -9760,
@@ -783,7 +815,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52798&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54063&fileName=DeNghiCapVTTB_UAT_2.vm",
                 "newVersion": true
             },
             "sla": {
@@ -934,6 +966,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -200,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "buocDuyet"
+                    },
+                    {
+                        "data-config": {
                             "column-key-mappings": [
                                 {
                                     "columnId": -9760,
@@ -964,7 +1004,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52798&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54063&fileName=DeNghiCapVTTB_UAT_2.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1090,6 +1130,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -200,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "buocDuyet"
+                    },
+                    {
+                        "data-config": {
                             "column-key-mappings": [
                                 {
                                     "columnId": -9760,
@@ -1120,7 +1168,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52798&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54063&fileName=DeNghiCapVTTB_UAT_2.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1248,6 +1296,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -200,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "buocDuyet"
+                    },
+                    {
+                        "data-config": {
                             "column-key-mappings": [
                                 {
                                     "columnId": -9760,
@@ -1278,7 +1334,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=52798&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54063&fileName=DeNghiCapVTTB_UAT_2.vm",
                 "newVersion": true
             },
             "sla": {
@@ -3108,7 +3164,7 @@
                         "conditions": {
                             "required": false
                         },
-                        "additionalDisplayClass": "left-info"
+                        "additionalDisplayClass": "left-info" 
                     },
                     {
                         "display": false,
@@ -3407,7 +3463,7 @@
                                 "name": "Số lượng đoạn",
                                 "id": -7930,
                                 "position": -7920,
-                                "type": "finance",
+                                "type": "text",
                                 "disabled": true,
                                 "conditions": {
                                     "required": false

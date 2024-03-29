@@ -384,14 +384,29 @@
     #foreach($item in $DanhSachVatTu)
         #set($MaVatTu = $item.MaVatTu)
 
+        #set($SoLuongStr = $item.SoLuong)
+        #set($valTam = $SoLuongStr.toString())
+		#set($valLongTam = "#RoundReturnString($valTam)" )
+		#set($SoLuong = $LONG_VALUE.parseLong($valLongTam.trim()) )
+
+
+        #if($buocDuyet.equals("1"))
+            #set($SoLuongDuyet = "")
+        #else
+            #set($SoLuongStr1 = $item.SoLuongDuyet)
+            #set($valTam1 = $SoLuongStr1.toString())
+            #set($valLongTam1 = "#RoundReturnString($valTam1)" )
+            #set($SoLuongDuyet = $LONG_VALUE.parseLong($valLongTam1.trim()) )
+        #end
+        
+
         #if($item.MaVatTuDuyet.equals(""))
             #set($MaVatTuDuyet = $MaVatTu)
         #else
             #set($MaVatTuDuyet = $item.MaVatTuDuyet)
         #end
-        
-        #set($outputMap[$MaVatTu] = { "MaVatTu": $MaVatTu, "TenVatTuVaQuyCach": $item.TenVatTuVaQuyCach, "DonViTinh": $item.DonViTinh, "SoLuong": $item.SoLuong, "GhiChu": $item.GhiChu,"MaVatTuDuyet": $MaVatTuDuyet, "TenVatTuVaQuyCachDuyet": $item.TenVatTuVaQuyCachDuyet, "DonViTinhDuyet": $item.DonViTinhDuyet, "SoLuongDuyet": $item.SoLuongDuyet  })
-        
+
+        #set($outputMap[$MaVatTu] = { "MaVatTu": $MaVatTu, "TenVatTuVaQuyCach": $item.TenVatTuVaQuyCach, "DonViTinh": $item.DonViTinh, "SoLuong": $SoLuong, "GhiChu": $item.GhiChu,"MaVatTuDuyet": $MaVatTuDuyet, "TenVatTuVaQuyCachDuyet": $item.TenVatTuVaQuyCachDuyet, "DonViTinhDuyet": $item.DonViTinhDuyet, "SoLuongDuyet": $SoLuongDuyet  })
     #end
 
 

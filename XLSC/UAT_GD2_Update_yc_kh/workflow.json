@@ -2305,17 +2305,6 @@
             "status": "waiting"
         },
         {
-            "autocreate": false,
-            "display": false,
-            "from": -40,
-            "comment": "Liên kết ẩn từ Bước 4 -> Bước 8 để xem",
-            "position": 30,
-            "id": -4080,
-            "to": -80,
-            "requestUpdateKeepData": true,
-            "relatedTo": -7080
-        },
-        {
             "customNote": "Bước 5 Small*",
             "advancedConfig": {
                 "signature_evn": {
@@ -2422,17 +2411,6 @@
             },
             "type": "approval",
             "status": "waiting"
-        },
-        {
-            "autocreate": false,
-            "display": false,
-            "from": -50,
-            "comment": "Liên kết ẩn từ Bước 5 -> Bước 9 để xem",
-            "position": 30,
-            "id": -5090,
-            "to": -90,
-            "requestUpdateKeepData": true,
-            "relatedTo": -8090
         },
         {
             "customNote": "Bước 6",
