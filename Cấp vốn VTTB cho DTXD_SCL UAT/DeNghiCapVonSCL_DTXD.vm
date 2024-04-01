@@ -164,7 +164,7 @@
                     <b style="border-bottom: 1px solid black;">$DonViDeNghi</b>
                     <br />
                     <div style="font-size:11pt; font-weight: normal;">
-                        Số:$SoCongVan/Ttr-Đơn vị soạn thảo<br />
+                        Số:$SoCongVan<br />
                     </div>
                 </th>
                 <th width="60%" style="text-align: center; font-size:11pt">

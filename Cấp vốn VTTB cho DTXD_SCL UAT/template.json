@@ -25,6 +25,29 @@
             "additionalDisplayClass": "left-info"
         },
         {
+            "display": false,
+            "name": "SortName kho",
+            "disabled": true,
+            "additionalDisplayClass": "left-info",
+            "id": -9994,
+            "position": -9994,
+            "type": "master_data_load_user_info_shortnameorg",
+            "conditions": {
+                "required": true
+            }
+        },
+        {
+            "display": false,
+            "id": -9995,
+            "name": "Type số",
+            "value": "SUBMISSION",
+            "type": "text",
+            "position": -9995,
+            "conditions": {
+                "required": true
+            }
+        },
+        {
             "id": -9991,
             "position": -9991,
             "name": "Họ tên người lập yêu cầu",
@@ -153,6 +176,30 @@
             },
             "additionalDisplayClass": "right-info",
             "position": -9910
+        },
+        {
+            "apiWebConfig": {
+                "apiConfig": {
+                    "param": "EVN_SPRO_PARAM_PICKER_FILTER_CREAT_NUMBER_VOTE_CAP_VON_VTTB",
+                    "hostnameKey": "SPRO_EVN",
+                    "urlFilter": "/common-spro/create-number-vote",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "numberVote",
+                    "minimumSearch": 0,
+                    "displayField": "numberVote"
+                    }
+            },
+            "id": -9865,
+            "name": "Số tờ trình",
+            "type": "apiweb",
+            "additionalDisplayClass": "right-info",
+            "position": -9865,
+            "conditions": {
+                "required": true,
+                "feedTo": []
+            }
         },
         {
             "name": "Cấp vốn bằng VTTB cho",

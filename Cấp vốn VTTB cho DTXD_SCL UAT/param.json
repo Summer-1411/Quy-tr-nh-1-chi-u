@@ -3,6 +3,14 @@ EVN_SPRO_PARAM_PICKER_FILTER_CMIS
     "orgId": "-9989",
     "pickerFilter": "projectName"
 }
+
+EVN_SPRO_PARAM_PICKER_FILTER_CREAT_NUMBER_VOTE_CAP_VON_VTTB
+{
+    "warehouseCode":"-9994",
+    "type":"-9995",
+    "pickerFilter": "numberVote"
+}
+
 B6_PARAM_CHON_TRUONG_PHO_PHONG_DTXD_SCL
 {
     "orgId" : "-9920",
@@ -166,6 +174,7 @@ B6_PARAM_CREATE_TICKET_CAP_VON_SCL_DTXD
             "cmisCode": "(-9700)",
             "cmisName": "(-9600)",
             "type": "(-9799)",
+            "numberVote": "(-9865)",
             "listTable": [(t)<-7000>
                 {
                     "materialName": "(-6940)",
@@ -228,6 +237,7 @@ B6_PARAM_FINISH_BUOC6_SCL_DTXD_BRANCH_SCL
             "cmisCode": "(-9700)",
             "cmisName": "(-9600)",
             "type": "(-9799)",
+            "numberVote": "(-9865)",
             "listTable": [(t)<-7000,-60,-70>
                 {
                     "materialName": "(-6940)",
@@ -270,6 +280,7 @@ B6_PARAM_FINISH_BUOC6_SCL_DTXD_BRANCH_DTXD
             "cmisCode": "(-9700)",
             "cmisName": "(-9600)",
             "type": "(-9799)",
+            "numberVote": "(-9865)",
             "listTable": [(t)<-7000,-65,-75>
                 {
                     "materialName": "(-6940)",
@@ -384,6 +395,7 @@ B6_PARAM_APPROVE_PHONG_BAN_KY_SCL_DTXD_BRANCH_SCL
             "cmisCode": "(-9700)",
             "cmisName": "(-9600)",
             "type": "(-9799)",
+            "numberVote": "(-9865)",
             "listTable": [(t)<-7000,-60,-70>
                 {
                     "materialName": "(-6940)",
@@ -436,6 +448,7 @@ B6_PARAM_APPROVE_PHONG_BAN_KY_SCL_DTXD_BRANCH_DTXD
             "cmisCode": "(-9700)",
             "cmisName": "(-9600)",
             "type": "(-9799)",
+            "numberVote": "(-9865)",
             "listTable": [(t)<-7000,-65,-75>
                 {
                     "materialName": "(-6940)",
@@ -487,6 +500,7 @@ B6_PARAM_APPROVE_BUOC16_SCL_DTXD_BRANCH_SCL
             "cmisCode": "(-9700)",
             "cmisName": "(-9600)",
             "type": "(-9799)",
+            "numberVote": "(-9865)",
             "listTable": [(t)<-7000,-60,-70>
                 {
                     "materialName": "(-6940)",
@@ -539,6 +553,7 @@ B6_PARAM_APPROVE_BUOC16_SCL_DTXD_BRANCH_DTXD
             "cmisCode": "(-9700)",
             "cmisName": "(-9600)",
             "type": "(-9799)",
+            "numberVote": "(-9865)",
             "listTable": [(t)<-7000,-65,-75>
                 {
                     "materialName": "(-6940)",
@@ -590,6 +605,7 @@ B6_PARAM_APPROVE_BUOC17_SCL_DTXD_BRANCH_SCL
             "cmisCode": "(-9700)",
             "cmisName": "(-9600)",
             "type": "(-9799)",
+            "numberVote": "(-9865)",
             "listTable": [(t)<-7000,-60,-70>
                 {
                     "materialName": "(-6940)",
@@ -642,6 +658,7 @@ B6_PARAM_APPROVE_BUOC17_SCL_DTXD_BRANCH_DTXD
             "cmisCode": "(-9700)",
             "cmisName": "(-9600)",
             "type": "(-9799)",
+            "numberVote": "(-9865)",
             "listTable": [(t)<-7000,-65,-75>
                 {
                     "materialName": "(-6940)",
@@ -693,6 +710,7 @@ B6_PARAM_APPROVE_BUOC18_SCL_DTXD_BRANCH_DTXD
             "cmisCode": "(-9700)",
             "cmisName": "(-9600)",
             "type": "(-9799)",
+            "numberVote": "(-9865)",
             "listTable": [(t)<-7000,-65,-75>
                 {
                     "materialName": "(-6940)",
@@ -744,6 +762,7 @@ B6_PARAM_APPROVE_BUOC22_SCL_DTXD_BRANCH_SCL
             "cmisCode": "(-9700)",
             "cmisName": "(-9600)",
             "type": "(-9799)",
+            "numberVote": "(-9865)",
             "listTable": [(t)<-7000,-60,-70>
                 {
                     "materialName": "(-6940)",
@@ -796,6 +815,7 @@ B6_PARAM_APPROVE_BUOC22_SCL_DTXD_BRANCH_DTXD
             "cmisCode": "(-9700)",
             "cmisName": "(-9600)",
             "type": "(-9799)",
+            "numberVote": "(-9865)",
             "listTable": [(t)<-7000,-65,-75>
                 {
                     "materialName": "(-6940)",

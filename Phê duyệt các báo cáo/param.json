@@ -35,7 +35,8 @@ B6_PARAM_GET_FILE_BAO_CAO_PDBC
     "fullname2": "-8399",
     "fullname3": "-8299",
     "fullname4": "-8199",
-    "fullname5": "-8099"
+    "fullname5": "-8099",
+    "userCreate": "-10000"
 }
 
 EVN_SPRO_PARAM_PICKER_FILTER_CMIS
