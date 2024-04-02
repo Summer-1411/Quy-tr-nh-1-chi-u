@@ -2546,7 +2546,7 @@
                         "filesToSign": [
                             {
                                 "infoId": -1,
-                                "relaId": -115120,
+                                "relaId": -117120,
                                 "dataset": "INDIVIDUAL"
                             }
                         ],
@@ -2555,7 +2555,7 @@
                             "dataset": "INDIVIDUAL"
                         },
                         "suffix": "(đã ký số)",
-                        "key": "ChuKyGiamDoc"
+                        "key": "ChuKyTruongDonVi"
                     }
                 ]
             },
@@ -2602,7 +2602,9 @@
                                 "text": "Gắn chữ ký số",
                                 "params": [
                                     {
+                                        "inputId": -120,
                                         "infoId": -1,
+                                        "phaseId": -117,
                                         "name": "File ký",
                                         "type": "text",
                                         "dataset": "INDIVIDUAL"
@@ -2676,7 +2678,9 @@
                                 "text": "Gắn chữ ký số",
                                 "params": [
                                     {
+                                        "inputId": -130,
                                         "infoId": -1,
+                                        "phaseId": -120,
                                         "name": "File ký",
                                         "type": "text",
                                         "dataset": "INDIVIDUAL"
@@ -2750,7 +2754,9 @@
                                 "text": "Gắn chữ ký số",
                                 "params": [
                                     {
+                                        "inputId": -130,
                                         "infoId": -1,
+                                        "phaseId": -120,
                                         "name": "File ký",
                                         "type": "text",
                                         "dataset": "INDIVIDUAL"
@@ -3266,7 +3272,7 @@
                                 "additionalDisplayClass": "left-info",
                                 "id": -9650,
                                 "position": -9650,
-                                "type": "textarea"
+                                "type": "text"
                             },
                             {
                                 "display": false,
