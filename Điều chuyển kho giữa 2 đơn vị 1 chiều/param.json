@@ -5,6 +5,15 @@ EVN_SPRO_PARAM_PICKER_GET_COST_1_CHIEU_DCK
     "pickerFilter":"materialCode"
 }
 
+EVN_SPRO_PARAM_GET_LIST_NUMBER_VOTE_DCK
+{
+    "type":"-1300",
+    "year":"-9945,-180,-190",
+    "orgId":"-9910",
+    "pickerFilter":"numberVote"
+}
+
+
 
 B6_PARAM_GET_TICKET_DCK
 

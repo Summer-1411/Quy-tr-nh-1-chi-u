@@ -4552,15 +4552,11 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
-                    "enable": true,
+                    "enable": false,
                     "text": "Hủy yêu cầu"
-                },
-                "requestUpdate": {
-                    "enable": true,
-                    "text": "Yêu cầu nhập thông tin"
                 }
             },
             "customNote": "Bước 13. Kế toán vật tư bên giao ký số biên bản",
@@ -4648,15 +4644,11 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
-                    "enable": true,
+                    "enable": false,
                     "text": "Hủy yêu cầu"
-                },
-                "requestUpdate": {
-                    "enable": true,
-                    "text": "Yêu cầu nhập thông tin"
                 }
             },
             "customNote": "Bước 14. Giám đốc/Phó giám đốc bên giao ký số biên bản",
@@ -4917,15 +4909,11 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
-                    "enable": true,
+                    "enable": false,
                     "text": "Hủy yêu cầu"
-                },
-                "requestUpdate": {
-                    "enable": true,
-                    "text": "Yêu cầu nhập thông tin"
                 }
             },
             "customNote": "Bước 18",
@@ -5693,15 +5681,11 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
                     "text": "Hủy yêu cầu"
-                },
-                "requestUpdate": {
-                    "enable": true,
-                    "text": "Yêu cầu nhập thông tin"
                 }
             },
             "customNote": "Bước 20. Chuyên viên P.KHVT bên giao ký số phiếu xuất kho",
@@ -5782,15 +5766,11 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
                     "text": "Hủy yêu cầu"
-                },
-                "requestUpdate": {
-                    "enable": true,
-                    "text": "Yêu cầu nhập thông tin"
                 }
             },
             "customNote": "Bước 21. Trưởng/phó P.KHVT bên giao ký số phiếu xuất kho",
@@ -5883,11 +5863,11 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
-                "requestUpdate": {
-                    "enable": true,
-                    "text": "Yêu cầu nhập thông tin"
+                "cancel": {
+                    "enable": false,
+                    "text": "Hủy yêu cầu"
                 }
             },
             "customNote": "Bước 22. Chuyên viên P.KHVT bên nhận đến kho nhận vật tư",
@@ -5968,7 +5948,7 @@
                     },
                     {
                         "display": false,
-                        "name": "Key ký đội trưởng",
+                        "name": "Key ký người nhận",
                         "additionalDisplayClass": "left-info",
                         "id": -2004,
                         "position": -2,
@@ -6013,15 +5993,11 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
                     "text": "Hủy yêu cầu"
-                },
-                "requestUpdate": {
-                    "enable": true,
-                    "text": "Yêu cầu nhập thông tin"
                 }
             },
             "customNote": "Bước 23. Chuyên viên P.KHVT bên nhận ký số phiếu xuất kho, phiếu giao hàng",
@@ -6041,7 +6017,7 @@
                         },
                         "suffix": " - (CV bên nhận)",
                         "key": {
-                            "infoId": -2001,
+                            "infoId": -2004,
                             "relaId": -190200,
                             "dataset": "INDIVIDUAL"
                         }
@@ -6167,15 +6143,11 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
                     "text": "Hủy yêu cầu"
-                },
-                "requestUpdate": {
-                    "enable": true,
-                    "text": "Yêu cầu nhập thông tin"
                 }
             },
             "customNote": "Bước 24. Thủ kho bên giao ký số phiếu giao hàng",
@@ -6269,15 +6241,11 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
-                    "text": "Yêu cầu hủy thông tin"
-                },
-                "requestUpdate": {
-                    "enable": true,
-                    "text": "Yêu cầu nhập thông tin"
+                    "text": "Hủy yêu cầu"
                 }
             },
             "customNote": "Bước 25. Thủ kho bên giao xác nhận đã xuất hàng",
@@ -7231,15 +7199,11 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
                     "text": "Hủy yêu cầu"
-                },
-                "requestUpdate": {
-                    "enable": true,
-                    "text": "Yêu cầu nhập thông tin"
                 }
             },
             "customNote": "Bước 28. Chuyên viên P.KHVT bên nhận ký số phiếu nhập kho ",
@@ -7331,15 +7295,11 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
                     "text": "Hủy yêu cầu"
-                },
-                "requestUpdate": {
-                    "enable": true,
-                    "text": "Yêu cầu nhập thông tin"
                 }
             },
             "customNote": "Bước 29. Trưởng/phó phòng KHVT bên nhận ký số phiếu nhập kho",
@@ -7431,15 +7391,11 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
                     "text": "Hủy yêu cầu"
-                },
-                "requestUpdate": {
-                    "enable": true,
-                    "text": "Yêu cầu nhập thông tin"
                 }
             },
             "customNote": "Bước 30. Kế toán vật tư bên nhận ký số phiếu nhập kho",
@@ -7531,15 +7487,11 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
                     "text": "Hủy yêu cầu"
-                },
-                "requestUpdate": {
-                    "enable": true,
-                    "text": "Yêu cầu nhập thông tin"
                 }
             },
             "customNote": "Bước 31. Chuyên viên P.KHVT bên nhận xuống kho nhập vật tư và ký số phiếu nhập kho",
@@ -7631,15 +7583,11 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
                     "text": "Hủy yêu cầu"
-                },
-                "requestUpdate": {
-                    "enable": true,
-                    "text": "Yêu cầu nhập thông tin"
                 }
             },
             "customNote": "Bước 32. Thủ kho bên nhận ký số phiếu nhập kho",
