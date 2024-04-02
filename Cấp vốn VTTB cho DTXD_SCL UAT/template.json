@@ -536,7 +536,7 @@
         {
             "id": -5350,
             "position": -5350,
-            "name": "Chọn Trưởng Ban vật tư",
+            "name": "Chọn trưởng/phó Ban Vật tư",
             "type": "apiweb",
             "conditions": {
                 "feedTo": [

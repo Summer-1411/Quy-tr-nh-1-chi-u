@@ -416,6 +416,7 @@ B6_PARAM_APPROVE_PHONG_BAN_KY_SCL_DTXD_BRANCH_SCL
             "ticketId": "(-0)",
             "files": [
                 {
+                    "numberVote": "(-9865)",
                     "link": "(-1,-160,-160)",
                     "type": "1",
                     "createUser": "(-10000)"
@@ -468,6 +469,7 @@ B6_PARAM_APPROVE_PHONG_BAN_KY_SCL_DTXD_BRANCH_DTXD
             "ticketId": "(-0)",
             "files": [
                 {
+                    "numberVote": "(-9865)",
                     "link": "(-1,-155,-165)",
                     "type": "1",
                     "createUser": "(-10000)"
@@ -521,6 +523,7 @@ B6_PARAM_APPROVE_BUOC16_SCL_DTXD_BRANCH_SCL
             "ticketId": "(-0)",
             "files": [
                 {
+                    "numberVote": "(-9865)",
                     "link": "(-1,-160,-170)",
                     "type": "1",
                     "createUser": "(-10000)"
@@ -573,6 +576,7 @@ B6_PARAM_APPROVE_BUOC16_SCL_DTXD_BRANCH_DTXD
             "ticketId": "(-0)",
             "files": [
                 {
+                    "numberVote": "(-9865)",
                     "link": "(-1,-165,-175)",
                     "type": "1",
                     "createUser": "(-10000)"
@@ -626,7 +630,8 @@ B6_PARAM_APPROVE_BUOC17_SCL_DTXD_BRANCH_SCL
             "ticketId": "(-0)",
             "files": [
                 {
-                    "link": "(-1,-170,-180)",
+                    "numberVote": "(-9865)",
+                    "link": "(-1,-170,-220)",
                     "type": "1",
                     "createUser": "(-10000)"
                 }
@@ -678,6 +683,7 @@ B6_PARAM_APPROVE_BUOC17_SCL_DTXD_BRANCH_DTXD
             "ticketId": "(-0)",
             "files": [
                 {
+                    "numberVote": "(-9865)",
                     "link": "(-1,-175,-185)",
                     "type": "1",
                     "createUser": "(-10000)"
@@ -730,7 +736,8 @@ B6_PARAM_APPROVE_BUOC18_SCL_DTXD_BRANCH_DTXD
             "ticketId": "(-0)",
             "files": [
                 {
-                    "link": "(-1,-185,-195)",
+                    "numberVote": "(-9865)",
+                    "link": "(-1,-185,-225)",
                     "type": "1",
                     "createUser": "(-10000)"
                 }
@@ -783,7 +790,8 @@ B6_PARAM_APPROVE_BUOC22_SCL_DTXD_BRANCH_SCL
             "ticketId": "(-0)",
             "files": [
                 {
-                    "link": "(-1,-210,-220)",
+                    "numberVote": "(-9865)",
+                    "link": "(-1,-170,-220)",
                     "type": "1",
                     "createUser": "(-10000)"
                 }
@@ -835,7 +843,8 @@ B6_PARAM_APPROVE_BUOC22_SCL_DTXD_BRANCH_DTXD
             "ticketId": "(-0)",
             "files": [
                 {
-                    "link": "(-1,-215,-225)",
+                    "numberVote": "(-9865)",
+                    "link": "(-1,-185,-225)",
                     "type": "1",
                     "createUser": "(-10000)"
                 }

@@ -6158,10 +6158,11 @@
             "status": "waiting"
         },
         {
-            "requestUpdateLock": true,
+            "requestUpdateUnlock": true,
             "buttonConfig": {
-                "requestUpdate": {
-                    "enable": false
+                "cancel": {
+                    "enable": false,
+                    "text": "Hủy yêu cầu"
                 }
             },
             "customNote": "Bước 3. Giám đốc/phó giám đốc duyệt",
@@ -6199,6 +6200,13 @@
             "status": "waiting"
         },
         {
+            "requestUpdateUnlock": true,
+            "buttonConfig": {
+                "cancel": {
+                    "enable": false,
+                    "text": "Hủy yêu cầu"
+                }
+            },
             "customNote": "Bước 4. Trưởng Ban VT giao việc cho Chuyên viên",
             "autocreate": false,
             "api_config": [
@@ -6247,6 +6255,13 @@
             "status": "waiting"
         },
         {
+            "requestUpdateUnlock": true,
+            "buttonConfig": {
+                "cancel": {
+                    "enable": false,
+                    "text": "Hủy yêu cầu"
+                }
+            },
             "customNote": "Bước 4. Trưởng Ban VT giao việc cho Chuyên viên",
             "autocreate": false,
             "api_config": [
@@ -7329,7 +7344,7 @@
                                 "displayField": "fullName"
                             }
                         },
-                        "name": "Chọn trưởng Ban kế hoạch",
+                        "name": "Chọn trưởng/phó Ban Kế hoạch",
                         "additionalDisplayClass": "right-info",
                         "id": -9300,
                         "position": -9300,
@@ -9003,39 +9018,6 @@
             "detail": {
                 "individual": [
                     {
-                        "name": "Văn bản đã ký số",
-                        "additionalDisplayClass": "left-info",
-                        "disabled": true,
-                        "id": -1,
-                        "position": -1,
-                        "conditions": {
-                            "filetype": "all/*",
-                            "advanced": {
-                                "files": {
-                                    "name": "File ký",
-                                    "value": ""
-                                },
-                                "text": "Gắn chữ ký số",
-                                "params": [
-                                    {
-                                        "inputId": -220,
-                                        "infoId": -1,
-                                        "phaseId": -170,
-                                        "name": "File ký",
-                                        "type": "text",
-                                        "dataset": "INDIVIDUAL"
-                                    }
-                                ],
-                                "type": "signature"
-                            },
-                            "max-size": 20,
-                            "multiple": true,
-                            "required": false
-                        },
-                        "type": "upload",
-                        "value": ""
-                    },
-                    {
                         "name": "Ghi chú",
                         "additionalDisplayClass": "left-info",
                         "id": -12,
@@ -9070,39 +9052,6 @@
             "to": -1,
             "detail": {
                 "individual": [
-                    {
-                        "name": "Văn bản đã ký số",
-                        "additionalDisplayClass": "left-info",
-                        "disabled": true,
-                        "id": -1,
-                        "position": -1,
-                        "conditions": {
-                            "filetype": "all/*",
-                            "advanced": {
-                                "files": {
-                                    "name": "File ký",
-                                    "value": ""
-                                },
-                                "text": "Gắn chữ ký số",
-                                "params": [
-                                    {
-                                        "inputId": -225,
-                                        "infoId": -1,
-                                        "phaseId": -185,
-                                        "name": "File ký",
-                                        "type": "text",
-                                        "dataset": "INDIVIDUAL"
-                                    }
-                                ],
-                                "type": "signature"
-                            },
-                            "max-size": 20,
-                            "multiple": true,
-                            "required": false
-                        },
-                        "type": "upload",
-                        "value": ""
-                    },
                     {
                         "name": "Ghi chú",
                         "additionalDisplayClass": "left-info",
