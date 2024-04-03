@@ -1,0 +1,123 @@
+B6_PARAM_APPROVE_BUOC11_NKBH
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "IMPORT_BH",
+        "status": "CLOSED",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "typeImportProcess": "(-9820)",
+        "requestSubject": "(ticket-title)",
+        "statusErp": 1,
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9000,-60,-70)",
+            "receiver": "(-8600,-60,-70)",
+            "deliver": "(-8600,-60,-70)",
+            "reason": "(-8500,-60,-70)",
+            "description": "(-8400,-60,-70)",
+            "location": "(-8900,-60,-70)",
+            "addressOrg": "(-8900,-60,-70)",
+            "requestDate": "(-8800,-60,-70)",
+            "numberVoteApprove": "(-8700,-60,-70)",
+            "tableData": [(t)<-9800,-60,-70>
+                {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "batch": "(-9120)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9700)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-40,-50)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-120,-1)",
+                    "type": "2",
+                    "numberVote": "(-8700,-60,-70)",
+                    "createUser": "(-9500,-50,-60)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 11",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-110)"
+    }
+}
+
+
+
+B6_PARAM_APPROVE_BUOC12_NKBH
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "IMPORT_BH",
+        "status": "CLOSED",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "typeImportProcess": "(-9820)",
+        "requestSubject": "(ticket-title)",
+        "statusErp": 1,
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9000,-60,-70)",
+            "receiver": "(-8600,-60,-70)",
+            "deliver": "(-8600,-60,-70)",
+            "reason": "(-8500,-60,-70)",
+            "description": "(-8400,-60,-70)",
+            "location": "(-8900,-60,-70)",
+            "addressOrg": "(-8900,-60,-70)",
+            "requestDate": "(-8800,-60,-70)",
+            "numberVoteApprove": "(-8700,-60,-70)",
+            "tableData": [(t)<-9800,-60,-70>
+                {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "batch": "(-9120)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9700)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-40,-50)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-120,-1)",
+                    "type": "2",
+                    "numberVote": "(-8700,-60,-70)",
+                    "createUser": "(-9500,-50,-60)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CLOSED",
+        "flowName": "Buoc 12",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-120)"
+    }
+}

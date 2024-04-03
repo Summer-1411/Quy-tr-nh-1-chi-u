@@ -15,7 +15,7 @@ B6_EXPORT_XUAT_KHO_TCT_XLSC_TUNGLV
     "keyNguoiLapPhieu":"-7900,-170,-190",
     "keyNguoiNhan":"-7800,-170,-190",
     "khvt":"-8949,-170,-190",
-    "userCreate":"-9000",
+    "userCreate":"-9550,-50,-60",
     "receiver":"-9000,-220,-230"
 }
 
@@ -539,41 +539,43 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_BUOC_8
 B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_BUOC_9
 {
     "ticket": {
+        "ticketId": 0,
         "ticketCode": "(-0)",
         "requestSubject": "(ticket-title)",
         "type": "EXPORT_PT_TCT",
         "statusErp": 0,
         "status": "INPROGRESS",
         "createUser": "(-10000)",
-        "statusValidate": 1,
+        "deptId": "(-9980)",
         "actionType": "REQUEST",
         "importExport": {
+            "ixId": 0,
             "ticketCode": "(-0)",
+            "orgRequest": "(-9900)",
             "reason": "(-9860)",
             "warehouse": "-9940",
-            "orgRequest": "(-9895,-60,-70)",
             "type": 2,
-            "orgCode": "(-9895,-60,-70)",
+            "orgCode": "(-9900)",
             "requestDate": "(-9880)",
             "numberVoteApprove": "(-9870)",
-            "tableData": [(t)<-10000,-60,-70>
+            "tableData": [(t)<-9820>
                 {
+                    "id": 0,
+                    "ixfId": 0,
                     "ticketCode": "(-0)",
-                    "materialCode": "(-9960)",
-                    "materialName": "(-9940)",
-                    "unit": "(-9900)",
-                    "requestQuantity": "(-9880)",
-                    "approveQuantity": "(-9860)",
-                    "unitPrice": "(-9760)",
-                    "orgIdTransfer": "(-9800)",
-                    "willDispense": "(-9840)",
-                    "amount": "(-9740)",
-                    "transfer": "(-9820)",
-                    "funds": "(-9780)",
-                    "transferOrg": "(-9800)",
-                    "total": "(-9740)",
-                    "producer": "(-9920)",
-                    "dispenseImmediately": "(-9860)"
+                    "materialCode": "(-9780)",
+                    "materialName": "(-9760)",
+                    "producer": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9718)",
+                    "unitPrice": 0,
+                    "amount": 0,
+                    "inventory": "(-9719)",
+                    "transfer": "(-9717)",
+                    "transferOrg": "(-9713)",
+                    "dispenseImmediately": "(-9715)",
+                    "willDispense": "(-9714)",
+                    "description": "(-9700)"
                 }(endt)
             ]
         },
@@ -601,41 +603,43 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_BUOC_9
 B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_BUOC_9_END bỏ qua
 {
     "ticket": {
+        "ticketId": 0,
         "ticketCode": "(-0)",
         "requestSubject": "(ticket-title)",
         "type": "EXPORT_PT_TCT",
         "statusErp": 0,
-        "status": "CLOSED",
+        "status": "INPROGRESS",
         "createUser": "(-10000)",
-        "statusValidate": 1,
+        "deptId": "(-9980)",
         "actionType": "REQUEST",
         "importExport": {
+            "ixId": 0,
             "ticketCode": "(-0)",
+            "orgRequest": "(-9900)",
             "reason": "(-9860)",
             "warehouse": "-9940",
-            "orgRequest": "(-9895,-60,-70)",
             "type": 2,
-            "orgCode": "(-9895,-60,-70)",
+            "orgCode": "(-9900)",
             "requestDate": "(-9880)",
             "numberVoteApprove": "(-9870)",
-            "tableData": [(t)<-10000,-60,-70>
+            "tableData": [(t)<-9820>
                 {
+                    "id": 0,
+                    "ixfId": 0,
                     "ticketCode": "(-0)",
-                    "materialCode": "(-9960)",
-                    "materialName": "(-9940)",
-                    "unit": "(-9900)",
-                    "requestQuantity": "(-9880)",
-                    "approveQuantity": "(-9860)",
-                    "unitPrice": "(-9760)",
-                    "orgIdTransfer": "(-9800)",
-                    "willDispense": "(-9840)",
-                    "amount": "(-9740)",
-                    "transfer": "(-9820)",
-                    "funds": "(-9780)",
-                    "transferOrg": "(-9800)",
-                    "total": "(-9740)",
-                    "producer": "(-9920)",
-                    "dispenseImmediately": "(-9860)"
+                    "materialCode": "(-9780)",
+                    "materialName": "(-9760)",
+                    "producer": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9718)",
+                    "unitPrice": 0,
+                    "amount": 0,
+                    "inventory": "(-9719)",
+                    "transfer": "(-9717)",
+                    "transferOrg": "(-9713)",
+                    "dispenseImmediately": "(-9715)",
+                    "willDispense": "(-9714)",
+                    "description": "(-9700)"
                 }(endt)
             ]
         },

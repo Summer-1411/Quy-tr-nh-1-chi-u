@@ -3,6 +3,11 @@ EVN_SPRO_PARAM_PICKER_FILTER_MATERIAL_CODE_XKTCT
     "erpId": "-9995",
     "materialCode": "query"
 }
+EVN_SPRO_PARAM_PICKER_LAY_SL_TON_KHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_XLSC
+{
+    "orgId":"-9995",
+    "materialCode":"-9780,-9820"
+}
 
 B6_EXPORT_XUAT_KHO_XLSC
 {
@@ -45,7 +50,7 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_B6
                     "materialCode": "(-9960)",
                     "materialName": "(-9940)",
                     "unit": "(-9900)",
-                    "producer": "(-9800)",
+                    "producer": "(-9920)",
                     "inventory": "(-9880)",
                     "requestQuantity": "(-9860)",
                     "transfer": "(-9840)",
@@ -80,6 +85,7 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_B6
 * Số lượng TCT sẽ cấp - WILL_DISPENSE
 * Ghi chú - NOTE
 B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_B1
+B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_B1
 {
     "ticket": {
         "ticketId": 0,
@@ -102,17 +108,17 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_B1
             "requestDate": "(-9880)",
             "numberVoteApprove": "(-9870)",
             "tableData": [(t)<-9820>
-            {
-                    "id": 0,
-                    "ixfId": 0,
+                {
                     "ticketCode": "(-0)",
                     "materialCode": "(-9780)",
                     "materialName": "(-9760)",
                     "producer": "(-9740)",
                     "unit": "(-9720)",
-                    "requestQuantity": "(-9700)",
+                    "requestQuantity": "(-9690)",
                     "unitPrice": 0,
-                    "amount": 0
+                    "amount": 0,
+                    "inventory": "(-9700)",
+                    "description": "(-9685)"
                 }(endt)
             ]
         }

@@ -449,6 +449,35 @@
                     }
                 },
                 {
+                    "apiWebConfig": {
+                        "apiConfig": {
+                            "param": "EVN_SPRO_PARAM_PICKER_LAY_SL_TON_KHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_XLSC",
+                            "hostnameKey": "SPRO_EVN",
+                            "urlFilter": "/common-spro/getNumberItemSXKDByOrg",
+                            "returnKey": "MT_GET_VENDOR_RP_S"
+                        },
+                        "searchConfig": {
+                            "idField": "count",
+                            "minimumSearch": 0,
+                            "displayField": "count"
+                        }
+                    },
+                    "id": -9721,
+                    "position": -9721,
+                    "name": "Lấy số lượng tồn kho",
+                    "type": "apiweb",
+                    "conditions": {
+                        "feedTo": [
+                            {
+                                "fieldName": "count",
+                                "id": -9700,
+                                "dataset": "TABLE"
+                            }
+                        ],
+                        "required": false
+                    }
+                },
+                {
                     "id": -9700,
                     "position": -9700,
                     "name": "Số lượng tồn kho",
