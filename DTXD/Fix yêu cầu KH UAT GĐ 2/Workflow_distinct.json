@@ -42,10 +42,6 @@
             "summary": "Bước 1.5 Chuyên viên KHVT duyệt đề nghị cấp",
             "owner": "",
             "customNote": "Bước 1.5",
-            "sla": {
-                "res": 7.99,
-                "fix": 8
-            },
             "print-config": {
                 "margin": "70,30,30,30",
                 "filename": "Danh sách vật tư",
@@ -227,12 +223,16 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54063&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55249&fileName=DeNghiCapVTTB_UAT_2%20Distinct.vm",
                 "newVersion": true
             },
-            "printable": true,
+            "sla": {
+                "res": 7.99,
+                "fix": 8
+            },
             "id": -15,
             "type": "phase",
+            "printable": true,
             "isDone": false,
             "phaseType": "Implement",
             "role_config": {
@@ -392,6 +392,7 @@
                     },
                     {
                         "data-config": {
+                            "inputId": -15,
                             "column-key-mappings": [
                                 {
                                     "columnId": -9760,
@@ -430,7 +431,6 @@
                                     "key": "SoLuongDuyet"
                                 }
                             ],
-                            "inputId": -15,
                             "phaseId": -20,
                             "tableId": -9800,
                             "type": "PHASE_INPUT_DETAIL",
@@ -440,16 +440,16 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54063&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55249&fileName=DeNghiCapVTTB_UAT_2%20Distinct.vm",
                 "newVersion": true
             },
-            "printable": true,
             "sla": {
                 "res": 7.99,
                 "fix": 8
             },
             "id": -20,
             "type": "phase",
+            "printable": true,
             "isDone": false,
             "phaseType": "Implement",
             "role_config": {
@@ -609,6 +609,7 @@
                     },
                     {
                         "data-config": {
+                            "inputId": -15,
                             "column-key-mappings": [
                                 {
                                     "columnId": -9760,
@@ -647,7 +648,6 @@
                                     "key": "SoLuongDuyet"
                                 }
                             ],
-                            "inputId": -15,
                             "phaseId": -20,
                             "tableId": -9800,
                             "type": "PHASE_INPUT_DETAIL",
@@ -657,7 +657,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54063&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55249&fileName=DeNghiCapVTTB_UAT_2%20Distinct.vm",
                 "newVersion": true
             },
             "sla": {
@@ -815,7 +815,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54063&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55249&fileName=DeNghiCapVTTB_UAT_2%20Distinct.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1004,7 +1004,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54063&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55249&fileName=DeNghiCapVTTB_UAT_2%20Distinct.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1168,7 +1168,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54063&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55249&fileName=DeNghiCapVTTB_UAT_2%20Distinct.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1334,7 +1334,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54063&fileName=DeNghiCapVTTB_UAT_2.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55249&fileName=DeNghiCapVTTB_UAT_2%20Distinct.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1691,7 +1691,6 @@
         {
             "summary": "Bước 15. Thủ kho ký số phiếu xuất",
             "customNote": "Bước 15",
-            
             "autocreate": false,
             "sla": {
                 "res": 15.99,
@@ -1773,7 +1772,6 @@
             "status": "finished"
         },
         {
-            "requestUpdateUnlock": true,
             "customNote": "Bước 1.5 Chuyên viên KHVT duyệt",
             "autocreate": true,
             "api_config": [
@@ -1788,17 +1786,18 @@
                 }
             ],
             "from": -15,
+            "requestUpdateUnlock": true,
             "id": -1520,
             "to": -20,
             "detail": {
                 "individual": [
                     {
-                        "id": -10000,
                         "name": "Tra cứu tồn kho",
-                        "type": "link",
                         "additionalDisplayClass": "left-info",
-                        "position": -10000,
                         "disabled": true,
+                        "id": -10000,
+                        "position": -10000,
+                        "type": "link",
                         "value": "http://10.9.195.57:8989/qlvt/category/searchconversion?urlPathId=7931"
                     },
                     {
@@ -1871,102 +1870,77 @@
                                             "fieldName": "requestQuantity",
                                             "id": -9684
                                         }
-                                        
                                     ]
                                 }
                             ],
                             "required": false
                         }
                     }
-                    
                 ],
                 "multitable": [
                     {
-                        "id": -9800,
-                        "position": -9800,
-                        "name": "Danh sách các thiết bị vật tư",
-                        "type": "table",
                         "columns": [
                             {
+                                "name": "Mã vật tư",
+                                "disabled": true,
                                 "id": -9760,
                                 "position": -9760,
-                                "name": "Mã vật tư",
                                 "type": "text",
-                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
                             },
                             {
+                                "name": "Tên vật tư và quy cách",
+                                "disabled": true,
                                 "id": -9740,
                                 "position": -9740,
-                                "name": "Tên vật tư và quy cách",
                                 "type": "text",
-                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
                             },
                             {
+                                "name": "Đơn vị tính",
+                                "disabled": true,
                                 "id": -9720,
                                 "position": -9720,
-                                "name": "Đơn vị tính",
                                 "type": "text",
-                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
                             },
                             {
+                                "name": "Số lượng đề nghị cấp",
+                                "disabled": true,
                                 "id": -9700,
                                 "position": -9700,
-                                "name": "Số lượng đề nghị cấp",
                                 "type": "finance",
-                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
                             },
                             {
+                                "name": "Độ dài mong muốn",
+                                "disabled": true,
                                 "id": -9692,
                                 "position": -9694,
-                                "name": "Độ dài mong muốn",
                                 "type": "finance",
-                                "disabled": true,
                                 "conditions": {
                                     "required": false
                                 }
                             },
                             {
-                                "id": -9694,
-                                "position": -9692,
                                 "name": "Số lượng đoạn",
-                                "type": "finance",
+                                "id": -9694,
                                 "disabled": true,
+                                "position": -9692,
+                                "type": "finance",
                                 "conditions": {
                                     "required": false
                                 }
                             },
                             {
-                                "id": -9690,
-                                "position": -9690,
-                                "name": "Mã vật tư duyệt cấp",
-                                "type": "apiweb",
-                                "conditions": {
-                                    "required": false,
-                                    "feedTo": [
-                                        {
-                                            "fieldName": "materialName",
-                                            "id": -9688,
-                                            "dataset": "TABLE"
-                                        },
-                                        {
-                                            "fieldName": "unit",
-                                            "id": -9686,
-                                            "dataset": "TABLE"
-                                        }
-                                    ]
-                                },
                                 "apiWebConfig": {
                                     "apiConfig": {
                                         "param": "B6_PARAM_MA_VART_TU_KHVT_DTXD",
@@ -1979,45 +1953,68 @@
                                         "minimumSearch": 0,
                                         "displayField": "materialCode"
                                     }
+                                },
+                                "name": "Mã vật tư duyệt cấp",
+                                "id": -9690,
+                                "position": -9690,
+                                "type": "apiweb",
+                                "conditions": {
+                                    "feedTo": [
+                                        {
+                                            "fieldName": "materialName",
+                                            "id": -9688,
+                                            "dataset": "TABLE"
+                                        },
+                                        {
+                                            "fieldName": "unit",
+                                            "id": -9686,
+                                            "dataset": "TABLE"
+                                        }
+                                    ],
+                                    "required": false
                                 }
                             },
                             {
+                                "name": "Tên vật tư và quy cách duyệt cấp",
                                 "id": -9688,
                                 "position": -9688,
-                                "name": "Tên vật tư và quy cách duyệt cấp",
                                 "type": "text",
                                 "conditions": {
                                     "required": false
                                 }
                             },
                             {
+                                "name": "Đơn vị tính duyệt cấp",
                                 "id": -9686,
                                 "position": -9686,
-                                "name": "Đơn vị tính duyệt cấp",
                                 "type": "text",
                                 "conditions": {
                                     "required": false
                                 }
                             },
                             {
+                                "name": "Số lượng duyệt cấp",
                                 "id": -9684,
                                 "position": -9684,
-                                "name": "Số lượng duyệt cấp",
                                 "type": "finance",
                                 "conditions": {
                                     "required": false
                                 }
                             },
                             {
+                                "name": "Ghi chú",
                                 "id": -9680,
                                 "position": -9680,
-                                "name": "Ghi chú",
                                 "type": "text",
                                 "conditions": {
                                     "required": false
                                 }
                             }
-                        ]
+                        ],
+                        "name": "Danh sách các thiết bị vật tư",
+                        "id": -9800,
+                        "position": -9800,
+                        "type": "table"
                     }
                 ]
             },
@@ -2026,7 +2023,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateUnlock": true,
             "customNote": "Bước 2",
             "autocreate": true,
             "api_config": [
@@ -2041,6 +2037,7 @@
                 }
             ],
             "from": -20,
+            "requestUpdateUnlock": true,
             "id": -2025,
             "to": -25,
             "detail": {
@@ -2076,7 +2073,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateUnlock": true,
             "customNote": "Bước 2.5",
             "advancedConfig": {
                 "signature_evn": {
@@ -2107,6 +2103,7 @@
                 }
             ],
             "from": -25,
+            "requestUpdateUnlock": true,
             "id": -2530,
             "to": -30,
             "detail": {
@@ -2161,7 +2158,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateUnlock": true,
             "customNote": "Bước 3",
             "advancedConfig": {
                 "signature_evn": {
@@ -2192,6 +2188,7 @@
                 }
             ],
             "from": -30,
+            "requestUpdateUnlock": true,
             "id": -3040,
             "to": -40,
             "detail": {
@@ -2246,7 +2243,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateUnlock": true,
             "customNote": "Bước 4",
             "api_config": [
                 {
@@ -2260,6 +2256,7 @@
                 }
             ],
             "from": -40,
+            "requestUpdateUnlock": true,
             "id": -4050,
             "to": -50,
             "detail": {
@@ -2308,7 +2305,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateUnlock": true,
             "customNote": "Bước 5",
             "advancedConfig": {
                 "signature_evn": {
@@ -2339,6 +2335,7 @@
                 }
             ],
             "from": -50,
+            "requestUpdateUnlock": true,
             "id": -5060,
             "to": -60,
             "detail": {
@@ -2441,7 +2438,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateUnlock": true,
             "customNote": "Bước 6",
             "advancedConfig": {
                 "signature_evn": {
@@ -2472,6 +2468,7 @@
                 }
             ],
             "from": -60,
+            "requestUpdateUnlock": true,
             "id": -6070,
             "to": -70,
             "detail": {
@@ -2526,7 +2523,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateUnlock": true,
             "customNote": "Bước 7",
             "advancedConfig": {
                 "signature_evn": {
@@ -2557,6 +2553,7 @@
                 }
             ],
             "from": -70,
+            "requestUpdateUnlock": true,
             "id": -7080,
             "to": -80,
             "detail": {
@@ -2633,7 +2630,6 @@
             "relatedTo": -7080
         },
         {
-            "requestUpdateUnlock": true,
             "customNote": "Bước 8",
             "api_config": [
                 {
@@ -2647,6 +2643,7 @@
                 }
             ],
             "from": -80,
+            "requestUpdateUnlock": true,
             "id": -8090,
             "to": -90,
             "detail": {
@@ -2700,17 +2697,16 @@
                         }
                     },
                     {
+                        "display": false,
                         "name": "Địa chỉ",
                         "additionalDisplayClass": "left-info",
                         "id": -9950,
-                        "display": false,
                         "position": -9950,
                         "type": "text",
                         "conditions": {
                             "required": false
                         }
                     },
-                    
                     {
                         "valuefeeder": "Now",
                         "display": true,
@@ -2813,7 +2809,6 @@
                                             "fieldName": "reasonCode",
                                             "id": -8955
                                         },
-                                        
                                         {
                                             "fieldName": "primaryInventoryId",
                                             "id": -8940
@@ -2913,7 +2908,6 @@
                                             "fieldName": "unitPrice",
                                             "id": -7910
                                         },
-                                        
                                         {
                                             "fieldName": "amount",
                                             "id": -7900
@@ -2932,8 +2926,6 @@
                             "required": false
                         }
                     },
-                    
-                    
                     {
                         "apiWebConfig": {
                             "apiConfig": {
@@ -3162,15 +3154,15 @@
                         "type": "text"
                     },
                     {
+                        "staticContent": "<p style='font-size: 14px; font-style: italic'>Người dùng đính kèm các hồ sơ liên quan</p>",
+                        "name": "Đính kèm FILE",
+                        "additionalDisplayClass": "left-info",
                         "id": -4600,
                         "position": -4600,
-                        "name": "Đính kèm FILE",
                         "type": "upload",
-                        "staticContent": "<p style='font-size: 14px; font-style: italic'>Người dùng đính kèm các hồ sơ liên quan</p>",
                         "conditions": {
                             "required": false
-                        },
-                        "additionalDisplayClass": "left-info" 
+                        }
                     },
                     {
                         "display": false,
@@ -3183,38 +3175,34 @@
                 ],
                 "multitable": [
                     {
-                        "id": -9000,
-                        "position": -9000,
-                        "name": "Thông tin xuất kho",
-                        "type": "table",
                         "columns": [
                             {
-                                "id": -8990,
                                 "name": "Số phiếu xuất",
-                                "type": "text",
                                 "disabled": true,
+                                "id": -8990,
                                 "position": -8990,
+                                "type": "text",
                                 "conditions": {
                                     "required": true
                                 }
                             },
                             {
-                                "id": -8985,
-                                "name": "deliveryNoteNumber",
-                                "type": "text",
-                                "position": -8985,
                                 "display": false,
+                                "name": "deliveryNoteNumber",
                                 "disabled": true,
+                                "id": -8985,
+                                "position": -8985,
+                                "type": "text",
                                 "conditions": {
                                     "required": false
                                 }
                             },
                             {
-                                "id": -8980,
                                 "name": "Ngày lập phiếu",
-                                "type": "date",
-                                "position": -8980,
                                 "disabled": true,
+                                "id": -8980,
+                                "position": -8980,
+                                "type": "date",
                                 "conditions": {
                                     "required": true
                                 }
@@ -3229,11 +3217,11 @@
                                 }
                             },
                             {
+                                "display": false,
                                 "name": "orgRequestId",
+                                "disabled": true,
                                 "id": -8965,
                                 "position": -8965,
-                                "display": false,
-                                "disabled": true,
                                 "type": "text",
                                 "conditions": {
                                     "required": false
@@ -3241,20 +3229,20 @@
                             },
                             {
                                 "name": "Địa chỉ",
+                                "disabled": true,
                                 "id": -8962,
                                 "position": -8962,
                                 "type": "text",
-                                "disabled": true,
                                 "conditions": {
                                     "required": false
                                 }
                             },
                             {
-                                "name": "orgAddress",
-                                "id": -8961,
                                 "display": false,
-                                "position": -8961,
+                                "name": "orgAddress",
                                 "disabled": true,
+                                "id": -8961,
+                                "position": -8961,
                                 "type": "text",
                                 "conditions": {
                                     "required": false
@@ -3262,235 +3250,234 @@
                             },
                             {
                                 "name": "Lý do xuất kho",
+                                "disabled": true,
                                 "id": -8960,
                                 "position": -8960,
                                 "type": "text",
-                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
                             },
                             {
+                                "display": false,
                                 "name": "reason code (code lý do xuất kho)",
+                                "disabled": true,
                                 "id": -8955,
                                 "position": -8955,
-                                "disabled": true,
-                                "type": "text",
-                                "display": false
+                                "type": "text"
                             },
                             {
-                                "id": -8950,
                                 "name": "Xuất tại kho",
-                                "type": "text",
-                                "position": -8950,
                                 "disabled": true,
+                                "id": -8950,
+                                "position": -8950,
+                                "type": "text",
                                 "conditions": {
                                     "required": true
                                 }
                             },
                             {
-                                "id": -8945,
+                                "display": false,
                                 "name": "Code kho xuất chính (PRIMARY_CODE)",
-                                "type": "text",
+                                "id": -8945,
                                 "position": -8945,
-                                "display": false
+                                "type": "text"
                             },
                             {
-                                "id": -8940,
+                                "display": false,
                                 "name": "Id kho xuất chính (PRIMARY_ID)",
-                                "type": "text",
+                                "id": -8940,
                                 "position": -8940,
-                                "display": false
+                                "type": "text"
                             },
                             {
-                                "id": -8930,
                                 "name": "Xuất tại kho phụ",
-                                "type": "text",
                                 "disabled": true,
-                                "position": -8930
+                                "id": -8930,
+                                "position": -8930,
+                                "type": "text"
                             },
                             {
-                                "id": -8925,
+                                "display": false,
                                 "name": "Code kho phụ xuất (SECONDARY_CODE)",
-                                "type": "text",
-                                "position": -8925,
                                 "disabled": true,
-                                "display": false
+                                "id": -8925,
+                                "position": -8925,
+                                "type": "text"
                             },
                             {
+                                "display": true,
                                 "name": "Công trình xuất",
+                                "disabled": true,
                                 "id": -8920,
                                 "position": -8920,
                                 "type": "text",
-                                "display": true,
-                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
                             },
                             {
+                                "display": false,
                                 "name": "Code công trình xuất",
+                                "disabled": true,
                                 "id": -8915,
                                 "position": -8915,
-                                "disabled": true,
-                                "type": "text",
-                                "display": false
+                                "type": "text"
                             },
                             {
-                                "id": -8910,
                                 "name": "Nhập tại kho",
-                                "type": "text",
-                                "position": -8910,
                                 "disabled": true,
+                                "id": -8910,
+                                "position": -8910,
+                                "type": "text",
                                 "conditions": {
                                     "required": true
                                 }
                             },
                             {
-                                "id": -8900,
+                                "display": false,
                                 "name": "Code kho nhập chính (codePrimaryInventory1)",
-                                "type": "text",
+                                "disabled": true,
+                                "id": -8900,
                                 "position": -8900,
-                                "disabled": true,
-                                "display": false
+                                "type": "text"
                             },
                             {
-                                "id": -8890,
+                                "display": false,
                                 "name": "Id kho nhập (idPrimaryInventory1)",
-                                "type": "text",
-                                "position": -8890,
                                 "disabled": true,
-                                "display": false
+                                "id": -8890,
+                                "position": -8890,
+                                "type": "text"
                             },
                             {
+                                "display": true,
                                 "name": "Công trình nhập",
+                                "disabled": true,
                                 "id": -8880,
                                 "position": -8880,
-                                "disabled": true,
-                                "type": "text",
-                                "display": true
+                                "type": "text"
                             },
                             {
+                                "display": false,
                                 "name": "Code công trình nhập",
+                                "disabled": true,
                                 "id": -8870,
                                 "position": -8870,
-                                "disabled": true,
-                                "type": "text",
-                                "display": false
+                                "type": "text"
                             },
                             {
+                                "display": true,
                                 "name": "Diễn giải",
+                                "disabled": true,
                                 "id": -8860,
                                 "position": -8860,
-                                "disabled": true,
-                                "type": "text",
-                                "display": true
+                                "type": "text"
                             }
-                            
-                        ]
+                        ],
+                        "name": "Thông tin xuất kho",
+                        "id": -9000,
+                        "position": -9000,
+                        "type": "table"
                     },
                     {
-                        "name": "Danh sách các thiết bị vật tư",
-                        "id": -8000,
-                        "position": -8000,
-                        "type": "table",
                         "columns": [
                             {
-                                "id": -7995,
                                 "name": "Số phiếu xuất",
-                                "type": "text",
-                                "position": -7995,
                                 "disabled": true,
+                                "id": -7995,
+                                "position": -7995,
+                                "type": "text",
                                 "conditions": {
                                     "required": true
                                 }
                             },
                             {
                                 "name": "Mã vật tư",
+                                "disabled": true,
                                 "id": -7990,
                                 "position": -7990,
                                 "type": "text",
-                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
                             },
                             {
                                 "name": "Tên vật tư và quy cách",
+                                "disabled": true,
                                 "id": -7980,
                                 "position": -7980,
                                 "type": "text",
-                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
                             },
                             {
                                 "name": "Lô vật tư",
+                                "disabled": true,
                                 "id": -7970,
                                 "position": -7970,
                                 "type": "text",
-                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
                             },
                             {
                                 "name": "Đơn vị tính",
+                                "disabled": true,
                                 "id": -7960,
                                 "position": -7960,
                                 "type": "text",
-                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
                             },
                             {
                                 "name": "Số lượng yêu cầu",
+                                "disabled": true,
                                 "id": -7950,
                                 "position": -7950,
                                 "type": "finance",
-                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
                             },
                             {
                                 "name": "Thực xuất",
+                                "disabled": true,
                                 "id": -7940,
                                 "position": -7940,
                                 "type": "finance",
-                                "disabled": true,
                                 "conditions": {
                                     "required": true
                                 }
                             },
                             {
                                 "name": "Số lượng đoạn",
+                                "disabled": true,
                                 "id": -7930,
                                 "position": -7920,
                                 "type": "text",
-                                "disabled": true,
                                 "conditions": {
                                     "required": false
                                 }
                             },
                             {
                                 "name": "Độ dài mong muốn",
+                                "disabled": true,
                                 "id": -7920,
                                 "position": -7930,
                                 "type": "finance",
-                                "disabled": true,
                                 "conditions": {
                                     "required": false
                                 }
                             },
                             {
                                 "name": "Đơn giá",
+                                "disabled": true,
                                 "id": -7910,
                                 "position": -7910,
                                 "type": "finance",
-                                "disabled": true,
                                 "conditions": {
                                     "required": false
                                 }
@@ -3499,36 +3486,39 @@
                                 "display": false,
                                 "name": "Thành tiền",
                                 "additionalDisplayClass": "left-info",
+                                "disabled": true,
                                 "id": -7900,
                                 "position": -7900,
                                 "type": "finance",
-                                "disabled": true,
                                 "conditions": {
                                     "required": false
                                 }
                             },
                             {
                                 "name": "TK nợ",
+                                "disabled": true,
                                 "id": -7890,
                                 "position": -7890,
                                 "type": "text",
-                                "disabled": true,
                                 "conditions": {
                                     "required": false
                                 }
                             },
                             {
                                 "name": "TK có",
+                                "disabled": true,
                                 "id": -7880,
                                 "position": -7880,
                                 "type": "text",
-                                "disabled": true,
                                 "conditions": {
                                     "required": false
                                 }
                             }
-                        ]
-                        
+                        ],
+                        "name": "Danh sách các thiết bị vật tư",
+                        "id": -8000,
+                        "position": -8000,
+                        "type": "table"
                     }
                 ]
             },
@@ -3547,7 +3537,6 @@
             "relatedTo": -8090
         },
         {
-            "requestUpdateUnlock": true,
             "customNote": "Bước 9",
             "api_config": [
                 {
@@ -3561,6 +3550,7 @@
                 }
             ],
             "from": -90,
+            "requestUpdateUnlock": true,
             "id": -90105,
             "to": -105,
             "detail": {
@@ -3640,49 +3630,49 @@
                         "value": ""
                     },
                     {
+                        "display": false,
+                        "name": "Key giám đốc",
+                        "additionalDisplayClass": "right-info",
                         "id": -2300,
                         "position": -2300,
-                        "name": "Key giám đốc",
-                        "display": false,
                         "type": "text",
-                        "value": "",
-                        "additionalDisplayClass": "right-info"
+                        "value": ""
                     },
                     {
+                        "display": false,
+                        "name": "Key thủ kho",
+                        "additionalDisplayClass": "right-info",
                         "id": -2200,
                         "position": -2200,
-                        "name": "Key thủ kho",
-                        "display": false,
                         "type": "text",
-                        "value": "",
-                        "additionalDisplayClass": "right-info"
+                        "value": ""
                     },
                     {
+                        "display": false,
+                        "name": "Key người nhận",
+                        "additionalDisplayClass": "right-info",
                         "id": -2100,
                         "position": -2100,
-                        "name": "Key người nhận",
-                        "display": false,
                         "type": "text",
-                        "value": "",
-                        "additionalDisplayClass": "right-info"
+                        "value": ""
                     },
                     {
+                        "display": false,
+                        "name": "Key người lập phiếu",
+                        "additionalDisplayClass": "right-info",
                         "id": -2000,
                         "position": -2000,
-                        "name": "Key người lập phiếu",
-                        "display": false,
                         "type": "text",
-                        "value": "",
-                        "additionalDisplayClass": "right-info"
+                        "value": ""
                     },
                     {
+                        "display": false,
+                        "name": "Key KHVT",
+                        "additionalDisplayClass": "right-info",
                         "id": -1900,
                         "position": -1900,
-                        "name": "Key KHVT",
-                        "display": false,
                         "type": "text",
-                        "value": "",
-                        "additionalDisplayClass": "right-info"
+                        "value": ""
                     }
                 ]
             },
@@ -3690,7 +3680,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -3732,6 +3721,7 @@
                 }
             ],
             "from": -105,
+            "requestUpdateUnlock": true,
             "id": -105110,
             "to": -110,
             "detail": {
@@ -3771,7 +3761,6 @@
                                         "dataset": "INDIVIDUAL"
                                     }
                                 ],
-                                
                                 "type": "signature"
                             },
                             "max-size": 20,
@@ -3787,7 +3776,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -3829,6 +3817,7 @@
                 }
             ],
             "from": -110,
+            "requestUpdateUnlock": true,
             "id": -110120,
             "to": -120,
             "detail": {
@@ -3881,7 +3870,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -3923,6 +3911,7 @@
                 }
             ],
             "from": -110,
+            "requestUpdateUnlock": true,
             "id": -110130,
             "to": -130,
             "detail": {
@@ -3983,7 +3972,6 @@
             "requestUpdateKeepData": true
         },
         {
-            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -4025,6 +4013,7 @@
                 }
             ],
             "from": -120,
+            "requestUpdateUnlock": true,
             "id": -120130,
             "to": -130,
             "detail": {
@@ -4079,7 +4068,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -4103,6 +4091,7 @@
                 }
             ],
             "from": -130,
+            "requestUpdateUnlock": true,
             "id": -130140,
             "to": -140,
             "detail": {
@@ -4151,7 +4140,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -4175,6 +4163,7 @@
                 }
             ],
             "from": -140,
+            "requestUpdateUnlock": true,
             "id": -140150,
             "to": -150,
             "detail": {
@@ -4250,22 +4239,22 @@
                         "value": ""
                     },
                     {
+                        "display": false,
+                        "name": "Key thủ kho",
+                        "additionalDisplayClass": "right-info",
                         "id": -2200,
                         "position": -2200,
-                        "name": "Key thủ kho",
-                        "display": false,
                         "type": "text",
-                        "value": "",
-                        "additionalDisplayClass": "right-info"
+                        "value": ""
                     },
                     {
+                        "display": false,
+                        "name": "Key người nhận",
+                        "additionalDisplayClass": "right-info",
                         "id": -2100,
                         "position": -2100,
-                        "name": "Key người nhận",
-                        "display": false,
                         "type": "text",
-                        "value": "",
-                        "additionalDisplayClass": "right-info"
+                        "value": ""
                     }
                 ]
             },
@@ -4273,7 +4262,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -4325,6 +4313,7 @@
                 }
             ],
             "from": -150,
+            "requestUpdateUnlock": true,
             "id": -150160,
             "to": -160,
             "detail": {
@@ -4382,10 +4371,10 @@
                         "value": ""
                     },
                     {
+                        "display": false,
                         "name": "Phiếu giao hàng đã kí số",
                         "additionalDisplayClass": "left-info",
                         "disabled": true,
-                        "display": false,
                         "id": -2,
                         "position": -2,
                         "conditions": {
@@ -4421,7 +4410,6 @@
             "status": "waiting"
         },
         {
-            "requestUpdateUnlock": true,
             "buttonConfig": {
                 "cancel": {
                     "enable": false,
@@ -4468,6 +4456,7 @@
                 }
             ],
             "from": -160,
+            "requestUpdateUnlock": true,
             "id": -1601,
             "to": -1,
             "detail": {
@@ -4516,7 +4505,6 @@
                         "type": "upload",
                         "value": ""
                     }
-                    
                 ]
             },
             "type": "approval",
@@ -4637,7 +4625,6 @@
             ],
             "id": -80
         },
-        
         {
             "image": "/images/workflowimage/User_male.png",
             "positions": [

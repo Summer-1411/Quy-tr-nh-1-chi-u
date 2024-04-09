@@ -184,6 +184,7 @@
             },
             "apiWebConfig": {
                 "apiConfig": {
+                    "param": "B6_PARAM_PICKER_FILTER_WAREHOUSE_TYPE",
                     "hostnameKey": "SPRO_EVN",
                     "urlFilter": "/app-param/get-by-type?type=WAREHOUSE_TYPE",
                     "returnKey": "MT_GET_VENDOR_RP_S"

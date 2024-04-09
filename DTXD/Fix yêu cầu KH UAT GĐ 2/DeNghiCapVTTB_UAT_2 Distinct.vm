@@ -406,9 +406,9 @@
             #set($MaVatTuDuyet = $item.MaVatTuDuyet)
         #end
 
-        #set($key = "$MaVatTu-$item.TenVatTuVaQuyCach-$item.DonViTinh-$item.GhiChu-$MaVatTuDuyet-$item.TenVatTuVaQuyCachDuyet-$item.DonViTinhDuyet")
-        #if(!$outputMap.containsKey($MaVatTu))
-            #set($outputMap[$MaVatTu] = { "MaVatTu": $MaVatTu, "TenVatTuVaQuyCach": $item.TenVatTuVaQuyCach, "DonViTinh": $item.DonViTinh, "SoLuong": $SoLuong, "GhiChu": $item.GhiChu,"MaVatTuDuyet": $MaVatTuDuyet, "TenVatTuVaQuyCachDuyet": $item.TenVatTuVaQuyCachDuyet, "DonViTinhDuyet": $item.DonViTinhDuyet, "SoLuongDuyet": $SoLuongDuyet  })
+        #set($key = "${MaVatTu}-${item.TenVatTuVaQuyCach}-${item.DonViTinh}-${item.GhiChu}-${MaVatTuDuyet}-${item.TenVatTuVaQuyCachDuyet}-${item.DonViTinhDuyet}")
+        #if(!$outputMap.containsKey($key))
+            #set($outputMap[$key] = { "MaVatTu": $MaVatTu, "TenVatTuVaQuyCach": $item.TenVatTuVaQuyCach, "DonViTinh": $item.DonViTinh, "SoLuong": $SoLuong, "GhiChu": $item.GhiChu,"MaVatTuDuyet": $MaVatTuDuyet, "TenVatTuVaQuyCachDuyet": $item.TenVatTuVaQuyCachDuyet, "DonViTinhDuyet": $item.DonViTinhDuyet, "SoLuongDuyet": $SoLuongDuyet  })
         #else
             #set($existingItem = $outputMap[$key])
             #set($existingItem.SoLuong = $existingItem.SoLuong + $SoLuong)
