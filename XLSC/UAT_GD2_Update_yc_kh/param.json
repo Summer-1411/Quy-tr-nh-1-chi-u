@@ -25,7 +25,16 @@ EVN_B6_URL_REPORT_TEMPLATE
 
 B6_PARAM_CREATE_TICKET_XUAT_KHO_XLSC
 XUAT_KHO_PT_KH_DONVI_DELETE_TICKET_API_PARAM_B1
-B6_PARAM_FINISH_BUOC2_DTXD
+B6_PARAM_FINISH_BUOC2_XLSC
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 2",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-20)"
+    }
+}
 B6_PARAM_APPROVE_BUOC2_5_XLSC_UAT_2
 B6_PARAM_APPROVE_BUOC3_XLSC
 B6_PARAM_FINISH_BUOC4_XLSC
