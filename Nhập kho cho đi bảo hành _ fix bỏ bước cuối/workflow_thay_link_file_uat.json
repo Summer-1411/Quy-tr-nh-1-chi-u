@@ -183,7 +183,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55278&fileName=DeNghiNhapKho.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104677&fileName=DeNghiNhapKho.vm",
                 "newVersion": true
             },
             "sla": {
@@ -357,7 +357,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55278&fileName=DeNghiNhapKho.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104677&fileName=DeNghiNhapKho.vm",
                 "newVersion": true
             },
             "sla": {
@@ -531,7 +531,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55278&fileName=DeNghiNhapKho.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104677&fileName=DeNghiNhapKho.vm",
                 "newVersion": true
             },
             "sla": {

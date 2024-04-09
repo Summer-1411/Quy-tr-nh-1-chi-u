@@ -1,3 +1,486 @@
+B6_PARAM_NKBH_KHO_CDS
+{
+    "orgId": "-9920",
+    "pickerFilter": "orgName"
+}
+B6_PARAM_PICKER_FILTER_WAREHOUSE_TYPE
+{
+    "pickerFilter": "name"
+}
+EVN_SPRO_PARAM_PICKER_FILTER_CREAT_NUMBER_VOTE_DE_NGHI_NKBH
+{
+    "warehouseCode":"-9808",
+    "type":"-9809",
+    "pickerFilter": "numberVote"
+}
+B6_PARAM_TRUONG_PHO_PHONG_NKBH
+{
+    "orgId": "-9920",
+    "deptId": "-9980",
+    "mappingLevel": "-5300",
+    "pickerFilter": "fullName"
+}
+P6_PARAM_NKBH_GET_ALL_DEPARTMENT
+{
+    "orgId": "-9920",
+    "pickerFilter": "name"
+}
+P6_PARAM_NKBH_CHON_TRUONG_PHO_PHONG
+{
+    "orgId": "-9920",
+    "mappingLevel": "-5300",
+    "deptId": "-9510",
+    "pickerFilter": "fullName"
+}
+B6_PARAM_CHON_GIAMDOC_PGD_NKBH
+{
+    "orgId": "-9920",
+    "mappingLevel": "-6000",
+    "pickerFilter": "fullName"
+}
+B6_PARAM_CREATE_TICKET_BUOC1_NKBH
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "deptId": "(-9980)",
+        "requestSubject": "(ticket-title)",
+        "type": "IMPORT_BH",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "typeImportProcess": "(-9820)",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "numberVoteApprove": "(-9810)",
+            "orgRequest": "(-9920)",
+            "primaryInventory": "(-9910)",
+            "requestDate": "(-9915)",
+            "cmis": "(-9900)",
+            "receiptDate": "(-9610)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "note": "(-9680)"
+                }(endt)
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 1",
+        "action": "FINISH",
+        "approvalUser": "(-9990)"
+    }
+}
+XUAT_KHO_PT_KH_DONVI_DELETE_TICKET_API_PARAM_B1
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CANCEL",
+        "reason": "(update-reason)",
+        "action": "CANCEL"
+    }
+}
+B6_PARAM_FINISH_BUOC2_NKBH
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 2",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-20)"
+    }
+}
+B6_PARAM_FINISH_BUOC2_5_NKBH
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "deptId": "(-9980)",
+        "requestSubject": "(ticket-title)",
+        "type": "IMPORT_BH",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "typeImportProcess": "(-9820)",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "numberVoteApprove": "(-9810)",
+            "orgRequest": "(-9920)",
+            "primaryInventory": "(-9910)",
+            "requestDate": "(-9915)",
+            "cmis": "(-9900)",
+            "receiptDate": "(-9610)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "note": "(-9680)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-25,-30)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 2",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-25)"
+    }
+}
+B6_PARAM_APPROVE_BUOC3_NKBH
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "deptId": "(-9980)",
+        "requestSubject": "(ticket-title)",
+        "type": "IMPORT_BH",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "typeImportProcess": "(-9820)",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "numberVoteApprove": "(-9810)",
+            "orgRequest": "(-9920)",
+            "primaryInventory": "(-9910)",
+            "requestDate": "(-9915)",
+            "cmis": "(-9900)",
+            "receiptDate": "(-9610)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "note": "(-9680)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-30,-40)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 3",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-30)"
+    }
+}
+B6_PARAM_APPROVE_BUOC4_NKBH
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "deptId": "(-9980)",
+        "requestSubject": "(ticket-title)",
+        "type": "IMPORT_BH",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "typeImportProcess": "(-9820)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "numberVoteApprove": "(-9810)",
+            "orgRequest": "(-9920)",
+            "primaryInventory": "(-9910)",
+            "requestDate": "(-9915)",
+            "cmis": "(-9900)",
+            "receiptDate": "(-9610)",
+            "tableData": [(t)<-9800>
+		        {
+                    "ticketCode": "(-0)",
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "note": "(-9680)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-40,-50)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 4",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-40)"
+    }
+}
+B6_PARAM_FINISH_BUOC5_NKBH
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 5",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-50)"
+    }
+}
+B6_PARAM_CHON_CHUYEN_VIEN_KHVT_BUOC5_NKXH
+{
+    "orgId": "-9920",
+    "deptId": "-9510",
+    "mappingLevel": "-5700",
+    "pickerFilter": "fullName"
+}
+B6_PARAM_FINISH_BUOC6_NKBH
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "IMPORT_BH",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "typeImportProcess": "(-9820)",
+        "requestSubject": "(ticket-title)",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9000,-60,-70)",
+            "receiver": "(-8600,-60,-70)",
+            "deliver": "(-8600,-60,-70)",
+            "reason": "(-8500,-60,-70)",
+            "description": "(-8400,-60,-70)",
+            "location": "(-8900,-60,-70)",
+            "addressOrg": "(-8900,-60,-70)",
+            "requestDate": "(-8800,-60,-70)",
+            "tableData": [(t)<-9800,-60,-70>
+                {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "batch": "(-9120)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9700)"
+                }(endt)
+            ],
+            "numberVoteApprove": "(-8700,-60,-70)"
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 6",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-60)"
+    }
+}
+B6_PARAM_CHON_SO_PHIEU_NKBH
+{
+    "type":"-3500",
+    "warehouseCode": "-9910",
+    "pickerFilter": "numberVote"
+}
+EVN_SPRO_PARAM_PICKER_FILTER_REASON
+B6_PARAM_THU_KHO_BUOC6_NKBH
+{
+    "orgId": "-9920",
+    "mappingLevel": "-5600",
+    "pickerFilter": "fullName"
+}
+P6_PARAM_NKBH_CHON_TRUONG_PHO_PHONG
+{
+    "orgId": "-9920",
+    "mappingLevel": "-5300",
+    "deptId": "-9510",
+    "pickerFilter": "fullName"
+}
+B6_PARAM_CHON_GIAMDOC_PGD_NKBH
+{
+    "orgId": "-9920",
+    "mappingLevel": "-6000",
+    "pickerFilter": "fullName"
+}
+EVN_B6_TRANSFER_SKKD_DTXD_PARAM_MATERIAL_CODE
+{
+    "erpId": "-9995",
+    "materialCode":"query"
+}
+B6_PARAM_FINISH_BUOC7_NKBH
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 7",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-70)"
+    }
+}
+B6_PARAM_GET_FILE_IMPORT_BY_REPORT_NKBH
+{
+    "ticketId": "-0",
+    "isHeadOrg": "-5700,-60,-70",
+    "storekeeper": "-5900,-60,-70",
+    "khvt": "-5800,-60,-70",
+    "headOrg": "-5500,-60,-70",
+    "deliver": "-9990",
+    "userCreate": "-9500,-50,-60",
+    "keyGiamDoc": "-2300",
+    "keyThuKho":"-2200",
+    "keyNguoiGiaoHang":"-2100",
+    "keyNguoiLapPhieu":"-2000",
+    "keyKHVT":"-1900"
+}
+B6_PARAM_APPROVE_BUOC8_NKBH
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "IMPORT_BH",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "typeImportProcess": "(-9820)",
+        "requestSubject": "(ticket-title)",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9000,-60,-70)",
+            "receiver": "(-8600,-60,-70)",
+            "reason": "(-8500,-60,-70)",
+            "description": "(-8400,-60,-70)",
+            "location": "(-8900,-60,-70)",
+            "requestDate": "(-8800,-60,-70)",
+            "tableData": [(t)<-9800,-60,-70>
+                {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "batch": "(-9120)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9700)"
+                }(endt)
+            ],
+            "numberVoteApprove": "(-8700,-60,-70)"
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 8",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-80)"
+    }
+}
+B6_PARAM_APPROVE_BUOC9_NKBH
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 9",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-90)"
+    }
+}
+B6_PARAM_FINISH_BUOC10_NKBH
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 10",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-100)"
+    }
+}
+B6_PARAM_APPROVE_BUOC11_NKBH
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "IMPORT_BH",
+        "status": "CLOSED",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "typeImportProcess": "(-9820)",
+        "requestSubject": "(ticket-title)",
+        "statusErp": 1,
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9000,-60,-70)",
+            "receiver": "(-8600,-60,-70)",
+            "deliver": "(-8600,-60,-70)",
+            "reason": "(-8500,-60,-70)",
+            "description": "(-8400,-60,-70)",
+            "location": "(-8900,-60,-70)",
+            "addressOrg": "(-8900,-60,-70)",
+            "requestDate": "(-8800,-60,-70)",
+            "numberVoteApprove": "(-8700,-60,-70)",
+            "tableData": [(t)<-9800,-60,-70>
+                {
+                    "materialCode": "(-9760)",
+                    "materialName": "(-9740)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "batch": "(-9120)",
+                    "unit": "(-9720)",
+                    "requestQuantity": "(-9700)",
+                    "approveQuantity": "(-9700)"
+                }(endt)
+            ]
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-40,-50)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-120,-1)",
+                    "type": "2",
+                    "numberVote": "(-8700,-60,-70)",
+                    "createUser": "(-9500,-50,-60)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Buoc 11",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-110)"
+    }
+}
+
 B6_PARAM_APPROVE_BUOC11_NKBH
 {
     "ticket": {
