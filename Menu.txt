@@ -1,0 +1,36 @@
+2. Quy trình:
++ Nhóm quy trình xuất nhập trên kho CĐS
+	Nhập kho:
+	    Nhập kho cho đi bảo hành
++ Nhóm quy trình xuất nhập trên kho ERP
+	Nhập kho:
+		Quy trình nghiệp vụ nhập mới, mua ngoài với mua sắm tập trung trên TCT
+	Xuất kho
+        Quy trình nghiệp vụ xuất kho cho đầu tư xây dựng
+		Quy trình nghiệp vụ xuất kho cho xử lý sự cố
+	Quy trình nghiệp vụ cấp vốn bằng VTTB cho ĐTXD/SCL 
+
+
+	 SELECT t2.org_id id_don_vi, t1.material_code, t1.material_name, t1.unit, 
+	 mnsx.mnsx_description ten_nuoc_sx, cl.mclvt_description chat_luong_vat_tu, 
+	 SUM( CASE WHEN t2.type = 1 AND trunc(t2.request_date,'dd') < to_date( :from_date, 'dd-MM-yyyy' ) 
+	 THEN t1.quantity WHEN t2.type = 2 AND trunc(t2.request_date,'dd') < to_date( :from_date, 'dd-MM-yyyy' ) 
+	 THEN t1.quantity *(- 1) END ) ton_dau, 
+	 SUM( CASE WHEN t2.type = 1 AND trunc( t2.request_date, 'dd' ) <= to_date( :to_date, 'dd-MM-yyyy' ) 
+	 THEN t1.quantity END ) nhap, SUM( CASE WHEN t2.type = 2 
+	 AND trunc( t2.request_date, 'dd' ) <= to_date( :to_date, 'dd-MM-yyyy' ) 
+	 THEN t1.quantity END ) xuat, SUM( CASE WHEN t2.type = 1 AND 
+	 trunc( t2.request_date, 'dd' ) <= to_date( :to_date, 'dd-MM-yyyy' ) 
+	 THEN t1.quantity WHEN t2.type = 2 AND trunc( t2.request_date, 'dd' ) <= to_date( :to_date, 'dd-MM-yyyy' ) 
+	 THEN t1.quantity *(- 1) END ) ton_cuoi 
+	 FROM history_import_export_local t1 
+	 JOIN import_export_approve t2 ON to_char( t1.ticket_code ) = to_char( t2.ticket_id ) 
+	 JOIN sec_organization t3 ON t2.org_id = to_char( t3.org_id ) 
+	 JOIN erp_b6.mtl_system_items_b t4 ON t1.material_code = t4.segment1 
+	 AND t4.organization_id = 3001 LEFT JOIN erp_b6.evn_inv_c15_mnsx mnsx 
+	 ON mnsx.mnsx_value = t4.segment15 AND mnsx.organization_id = 3001 
+	 LEFT JOIN erp_b6.evn_inv_c15_mclvt cl ON t4.segment17 = cl.mclvt_value 
+	 AND cl.organization_id = 3001 WHERE t2.org_id = :org_id 
+	 AND trunc( t2.request_date, 'dd' ) >= to_date( :from_date, 'dd-MM-yyyy' ) 
+	 AND trunc( t2.request_date, 'dd' ) <= to_date( :to_date, 'dd-MM-yyyy' ) 
+	 GROUP BY t2.org_id, t1.material_code, t1.material_name, t1.unit, mnsx.mnsx_description, cl.mclvt_description;
