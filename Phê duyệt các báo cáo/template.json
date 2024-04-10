@@ -336,6 +336,7 @@
             "position": -9770,
             "apiWebConfig": {
                 "apiConfig": {
+                    "param": "B6_PARAM_PICKER_FILTER_DON_VI_DC",
                     "hostnameKey": "SPRO_EVN",
                     "urlFilter": "/common-spro/get-all-organization",
                     "returnKey": "MT_GET_VENDOR_RP_S"
@@ -380,6 +381,7 @@
             "position": -9760,
             "apiWebConfig": {
                 "apiConfig": {
+                    "param": "B6_PARAM_PICKER_FILTER_DON_VI_DC",
                     "hostnameKey": "SPRO_EVN",
                     "urlFilter": "/common-spro/get-all-organization",
                     "returnKey": "MT_GET_VENDOR_RP_S"
