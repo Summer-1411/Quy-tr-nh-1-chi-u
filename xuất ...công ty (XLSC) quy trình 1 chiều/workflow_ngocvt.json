@@ -16,7 +16,7 @@
                     "executeAPI": {
                         "paramType": "regex",
                         "number": 0,
-                        "param": "B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_B1",
+                        "param": "B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_XLSC_B1",
                         "name": "TICKET_EVN_SPRO_CREATE"
                     },
                     "triggerOn": "update-ticket",
@@ -190,7 +190,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54899&fileName=DeNghiCapVTTB_TungLv27.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104801&fileName=DeNghiCapVTTB_TungLv27.vm",
                 "newVersion": true
             },
             "sla": {
@@ -372,7 +372,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54899&fileName=DeNghiCapVTTB_TungLv27.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104801&fileName=DeNghiCapVTTB_TungLv27.vm",
                 "newVersion": true
             },
             "sla": {
@@ -554,7 +554,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54899&fileName=DeNghiCapVTTB_TungLv27.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104801&fileName=DeNghiCapVTTB_TungLv27.vm",
                 "newVersion": true
             },
             "sla": {
@@ -736,7 +736,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54899&fileName=DeNghiCapVTTB_TungLv27.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104801&fileName=DeNghiCapVTTB_TungLv27.vm",
                 "newVersion": true
             },
             "sla": {
@@ -918,7 +918,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54899&fileName=DeNghiCapVTTB_TungLv27.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104801&fileName=DeNghiCapVTTB_TungLv27.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1100,7 +1100,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54899&fileName=DeNghiCapVTTB_TungLv27.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104801&fileName=DeNghiCapVTTB_TungLv27.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1282,7 +1282,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54899&fileName=DeNghiCapVTTB_TungLv27.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104801&fileName=DeNghiCapVTTB_TungLv27.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1464,7 +1464,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=54899&fileName=DeNghiCapVTTB_TungLv27.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104801&fileName=DeNghiCapVTTB_TungLv27.vm",
                 "newVersion": true
             },
             "sla": {
