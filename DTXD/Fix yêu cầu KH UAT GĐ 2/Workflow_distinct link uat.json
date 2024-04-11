@@ -1798,7 +1798,7 @@
                         "id": -10000,
                         "position": -10000,
                         "type": "link",
-                        "value": "http://10.9.195.57:8989/qlvt/category/searchconversion?urlPathId=7931"
+                        "value": "http://10.9.195.57:8989/qlvt/category/linventory?urlPathId=7912"
                     },
                     {
                         "apiWebConfig": {

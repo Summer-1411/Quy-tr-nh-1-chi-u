@@ -57,12 +57,12 @@ B6_PARAM_CHON_TRUONG_BAN_VAT_TU_DTXD_SCL
 B6_PARAM_MA_VAT_TU_DTXD_SCL
 {
     "erpId": "-9989",
-    "pickerFilter": "materialCode"
+    "materialCode":"query"
 }
 B6_PARAM_CHON_CHUYEN_VIEN_BUOC5_DTXD_SCL_v1
 {
     "orgId" : "-276",
-    "deptId" : "-9506",
+    "deptId" : "-5400",
     "mappingLevel" : "-3",
     "pickerFilter": "fullName"
 }
@@ -696,7 +696,7 @@ B6_PARAM_APPROVE_BUOC17_SCL_DTXD_BRANCH_DTXD
         "status": "INPROGRESS",
         "flowName": "Buoc 13",
         "action": "APPROVE",
-        "approvalUser": "(phase-owner,-170)"
+        "approvalUser": "(phase-owner,-175)"
     }
 }
 B6_PARAM_APPROVE_BUOC18_SCL_DTXD_BRANCH_DTXD
@@ -749,7 +749,7 @@ B6_PARAM_APPROVE_BUOC18_SCL_DTXD_BRANCH_DTXD
         "status": "INPROGRESS",
         "flowName": "Buoc 14",
         "action": "APPROVE",
-        "approvalUser": "(phase-owner,-180)"
+        "approvalUser": "(phase-owner,-185)"
     }
 }
 B6_PARAM_APPROVE_BUOC22_SCL_DTXD_BRANCH_SCL

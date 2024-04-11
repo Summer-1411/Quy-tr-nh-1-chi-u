@@ -321,7 +321,7 @@
             "additionalDisplayClass": "left-info",
             "position": -9840,
             "disabled": true,
-            "value": "http://10.9.195.57:8989/qlvt/category/searchconversion?urlPathId=7931"
+            "value": "http://10.9.195.57:8989/qlvt/category/linventory?urlPathId=7912"
         },
         {
             "display": false,

@@ -647,7 +647,7 @@
             "name": "Id ban vật tư",
             "type": "number",
             "disable": true,
-            "display": false,
+            "display": true,
             "conditions": {
                 "required": true
             },
