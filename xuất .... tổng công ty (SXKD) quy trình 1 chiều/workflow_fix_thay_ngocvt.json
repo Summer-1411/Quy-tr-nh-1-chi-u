@@ -3178,6 +3178,7 @@
                                 "additionalDisplayClass": "left-info",
                                 "id": -9955,
                                 "position": -9955,
+                                "disabled": true,
                                 "type": "text",
                                 "conditions": {
                                     "required": true
@@ -3189,6 +3190,7 @@
                                 "additionalDisplayClass": "left-info",
                                 "id": -9950,
                                 "position": -9950,
+                                "disabled": true,
                                 "type": "text",
                                 "conditions": {
                                     "required": true
@@ -3199,6 +3201,7 @@
                                 "additionalDisplayClass": "left-info",
                                 "id": -9910,
                                 "position": -9830,
+                                "disabled": true,
                                 "type": "date",
                                 "conditions": {
                                     "required": true
@@ -3210,6 +3213,7 @@
                                 "additionalDisplayClass": "left-info",
                                 "id": -9810,
                                 "position": -9810,
+                                "disabled": true,
                                 "type": "text",
                                 "conditions": {
                                     "required": true
@@ -3231,6 +3235,7 @@
                                 "additionalDisplayClass": "left-info",
                                 "id": -9800,
                                 "position": -9800,
+                                "disabled": true,
                                 "type": "text",
                                 "conditions": {
                                     "required": true
@@ -3241,6 +3246,7 @@
                                 "additionalDisplayClass": "left-info",
                                 "id": -9750,
                                 "position": -9750,
+                                "disabled": true,
                                 "type": "text",
                                 "conditions": {
                                     "required": true
@@ -3252,6 +3258,7 @@
                                 "additionalDisplayClass": "left-info",
                                 "id": -9890,
                                 "position": -9890,
+                                "disabled": true,
                                 "type": "text",
                                 "conditions": {
                                     "required": true
@@ -3262,6 +3269,7 @@
                                 "additionalDisplayClass": "left-info",
                                 "id": -9700,
                                 "position": -9700,
+                                "disabled": true,
                                 "type": "text",
                                 "conditions": {
                                     "required": true
@@ -3272,6 +3280,7 @@
                                 "additionalDisplayClass": "left-info",
                                 "id": -9650,
                                 "position": -9650,
+                                "disabled": true,
                                 "type": "text"
                             },
                             {
@@ -3279,6 +3288,7 @@
                                 "name": "Id kho chính",
                                 "additionalDisplayClass": "left-info",
                                 "id": -9520,
+                                "disabled": true,
                                 "position": -9520,
                                 "type": "text",
                                 "conditions": {
@@ -3290,6 +3300,7 @@
                                 "name": "Code kho chính",
                                 "additionalDisplayClass": "left-info",
                                 "id": -9510,
+                                "disabled": true,
                                 "position": -9510,
                                 "type": "text",
                                 "conditions": {
@@ -3300,6 +3311,7 @@
                                 "name": "Xuất tại kho chính",
                                 "additionalDisplayClass": "left-info",
                                 "id": -9500,
+                                "disabled": true,
                                 "position": -9500,
                                 "type": "text",
                                 "conditions": {
@@ -3310,6 +3322,7 @@
                                 "name": "Xuất tại kho phụ",
                                 "additionalDisplayClass": "left-info",
                                 "id": -9480,
+                                "disabled": true,
                                 "position": -9480,
                                 "type": "text",
                                 "conditions": {
@@ -3321,6 +3334,7 @@
                                 "name": "Code kho phụ (bổ sung cho kho chính)",
                                 "additionalDisplayClass": "right-info",
                                 "id": -9470,
+                                "disabled": true,
                                 "position": -9470,
                                 "type": "text",
                                 "conditions": {
@@ -3332,6 +3346,7 @@
                                 "name": "Code Công trình",
                                 "additionalDisplayClass": "left-info",
                                 "id": -9460,
+                                "disabled": true,
                                 "position": -9460,
                                 "type": "text",
                                 "conditions": {
@@ -3342,6 +3357,7 @@
                                 "name": "Công trình",
                                 "additionalDisplayClass": "left-info",
                                 "id": -9450,
+                                "disabled": true,
                                 "position": -9450,
                                 "type": "text",
                                 "conditions": {}
@@ -3350,6 +3366,7 @@
                                 "name": "Hạng mục",
                                 "additionalDisplayClass": "left-info",
                                 "id": -9430,
+                                "disabled": true,
                                 "position": -9430,
                                 "type": "text",
                                 "conditions": {}
@@ -3367,6 +3384,7 @@
                                 "additionalDisplayClass": "left-info",
                                 "id": -9370,
                                 "position": -9370,
+                                "disabled": true,
                                 "type": "text",
                                 "conditions": {
                                     "required": true
@@ -3377,6 +3395,7 @@
                                 "additionalDisplayClass": "left-info",
                                 "id": -9365,
                                 "position": -9365,
+                                "disabled": true,
                                 "type": "text",
                                 "conditions": {
                                     "required": true
@@ -3386,6 +3405,7 @@
                                 "name": "Mã vật tư:",
                                 "id": -9300,
                                 "position": -9300,
+                                "disabled": true,
                                 "type": "text",
                                 "conditions": {
                                     "required": true
@@ -3395,6 +3415,7 @@
                                 "name": "Tên vật tư và quy cách:",
                                 "id": -9250,
                                 "position": -9250,
+                                "disabled": true,
                                 "type": "text",
                                 "conditions": {
                                     "required": true
@@ -3404,6 +3425,7 @@
                                 "name": "Lô vật tư:",
                                 "id": -9200,
                                 "position": -9200,
+                                "disabled": true,
                                 "type": "text",
                                 "conditions": {}
                             },
@@ -3411,6 +3433,7 @@
                                 "name": "Đơn vị tính:",
                                 "id": -9150,
                                 "position": -9150,
+                                "disabled": true,
                                 "type": "text",
                                 "conditions": {
                                     "required": true
@@ -3420,6 +3443,7 @@
                                 "name": "Số lượng yêu cầu:",
                                 "id": -9100,
                                 "position": -9100,
+                                "disabled": true,
                                 "type": "finance",
                                 "conditions": {
                                     "required": true
@@ -3427,7 +3451,6 @@
                             },
                             {
                                 "name": "Số lượng đoạn",
-                                "disabled": true,
                                 "id": -9090,
                                 "position": -9090,
                                 "type": "text",
@@ -3437,7 +3460,6 @@
                             },
                             {
                                 "name": "Độ dài mong muốn",
-                                "disabled": true,
                                 "id": -9080,
                                 "position": -9080,
                                 "type": "text",
@@ -3537,7 +3559,7 @@
                     {
                         "staticContent": "<p style='font-size: 12px; color: #3617FF'><i></i></p>",
                         "display": true,
-                        "name": "Link file phiếu nhập kho",
+                        "name": "Link file phiếu xuất kho",
                         "additionalDisplayClass": "left-info",
                         "disabled": true,
                         "placeholder": "",

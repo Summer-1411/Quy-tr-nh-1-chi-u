@@ -1856,10 +1856,6 @@
         {
             "requestUpdateUnlock": true,
             "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                },
                 "requestUpdate": {
                     "enable": false
                 }
@@ -1928,10 +1924,6 @@
         {
             "requestUpdateUnlock": true,
             "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                },
                 "requestUpdate": {
                     "enable": false
                 }
@@ -2022,10 +2014,6 @@
         {
             "requestUpdateUnlock": true,
             "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                },
                 "requestUpdate": {
                     "enable": false
                 }
@@ -2116,10 +2104,6 @@
         {
             "requestUpdateUnlock": true,
             "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                },
                 "requestUpdate": {
                     "enable": false
                 }
@@ -2210,10 +2194,6 @@
         {
             "requestUpdateUnlock": true,
             "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                },
                 "requestUpdate": {
                     "enable": false
                 }
@@ -2304,10 +2284,6 @@
         {
             "requestUpdateUnlock": true,
             "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                },
                 "requestUpdate": {
                     "enable": false
                 }
@@ -2398,10 +2374,6 @@
         {
             "requestUpdateUnlock": true,
             "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                },
                 "requestUpdate": {
                     "enable": false
                 }
@@ -2442,10 +2414,6 @@
         {
             "requestUpdateUnlock": true,
             "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                },
                 "requestUpdate": {
                     "enable": false
                 }
@@ -2537,10 +2505,6 @@
         {
             "requestUpdateUnlock": true,
             "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                },
                 "requestUpdate": {
                     "enable": false
                 }
@@ -2632,10 +2596,6 @@
         {
             "requestUpdateUnlock": true,
             "buttonConfig": {
-                "cancel": {
-                    "enable": false,
-                    "text": "Hủy yêu cầu"
-                },
                 "requestUpdate": {
                     "enable": false
                 }
@@ -3321,7 +3281,6 @@
                             },
                             {
                                 "name": "Số lượng đoạn",
-                                "disabled": true,
                                 "id": -9090,
                                 "position": -9090,
                                 "type": "text",
@@ -3331,7 +3290,6 @@
                             },
                             {
                                 "name": "Độ dài mong muốn",
-                                "disabled": true,
                                 "id": -9080,
                                 "position": -9080,
                                 "type": "text",
@@ -3471,7 +3429,7 @@
                     {
                         "staticContent": "<p style='font-size: 12px; color: #3617FF'><i></i></p>",
                         "display": true,
-                        "name": "Link file phiếu nhập kho",
+                        "name": "Link file phiếu xuất kho",
                         "additionalDisplayClass": "left-info",
                         "disabled": true,
                         "placeholder": "",
