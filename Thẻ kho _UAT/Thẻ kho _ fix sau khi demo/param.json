@@ -1,0 +1,295 @@
+B6_PARAM_THE_KHO_KHO_CHINH
+{
+    "organizationId": "-9989",
+    "pickerFilter": "primaryInventoryCode"
+}
+
+B6_PARAM_THE_KHO_KHO_PHU
+{
+    "primaryInventoryId": "-9900",
+    "pickerFilter": "nameSubInventory"
+}
+
+B6_PARAM_THE_KHO_TRUONG_PHO_PHONG
+{
+    "orgId" : "-9920",
+    "deptId" : "-9980",
+    "mappingLevel" : "-5300",
+    "pickerFilter": "fullName"
+}
+B6_PARAM_GET_ALL_DEPARTMENT_DTXD
+{
+    "orgId":"-9920",
+    "pickerFilter": "name"
+}
+
+
+
+B6_PARAM_THE_KHO_KE_TOAN_TRUONG
+{
+    "orgId": "-9920",
+    "mappingLevel": "-5300",
+    "deptId" : "-9550",
+    "pickerFilter": "fullName"
+}
+
+B6_PARAM_THE_KHO_CHUYEN_VIEN_KE_TOAN
+{
+    "orgId": "-9920",
+    "mappingLevel": "-5700",
+    "deptId" : "-9550",
+    "pickerFilter": "fullName"
+}
+
+B6_PARAM_THE_KHO_CREATE_TICKET
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "WAREHOUSE_CARD",
+        "status": "INPROGRESS",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "deptId": "(-9980)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "primaryInventory": "(-9900)",
+            "subInventory": "(-9870)"
+        }
+    }
+}
+B6_PARAM_THE_KHO_BUOC_2
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "WAREHOUSE_CARD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "deptId": "(-9980)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "primaryInventory": "(-9900)",
+            "subInventory": "(-9870)"
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-20,-30)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS ",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 2",
+        "approvalUser": "(phase-owner,-20)",
+        "action": "APPROVE"
+    }
+}
+
+
+B6_PARAM_THE_KHO_BUOC_2_BRANCH_2
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "WAREHOUSE_CARD",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "createDate": "(-9999)",
+        "deptId": "(-9980)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "primaryInventory": "(-9900)",
+            "subInventory": "(-9870)"
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-20,-40)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS ",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 2",
+        "approvalUser": "(phase-owner,-20)",
+        "action": "APPROVE"
+    }
+}
+
+
+
+
+B6_PARAM_THE_KHO_BUOC_3
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "WAREHOUSE_CARD",
+        "createDate": "(-9999)",
+        "deptId": "(-9980)",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "primaryInventory": "(-9900)",
+            "subInventory": "(-9870)"
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-30,-40)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS ",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 3",
+        "approvalUser": "(phase-owner,-30)",
+        "action": "APPROVE"
+    }
+}
+
+B6_PARAM_THE_KHO_BUOC_4
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "WAREHOUSE_CARD",
+        "status": "INPROGRESS",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "deptId": "(-9980)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "primaryInventory": "(-9900)",
+            "subInventory": "(-9870)"
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-40,-50)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS ",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 4",
+        "approvalUser": "(phase-owner,-40)",
+        "action": "APPROVE"
+    }
+}
+
+B6_PARAM_THE_KHO_BUOC_4_BRANCH_2
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "WAREHOUSE_CARD",
+        "status": "CLOSED",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "deptId": "(-9980)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "primaryInventory": "(-9900)",
+            "subInventory": "(-9870)"
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-40,-1)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CLOSED",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 4",
+        "approvalUser": "(phase-owner,-40)",
+        "action": "APPROVE"
+    }
+}
+
+
+
+B6_PARAM_THE_KHO_BUOC_5
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "WAREHOUSE_CARD",
+        "status": "CLOSED",
+        "deptId": "(-9980)",
+        "createDate": "(-9999)",
+        "createUser": "(-10000)",
+        "actionType": "REQUEST",
+        "importExport": {
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9920)",
+            "primaryInventory": "(-9900)",
+            "subInventory": "(-9870)"
+        },
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-50,-1)",
+                    "type": "1",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CLOSED",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 5",
+        "approvalUser": "(phase-owner,-50)",
+        "action": "APPROVE"
+    }
+}

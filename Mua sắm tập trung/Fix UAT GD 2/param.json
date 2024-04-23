@@ -23,7 +23,7 @@ B6_PARAM_GET_FILE_IMPORT_BY_REPORT_MSTT
     "tckt": "-5200",
     "storekeeper": "-5600",
     "khvt": "-5400",
-    "deliver": "-10000",
+    "deliver": "-5500",
     "ticketId": "-0",
     "userCreate": "-10000",
     "keyThuKho":"-1200",
@@ -71,6 +71,13 @@ B6_PARAM_CHON_THU_KHO_MSTT
 {
     "orgId": "-8900",
     "mappingLevel": "-2960",
+    "pickerFilter": "fullName"
+}
+
+B6_PARAM_CHON_NGUOI_GIAO_HANG_MSTT
+{
+    "orgId": "-8900",
+    "mappingLevel": "-2970",
     "pickerFilter": "fullName"
 }
 

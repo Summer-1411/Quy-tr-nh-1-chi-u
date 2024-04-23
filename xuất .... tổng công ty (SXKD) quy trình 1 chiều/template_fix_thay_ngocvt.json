@@ -323,6 +323,78 @@
             "additionalDisplayClass": "right-info"
         },
         {
+            "id": -9500,
+            "position": -9500,
+            "name": "Chọn phòng/ban liên quan",
+            "type": "apiweb",
+            "disable": true,
+            "conditions": {
+                "required": true,
+                "feedTo": [
+                    {
+                        "fieldName": "deptId",
+                        "id": -9515,
+                        "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "fieldName": "orgId",
+                        "id": -9510,
+                        "dataset": "INDIVIDUAL"
+                    },
+                    {
+                        "fieldName": "name",
+                        "id": -9505,
+                        "dataset": "INDIVIDUAL"
+                    }
+                ]
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_EVN_SPRO_PARAM_PHONG_BAN_PHE_DUYET_XKCPTKHTTCT",
+                    "urlFilter": "/common-spro/get-all-department?orgId=276",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "code",
+                    "minimumSearch": 0,
+                    "displayField": "name"
+                }
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9400,
+            "position": -9400,
+            "name": "Chọn trưởng/phó phòng/ban liên quan",
+            "type": "apiweb",
+            "disable": true,
+            "conditions": {
+                "required": true,
+                "feedTo": [
+                    {
+                        "fieldName": "fullName",
+                        "id": -9399,
+                        "dataset": "INDIVIDUAL"
+                    }
+                ]
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_EVN_SPRO_PARAM_CHUYEN_VIEN_BAN_LIEN_QUAN_SXKD",
+                    "urlFilter": "/common-spro/getUserByPosition?mappingLevel=5",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "userName",
+                    "minimumSearch": 0,
+                    "displayField": "fullName"
+                }
+            },
+            "additionalDisplayClass": "right-info"
+        },
+        {
             "id": -9560,
             "position": -9560,
             "name": "mappinglevel",
@@ -348,6 +420,38 @@
             "additionalDisplayClass": "left-info"
         },
         {
+            "id": -9515,
+            "position": -9515,
+            "name": "Id phòng ban liên quan",
+            "display": false,
+            "type": "number",
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9505,
+            "position": -9505,
+            "name": "Tên phòng ban liên quan",
+            "display": false,
+            "type": "text",
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9510,
+            "position": -9510,
+            "name": "Id đơn vị liên quan",
+            "display": false,
+            "type": "number",
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -9399,
+            "position": -9399,
+            "name": "Tên trưởng phó ban liên quan",
+            "display": false,
+            "type": "text",
+            "additionalDisplayClass": "left-info"
+        },
+        {
             "display": false,
             "name": "Key ký thủ kho",
             "additionalDisplayClass": "left-info",
@@ -364,6 +468,17 @@
             "position": -2001,
             "type": "text",
             "value": "NGUOI_NHAN_"
+        },
+        {
+            "id": -1111,
+            "position": -1111,
+            "name": "Địa chỉ đơn vị",
+            "display": false,
+            "type": "master_data_load_user_info_diachidonvi",
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "left-info"
         }
     ],
     "multitable": [

@@ -52,6 +52,20 @@ B6_EVN_SPRO_PARAM_TRUONG_PHONG_PHE_DUYET_XKCPTKHTTCT
     "orgId" : "-9520",
     "deptId" : "-9540"
 }
+
+B6_EVN_SPRO_PARAM_CHUYEN_VIEN_BAN_LIEN_QUAN_SXKD
+{
+    "orgId" : "-9510",
+    "deptId" : "-9515"
+}
+
+
+
+B6_EVN_SPRO_PARAM_TRUONG_PHONG_BAN_LIEN_QUAN_XKCPTKHTTCT
+{
+    "orgId" : "-9510",
+    "deptId" : "-9515"
+}
 EVN_SPRO_PARAM_PICKER_FILTER_MATERIAL_CODE_XKTCT
 {
     "erpId":"-9995",
@@ -237,18 +251,33 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_B3
     }
 } 
 
-B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_B5,
+B6_EVN_SPRO_PARAM_TCT_SXKD_BUOC_4
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 4",
+        "approvalUser": "(phase-owner,-50)",
+        "action": "FINISH"
+    }
+}
+
+B6_EVN_SPRO_PARAM_TCT_SXKD_BUOC_5
 {
     "approval": {
         "ticketCode": "(-0)",
         "status": "INPROGRESS",
         "reason": "(update-reason)",
         "flowName": "Buoc 5",
-        "approvalUser": "(phase-owner,-50)",
+        "approvalUser": "(phase-owner,-60)",
         "action": "FINISH"
     }
 }
-  
+
+
+
+
 B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_B6, 
 {
     "ticket": {
@@ -293,11 +322,130 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_B6,
         "ticketCode": "(-0)",
         "status": "INPROGRESS",
         "reason": "(update-reason)",
-        "flowName": "Buoc 6",
+        "flowName": "Buoc 5",
         "approvalUser": "(phase-owner,-60)",
         "action": "FINISH"
     }
 }
+
+B6_EVN_SPRO_PARAM_TCT_SXKD_BUOC_6
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 6",
+        "approvalUser": "(phase-owner,-70)",
+        "action": "APPROVE"
+    }
+}
+
+B6_EVN_SPRO_PARAM_TCT_SXKD_BUOC_7
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 7",
+        "approvalUser": "(phase-owner,-80)",
+        "action": "FINISH"
+    }
+}
+
+B6_EVN_SPRO_PARAM_TCT_SXKD_BUOC_8
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 8",
+        "approvalUser": "(phase-owner,-90)",
+        "action": "APPROVE"
+    }
+}
+B6_EVN_SPRO_PARAM_TCT_SXKD_BUOC_9
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 9",
+        "approvalUser": "(phase-owner,-100)",
+        "action": "APPROVE"
+    }
+}
+
+B6_EVN_SPRO_PARAM_TCT_SXKD_BUOC_10
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 10",
+        "approvalUser": "(phase-owner,-115)",
+        "action": "FINISH"
+    }
+}
+B6_EVN_SPRO_PARAM_TCT_SXKD_BUOC_11
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 11",
+        "approvalUser": "(phase-owner,-116)",
+        "action": "APPROVE"
+    }
+}
+B6_EVN_SPRO_PARAM_TCT_SXKD_BUOC_12
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 12",
+        "approvalUser": "(phase-owner,-117)",
+        "action": "APPROVE"
+    }
+}
+
+B6_EVN_SPRO_PARAM_TCT_SXKD_BUOC_13
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 13",
+        "approvalUser": "(phase-owner,-120)",
+        "action": "APPROVE"
+    }
+}
+
+B6_EVN_SPRO_PARAM_TCT_SXKD_BUOC_14
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 14",
+        "approvalUser": "(phase-owner,-130)",
+        "action": "APPROVE"
+    }
+}
+
+B6_EVN_SPRO_PARAM_TCT_SXKD_BUOC_15
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "reason": "(update-reason)",
+        "flowName": "Buoc 15",
+        "approvalUser": "(phase-owner,-150)",
+        "action": "APPROVE"
+    }
+}
+
+
 
 B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_B7, 
 {

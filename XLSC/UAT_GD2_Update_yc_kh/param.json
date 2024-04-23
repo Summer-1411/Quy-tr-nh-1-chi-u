@@ -117,6 +117,7 @@ B6_PARAM_CREATE_TICKET_XUAT_KHO_XLSC
             "subInventory": "(-9871)",
             "requestDate": "(-9910)",
             "description": "(-9875)",
+            "construction": "(-9874)",
             "numberVoteApprove": "(-9865)",
             "tableData": [(t)<-9800>
 		        {
@@ -154,6 +155,7 @@ B6_PARAM_APPROVE_BUOC2_5_XLSC_UAT_2
             "subInventory": "(-9871)",
             "requestDate": "(-9910)",
             "description": "(-9875)",
+            "construction": "(-9874)",
             "numberVoteApprove": "(-9865)",
             "tableData": [(t)<-9800>
 		        {
@@ -217,6 +219,7 @@ B6_PARAM_APPROVE_BUOC3_XLSC
             "subInventory": "(-9871)",
             "requestDate": "(-9910)",
             "description": "(-9875)",
+            "construction": "(-9874)",
             "numberVoteApprove": "(-9865)",
             "tableData": [(t)<-9800>
 		        {
@@ -280,6 +283,7 @@ B6_PARAM_APPROVE_BUOC5_XLSC
             "subInventory": "(-9871)",
             "requestDate": "(-9910)",
             "description": "(-9875)",
+            "construction": "(-9874)",
             "numberVoteApprove": "(-9865)",
             "tableData": [(t)<-9800>
 		        {
@@ -333,6 +337,7 @@ B6_PARAM_APPROVE_BUOC6_XLSC
             "subInventory": "(-9871)",
             "requestDate": "(-9910)",
             "description": "(-9875)",
+            "construction": "(-9874)",
             "numberVoteApprove": "(-9865)",
             "tableData": [(t)<-9800>
 		        {
@@ -395,6 +400,7 @@ B6_PARAM_FINISH_BUOC8_XLSC
             "subInventory": "(-9871)",
             "requestDate": "(-9910)",
             "description": "(-9875)",
+            "construction": "(-9874)",
             "numberVoteApprove": "(-9865)",
             "tableData": [(t)<-9800>
 		        {
@@ -448,6 +454,7 @@ B6_PARAM_APPROVE_BUOC9_XLSC
             "subInventory": "(-9871)",
             "requestDate": "(-9910)",
             "description": "(-9875)",
+            "construction": "(-9874)",
             "numberVoteApprove": "(-9865)",
             "tableData": [(t)<-9800>
 		        {
@@ -500,6 +507,7 @@ B6_PARAM_APPROVE_BUOC10_XLSC
             "subInventory": "(-9871)",
             "requestDate": "(-9910)",
             "description": "(-9875)",
+            "construction": "(-9874)",
             "numberVoteApprove": "(-9865)",
             "tableData": [(t)<-9800>
 		        {

@@ -151,6 +151,46 @@
             $value.replaceAll(',','.')
         #end
     #end
+
+    #macro( RegexDistrict $value )
+    #set($result = "")
+    #if($value.contains("quận"))
+        #set($startIndex = $value.indexOf("quận"))
+        #set($endIndex = $value.indexOf(",", $startIndex))
+        #if($endIndex == -1)
+            #set($endIndex = $value.length())
+        #end
+        #set($district = $value.substring($startIndex, $endIndex))
+        #set($district = $district.replaceAll("quận", "").trim())
+        #set($result = $district)  
+    #elseif($value.contains("thị xã"))
+        #set($startIndex = $value.indexOf("thị xã"))
+        #set($endIndex = $value.indexOf(",", $startIndex))
+        #if($endIndex == -1)
+            #set($endIndex = $value.length())
+        #end
+        #set($district = $value.substring($startIndex, $endIndex))
+        #set($district = $district.replaceAll("thị xã", "").trim())
+        #set($result = $district)
+    #end
+
+    #if($value.contains("huyện"))
+        #set($startIndex = $value.indexOf("huyện"))
+        #set($endIndex = $value.indexOf(",", $startIndex))
+        #if($endIndex == -1)
+            #set($endIndex = $value.length())
+        #end
+        #set($district = $value.substring($startIndex, $endIndex))
+        #set($district = $district.replaceAll("huyện", "").trim())
+        #set($result = $district)
+    #end
+    $result
+#end
+
+
+#set($input = $DiaChiDonVi)
+#set($input = $input.toLowerCase())
+
 <div class="sectionGuide" >
     <table colspan="0" rowspan="0" class="tableHeader"
         style="margin-top: 10pt; margin-left: 0pt; margin-right: 5pt; padding-right: 100px">
@@ -158,8 +198,7 @@
             <td width="40%" style="text-align: center; font-size:11pt; padding-right: 100px ">
                 <span>TỔNG CÔNG TY<br />ĐIỆN LỰC TP HÀ NỘI</span>
                 <br />
-                <b style="border-bottom: 1px solid black;">$DonVi</b>
-                
+                <b style="border-bottom: 1px solid black;text-transform: uppercase;">$DonVi</b>
                 <br/>
                 <div><b>Số:</b> $So</div>
             </td>
@@ -172,7 +211,7 @@
         </tr>
     </table>
 </div>
-<div style="font-style: italic; text-align: right; font-size: 11pt;">Hà Nội, ngày $NgayToTrinh.split(" ")[0].split("/")[0] tháng $NgayToTrinh.split("
+<div style="font-style: italic; text-align: right; font-size: 11pt;"><span style="text-transform: capitalize;">#RegexDistrict($input)</span>, ngày $NgayToTrinh.split(" ")[0].split("/")[0] tháng $NgayToTrinh.split("
                             ")[0].split(
     "/")[1] năm $NgayToTrinh.split(" ")[0].split("/")[2]
 </div>
@@ -289,6 +328,16 @@
         </table>
         <table colspan="0" rowspan="0" class="tableHeader" style="margin-top: 15pt;">
             <tr>
+                <th style="text-align: center; font-size: 10pt;">
+                    <p style="font-size:2pt; color: white">$ChuKyLienQuan</p>
+                    <b>$TenBanLienQuan</b>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <p>$TenNguoiKyBanLienQuan</p>
                 </th>
                 <th style="text-align: center; font-size: 10pt;">
                     <p style="font-size:2pt; color: white">$ChuKyBanVatTu</p>

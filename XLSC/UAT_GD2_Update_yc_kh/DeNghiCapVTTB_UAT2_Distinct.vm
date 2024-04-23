@@ -399,8 +399,48 @@
     #end
 
 
+    #macro( RegexDistrict $value )
+        #set($result = "")
+        #if($value.contains("quận"))
+            #set($startIndex = $value.indexOf("quận"))
+            #set($endIndex = $value.indexOf(",", $startIndex))
+            #if($endIndex == -1)
+                #set($endIndex = $value.length())
+            #end
+            #set($district = $value.substring($startIndex, $endIndex))
+            #set($district = $district.replaceAll("quận", "").trim())
+            #set($result = $district)  
+        #elseif($value.contains("thị xã"))
+            #set($startIndex = $value.indexOf("thị xã"))
+            #set($endIndex = $value.indexOf(",", $startIndex))
+            #if($endIndex == -1)
+                #set($endIndex = $value.length())
+            #end
+            #set($district = $value.substring($startIndex, $endIndex))
+            #set($district = $district.replaceAll("thị xã", "").trim())
+            #set($result = $district)
+        #end
+
+        #if($value.contains("huyện"))
+            #set($startIndex = $value.indexOf("huyện"))
+            #set($endIndex = $value.indexOf(",", $startIndex))
+            #if($endIndex == -1)
+                #set($endIndex = $value.length())
+            #end
+            #set($district = $value.substring($startIndex, $endIndex))
+            #set($district = $district.replaceAll("huyện", "").trim())
+            #set($result = $district)
+        #end
+        $result
+    #end
 
     #set($outputArray = $outputMap.values().toArray())
+    
+    #set($input = $DiaChiDonVi)
+    #set($input = $input.toLowerCase())
+
+
+
 
 
     <div class="sectionGuide">
@@ -424,7 +464,7 @@
                     </span>
                     <div style="font-size:10pt; text-align: right;">
                         <br />
-                        <i>Hà Nội, ngày $NgayToTrinh.split(" ")[0].split("/")[0] tháng $NgayToTrinh.split("
+                        <i><span style="text-transform: capitalize;">#RegexDistrict($input)</span>, ngày $NgayToTrinh.split(" ")[0].split("/")[0] tháng $NgayToTrinh.split("
                             ")[0].split(
                             "/")[1] năm $NgayToTrinh.split(" ")[0].split("/")[2]
                         </i>
@@ -461,6 +501,9 @@
                 </div>
                 <div>Diễn giải:
                     $DienGiai
+                </div>
+                <div>Công trình:
+                    $CongTrinh
                 </div>
                 <div>Đề nghị cấp danh sách vật tư thiết bị như sau:</div>
             </div>

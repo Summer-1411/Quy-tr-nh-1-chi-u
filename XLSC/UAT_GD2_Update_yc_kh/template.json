@@ -255,6 +255,47 @@
             }
         },
         {
+            "id": -9874,
+            "position": -9864,
+            "name": "Mã công trình",
+            "type": "apiweb",
+            "apiWebConfig": {
+                "apiConfig": {
+                    "param": "EVN_SPRO_PARAM_PICKER_FILTER_CMIS",
+                    "hostnameKey": "SPRO_EVN",
+                    "urlFilter": "/common-spro/get-cmis?type=KHAC",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "projectCode",
+                    "minimumSearch": 0,
+                    "displayField": "projectName"
+                }
+            },
+            "conditions": {
+                "feedTo": [
+                    {
+                        "fieldName": "projectName",
+                        "id": -9873,
+                        "dataset": "INDIVIDUAL"
+                    }
+                ],
+                "required": true
+            },
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "name": "Tên công trình",
+            "id": -9873,
+            "position": -9864,
+            "type": "text",
+            "display": false,
+            "conditions": {
+                "required": false
+            },
+            "additionalDisplayClass": "right-info"
+        },
+        {
             "display": false,
             "name": "Code kho phụ",
             "additionalDisplayClass": "right-info",
@@ -721,6 +762,17 @@
                 "required": true
             },
             "position": -1500,
+            "additionalDisplayClass": "left-info"
+        },
+        {
+            "id": -1111,
+            "position": -1111,
+            "name": "Địa chỉ đơn vị",
+            "display": false,
+            "type": "master_data_load_user_info_diachidonvi",
+            "conditions": {
+                "required": true
+            },
             "additionalDisplayClass": "left-info"
         }
     ],

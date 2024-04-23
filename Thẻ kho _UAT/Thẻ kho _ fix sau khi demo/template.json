@@ -186,7 +186,7 @@
             "display": true,
             "name": "Link thẻ kho",
             "additionalDisplayClass": "left-info",
-            "disabled": false,
+            "disabled": true,
             "placeholder": "",
             "id": -9240,
             "position": -9240,
@@ -342,6 +342,7 @@
             "additionalDisplayClass": "left-info",
             "id": -9200,
             "position": -9200,
+            "display": false,
             "type": "select",
             "conditions": {
                 "data": [
@@ -354,7 +355,7 @@
                         "value": "2"
                     },
                     {
-                        "text": "Không chọn cả 2 người trên",
+                        "text": "Không chọn Trưởng phó phòng phê duyệt và Trưởng phòng tài chính kế toán",
                         "value": "3"
                     },
                     {

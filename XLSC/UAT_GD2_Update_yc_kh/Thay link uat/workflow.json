@@ -57,6 +57,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1111,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DiaChiDonVi"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9875,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -86,6 +94,14 @@
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "KinhGui"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9873,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CongTrinh"
                     },
                     {
                         "data-config": {
@@ -199,7 +215,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104688&fileName=DeNghiCapVTTB_UAT2_Distinct.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105383&fileName=DeNghiCapVTTB_UAT2_Distinct.vm",
                 "newVersion": true
             },
             "sla": {
@@ -247,6 +263,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1111,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DiaChiDonVi"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9875,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -276,6 +300,14 @@
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "KinhGui"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9873,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CongTrinh"
                     },
                     {
                         "data-config": {
@@ -389,7 +421,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104688&fileName=DeNghiCapVTTB_UAT2_Distinct.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105383&fileName=DeNghiCapVTTB_UAT2_Distinct.vm",
                 "newVersion": true
             },
             "sla": {
@@ -437,6 +469,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1111,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DiaChiDonVi"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9875,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -466,6 +506,14 @@
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "KinhGui"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9873,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CongTrinh"
                     },
                     {
                         "data-config": {
@@ -579,7 +627,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104688&fileName=DeNghiCapVTTB_UAT2_Distinct.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105383&fileName=DeNghiCapVTTB_UAT2_Distinct.vm",
                 "newVersion": true
             },
             "sla": {
@@ -656,6 +704,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1111,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DiaChiDonVi"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9875,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -685,6 +741,14 @@
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "KinhGui"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9873,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CongTrinh"
                     },
                     {
                         "data-config": {
@@ -798,7 +862,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104688&fileName=DeNghiCapVTTB_UAT2_Distinct.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105383&fileName=DeNghiCapVTTB_UAT2_Distinct.vm",
                 "newVersion": true
             },
             "sla": {
@@ -848,6 +912,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1111,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DiaChiDonVi"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9875,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -877,6 +949,14 @@
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "KinhGui"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9873,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CongTrinh"
                     },
                     {
                         "data-config": {
@@ -990,7 +1070,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104688&fileName=DeNghiCapVTTB_UAT2_Distinct.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105383&fileName=DeNghiCapVTTB_UAT2_Distinct.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1069,6 +1149,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1111,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DiaChiDonVi"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9875,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1098,6 +1186,14 @@
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "KinhGui"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9873,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CongTrinh"
                     },
                     {
                         "data-config": {
@@ -1211,7 +1307,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104688&fileName=DeNghiCapVTTB_UAT2_Distinct.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105383&fileName=DeNghiCapVTTB_UAT2_Distinct.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1261,6 +1357,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1111,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DiaChiDonVi"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9875,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1290,6 +1394,14 @@
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "KinhGui"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9873,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CongTrinh"
                     },
                     {
                         "data-config": {
@@ -1403,7 +1515,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104688&fileName=DeNghiCapVTTB_UAT2_Distinct.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105383&fileName=DeNghiCapVTTB_UAT2_Distinct.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1453,6 +1565,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -1111,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DiaChiDonVi"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9875,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1482,6 +1602,14 @@
                             "dataset": "INDIVIDUAL"
                         },
                         "name": "KinhGui"
+                    },
+                    {
+                        "data-config": {
+                            "infoId": -9873,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "CongTrinh"
                     },
                     {
                         "data-config": {
@@ -1595,7 +1723,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=104688&fileName=DeNghiCapVTTB_UAT2_Distinct.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105383&fileName=DeNghiCapVTTB_UAT2_Distinct.vm",
                 "newVersion": true
             },
             "sla": {

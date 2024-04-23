@@ -472,8 +472,6 @@
                 }
             },
             "additionalDisplayClass": "left-info"
-            
-            
         },
         {
             "id": -5599,
@@ -483,7 +481,32 @@
             "additionalDisplayClass": "left-info",
             "type": "text"
         },
-        
+        {
+            "id": -5500,
+            "position": -5500,
+            "name": "Chọn người giao hàng",
+            "type": "apiweb",
+            "conditions": {
+                "feedTo": [
+                    
+                ],
+                "required": true
+            },
+            "apiWebConfig": {
+                "apiConfig": {
+                    "hostnameKey": "SPRO_EVN",
+                    "param": "B6_PARAM_CHON_NGUOI_GIAO_HANG_MSTT",
+                    "urlFilter": "/common-spro/getUserByPosition",
+                    "returnKey": "MT_GET_VENDOR_RP_S"
+                },
+                "searchConfig": {
+                    "idField": "userName",
+                    "minimumSearch": 0,
+                    "displayField": "fullName"
+                }
+            },
+            "additionalDisplayClass": "left-info"
+        },
         {
             "id": -5400,
             "position": -5400,
