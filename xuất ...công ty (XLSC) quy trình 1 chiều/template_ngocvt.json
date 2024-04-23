@@ -136,7 +136,7 @@
             "display": false,
             "id": -9875,
             "name": "Type số",
-            "value": "REQUEST",
+            "value": "SUBMISSION",
             "type": "text",
             "position": -9935,
             "conditions": {
@@ -549,6 +549,17 @@
             "position": -2001,
             "type": "text",
             "value": "NGUOI_NHAN_"
+        },
+        {
+            "id": -1111,
+            "position": -1111,
+            "name": "Địa chỉ đơn vị",
+            "display": false,
+            "type": "master_data_load_user_info_diachidonvi",
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "left-info"
         }
     ],
     "multitable": [

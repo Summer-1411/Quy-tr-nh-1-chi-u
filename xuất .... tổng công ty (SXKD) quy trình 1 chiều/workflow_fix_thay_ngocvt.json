@@ -88,6 +88,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9830,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9505,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -206,7 +214,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105446&fileName=DeNghiCapVTTB_TUNGLV27.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105464&fileName=DeNghiCapVTTB_TUNGLV27.vm",
                 "newVersion": true
             },
             "sla": {
@@ -294,6 +302,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9830,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9399,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -396,7 +412,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105446&fileName=DeNghiCapVTTB_TUNGLV27.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105464&fileName=DeNghiCapVTTB_TUNGLV27.vm",
                 "newVersion": true
             },
             "sla": {
@@ -546,6 +562,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9830,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9399,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -650,7 +674,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105446&fileName=DeNghiCapVTTB_TUNGLV27.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105464&fileName=DeNghiCapVTTB_TUNGLV27.vm",
                 "newVersion": true
             },
             "sla": {
@@ -802,6 +826,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9830,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9399,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -906,7 +938,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105446&fileName=DeNghiCapVTTB_TUNGLV27.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105464&fileName=DeNghiCapVTTB_TUNGLV27.vm",
                 "newVersion": true
             },
             "sla": {
@@ -991,6 +1023,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9830,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9505,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1103,7 +1143,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105446&fileName=DeNghiCapVTTB_TUNGLV27.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105464&fileName=DeNghiCapVTTB_TUNGLV27.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1133,198 +1173,7 @@
             },
             "status": "Responding"
         },
-        {
-            "summary": "Bước 11 Chuyên viên KHVT ký số",
-            "customNote": "Bước 8",
-            "print-config": {
-                "margin": "70,30,30,30",
-                "filename": "Đề nghị cấp vật tư thiết bị",
-                "img-urls": [],
-                "parameters": [
-                    {
-                        "data-config": {
-                            "infoId": -9900,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "DonVi"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -9900,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "DonViDeNghi"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -9860,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "LyDoCap"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -9580,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "BanVatTu"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -1111,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "DiaChiDonVi"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -9505,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "TenBanLienQuan"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -9399,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "TenNguoiKyBanLienQuan"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -9620,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "TruongDonVi"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -9680,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "KHVT"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -9991,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "NguoiLap"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -9880,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "NgayToTrinh"
-                    },
-                    {
-                        "data-config": {
-                            "infoId": -9870,
-                            "type": "TICKET_DETAIL",
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "name": "So"
-                    },
-                    {
-                        "data-config": {
-                            "inputId": -60,
-                            "column-key-mappings": [
-                                {
-                                    "columnId": -9960,
-                                    "key": "MaVatTu"
-                                },
-                                {
-                                    "columnId": -9940,
-                                    "key": "TenVatTuVaQuyCach"
-                                },
-                                {
-                                    "columnId": -9920,
-                                    "key": "MaTenNSX"
-                                },
-                                {
-                                    "columnId": -9900,
-                                    "key": "DonViTinh"
-                                },
-                                {
-                                    "columnId": -9880,
-                                    "key": "TonKho"
-                                },
-                                {
-                                    "columnId": -9860,
-                                    "key": "DeNghiCap"
-                                },
-                                {
-                                    "columnId": -9840,
-                                    "key": "DieuChuyen"
-                                },
-                                {
-                                    "columnId": -9800,
-                                    "key": "DonViDieuChuyen"
-                                },
-                                {
-                                    "columnId": -9780,
-                                    "key": "CapNgay"
-                                },
-                                {
-                                    "columnId": -9760,
-                                    "key": "SeCap"
-                                },
-                                {
-                                    "columnId": -9740,
-                                    "key": "GhiChu"
-                                }
-                            ],
-                            "phaseId": -70,
-                            "tableId": -10000,
-                            "type": "PHASE_INPUT_DETAIL",
-                            "dataset": "MULTITABLE"
-                        },
-                        "name": "DanhSachVatTu"
-                    }
-                ],
-                "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105446&fileName=DeNghiCapVTTB_TUNGLV27.vm",
-                "newVersion": true
-            },
-            "sla": {
-                "res": 2,
-                "fix": 8
-            },
-            "id": -116,
-            "type": "phase",
-            "printable": true,
-            "isDone": false,
-            "phaseType": "Implement",
-            "role_config": {
-                "functions": [
-                    {
-                        "role_type_to_add": "implementer",
-                        "id": 3,
-                        "params": [
-                            {
-                                "infoId": -10000,
-                                "name": "info",
-                                "type": "INPUT",
-                                "dataset": "INDIVIDUAL"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "status": "Responding"
-        },
+
         {
             "summary": "Bước 12 Trường/phó phòng KHVT ký số",
             "customNote": "Bước 9",
@@ -1383,6 +1232,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9830,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9399,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1487,7 +1344,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105446&fileName=DeNghiCapVTTB_TUNGLV27.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105464&fileName=DeNghiCapVTTB_TUNGLV27.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1575,6 +1432,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9830,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9399,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1679,7 +1544,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105446&fileName=DeNghiCapVTTB_TUNGLV27.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105464&fileName=DeNghiCapVTTB_TUNGLV27.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1767,6 +1632,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9830,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9399,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -1871,7 +1744,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105446&fileName=DeNghiCapVTTB_TUNGLV27.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105464&fileName=DeNghiCapVTTB_TUNGLV27.vm",
                 "newVersion": true
             },
             "sla": {
@@ -2052,6 +1925,14 @@
                     },
                     {
                         "data-config": {
+                            "infoId": -9830,
+                            "type": "TICKET_DETAIL",
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "name": "DienGiai"
+                    },
+                    {
+                        "data-config": {
                             "infoId": -9399,
                             "type": "TICKET_DETAIL",
                             "dataset": "INDIVIDUAL"
@@ -2156,7 +2037,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105446&fileName=DeNghiCapVTTB_TUNGLV27.vm",
+                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105464&fileName=DeNghiCapVTTB_TUNGLV27.vm",
                 "newVersion": true
             },
             "sla": {
@@ -3160,8 +3041,8 @@
                 }
             ],
             "from": -115,
-            "id": -115116,
-            "to": -116,
+            "id": -115117,
+            "to": -117,
             "detail": {
                 "individual": [
                     {
@@ -3209,90 +3090,6 @@
             "status": "waiting"
         },
         {
-            "customNote": "Bước 11",
-            "advancedConfig": {
-                "signature_evn": [
-                    {
-                        "filesToSign": [
-                            {
-                                "infoId": -1,
-                                "relaId": -115116,
-                                "dataset": "INDIVIDUAL"
-                            }
-                        ],
-                        "whereToSave": {
-                            "infoId": -1,
-                            "dataset": "INDIVIDUAL"
-                        },
-                        "suffix": "(đã ký số)",
-                        "key": "ChuKyNguoiLap"
-                    }
-                ]
-            },
-            "api_config": [
-                {
-                    "executeAPI": {
-                        "paramType": "regex",
-                        "number": 0,
-                        "param": "B6_EVN_SPRO_PARAM_TCT_SXKD_BUOC_11",
-                        "name": "TICKET_EVN_SPRO_UPDATE"
-                    },
-                    "requireAuthenAPI": false
-                }
-            ],
-            "from": -116,
-            "id": -116117,
-            "to": -117,
-            "detail": {
-                "individual": [
-                    {
-                        "name": "Ghi chú",
-                        "additionalDisplayClass": "left-info",
-                        "id": -12,
-                        "position": -12,
-                        "type": "textarea",
-                        "conditions": {
-                            "max-length": 1000,
-                            "height": 5
-                        }
-                    },
-                    {
-                        "name": "Văn bản đã ký số",
-                        "additionalDisplayClass": "left-info",
-                        "disabled": true,
-                        "id": -1,
-                        "position": -1,
-                        "conditions": {
-                            "filetype": "all/*",
-                            "advanced": {
-                                "files": {
-                                    "name": "File ký",
-                                    "value": ""
-                                },
-                                "text": "Gắn chữ ký số",
-                                "params": [
-                                    {
-                                        "infoId": -1,
-                                        "name": "File ký",
-                                        "type": "text",
-                                        "dataset": "INDIVIDUAL"
-                                    }
-                                ],
-                                "type": "signature"
-                            },
-                            "max-size": 20,
-                            "multiple": true,
-                            "required": false
-                        },
-                        "type": "upload",
-                        "value": ""
-                    }
-                ]
-            },
-            "type": "approval",
-            "status": "waiting"
-        },
-        {
             "customNote": "Bước 12",
             "advancedConfig": {
                 "signature_evn": [
@@ -3300,7 +3097,7 @@
                         "filesToSign": [
                             {
                                 "infoId": -1,
-                                "relaId": -116117,
+                                "relaId": -115117,
                                 "dataset": "INDIVIDUAL"
                             }
                         ],
@@ -3309,7 +3106,7 @@
                             "dataset": "INDIVIDUAL"
                         },
                         "suffix": "(đã ký số)",
-                        "key": "ChuKyKHVT"
+                        "key": "Small*ChuKyKHVT"
                     }
                 ]
             },
@@ -5288,14 +5085,6 @@
                 450
             ],
             "id": -115
-        },
-        {
-            "image": "/images/workflowimage/User_male.png",
-            "positions": [
-                500,
-                600
-            ],
-            "id": -116
         },
         {
             "image": "/images/workflowimage/User_male.png",

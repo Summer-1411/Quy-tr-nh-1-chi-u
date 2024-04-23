@@ -152,7 +152,7 @@
         #end
     #end
 
-    #macro( RegexDistrict $value )
+#macro( RegexDistrict $value )
     #set($result = "")
     #if($value.contains("quận"))
         #set($startIndex = $value.indexOf("quận"))
@@ -221,7 +221,7 @@
             <td style="text-align: center; font-size:13pt; font-weight: bold;">
                 <b >TỜ TRÌNH</b>
                 <br />
-                <b style="border-bottom: 1px solid black;">Về việc xin cấp VTTB cho sự cố hoặc vận hành phục vụ sản xuất kinh doanh</b>
+                <b style="border-bottom: 1px solid black;">Về việc xin cấp VTTB vận hành phục vụ sản xuất kinh doanh</b>
             </td>
         </tr>
     </table>
@@ -234,6 +234,11 @@
         <tr>
             <td style="font-size:11pt;">
                 Lý do cấp: <b>$LyDoCap</b>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size:11pt;">
+                Diễn giải: <b>$DienGiai</b>
             </td>
         </tr>
         <tr>
@@ -328,9 +333,34 @@
         </table>
         <table colspan="0" rowspan="0" class="tableHeader" style="margin-top: 15pt;">
             <tr>
+                <th>
+                    
+                </th>
+                <th>
+                    
+                </th>
+                <th>
+                    
+                </th>
+                <th>
+                    <p style="font-size:2pt; color: white">$Small*ChuKyKHVT</p>
+                </th>
+            </tr>
+            <tr>
+                <th style="text-align: left;">
+                    <p style="font-size:2pt; color: white">EMPTY</p>
+                    <div>
+                        <div style="font-style: italic;">Nơi nhận :</div>
+                        <div style="text-align: left; margin-left: 15px; font-weight: 400;">
+                            <div> - .........</div>
+                            <div> - Lưu VT, Đơn vị</div>
+                        </div>
+                        
+                    </div>
+                </th>
                 <th style="text-align: center; font-size: 10pt;">
                     <p style="font-size:2pt; color: white">$ChuKyLienQuan</p>
-                    <b>$TenBanLienQuan</b>
+                    <b style="text-transform: uppercase;">$TenBanLienQuan</b>
                     <br />
                     <br />
                     <br />
@@ -360,28 +390,6 @@
                     <br />
                     <br />
                     <p>$TruongDonVi</p>
-                </th>
-                <th style="text-align: center; font-size: 10pt;">
-                    <p style="font-size:2pt; color: white">$ChuKyKHVT</p>
-                    <b>PHÒNG KHVT</b>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <p>$KHVT</p>
-                </th>
-                <th style="text-align: center; font-size: 10pt;">
-                    <p style="font-size:2pt; color: white">$ChuKyNguoiLap</p>
-                    <b>NGƯỜI LẬP</b>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <p>$NguoiLap</p>
                 </th>
             </tr>
         </table>

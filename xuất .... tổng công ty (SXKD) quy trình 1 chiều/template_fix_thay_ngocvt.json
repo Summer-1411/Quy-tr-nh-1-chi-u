@@ -136,7 +136,7 @@
             "display": false,
             "id": -9875,
             "name": "Type số",
-            "value": "REQUEST",
+            "value": "SUBMISSION",
             "type": "text",
             "position": -9935,
             "conditions": {

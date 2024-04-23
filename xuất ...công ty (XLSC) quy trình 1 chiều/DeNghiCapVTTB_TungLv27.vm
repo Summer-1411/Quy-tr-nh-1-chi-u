@@ -151,6 +151,45 @@
             $value.replaceAll(',','.')
         #end
     #end
+
+#macro( RegexDistrict $value )
+    #set($result = "")
+    #if($value.contains("quận"))
+        #set($startIndex = $value.indexOf("quận"))
+        #set($endIndex = $value.indexOf(",", $startIndex))
+        #if($endIndex == -1)
+            #set($endIndex = $value.length())
+        #end
+        #set($district = $value.substring($startIndex, $endIndex))
+        #set($district = $district.replaceAll("quận", "").trim())
+        #set($result = $district)  
+    #elseif($value.contains("thị xã"))
+        #set($startIndex = $value.indexOf("thị xã"))
+        #set($endIndex = $value.indexOf(",", $startIndex))
+        #if($endIndex == -1)
+            #set($endIndex = $value.length())
+        #end
+        #set($district = $value.substring($startIndex, $endIndex))
+        #set($district = $district.replaceAll("thị xã", "").trim())
+        #set($result = $district)
+    #end
+
+    #if($value.contains("huyện"))
+        #set($startIndex = $value.indexOf("huyện"))
+        #set($endIndex = $value.indexOf(",", $startIndex))
+        #if($endIndex == -1)
+            #set($endIndex = $value.length())
+        #end
+        #set($district = $value.substring($startIndex, $endIndex))
+        #set($district = $district.replaceAll("huyện", "").trim())
+        #set($result = $district)
+    #end
+    $result
+#end
+
+
+#set($input = $DiaChiDonVi)
+#set($input = $input.toLowerCase())
 <div class="sectionGuide" >
     <table colspan="0" rowspan="0" class="tableHeader"
         style="margin-top: 10pt; margin-left: 0pt; margin-right: 5pt; padding-right: 100px">
@@ -170,7 +209,7 @@
         </tr>
     </table>
 </div>
-<div style="font-style: italic; text-align: right; margin-top: 16.5pt">Hà Nội, ngày $NgayToTrinh.split(" ")[0].split("/")[0] tháng $NgayToTrinh.split("
+<div style="font-style: italic; text-align: right; margin-top: 16.5pt"><span style="text-transform: capitalize;">#RegexDistrict($input)</span>, ngày $NgayToTrinh.split(" ")[0].split("/")[0] tháng $NgayToTrinh.split("
                             ")[0].split(
     "/")[1] năm $NgayToTrinh.split(" ")[0].split("/")[2]
 </div>
@@ -180,7 +219,7 @@
             <td style="text-align: center; font-size:13pt; font-weight: bold;">
                 <b >TỜ TRÌNH</b>
                 <br />
-                <b style="border-bottom: 1px solid black;">Về việc xin cấp VTTB cho sự cố hoặc vận hành phục vụ sản xuất kinh doanh</b>
+                <b style="border-bottom: 1px solid black;">Về việc xin cấp VTTB cho xử lý sự cố</b>
             </td>
         </tr>
     </table>
@@ -193,6 +232,11 @@
         <tr>
             <td style="font-size:11pt;">
                 Lý do cấp: <b>$LyDoCap</b>
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size:11pt;">
+                Diễn giải: <b>$DienGiai</b>
             </td>
         </tr>
         <tr>
@@ -287,6 +331,32 @@
         </table>
         <table colspan="0" rowspan="0" class="tableHeader" style="margin-top: 15pt;">
             <tr>
+                <th>
+                </th>
+                <th>
+                </th>
+                <th>
+                </th>
+                <th >
+                </th>
+                <th>
+                    <div>
+                        <p style="font-size:2pt; color: white">$Small*ChuKyKHVT</p>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <th style="text-align: left;">
+                    <p style="font-size:2pt; color: white">EMPTY</p>
+                    <div>
+                        <div style="font-style: italic;">Nơi nhận :</div>
+                        <div style="text-align: left; margin-left: 15px; font-weight: 400;">
+                            <div> - .........</div>
+                            <div> - Lưu VT, Đơn vị</div>
+                        </div>
+                        
+                    </div>
+                </th>
                 <th style="text-align: center; font-size: 11pt;">
                     <div style="color: white;font-size:2pt;">$ChukyTGD</div>
                     <b>TGĐ/PTGD</b>
@@ -326,26 +396,6 @@
                     <br />
                     <br />
                     <div>$TruongDonVi</div>
-                </th>
-                <th style="text-align: center; font-size: 11pt;">
-                    <div style="font-size:2pt; color: white">$ChuKyKHVT</div>
-                    <b>PHÒNG KHVT</b>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <div>$KHVT</div>
-                </th>
-                <th style="text-align: center; font-size: 11pt;">
-                    <div style="font-size:2pt; color: white">$ChuKyNguoiLap</div>
-                    <b>NGƯỜI LẬP</b>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <div>$NguoiLap</div>
                 </th>
             </tr>
         </table>
