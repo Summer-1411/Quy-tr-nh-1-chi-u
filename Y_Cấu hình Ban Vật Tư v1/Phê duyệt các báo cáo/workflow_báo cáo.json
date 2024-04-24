@@ -1,0 +1,1270 @@
+{
+    "relatives": [
+        {
+            "customNote": "Bước 1. Lập đề nghị",
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_PDBC_CREATE_TICKET",
+                        "name": "TICKET_EVN_SPRO_CREATE"
+                    },
+                    "requireAuthenAPI": false
+                },
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_PDBC_CREATE_TICKET",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "triggerOn": "update-ticket",
+                    "requireAuthenAPI": false
+                },
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "XUAT_KHO_PT_KH_DONVI_DELETE_TICKET_API_PARAM_B1",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "triggerOn": "cancel",
+                    "requireAuthenAPI": false
+                }
+            ],
+            "id": -10,
+            "decisions": {
+                "textDisp": "Processes Decision",
+                "text": "Processes Decision",
+                "actions": [
+                    {
+                        "workflow": {
+                            "relationships": [
+                                -1020,
+                                -201
+                            ],
+                            "relatives": [
+                                -10,
+                                -20,
+                                -1
+                            ]
+                        },
+                        "name": "1 người phê duyệt",
+                        "id": -1,
+                        "conditions": {
+                            "right-element": {
+                                "dataset": "value",
+                                "value": "1"
+                            },
+                            "compare-type": "text",
+                            "operation": "equal",
+                            "left-element": {
+                                "inputId": -10,
+                                "infoId": -9500,
+                                "phaseId": -20,
+                                "type": "text",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        }
+                    },
+                    {
+                        "workflow": {
+                            "relationships": [
+                                -1020,
+                                -2030,
+                                -301
+                            ],
+                            "relatives": [
+                                -10,
+                                -20,
+                                -30,
+                                -1
+                            ]
+                        },
+                        "name": "2 người phê duyệt",
+                        "id": -2,
+                        "conditions": {
+                            "right-element": {
+                                "dataset": "value",
+                                "value": "2"
+                            },
+                            "compare-type": "text",
+                            "operation": "equal",
+                            "left-element": {
+                                "inputId": -10,
+                                "infoId": -9500,
+                                "phaseId": -20,
+                                "type": "text",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        }
+                    },
+                    {
+                        "workflow": {
+                            "relationships": [
+                                -1020,
+                                -2030,
+                                -3040,
+                                -401
+                            ],
+                            "relatives": [
+                                -10,
+                                -20,
+                                -30,
+                                -40,
+                                -1
+                            ]
+                        },
+                        "name": "3 người phê duyệt",
+                        "id": -3,
+                        "conditions": {
+                            "right-element": {
+                                "dataset": "value",
+                                "value": "3"
+                            },
+                            "compare-type": "text",
+                            "operation": "equal",
+                            "left-element": {
+                                "inputId": -10,
+                                "infoId": -9500,
+                                "phaseId": -20,
+                                "type": "text",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        }
+                    },
+                    {
+                        "workflow": {
+                            "relationships": [
+                                -1020,
+                                -2030,
+                                -3040,
+                                -4050,
+                                -501
+                            ],
+                            "relatives": [
+                                -10,
+                                -20,
+                                -30,
+                                -40,
+                                -50,
+                                -1
+                            ]
+                        },
+                        "name": "4 người phê duyệt",
+                        "id": -4,
+                        "conditions": {
+                            "right-element": {
+                                "dataset": "value",
+                                "value": "4"
+                            },
+                            "compare-type": "text",
+                            "operation": "equal",
+                            "left-element": {
+                                "inputId": -10,
+                                "infoId": -9500,
+                                "phaseId": -20,
+                                "type": "text",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        }
+                    },
+                    {
+                        "workflow": {
+                            "relationships": [
+                                -1020,
+                                -2030,
+                                -3040,
+                                -4050,
+                                -5060,
+                                -601
+                            ],
+                            "relatives": [
+                                -10,
+                                -20,
+                                -30,
+                                -40,
+                                -50,
+                                -60,
+                                -1
+                            ]
+                        },
+                        "name": "5 người phê duyệt",
+                        "id": -5,
+                        "conditions": {
+                            "right-element": {
+                                "dataset": "value",
+                                "value": "5"
+                            },
+                            "compare-type": "text",
+                            "operation": "equal",
+                            "left-element": {
+                                "inputId": -10,
+                                "infoId": -9500,
+                                "phaseId": -20,
+                                "type": "text",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        }
+                    }
+                ],
+                "status": "unfinished"
+            },
+            "type": "ticket",
+            "isDone": false,
+            "status": "Opened"
+        },
+        {
+            "summary": "Bước 2. Người xem xét 1 phê duyệt và ký số báo cáo",
+            "owner": "",
+            "customNote": "Bước 2",
+            "sla": {
+                "res": 7.99,
+                "fix": 8
+            },
+            "id": -20,
+            "type": "phase",
+            "printable": true,
+            "isDone": false,
+            "phaseType": "Implement",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -8500,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "status": "Responding"
+        },
+        {
+            "autocreate": false,
+            "summary": "Bước 3. Người xem xét 2 phê duyệt và ký số báo cáo",
+            "owner": "",
+            "customNote": "Bước 3",
+            "sla": {
+                "res": 7.99,
+                "fix": 8
+            },
+            "id": -30,
+            "type": "phase",
+            "printable": true,
+            "isDone": false,
+            "phaseType": "Implement",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -8400,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "status": "Responding"
+        },
+        {
+            "autocreate": false,
+            "summary": "Bước 4. Người xem xét 3 phê duyệt và ký số báo cáo",
+            "customNote": "Bước 4",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -40,
+            "type": "phase",
+            "printable": true,
+            "isDone": false,
+            "phaseType": "Implement",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -8300,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "status": "Responding"
+        },
+        {
+            "autocreate": false,
+            "summary": "Bước 5. Người xem xét 4 phê duyệt và ký số báo cáo",
+            "customNote": "Bước 5",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -50,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -8200,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "status": "Responding"
+        },
+        {
+            "autocreate": false,
+            "summary": "Bước 6. Người xem xét 5 phê duyệt và ký số báo cáo",
+            "customNote": "Bước 6",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -60,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -8100,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "status": "Responding"
+        },
+        {
+            "summary": "Kết thúc",
+            "autocreate": true,
+            "id": -1,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Close",
+            "status": "Waiting"
+        }
+    ],
+    "relationships": [
+        {
+            "customNote": "Bước 1. Lập đề nghị",
+            "from": -10,
+            "id": -1020,
+            "to": -20,
+            "type": "default",
+            "status": "finished"
+        },
+        {
+            "autocreate": false,
+            "from": -20,
+            "id": -2030,
+            "to": -30,
+            "customNote": "Bước 2. Người xem xét 1 phê duyệt và ký số báo cáo",
+            "advancedConfig": {
+                "signature_evn": [
+                    {
+                        "filesToSign": [
+                            {
+                                "infoId": -1,
+                                "relaId": -1020,
+                                "type": "TICKET_DETAIL",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ],
+                        "whereToSave": {
+                            "infoId": -1,
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "suffix": " - (Người 1)",
+                        "key": "NGUOI_1"
+                    }
+                ]
+            },
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_PDBC_BUOC2",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -10000,
+                        "position": -10000,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "File báo cáo đã kí số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "inputId": -20,
+                                        "infoId": -1,
+                                        "phaseId": -10,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "autocreate": false,
+            "from": -20,
+            "id": -201,
+            "to": -1,
+            "customNote": "Bước 2. Người xem xét 1 phê duyệt và ký số báo cáo",
+            "advancedConfig": {
+                "signature_evn": [
+                    {
+                        "filesToSign": [
+                            {
+                                "infoId": -1,
+                                "relaId": -1020,
+                                "type": "TICKET_DETAIL",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ],
+                        "whereToSave": {
+                            "infoId": -1,
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "suffix": " - (Người 1)",
+                        "key": "NGUOI_1"
+                    }
+                ]
+            },
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_PDBC_BUOC2_END",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -10000,
+                        "position": -10000,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "File báo cáo kí số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "inputId": -20,
+                                        "infoId": -1,
+                                        "phaseId": -10,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "autocreate": false,
+            "from": -30,
+            "id": -3040,
+            "to": -40,
+            "customNote": "Bước 3. Người xem xét 2 phê duyệt và ký số báo cáo",
+            "advancedConfig": {
+                "signature_evn": [
+                    {
+                        "filesToSign": [
+                            {
+                                "infoId": -1,
+                                "relaId": -2030,
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ],
+                        "whereToSave": {
+                            "infoId": -1,
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "suffix": " - (Người 2)",
+                        "key": "NGUOI_2"
+                    }
+                ]
+            },
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_PDBC_BUOC3",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -10000,
+                        "position": -10000,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "File báo cáo đã kí số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "inputId": -30,
+                                        "infoId": -1,
+                                        "phaseId": -20,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "autocreate": false,
+            "from": -30,
+            "id": -301,
+            "to": -1,
+            "customNote": "Bước 3. Người xem xét 2 phê duyệt và ký số báo cáo",
+            "advancedConfig": {
+                "signature_evn": [
+                    {
+                        "filesToSign": [
+                            {
+                                "infoId": -1,
+                                "relaId": -2030,
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ],
+                        "whereToSave": {
+                            "infoId": -1,
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "suffix": " - (Người 2)",
+                        "key": "NGUOI_2"
+                    }
+                ]
+            },
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_PDBC_BUOC3_END",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -10000,
+                        "position": -10000,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "File báo cáo đã kí số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "inputId": -30,
+                                        "infoId": -1,
+                                        "phaseId": -20,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "autocreate": false,
+            "customNote": "Bước 4. Người xem xét 3 phê duyệt và ký số báo cáo",
+            "advancedConfig": {
+                "signature_evn": [
+                    {
+                        "filesToSign": [
+                            {
+                                "infoId": -1,
+                                "relaId": -3040,
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ],
+                        "whereToSave": {
+                            "infoId": -1,
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "suffix": " - (Người 3)",
+                        "key": "NGUOI_3"
+                    }
+                ]
+            },
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_PDBC_BUOC4",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -40,
+            "id": -4050,
+            "to": -50,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -10000,
+                        "position": -10000,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "File báo cáo đã kí số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "inputId": -40,
+                                        "infoId": -1,
+                                        "phaseId": -30,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "autocreate": false,
+            "from": -40,
+            "id": -401,
+            "to": -1,
+            "customNote": "Bước 4. Người xem xét 3 phê duyệt và ký số báo cáo",
+            "advancedConfig": {
+                "signature_evn": [
+                    {
+                        "filesToSign": [
+                            {
+                                "infoId": -1,
+                                "relaId": -3040,
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ],
+                        "whereToSave": {
+                            "infoId": -1,
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "suffix": " - (Người 3)",
+                        "key": "NGUOI_3"
+                    }
+                ]
+            },
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_PDBC_BUOC4_END",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -10000,
+                        "position": -10000,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "File báo cáo đã kí số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "inputId": -40,
+                                        "infoId": -1,
+                                        "phaseId": -30,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "autocreate": false,
+            "customNote": "Bước 5. Người xem xét 4 phê duyệt và ký số báo cáo",
+            "advancedConfig": {
+                "signature_evn": [
+                    {
+                        "filesToSign": [
+                            {
+                                "infoId": -1,
+                                "relaId": -4050,
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ],
+                        "whereToSave": {
+                            "infoId": -1,
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "suffix": " - (Người 4)",
+                        "key": "NGUOI_4"
+                    }
+                ]
+            },
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_PDBC_BUOC5",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -50,
+            "id": -5060,
+            "to": -60,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -10000,
+                        "position": -10000,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "File báo cáo đã kí số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "inputId": -50,
+                                        "infoId": -1,
+                                        "phaseId": -40,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "autocreate": false,
+            "from": -50,
+            "id": -501,
+            "to": -1,
+            "customNote": "Bước 5. Người xem xét 4 phê duyệt và ký số báo cáo",
+            "advancedConfig": {
+                "signature_evn": [
+                    {
+                        "filesToSign": [
+                            {
+                                "infoId": -1,
+                                "relaId": -4050,
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ],
+                        "whereToSave": {
+                            "infoId": -1,
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "suffix": " - (Người 4)",
+                        "key": "NGUOI_4"
+                    }
+                ]
+            },
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_PDBC_BUOC5_END",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -10000,
+                        "position": -10000,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "File báo cáo đã kí số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "inputId": -50,
+                                        "infoId": -1,
+                                        "phaseId": -40,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "autocreate": false,
+            "from": -60,
+            "id": -601,
+            "to": -1,
+            "customNote": "Bước 6. Người xem xét 5 phê duyệt và ký số báo cáo",
+            "advancedConfig": {
+                "signature_evn": [
+                    {
+                        "filesToSign": [
+                            {
+                                "infoId": -1,
+                                "relaId": -5060,
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ],
+                        "whereToSave": {
+                            "infoId": -1,
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "suffix": " - (Người 5)",
+                        "key": "NGUOI_5"
+                    }
+                ]
+            },
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_PARAM_PDBC_BUOC6_END",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -10000,
+                        "position": -10000,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "File báo cáo đã kí số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "inputId": -60,
+                                        "infoId": -1,
+                                        "phaseId": -50,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        }
+    ],
+    "notification_config": {
+        "approvers_pending_mail_template": 59,
+        "ticket_response_mail_template": 47,
+        "comment_mail_template": 66,
+        "viewers_assignment_mail_template": 68,
+        "watchers_ticket_rejection_mail_template": 21,
+        "ticket_result_reject_mail_template": 54,
+        "new_performer_phase_reassignment_mail_template": 56,
+        "creator_rejected_mail_template": 65,
+        "ticket_share_mail_template": 71,
+        "ticket_creation_mail_template": 45,
+        "relationship_result_reject_mail_template": 55,
+        "creator_approved_mail_template": 67,
+        "mention_mail_template": 53,
+        "co_execute_rejection_mail_template": 69,
+        "implementation_reminder_mail_template": 63,
+        "ticket_cancellation_mail_template": 49,
+        "creator_requested_update_mail_template": 58,
+        "approval_input_finish_mail_template": 61,
+        "co_execute_request_to_update_mail_template": 70,
+        "old_performer_phase_reassignment_mail_template": 57,
+        "watchers_ticket_auto_closing_mail_template": 52,
+        "approval_reminder_no_token_mail_template": 73,
+        "watchers_ticket_creation_mail_template": 46,
+        "send_notification_mail_template": 85,
+        "watchers_ticket_cancellation_mail_template": 50,
+        "approval_reminder_mail_template": 62,
+        "confirmation_reminder_mail_template": 64,
+        "phase_input_finish_mail_template": 60,
+        "phase_finished_mail_template": 74,
+        "watchers_ticket_closing_mail_template": 51,
+        "watchers_ticket_response_mail_template": 48,
+        "phase_approve_finished_mail_template": 75
+    },
+    "display": [
+        {
+            "positions": [
+                250,
+                15
+            ],
+            "id": -10
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                0,
+                150
+            ],
+            "id": -20
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                250,
+                150
+            ],
+            "id": -30
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                500,
+                150
+            ],
+            "id": -40
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                500,
+                300
+            ],
+            "id": -50
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                250,
+                300
+            ],
+            "id": -60
+        },
+        {
+            "positions": [
+                0,
+                300
+            ],
+            "id": -1
+        }
+    ]
+}

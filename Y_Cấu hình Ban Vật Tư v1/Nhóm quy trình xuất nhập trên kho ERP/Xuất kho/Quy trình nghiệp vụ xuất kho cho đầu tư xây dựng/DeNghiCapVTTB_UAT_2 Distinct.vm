@@ -383,18 +383,38 @@
     #set($outputMap = {})
     #foreach($item in $DanhSachVatTu)
         #set($MaVatTu = $item.MaVatTu)
-        #set($SoLuongStr = $item.SoLuong)
 
+        #set($SoLuongStr = $item.SoLuong)
         #set($valTam = $SoLuongStr.toString())
 		#set($valLongTam = "#RoundReturnString($valTam)" )
 		#set($SoLuong = $LONG_VALUE.parseLong($valLongTam.trim()) )
 
-        #if(!$outputMap.containsKey($MaVatTu))
-            #set($outputMap[$MaVatTu] = { "MaVatTu": $MaVatTu, "TenVatTuVaQuyCach": $item.TenVatTuVaQuyCach, "DonViTinh": $item.DonViTinh, "SoLuong": $SoLuong, "GhiChu": $item.GhiChu })
+
+        #if($buocDuyet.equals("1"))
+            #set($SoLuongDuyet = "")
         #else
-            #set($existingItem = $outputMap[$MaVatTu])
-            #set($existingItem.SoLuong = $existingItem.SoLuong + $SoLuong)
+            #set($SoLuongStr1 = $item.SoLuongDuyet)
+            #set($valTam1 = $SoLuongStr1.toString())
+            #set($valLongTam1 = "#RoundReturnString($valTam1)" )
+            #set($SoLuongDuyet = $LONG_VALUE.parseLong($valLongTam1.trim()) )
         #end
+        
+
+        #if($item.MaVatTuDuyet.equals(""))
+            #set($MaVatTuDuyet = $MaVatTu)
+        #else
+            #set($MaVatTuDuyet = $item.MaVatTuDuyet)
+        #end
+
+        #set($key = "${MaVatTu}-${item.TenVatTuVaQuyCach}-${item.DonViTinh}-${item.GhiChu}-${MaVatTuDuyet}-${item.TenVatTuVaQuyCachDuyet}-${item.DonViTinhDuyet}")
+        #if(!$outputMap.containsKey($key))
+            #set($outputMap[$key] = { "MaVatTu": $MaVatTu, "TenVatTuVaQuyCach": $item.TenVatTuVaQuyCach, "DonViTinh": $item.DonViTinh, "SoLuong": $SoLuong, "GhiChu": $item.GhiChu,"MaVatTuDuyet": $MaVatTuDuyet, "TenVatTuVaQuyCachDuyet": $item.TenVatTuVaQuyCachDuyet, "DonViTinhDuyet": $item.DonViTinhDuyet, "SoLuongDuyet": $SoLuongDuyet  })
+        #else
+            #set($existingItem = $outputMap[$key])
+            #set($existingItem.SoLuong = $existingItem.SoLuong + $SoLuong)
+            #set($existingItem.SoLuongDuyet = $existingItem.SoLuongDuyet + $SoLuongDuyet)
+        #end
+
     #end
 
 
@@ -421,7 +441,7 @@
                         <br />
                         <br />
                     </span>
-                    <div style="font-size:10pt; text-align: right;">
+                    <div style="font-size:11pt; text-align: right;">
                         <br />
                         <i>Hà Nội, ngày $NgayToTrinh.split(" ")[0].split("/")[0] tháng $NgayToTrinh.split("
                             ")[0].split(
@@ -444,7 +464,7 @@
                 </tr>
                 <tr>
                     <td style="font-size:11pt; font-weight: normal;">
-                        <div style="margin-left: 300px;">Tại kho: Kho của $DonViDeNghi </div>
+                        <div style="margin-left: 300px;">Tại kho: Kho của $DonViDeNghi</div>
                     </td>
                 </tr>
                 <tr>
@@ -467,23 +487,35 @@
         <div>
             <table class="tableHeaderxx">
                 <tr class="PaddingCellTable">
-                    <th style="text-align: center; font-weight: bold; font-size: 10pt;">
-                        STT
-                    </th>
-                    <th style="text-align: center; font-weight: bold; font-size: 10pt;">
+                    <th rowspan="2" style="text-align: center; font-weight: bold;font-size: 10pt;">STT</th>
+                    <th colspan="4" style="text-align: center; font-weight: bold;font-size: 10pt;">DỀ NGHỊ CẤP</th>
+                    <th colspan="4" style="text-align: center; font-weight: bold;font-size: 10pt;">DUYỆT</th>
+                    <th rowspan="2" style="text-align: center; font-weight: bold;font-size: 10pt;">GHI CHÚ</th>
+                </tr>
+                <tr class="PaddingCellTable">
+                    <th style="text-align: center; font-weight: bold;font-size: 10pt;">
                         MÃ VẬT TƯ
                     </th>
-                    <th style="text-align: center; font-weight: bold; font-size: 10pt;">
+                    <th  style="text-align: center; font-weight: bold;font-size: 10pt;">
                         TÊN VẬT TƯ VÀ QUY CÁCH
                     </th>
-                    <th style="text-align: center; font-weight: bold; font-size: 10pt;">
+                    <th  style="text-align: center; font-weight: bold;font-size: 10pt;">
                         ĐƠN VỊ TÍNH
                     </th>
-                    <th style="text-align: center; font-weight: bold; font-size: 10pt;">
+                    <th  style="text-align: center; font-weight: bold;font-size: 10pt;">
                         SỐ LƯỢNG
                     </th>
-                    <th style="text-align: center; font-weight: bold; font-size: 10pt;">
-                        GHI CHÚ
+                    <th style="text-align: center; font-weight: bold;font-size: 10pt;">
+                        MÃ VẬT TƯ
+                    </th>
+                    <th  style="text-align: center; font-weight: bold;font-size: 10pt;">
+                        TÊN VẬT TƯ VÀ QUY CÁCH
+                    </th>
+                    <th  style="text-align: center; font-weight: bold;font-size: 10pt;">
+                        ĐƠN VỊ TÍNH
+                    </th>
+                    <th  style="text-align: center; font-weight: bold;font-size: 10pt;">
+                        SỐ LƯỢNG
                     </th>
                 </tr>
                 #set($index = 1)
@@ -505,84 +537,82 @@
                         #formatStringFinance($row.get("SoLuong"))
                     </td>
                     <td style="text-align: left; font-size: 11pt;">
+                        $row.get("MaVatTuDuyet")
+                    </td>
+                    <td style="text-align: left; font-size: 11pt;">
+                        $row.get("TenVatTuVaQuyCachDuyet")
+                    </td>
+                    <td style="text-align: left; font-size: 11pt;">
+                        $row.get("DonViTinhDuyet")
+                    </td>
+                    <td style="text-align: right; font-size: 11pt;">
+                        #formatStringFinance($row.get("SoLuongDuyet"))
+                    </td>
+                    <td style="text-align: left; font-size: 11pt;">
                         $row.get("GhiChu")
                     </td>
                 </tr>
                 #set($index = $index + 1)
                 #end
-                
             </table>
             <table colspan="0" rowspan="0" class="tableHeader" style="margin-top: 20pt;">
                 <tr >
                     <th></th>
                     <th style="text-align: right;">
-                        <span style="font-size:2pt; color: white">$Small*ChuKy_ChuyenVienKHVT</span>
+                        <span style="font-size:2pt; color: white">$Small*ChuKy_ChuyenVien</span>
                     </th>
-                    <th style="text-align: right;">
-                        <span style="font-size:2pt; color: white">$Small*ChuKy_ChuyenVienKT</span>
-                    </th>
-                    
+                    <th style="text-align: right;"></th>
                     <th></th>
-                    <th></th>
+
                 </tr>
                 <tr>
-                    <th colspan="5"> <div style="line-height: 15px; color: white;">shfshfh</div></th>
+                    <th colspan="4"> <div style="line-height: 15px; color: white;">shfshfh</div></th>
                 </tr>
                 <tr>
-                    <th style="text-align: center">
+                    <th style="text-align: center; font-size: 10pt;">
                         <p style="font-size:2pt; color: white">$ChuKy_GiamDoc</p>
                         <b>GIÁM ĐỐC</b>
-                        <div style="color: white;">EMPTY</div>
                         <br />
                         <br />
                         <br />
                         <br />
                         <br />
-                        <p style="font-size:11pt; margin-top: 30px;">$Name_GiamDoc</p>
+                        <br />
+                        <p>$HoTen_GiamDoc</p>
                     </th>
-                    <th style="text-align: center">
-                        <p style="font-size:2pt; color: white">$ChuKy_TPPKHVT</p>
-                        
+                    <th style="text-align: center; font-size: 10pt;">
+                        <p style="font-size:2pt; color: white">$ChuKy_TruongPhoPhongKHVT</p>
                         <b>PHÒNG KHVT</b>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <p style="font-size:11pt; margin-top: 30px;">$Name_TPPKHVT</p>
-                    </th>
-                    <th style="text-align: center">
-                        <p style="font-size:2pt; color: white">$ChuKy_TPPKT</p>
                         
-                        <b>PHÒNG KT</b>
                         <br />
                         <br />
                         <br />
                         <br />
                         <br />
-                        <p style="font-size:11pt; margin-top: 30px;">$Name_TPPKT</p>
+                        <br />
+                        <p>$HoTen_TruongPhoPhongKHVT</p>
                     </th>
-                    <th style="text-align: center">
-                        <p style="font-size:2pt; color: white">$ChuKy_DoiTruong</p>
-                        <b>ĐỘI TRƯỞNG</b>
-                        <div style="color: white;">EMPTY</div>
+                    <th style="text-align: center; font-size: 10pt;">
+                        <p style="font-size:2pt; color: white">$ChuKy_TruongPhong</p>
+                        <b style="text-transform: uppercase;">$PositionName</b>
                         <br />
                         <br />
                         <br />
                         <br />
                         <br />
-                        <p style="font-size:11pt; margin-top: 30px;">$Name_DoiTruong</p>
+                        <br />  
+                        <p>$HoTen_TruongPhong</p>
                     </th>
-                    <th style="text-align: center">
+                    <th style="text-align: center; font-size: 10pt;">
                         <p style="font-size:2pt; color: white">$ChuKy_NguoiLap</p>
-                        <b>NGƯỜI LẬP PHIẾU</b>
-                        <div style="color: white;">EMPTY</div>
+                        <b>NGƯỜI LẬP</b>
                         <br />
                         <br />
                         <br />
                         <br />
                         <br />
-                        <p style="font-size:11pt; margin-top: 30px;">$Name_NguoiLap</p>
+                        <br />  
+                        <p>$HoTen_NguoiLap</p>
                     </th>
                 </tr>
             </table>

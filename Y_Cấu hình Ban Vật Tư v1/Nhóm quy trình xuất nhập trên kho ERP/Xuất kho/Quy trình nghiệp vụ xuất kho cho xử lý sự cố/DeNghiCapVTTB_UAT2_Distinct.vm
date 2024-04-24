@@ -4,14 +4,14 @@
     <style type="text/css">
         body {
             font-family: "Times New Roman";
-            font-size: 13pt;
+            font-size: 9pt;
             page-break-inside: avoid;
             page-break-after: auto
         }
 
         table {
             font-family: "Times New Roman";
-            font-size: 13pt;
+            font-size: 9pt;
             line-height: 1.3;
             width: 100%;
         }
@@ -22,27 +22,16 @@
 
         table th {
             font-family: "Times New Roman";
-            font-size: 13pt;
+            font-size: 10pt;
             text-align: center;
+            vertical-align: top;
         }
 
-        table th,
         table td {
-            vertical-align: top;
             font-size: 9pt;
         }
 
-        .tableContent {
-            font-size: 13pt;
-            width: 100%;
-            border-collapse: collapse;
-            border: 0.25pt solid gray;
-        }
 
-        .tableContent th,
-        .tableContent td {
-            border: 0.25pt solid gray;
-        }
 
         .tableHeader {
             width: 100%;
@@ -132,11 +121,11 @@
         }
 
         .PaddingCellTable td {
-            padding: 3.75pt;
+            padding: 2pt;
         }
 
         .PaddingCellTable th {
-            padding: 3.75pt;
+            padding: 2pt;
         }
     </style>
 </head>
@@ -400,17 +389,58 @@
 		#set($valLongTam = "#RoundReturnString($valTam)" )
 		#set($SoLuong = $LONG_VALUE.parseLong($valLongTam.trim()) )
 
-        #if(!$outputMap.containsKey($MaVatTu))
-            #set($outputMap[$MaVatTu] = { "MaVatTu": $MaVatTu, "TenVatTuVaQuyCach": $item.TenVatTuVaQuyCach, "DonViTinh": $item.DonViTinh, "SoLuong": $SoLuong, "GhiChu": $item.GhiChu })
+        #set($key = "${MaVatTu}-${item.TenVatTuVaQuyCach}-${item.DonViTinh}-${item.GhiChu}")
+        #if(!$outputMap.containsKey($key))
+            #set($outputMap[$key] = { "MaVatTu": $MaVatTu, "TenVatTuVaQuyCach": $item.TenVatTuVaQuyCach, "DonViTinh": $item.DonViTinh, "SoLuong": $SoLuong, "GhiChu": $item.GhiChu })
         #else
-            #set($existingItem = $outputMap[$MaVatTu])
+            #set($existingItem = $outputMap[$key])
             #set($existingItem.SoLuong = $existingItem.SoLuong + $SoLuong)
         #end
     #end
 
 
+    #macro( RegexDistrict $value )
+        #set($result = "")
+        #if($value.contains("quận"))
+            #set($startIndex = $value.indexOf("quận"))
+            #set($endIndex = $value.indexOf(",", $startIndex))
+            #if($endIndex == -1)
+                #set($endIndex = $value.length())
+            #end
+            #set($district = $value.substring($startIndex, $endIndex))
+            #set($district = $district.replaceAll("quận", "").trim())
+            #set($result = $district)  
+        #elseif($value.contains("thị xã"))
+            #set($startIndex = $value.indexOf("thị xã"))
+            #set($endIndex = $value.indexOf(",", $startIndex))
+            #if($endIndex == -1)
+                #set($endIndex = $value.length())
+            #end
+            #set($district = $value.substring($startIndex, $endIndex))
+            #set($district = $district.replaceAll("thị xã", "").trim())
+            #set($result = $district)
+        #end
+
+        #if($value.contains("huyện"))
+            #set($startIndex = $value.indexOf("huyện"))
+            #set($endIndex = $value.indexOf(",", $startIndex))
+            #if($endIndex == -1)
+                #set($endIndex = $value.length())
+            #end
+            #set($district = $value.substring($startIndex, $endIndex))
+            #set($district = $district.replaceAll("huyện", "").trim())
+            #set($result = $district)
+        #end
+        $result
+    #end
 
     #set($outputArray = $outputMap.values().toArray())
+    
+    #set($input = $DiaChiDonVi)
+    #set($input = $input.toLowerCase())
+
+
+
 
 
     <div class="sectionGuide">
@@ -418,13 +448,11 @@
             style="margin-top: 10pt; margin-left: 0pt; margin-right: 5pt;">
             <tr>
                 <th width="40%" style="text-align: center; font-size:11pt">
-                    <span style="font-weight: normal;">TỔNG CÔNG TY</span>
+                    <span style="font-weight: normal;text-transform: uppercase;">$DonViDeNghi</span>
                     <br />
-                    <span style="font-weight: normal;">ĐIỆN LỰC TP HÀ NỘI </span>
+                    <b style="border-bottom: 1px solid black;text-transform: uppercase;">$PhongBan</b>
                     <br />
-                    <b style="border-bottom: 1px solid black;">$DonViDeNghi</b>
-                    <br />
-                    <br />
+                    <div style="font-weight: normal;">Số: $SoToTrinh</div>
                 </th>
                 <th width="60%" style="text-align: center; font-size:11pt">
                     <span style="text-align: center;">
@@ -434,9 +462,9 @@
                         <br />
                         <br />
                     </span>
-                    <div style="font-size:11pt; text-align: right;">
+                    <div style="font-size:10pt; text-align: right;">
                         <br />
-                        <i>Hà Nội, ngày $NgayToTrinh.split(" ")[0].split("/")[0] tháng $NgayToTrinh.split("
+                        <i><span style="text-transform: capitalize;">#RegexDistrict($input)</span>, ngày $NgayToTrinh.split(" ")[0].split("/")[0] tháng $NgayToTrinh.split("
                             ")[0].split(
                             "/")[1] năm $NgayToTrinh.split(" ")[0].split("/")[2]
                         </i>
@@ -449,25 +477,33 @@
         <div>
             <table class="tableHeader">
                 <tr>
-                    <td style="text-align: center; font-size:13pt; font-weight: bold;">
-                        <b>ĐỀ NGHỊ CẤP VẬT TƯ THIẾT BỊ</b>
+                    <td style="text-align: center; font-size:13pt;">
+                        <b style="font-weight: bold;">ĐỀ NGHỊ</b>
+                        <br />
+                        <span>V/v cấp VTTB</span>
                     </td>
                 </tr>
                 <tr>
-                    <td style="font-size:13pt; font-weight: normal;">
-                        <div style="margin-left: 300px;">Tại kho: $TaiKho</div>
+                    <td style="font-size:11pt; font-weight: normal;">
+                        <div style="margin-left: 300px;">Tại kho: Kho của $DonViDeNghi </div>
                     </td>
                 </tr>
                 <tr>
-                    <td style="font-size:13pt; font-weight: normal;">
+                    <td style="font-size:11pt; font-weight: normal;">
                         <div style="margin-left: 300px;">Kính gửi: $KinhGui</div>
                     </td>
                 </tr>
             </table>
-            <div style="padding-top: 15pt;">
-                <div>Tên đơn vị đề nghị: $DonViDeNghi</div>
+            <div style="padding-top: 15pt; font-size: 11pt;">
+                <div>Tên đơn vị đề nghị: $PhongBan</div>
                 <div>Lý do cấp:
                     $LyDoCap
+                </div>
+                <div>Diễn giải:
+                    $DienGiai
+                </div>
+                <div>Công trình:
+                    $CongTrinh
                 </div>
                 <div>Đề nghị cấp danh sách vật tư thiết bị như sau:</div>
             </div>
@@ -475,95 +511,122 @@
         <div>
             <table class="tableHeaderxx">
                 <tr class="PaddingCellTable">
-                    <th style="text-align: center; font-weight: bold;">
+                    <th style="text-align: center; font-weight: bold; font-size: 10pt;">
                         STT
                     </th>
-                    <th style="text-align: center; font-weight: bold;">
+                    <th style="text-align: center; font-weight: bold; font-size: 10pt;">
                         MÃ VẬT TƯ
                     </th>
-                    <th style="text-align: center; font-weight: bold;">
+                    <th style="text-align: center; font-weight: bold; font-size: 10pt;">
                         TÊN VẬT TƯ VÀ QUY CÁCH
                     </th>
-                    <th style="text-align: center; font-weight: bold;">
+                    <th style="text-align: center; font-weight: bold; font-size: 10pt;">
                         ĐƠN VỊ TÍNH
                     </th>
-                    <th style="text-align: center; font-weight: bold;">
+                    <th style="text-align: center; font-weight: bold; font-size: 10pt;">
                         SỐ LƯỢNG
                     </th>
-                    <th style="text-align: center; font-weight: bold;">
+                    <th style="text-align: center; font-weight: bold; font-size: 10pt;">
                         GHI CHÚ
                     </th>
                 </tr>
                 #set($index = 1)
                 #foreach($row in $outputArray)
                 <tr class="PaddingCellTable">
-                    <td style="text-align: center; font-size: 10.5pt;">
+                    <td style="text-align: center; font-size: 11pt;">
                         $index
                     </td>
-                    <td style="text-align: left; font-size: 10.5pt;">
+                    <td style="text-align: left; font-size: 11pt;">
                         $row.get("MaVatTu")
                     </td>
-                    <td style="text-align: left; font-size: 10.5pt;">
+                    <td style="text-align: left; font-size: 11pt;">
                         $row.get("TenVatTuVaQuyCach")
                     </td>
-                    <td style="text-align: left; font-size: 10.5pt;">
+                    <td style="text-align: left; font-size: 11pt;">
                         $row.get("DonViTinh")
                     </td>
-                    <td style="text-align: right; font-size: 10.5pt;">
+                    <td style="text-align: right; font-size: 11pt;">
                         #formatStringFinance($row.get("SoLuong"))
                     </td>
-                    <td style="text-align: left; font-size: 10.5pt;">
+                    <td style="text-align: left; font-size: 11pt;">
                         $row.get("GhiChu")
                     </td>
                 </tr>
                 #set($index = $index + 1)
                 #end
+                
             </table>
             <table colspan="0" rowspan="0" class="tableHeader" style="margin-top: 20pt;">
+                <tr >
+                    <th></th>
+                    <th style="text-align: right;">
+                        <span style="font-size:2pt; color: white">$Small*ChuKy_ChuyenVienKHVT</span>
+                    </th>
+                    <th style="text-align: right;">
+                        <span style="font-size:2pt; color: white">$Small*ChuKy_ChuyenVienKT</span>
+                    </th>
+                    
+                    <th></th>
+                    <th></th>
+                </tr>
                 <tr>
-                    <th style="text-align: center; font-size: 11pt;">
-                        <p style="font-size:2pt; color: white">$ChuKy_TruongPhong</p>
-                        <b>TRƯỞNG/PHÓ PHÒNG</b>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <p>$HoTen_TruongPhong</p>
-                    </th>
-                    <th style="text-align: center; font-size: 11pt;">
-                        <p style="font-size:2pt; color: white">$ChuKy_ChuyenVien</p>
-                        <b>CHUYÊN VIÊN KHVT</b>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <p>$HoTen_ChuyenVien</p>
-                    </th>
-                    <th style="text-align: center; font-size: 11pt;">
-                        <p style="font-size:2pt; color: white">$ChuKy_TruongPhoPhongKHVT</p>
-                        <b>TRƯỞNG/PHÓ PHÒNG KHVT</b>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <p>$HoTen_TruongPhoPhongKHVT</p>
-                    </th>
-                    <th style="text-align: center; font-size: 11pt;">
+                    <th colspan="5"> <div style="line-height: 15px; color: white;">shfshfh</div></th>
+                </tr>
+                <tr>
+                    <th style="text-align: center">
                         <p style="font-size:2pt; color: white">$ChuKy_GiamDoc</p>
                         <b>GIÁM ĐỐC</b>
+                        <div style="color: white;">EMPTY</div>
                         <br />
                         <br />
                         <br />
                         <br />
                         <br />
+                        <p style="font-size:11pt; margin-top: 30px;">$Name_GiamDoc</p>
+                    </th>
+                    <th style="text-align: center">
+                        <p style="font-size:2pt; color: white">$ChuKy_TPPKHVT</p>
+                        
+                        <b>PHÒNG KHVT</b>
                         <br />
-                        <p>$HoTen_GiamDoc</p>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <p style="font-size:11pt; margin-top: 30px;">$Name_TPPKHVT</p>
+                    </th>
+                    <th style="text-align: center">
+                        <p style="font-size:2pt; color: white">$ChuKy_TPPKT</p>
+                        
+                        <b>PHÒNG KT</b>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <p style="font-size:11pt; margin-top: 30px;">$Name_TPPKT</p>
+                    </th>
+                    <th style="text-align: center">
+                        <p style="font-size:2pt; color: white">$ChuKy_DoiTruong</p>
+                        <b>ĐỘI TRƯỞNG</b>
+                        <div style="color: white;">EMPTY</div>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <p style="font-size:11pt; margin-top: 30px;">$Name_DoiTruong</p>
+                    </th>
+                    <th style="text-align: center">
+                        <p style="font-size:2pt; color: white">$ChuKy_NguoiLap</p>
+                        <b>NGƯỜI LẬP PHIẾU</b>
+                        <div style="color: white;">EMPTY</div>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <p style="font-size:11pt; margin-top: 30px;">$Name_NguoiLap</p>
                     </th>
                 </tr>
             </table>
