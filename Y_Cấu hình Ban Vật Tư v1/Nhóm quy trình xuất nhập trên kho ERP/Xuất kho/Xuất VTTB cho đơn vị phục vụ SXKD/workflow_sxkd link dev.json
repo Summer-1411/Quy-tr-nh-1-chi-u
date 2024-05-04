@@ -214,7 +214,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105464&fileName=DeNghiCapVTTB_TUNGLV27.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55633&fileName=DeNghi_TCT_SXKD.vm",
                 "newVersion": true
             },
             "sla": {
@@ -412,7 +412,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105464&fileName=DeNghiCapVTTB_TUNGLV27.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55633&fileName=DeNghi_TCT_SXKD.vm",
                 "newVersion": true
             },
             "sla": {
@@ -674,7 +674,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105464&fileName=DeNghiCapVTTB_TUNGLV27.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55633&fileName=DeNghi_TCT_SXKD.vm",
                 "newVersion": true
             },
             "sla": {
@@ -938,7 +938,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105464&fileName=DeNghiCapVTTB_TUNGLV27.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55633&fileName=DeNghi_TCT_SXKD.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1143,7 +1143,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105464&fileName=DeNghiCapVTTB_TUNGLV27.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55633&fileName=DeNghi_TCT_SXKD.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1344,7 +1344,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105464&fileName=DeNghiCapVTTB_TUNGLV27.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55633&fileName=DeNghi_TCT_SXKD.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1544,7 +1544,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105464&fileName=DeNghiCapVTTB_TUNGLV27.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55633&fileName=DeNghi_TCT_SXKD.vm",
                 "newVersion": true
             },
             "sla": {
@@ -1744,7 +1744,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105464&fileName=DeNghiCapVTTB_TUNGLV27.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55633&fileName=DeNghi_TCT_SXKD.vm",
                 "newVersion": true
             },
             "sla": {
@@ -2037,7 +2037,7 @@
                     }
                 ],
                 "landscape": true,
-                "template-url": "http://10.9.195.55/plugins/servlet/sms-attachment?id=105464&fileName=DeNghiCapVTTB_TUNGLV27.vm",
+                "template-url": "http://10.15.24.77/plugins/servlet/sms-attachment?id=55633&fileName=DeNghi_TCT_SXKD.vm",
                 "newVersion": true
             },
             "sla": {
@@ -3443,17 +3443,6 @@
                     }
                 ]
             },
-            "api_config": [
-                {
-                    "executeAPI": {
-                        "paramType": "regex",
-                        "number": 0,
-                        "param": "B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_15_END",
-                        "name": "TICKET_EVN_SPRO_UPDATE"
-                    },
-                    "requireAuthenAPI": false
-                }
-            ],
             "autocreate": false,
             "from": -150,
             "id": -1501,

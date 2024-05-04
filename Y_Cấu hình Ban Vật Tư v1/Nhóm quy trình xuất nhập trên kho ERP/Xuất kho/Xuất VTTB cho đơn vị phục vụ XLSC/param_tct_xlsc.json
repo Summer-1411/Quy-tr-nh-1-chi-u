@@ -1139,13 +1139,14 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_BUOC_17
                 {
                     "link": "(-1,-160,-170)",
                     "type": "1",
-                    "createUser": "(-11000,-60,-70)"
+                    "createUser": "(-10000)",
+                    "numberVote": "(-9870)"
                 },
                 {
-                    "link": "(-1,-250,-1)",
+                    "link": "(-1,-240,-250)",
                     "type": "3",
-                    "createUser": "(-11000,-170,-190)",
-                    "numberVote": "(-9850,-170,-190)"
+                    "createUser": "(-9360)",
+                    "numberVote": "(-9960,-170,-190)"
                 },
                 {
                     "link": "(-2,-250,-1)",
@@ -1159,7 +1160,7 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_BUOC_17
         "ticketCode": "(-0)",
         "status": "CLOSED",
         "reason": "(update-reason)",
-        "flowName": "Buoc 24",
+        "flowName": "Buoc 17",
         "approvalUser": "(phase-owner,-250)",
         "action": "APPROVE"
     }
@@ -1859,9 +1860,7 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_BUOC_10
         "createUser": "(-11000,-170,-190)",
         "actionType": "APPROVE",
         "storekeeper": "(-9000,-170,-190)",
-        "infoVote": [(t)<-9960,
-            -170,
-            -190>
+        "infoVote": [(t)<-9960,-170,-190>
             {
                 "ticketCode": "(-0)",
                 "orgRequest": "(-9801)",
@@ -1940,9 +1939,7 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_BUOC_12
         "createUser": "(-11000,-170,-190)",
         "actionType": "APPROVE",
         "storekeeper": "(-9000,-170,-190)",
-        "infoVote": [(t)<-9960,
-            -170,
-            -190>
+        "infoVote": [(t)<-9960,-170,-190>
             {
                 "ticketCode": "(-0)",
                 "orgRequest": "(-9801)",
@@ -1963,9 +1960,7 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_BUOC_12
                 "numberDeliveryNote": "(-9810)"
             }(endt)
         ],
-        "infoItem": [(t)<-9400,
-            -170,
-            -190>
+        "infoItem": [(t)<-9400,-170,-190>
         {
                 "ticketCode": "(-0)",
                 "materialCode": "(-9300)",
@@ -2025,9 +2020,7 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_BUOC_13
         "createUser": "(-11000,-170,-190)",
         "actionType": "APPROVE",
         "storekeeper": "(-9000,-170,-190)",
-        "infoVote": [(t)<-9960,
-            -170,
-            -190>
+        "infoVote": [(t)<-9960,-170,-190>
             {
                 "ticketCode": "(-0)",
                 "orgRequest": "(-9801)",
@@ -2048,9 +2041,7 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_BUOC_13
                 "numberDeliveryNote": "(-9810)"
             }(endt)
         ],
-        "infoItem": [(t)<-9400,
-            -170,
-            -190>
+        "infoItem": [(t)<-9400,-170,-190>
         {
                 "ticketCode": "(-0)",
                 "materialCode": "(-9300)",
@@ -2133,9 +2124,7 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_BUOC_16
         "createUser": "(-11000,-170,-190)",
         "actionType": "APPROVE",
         "storekeeper": "(-9000,-170,-190)",
-        "infoVote": [(t)<-9960,
-            -170,
-            -190>
+        "infoVote": [(t)<-9960,-170,-190>
             {
                 "ticketCode": "(-0)",
                 "orgRequest": "(-9801)",
@@ -2156,9 +2145,7 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_BUOC_16
                 "numberDeliveryNote": "(-9810)"
             }(endt)
         ],
-        "infoItem": [(t)<-9400,
-            -170,
-            -190>
+        "infoItem": [(t)<-9400,-170,-190>
         {
                 "ticketCode": "(-0)",
                 "materialCode": "(-9300)",
@@ -2189,12 +2176,13 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_BUOC_16
                     "link": "(-1,-240,-250)",
                     "type": "3",
                     "createUser": "(-9360)",
-                    "numberVote": "(-9960,-170,-190)"
+                    "numberVote": "(-9850,-170,-190)"
                 },
                 {
                     "link": "(-2,-240,-250)",
                     "type": "4",
-                    "createUser": "(-12,-220,-230)"
+                    "createUser": "(-12,-220,-230)",
+                    "numberVote": "(-9850,-170,-190)"
                 }
             ]
         }
@@ -2224,9 +2212,7 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_BUOC_17
         "createUser": "(-11000,-170,-190)",
         "actionType": "APPROVE",
         "storekeeper": "(-9000,-170,-190)",
-        "infoVote": [(t)<-9960,
-            -170,
-            -190>
+        "infoVote": [(t)<-9960,-170,-190>
         {
                 "ticketCode": "(-0)",
                 "orgRequest": "(-9801)",
@@ -2247,9 +2233,7 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_BUOC_17
                 "numberDeliveryNote": "(-9810)"
             }(endt)
         ],
-        "infoItem": [(t)<-9400,
-            -170,
-            -190>
+        "infoItem": [(t)<-9400,-170,-190>
         {
                 "ticketCode": "(-0)",
                 "materialCode": "(-9300)",
@@ -2284,7 +2268,8 @@ B6_XUAT_KHO_CHO_PHAT_TRIEN_KHACH_HANG_TAI_TONG_CONG_TY_BUOC_17
                 {
                     "link": "(-2,-250,-1)",
                     "type": "4",
-                    "createUser": "(-12,-220,-230)"
+                    "createUser": "(-12,-220,-230)",
+                    "numberVote": "(-9850,-170,-190)"
                 }
             ]
         }

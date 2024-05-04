@@ -299,7 +299,7 @@
         {
             "id": -9790,
             "position": -9790,
-            "name": "Từ ngày",
+            "name": "Chọn tháng",
             "type": "DATE",
             "valuefeeder": "Now",
             "additionalDisplayClass": "left-info",
@@ -309,69 +309,11 @@
                     "idCondition": -9850,
                     "dataCondition": "INDIVIDUAL"
                 },
-                "required": true
-            }
-        },
-        {
-            "id": -9780,
-            "position": -9780,
-            "name": "Đến ngày",
-            "type": "DATE",
-            "valuefeeder": "Now",
-            "additionalDisplayClass": "right-info",
-            "display": true,
-            "conditions": {
-                "displayCondition": {
-                    "valueCondition": "Bao_Cao_Chi_Tiet_VTTB_Dieu_Chuyen_Theo_Thang",
-                    "idCondition": -9850,
-                    "dataCondition": "INDIVIDUAL"
-                },
-                "required": true
-            }
-        },
-        {
-            "name": "Đơn vị điều chuyển",
-            "additionalDisplayClass": "left-info",
-            "id": -9770,
-            "position": -9770,
-            "apiWebConfig": {
-                "apiConfig": {
-                    "param": "B6_PARAM_PICKER_FILTER_DON_VI_DC",
-                    "hostnameKey": "SPRO_EVN",
-                    "urlFilter": "/common-spro/get-all-organization",
-                    "returnKey": "MT_GET_VENDOR_RP_S"
-                },
-                "searchConfig": {
-                    "idField": "orgId",
-                    "minimumSearch": 0,
-                    "displayField": "orgName"
+                "required": true,
+                "format": {
+                    "regex": "MM/yyyy",
+                    "text": "Nhập yyyy"
                 }
-            },
-            "type": "apiweb",
-            "conditions": {
-                "displayCondition": {
-                    "valueCondition": "Bao_Cao_Chi_Tiet_VTTB_Dieu_Chuyen_Theo_Thang",
-                    "idCondition": -9850,
-                    "dataCondition": "INDIVIDUAL"
-                },
-                "feedTo": [
-                    {
-                        "fieldName": "orgName",
-                        "id": -9765,
-                        "dataset": "INDIVIDUAL"
-                    }
-                ],
-                "required": true
-            }
-        },
-        {
-            "name": "Name đơn vị điều chuyển",
-            "id": -9765,
-            "position": -9765,
-            "type": "text",
-            "display": false,
-            "conditions": {
-                "required": false
             }
         },
         {
@@ -379,6 +321,7 @@
             "additionalDisplayClass": "left-info",
             "id": -9760,
             "position": -9760,
+            "display": false,
             "apiWebConfig": {
                 "apiConfig": {
                     "param": "B6_PARAM_PICKER_FILTER_DON_VI_DC",
@@ -394,11 +337,6 @@
             },
             "type": "apiweb",
             "conditions": {
-                "displayCondition": {
-                    "valueCondition": "Bao_Cao_Chi_Tiet_VTTB_Dieu_Chuyen_Theo_Thang",
-                    "idCondition": -9850,
-                    "dataCondition": "INDIVIDUAL"
-                },
                 "feedTo": [
                     {
                         "fieldName": "orgName",
@@ -406,7 +344,7 @@
                         "dataset": "INDIVIDUAL"
                     }
                 ],
-                "required": true
+                "required": false
             }
         },
         {
@@ -437,6 +375,7 @@
             "additionalDisplayClass": "left-info",
             "id": -9750,
             "position": -9750,
+            "display": false,
             "type": "apiweb",
             "conditions": {
                 "feedTo": [
@@ -446,12 +385,7 @@
                         "dataset": "INDIVIDUAL"
                     }
                 ],
-                "displayCondition": {
-                    "valueCondition": "Bao_Cao_Chi_Tiet_VTTB_Dieu_Chuyen_Theo_Thang",
-                    "idCondition": -9850,
-                    "dataCondition": "INDIVIDUAL"
-                },
-                "required": true
+                "required": false
             }
         },
         {

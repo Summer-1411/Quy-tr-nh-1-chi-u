@@ -52,6 +52,7 @@ B6_PARAM_THE_KHO_CREATE_TICKET
         "createUser": "(-10000)",
         "deptId": "(-9980)",
         "actionType": "REQUEST",
+        "requestId": "(-2500)",
         "importExport": {
             "ticketCode": "(-0)",
             "orgRequest": "(-9920)",
@@ -71,6 +72,7 @@ B6_PARAM_THE_KHO_BUOC_2
         "createDate": "(-9999)",
         "deptId": "(-9980)",
         "actionType": "REQUEST",
+        "requestId": "(-2500)",
         "importExport": {
             "ticketCode": "(-0)",
             "orgRequest": "(-9920)",
@@ -110,6 +112,7 @@ B6_PARAM_THE_KHO_BUOC_2_BRANCH_2
         "createDate": "(-9999)",
         "deptId": "(-9980)",
         "actionType": "REQUEST",
+        "requestId": "(-2500)",
         "importExport": {
             "ticketCode": "(-0)",
             "orgRequest": "(-9920)",
@@ -151,6 +154,7 @@ B6_PARAM_THE_KHO_BUOC_3
         "status": "INPROGRESS",
         "createUser": "(-10000)",
         "actionType": "REQUEST",
+        "requestId": "(-2500)",
         "importExport": {
             "ticketCode": "(-0)",
             "orgRequest": "(-9920)",
@@ -189,6 +193,7 @@ B6_PARAM_THE_KHO_BUOC_4
         "createUser": "(-10000)",
         "deptId": "(-9980)",
         "actionType": "REQUEST",
+        "requestId": "(-2500)",
         "importExport": {
             "ticketCode": "(-0)",
             "orgRequest": "(-9920)",
@@ -227,6 +232,7 @@ B6_PARAM_THE_KHO_BUOC_4_BRANCH_2
         "createUser": "(-10000)",
         "deptId": "(-9980)",
         "actionType": "REQUEST",
+        "requestId": "(-2500)",
         "importExport": {
             "ticketCode": "(-0)",
             "orgRequest": "(-9920)",
@@ -267,6 +273,7 @@ B6_PARAM_THE_KHO_BUOC_5
         "createDate": "(-9999)",
         "createUser": "(-10000)",
         "actionType": "REQUEST",
+        "requestId": "(-2500)",
         "importExport": {
             "ticketCode": "(-0)",
             "orgRequest": "(-9920)",

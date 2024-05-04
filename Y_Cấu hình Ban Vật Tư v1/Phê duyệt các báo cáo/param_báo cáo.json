@@ -48,11 +48,11 @@ B6_PARAM_GET_FILE_BAO_CAO_PDBC
     "physicalDate": "-9600",
     "monthYear": "-9800",
     "fromDate": "-9790",
-    "toDate": "-9780",
-    "maDonViDC": "-9770",
+    "toDate": "-9790",
+    "maDonViDC": "-9920",
     "maDonViNDC": "-9760",
     "projectCode": "-9750",
-    "tenDonViDC": "-9765",
+    "tenDonViDC": "-8800",
     "tenDonViNhanDC": "-9755",
     "tenCongTrinh": "-9740",
     "position1": "-8498",
@@ -121,7 +121,7 @@ B6_PARAM_PDBC_BUOC2
     },
     "approval": {
         "ticketCode": "(-0)",
-        "status": "INPROGRESS ",
+        "status": "INPROGRESS",
         "reason": "(update-reason)",
         "flowName": "Buoc 2",
         "approvalUser": "(phase-owner,-20)",
@@ -154,7 +154,7 @@ B6_PARAM_PDBC_BUOC2_END
     },
     "approval": {
         "ticketCode": "(-0)",
-        "status": "CLOSED ",
+        "status": "CLOSED",
         "reason": "(update-reason)",
         "flowName": "Buoc 2",
         "approvalUser": "(phase-owner,-20)",
@@ -258,7 +258,7 @@ B6_PARAM_PDBC_BUOC4
     },
     "approval": {
         "ticketCode": "(-0)",
-        "status": "INPROGRESS ",
+        "status": "INPROGRESS",
         "reason": "(update-reason)",
         "flowName": "Buoc 4",
         "approvalUser": "(phase-owner,-40)",
@@ -293,7 +293,7 @@ B6_PARAM_PDBC_BUOC4_END
     },
     "approval": {
         "ticketCode": "(-0)",
-        "status": "CLOSED ",
+        "status": "CLOSED",
         "reason": "(update-reason)",
         "flowName": "Buoc 4",
         "approvalUser": "(phase-owner,-40)",
@@ -328,7 +328,7 @@ B6_PARAM_PDBC_BUOC5
     },
     "approval": {
         "ticketCode": "(-0)",
-        "status": "INPROGRESS ",
+        "status": "INPROGRESS",
         "reason": "(update-reason)",
         "flowName": "Buoc 5",
         "approvalUser": "(phase-owner,-50)",
@@ -363,7 +363,7 @@ B6_PARAM_PDBC_BUOC5_END
     },
     "approval": {
         "ticketCode": "(-0)",
-        "status": "CLOSED ",
+        "status": "CLOSED",
         "reason": "(update-reason)",
         "flowName": "Buoc 5",
         "approvalUser": "(phase-owner,-50)",
@@ -399,7 +399,7 @@ B6_PARAM_PDBC_BUOC6_END
     },
     "approval": {
         "ticketCode": "(-0)",
-        "status": "CLOSED ",
+        "status": "CLOSED",
         "reason": "(update-reason)",
         "flowName": "Buoc 6",
         "approvalUser": "(phase-owner,-60)",

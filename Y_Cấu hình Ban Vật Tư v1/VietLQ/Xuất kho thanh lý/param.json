@@ -1,0 +1,372 @@
+B6_XKTL_GET_FILE_REQUEST
+{
+    "liquidId":"-9785",
+    "orgName":"-9940",
+    "approveUser":"-9400",
+    "createUser":"-9470",
+    "deptName":"-9950",
+    "numberRequest":"-9795",
+    "address":"-9900",
+    "type":"-2204"
+}
+
+B6_XKTL_PARAM_SIGN_FILE_PHASE_2
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Bước 2: Chuyên viên lập file ký",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-200)"
+    }
+}
+
+B6_XKTL_PARAM_UPDATE_PHASE_3
+{
+    "ticket": {
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-300,-400)",
+                    "type": "1",
+                    "numberVote": "(-9795)",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Bước 3: Người lập đề nghị ký số",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-300)"
+    }
+}
+
+B6_XKTL_PARAM_UPDATE_PHASE_4
+{
+    "ticket": {
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-400,-500)",
+                    "type": "1",
+                    "numberVote": "(-9795)",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Bước 4: Trưởng đơn vị ký số phiếu đề nghị",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-400)"
+    }
+}
+
+
+B6_XKTL_PARAM_UPDATE_PHASE_5
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "EXPORT_TL",
+        "status": "INPROGRESS",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "statusErp": 0,
+        "statusDelivery": "1",
+        "requestSubject": "(ticket-title)",
+        "storekeeper": "(-8700,-500,-600)",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgRequest": "(-9945)",
+            "type": "2",
+            "orgCode": "(-9945)",
+            "storekeeper": "(-8700,-500,-600)"
+        },
+        "infoVote": [(t)<-9699,-500,-600>  
+            {
+                "ticketCode": "(-0)",
+                "orgRequest": "(-8470)",
+                "orgCode": "(-8470)",
+                "numberVoteApprove": "(-9695)",
+                "numberDeliveryNote": "(-9545)",
+                "location": "(-9675)",
+                "reason": "(-9653)",
+                "receiver": "(-9680)",
+                "type": "2",
+                "addressOrg": "(-9685)",
+                "primaryInventory": "(-9500)",
+                "subInventory": "(-9480)",
+                "requestDate": "(-9690)",
+                "construction": "(-9445)",
+                "category": "(-9440)",
+                "storekeeper": "(-9520)",
+                "description": "(-9550)"
+            }(endt)
+        ],
+        "infoItem": [(t)<-9000,-500,-600>
+            {
+                "ticketCode": "(-0)",
+                "numberVoteApprove": "(-8910)",
+                "materialCode": "(-8900)",
+                "materialName": "(-8850)",
+                "unit": "(-8800)",
+                "unitPrice": "(-8790)",
+                "accountDebit": "(-8770)",
+                "accountCredit": "(-8760)",
+                "amount": "(-8780)",
+                "requestQuantity": "(-8785)",
+                "approveQuantity": "(-8750)",
+                "batch": "(-8820)"
+            }(endt)
+        ]
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Bước 5: Chuyên viên lập phiếu xuất kho",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-500)"
+    }
+}
+
+B6_XKTL_PARAM_UPDATE_PHASE_6
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Bước 6: Chuyên viên trình ký phiếu xuất kho kiêm phiếu giao hàng",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-600)"
+    }
+}
+
+B6_1C_XKTL_PARAM_UPDATE_PHASE_7
+{
+    "ticket": {
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-400,-500)",
+                    "type": "1",
+                    "numberVote": "(-9795)",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-700,-800)",
+                    "type": "3",
+                    "numberVote": "(-9830,-500,-600)",
+                    "createUser": "(-9480)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Bước 7: Chuyên viên ký số phiếu xuất kho",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-700)"
+    }
+}
+
+B6_XKTL_PARAM_UPDATE_PHASE_8
+{
+    "ticket": {
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-400,-500)",
+                    "type": "1",
+                    "numberVote": "(-9795)",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-800,-900)",
+                    "type": "3",
+                    "numberVote": "(-9830,-500,-600)",
+                    "createUser": "(-9480)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Bước 8: Phòng KHVT ký số phiếu xuất",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-800)"
+    }
+}
+
+B6_XKTL_PARAM_UPDATE_PHASE_8_2
+{
+    "ticket": {
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-400,-500)",
+                    "type": "1",
+                    "numberVote": "(-9795)",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-800,-1000)",
+                    "type": "3",
+                    "numberVote": "(-9830,-500,-600)",
+                    "createUser": "(-9480)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Bước 8: Phòng KHVT ký số phiếu xuất",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-800)"
+    }
+}
+
+B6_XKTL_PARAM_UPDATE_PHASE_9
+{
+    "ticket": {
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-400,-500)",
+                    "type": "1",
+                    "numberVote": "(-9795)",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-900,-1000)",
+                    "type": "3",
+                    "numberVote": "(-9830,-500,-600)",
+                    "createUser": "(-9480)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Bước 9: Giám đốc ký số phiếu xuất kho",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-900)"
+    }
+}
+
+B6_XKTL_PARAM_UPDATE_PHASE_10
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Bước 10: Nhà thầu đến kho nhận vật tư",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-1000)"
+    }
+}
+
+
+
+B6_XKTL_PARAM_UPDATE_PHASE_11
+{
+    "ticket": {
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-400,-500)",
+                    "type": "1",
+                    "numberVote": "(-9795)",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-900,-1000)",
+                    "type": "3",
+                    "numberVote": "(-9830,-500,-600)",
+                    "createUser": "(-9480)"
+                },
+                {
+                    "link": "(-1,-800,-1000)",
+                    "type": "3",
+                    "numberVote": "(-9830,-500,-600)",
+                    "createUser": "(-9480)"
+                },
+                {
+                    "link": "(-1,-1100,-1200)",
+                    "type": "4",
+                    "numberVote": "(-9830,-500,-600)",
+                    "createUser": "(-9480)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Bước 11: Thủ kho xuất kho và ký số phiếu giao hàng",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-1100)"
+    }
+}
+
+B6_XKTL_PARAM_UPDATE_PHASE_12
+{
+    "ticket": {
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-400,-500)",
+                    "type": "1",
+                    "numberVote": "(-9795)",
+                    "createUser": "(-10000)"
+                },
+                {
+                    "link": "(-1,-1200,-1300)",
+                    "type": "3",
+                    "numberVote": "(-9830,-500,-600)",
+                    "createUser": "(-9480)"
+                },
+                {
+                    "link": "(-2,-1200,-1300)",
+                    "type": "4",
+                    "numberVote": "(-9830,-500,-600)",
+                    "createUser": "(-9480)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Bước 12: Nhà thầu ký số phiếu giao hàng, phiếu xuất kho",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-1200)"
+    }
+}
+
+B6_XKTL_PARAM_UPDATE_PHASE_13
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CLOSED",
+        "flowName": "Bước 13: Thủ kho upload phiếu giao hàng đã ký",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-1300)"
+    }
+}
+

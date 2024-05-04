@@ -176,6 +176,7 @@ B6_PARAM_APPROVE_BUOC2_5_XLSC_UAT_2
                 {
                     "link": "(-1,-25,-30)",
                     "type": "1",
+                    "numberVote": "(-9865)",
                     "createUser": "(-10000)"
                 }
             ]
@@ -240,6 +241,7 @@ B6_PARAM_APPROVE_BUOC3_XLSC
                 {
                     "link": "(-1,-30,-40)",
                     "type": "1",
+                    "numberVote": "(-9865)",
                     "createUser": "(-10000)"
                 }
             ]
@@ -304,6 +306,7 @@ B6_PARAM_APPROVE_BUOC5_XLSC
                 {
                     "link": "(-1,-50,-60)",
                     "type": "1",
+                    "numberVote": "(-9865)",
                     "createUser": "(-10000)"
                 }
             ]
@@ -358,6 +361,7 @@ B6_PARAM_APPROVE_BUOC6_XLSC
                 {
                     "link": "(-1,-60,-70)",
                     "type": "1",
+                    "numberVote": "(-9865)",
                     "createUser": "(-10000)"
                 }
             ]
@@ -421,6 +425,7 @@ B6_PARAM_FINISH_BUOC8_XLSC
                 {
                     "link": "(-1,-80,-90)",
                     "type": "1",
+                    "numberVote": "(-9865)",
                     "createUser": "(-10000)"
                 }
             ]
@@ -475,6 +480,7 @@ B6_PARAM_APPROVE_BUOC9_XLSC
                 {
                     "link": "(-1,-90,-100)",
                     "type": "1",
+                    "numberVote": "(-9865)",
                     "createUser": "(-10000)"
                 }
             ]
@@ -528,6 +534,7 @@ B6_PARAM_APPROVE_BUOC10_XLSC
                 {
                     "link": "(-1,-100,-110)",
                     "type": "1",
+                    "numberVote": "(-9865)",
                     "createUser": "(-10000)"
                 }
             ]

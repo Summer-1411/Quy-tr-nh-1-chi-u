@@ -460,6 +460,15 @@
             "additionalDisplayClass": "right-info"
         },
         {
+            "id": -2500,
+            "position": -2500,
+            "name": "RequestId",
+            "display": false,
+            "type": "text",
+            "value": "",
+            "additionalDisplayClass": "right-info"
+        },
+        {
             "id": -3000,
             "position": -3000,
             "name": "String empty",
