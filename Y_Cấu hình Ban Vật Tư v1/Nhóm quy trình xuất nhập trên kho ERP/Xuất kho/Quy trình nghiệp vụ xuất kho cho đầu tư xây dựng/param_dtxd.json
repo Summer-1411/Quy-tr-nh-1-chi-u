@@ -253,6 +253,7 @@ B6_PARAM_APPROVE_BUOC2_5_DTXD_UAT_2
                 {
                     "link": "(-1,-25,-30)",
                     "type": "1",
+                    "numberVote": "(-9850)",
                     "createUser": "(-10000)"
                 }
             ]
@@ -311,6 +312,7 @@ B6_PARAM_UPDATE_TICKET_BUOC3_DTXD_UAT_2
                 {
                     "link": "(-1,-30,-40)",
                     "type": "1",
+                    "numberVote": "(-9850)",
                     "createUser": "(-10000)"
                 }
             ]
@@ -381,6 +383,7 @@ B6_PARAM_APPROVE_BUOC5_DTXD_UAT_2
                 {
                     "link": "(-1,-50,-60)",
                     "type": "1",
+                    "numberVote": "(-9850)",
                     "createUser": "(-10000)"
                 }
             ]
@@ -439,6 +442,7 @@ B6_PARAM_APPROVE_BUOC6_DTXD_UAT_2
                 {
                     "link": "(-1,-60,-70)",
                     "type": "1",
+                    "numberVote": "(-9850)",
                     "createUser": "(-10000)"
                 }
             ]
@@ -496,6 +500,7 @@ B6_PARAM_APPROVE_BUOC7_DTXD_UAT_2
                 {
                     "link": "(-1,-70,-80)",
                     "type": "1",
+                    "numberVote": "(-9850)",
                     "createUser": "(-10000)"
                 }
             ]
@@ -513,6 +518,7 @@ B6_PARAM_FINISH_BUOC8_DTXD_UAT_2
 {
     "ticket": {
         "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
         "type": "EXPORT_DTXD",
         "status": "INPROGRESS",
         "createUser": "(-10000)",
@@ -571,6 +577,7 @@ B6_PARAM_FINISH_BUOC9_DTXD_UAT_2
     "ticket": {
         "ticketCode": "(-0)",
         "type": "EXPORT_DTXD",
+        "requestSubject": "(ticket-title)",
         "status": "INPROGRESS",
         "createUser": "(-10000)",
         "createDate": "(-9999)",
@@ -628,6 +635,7 @@ B6_PARAM_FINISH_BUOC9_DTXD_UAT_2
     "ticket": {
         "ticketCode": "(-0)",
         "type": "EXPORT_DTXD",
+        "requestSubject": "(ticket-title)",
         "status": "INPROGRESS",
         "createUser": "(-10000)",
         "createDate": "(-9999)",
@@ -683,6 +691,7 @@ B6_PARAM_FINISH_BUOC9_DTXD_UAT_2
                 {
                     "link": "(-1,-70,-80)",
                     "type": "1",
+                    "numberVote": "(-9850)",
                     "createUser": "(-10000)"
                 }
             ]
@@ -702,6 +711,7 @@ B6_PARAM_APPROVE_BUOC10_DTXD_UAT_2
 {
     "ticket": {
         "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
         "type": "EXPORT_DTXD",
         "status": "INPROGRESS",
         "createUser": "(-10000)",
@@ -758,6 +768,7 @@ B6_PARAM_APPROVE_BUOC10_DTXD_UAT_2
                 {
                     "link": "(-1,-70,-80)",
                     "type": "1",
+                    "numberVote": "(-9850)",
                     "createUser": "(-10000)"
                 }
             ]
@@ -778,6 +789,7 @@ B6_PARAM_APPROVE_BUOC11_1_DTXD_UAT_2
     "ticket": {
         "ticketCode": "(-0)",
         "type": "EXPORT_DTXD",
+        "requestSubject": "(ticket-title)",
         "status": "INPROGRESS",
         "createUser": "(-10000)",
         "createDate": "(-9999)",
@@ -833,6 +845,7 @@ B6_PARAM_APPROVE_BUOC11_1_DTXD_UAT_2
                 {
                     "link": "(-1,-70,-80)",
                     "type": "1",
+                    "numberVote": "(-9850)",
                     "createUser": "(-10000)"
                 }
             ]
@@ -850,6 +863,7 @@ B6_PARAM_APPROVE_BUOC11_2_DTXD_UAT_2
 {
     "ticket": {
         "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
         "type": "EXPORT_DTXD",
         "status": "INPROGRESS",
         "createUser": "(-10000)",
@@ -906,6 +920,7 @@ B6_PARAM_APPROVE_BUOC11_2_DTXD_UAT_2
                 {
                     "link": "(-1,-70,-80)",
                     "type": "1",
+                    "numberVote": "(-9850)",
                     "createUser": "(-10000)"
                 }
             ]
@@ -923,6 +938,7 @@ B6_PARAM_APPROVE_BUOC12_DTXD_UAT_2
 {
     "ticket": {
         "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
         "type": "EXPORT_DTXD",
         "status": "INPROGRESS",
         "createUser": "(-10000)",
@@ -979,6 +995,7 @@ B6_PARAM_APPROVE_BUOC12_DTXD_UAT_2
                 {
                     "link": "(-1,-70,-80)",
                     "type": "1",
+                    "numberVote": "(-9850)",
                     "createUser": "(-10000)"
                 }
             ]
@@ -1019,6 +1036,7 @@ B6_PARAM_APPROVE_BUOC15_DTXD_UAT_2
 {
     "ticket": {
         "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
         "type": "EXPORT_DTXD",
         "status": "INPROGRESS",
         "createUser": "(-10000)",
@@ -1075,6 +1093,7 @@ B6_PARAM_APPROVE_BUOC15_DTXD_UAT_2
                 {
                     "link": "(-1,-70,-80)",
                     "type": "1",
+                    "numberVote": "(-9850)",
                     "createUser": "(-10000)"
                 }
             ]
@@ -1092,6 +1111,7 @@ B6_PARAM_APPROVE_BUOC16_DTXD_UAT_2
 {
     "ticket": {
         "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
         "type": "EXPORT_DTXD",
         "status": "CLOSED",
         "statusErp": 1,
@@ -1149,6 +1169,7 @@ B6_PARAM_APPROVE_BUOC16_DTXD_UAT_2
                 {
                     "link": "(-1,-70,-80)",
                     "type": "1",
+                    "numberVote": "(-9850)",
                     "createUser": "(-10000)"
                 }
             ]

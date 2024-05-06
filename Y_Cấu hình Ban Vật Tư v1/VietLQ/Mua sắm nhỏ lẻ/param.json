@@ -1,0 +1,173 @@
+B6_1C_NKMSNL_CREATE_TICKET
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "requestSubject": "(ticket-title)",
+        "type": "IMPORT_MSNL",
+        "status": "INPROGRESS",
+        "deptId": "(-9965)",
+        "createDate": "(-8700)",
+        "createUser": "(-10000)",
+        "actionType": "APPROVE",
+        "storekeeper": "(-5595)",
+        "importExport": {
+            "ixId": 0,
+            "ticketCode": "(-0)",
+            "orgCode": "(-9950)",
+            "orgRequest": "(-8901)",
+            "type": "1"
+        },
+        "infoVote": [(t)<-8500>  
+        {
+                "ticketCode": "(-0)",
+                "orgRequest": "(-8475)",
+                "orgCode": "(-8475)",
+                "numberVoteApprove": "(-8495)",
+                "numberDeliveryNote": "(-8450)",
+                "deliver": "(-8480)",
+                "location": "(-8485)",
+                "addressOrg": "(-8470)",
+                "reason": "(-8460)",
+                "type": "1",
+                "primaryInventory": "(-8445)",
+                "subInventory": "(-8430)",
+                "requestDate": "(-8490)",
+                "construction": "(-8420)",
+                "category": "(-8410)",
+                "storekeeper": "(-5595)",
+                "description": "(-8455)"
+            }(endt)
+        ],
+        "infoItem": [(t)<-7000>
+            {
+                "ticketCode": "(-0)",
+                "numberVoteApprove": "(-6980)",
+                "materialCode": "(-6960)",
+                "materialName": "(-6940)",
+                "unit": "(-6920)",
+                "requestQuantity": "(-6880)",
+                "approveQuantity": "(-6860)",
+                "batch": "(-6900)",
+                "segmentQuantity": "(-6855)",
+                "desirableLength": "(-6850)",
+                "unitPrice": "(-6840)",
+                "amount": "(-6820)",
+                "accountDebit": "(-6800)",
+                "accountCredit": "(-6780)"
+            }(endt)
+        ]
+    }
+}
+
+B6_NHAP_KHO_MSNL_CANCEL_TICKET
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CANCEL",
+        "reason": "(update-reason)",
+        "action": "CANCEL"
+    }
+}
+
+B6_1C_NKMSNL_PARAM_UPDATE_PHASE_2
+{
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Bước 2. Chuyên viên phòng KHVT trình ký phiếu nhập kho",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-20)"
+    }
+}
+
+B6_1C_NKMSNL_PARAM_UPDATE_PHASE_3
+
+
+B6_1C_NKMSNL_PARAM_UPDATE_PHASE_4
+{
+    "ticket": {
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-40,-50)",
+                    "type": "2",
+                    "numberVote": "(-8550)",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Bước 4. Trưởng/phó phòng KHVT ký số phiếu nhập kho",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-40)"
+    }
+}
+
+B6_1C_NKMSNL_PARAM_UPDATE_PHASE_5
+{
+    "ticket": {
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-50,-60)",
+                    "type": "2",
+                    "numberVote": "(-8550)",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Bước 5. Kế toán vật tư ký số phiếu nhập kho",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-50)"
+    }
+}
+
+    B6_1C_NKMSNL_PARAM_UPDATE_PHASE_6
+    {
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "INPROGRESS",
+        "flowName": "Bước 6. Người giao hàng xuống kho nhập vật tư",
+        "action": "FINISH",
+        "approvalUser": "(phase-owner,-60)"
+    }
+}
+
+
+B6_1C_NKMSNL_PARAM_UPDATE_PHASE_7
+{
+    "ticket": {
+        "ticketCode": "(-0)",
+        "type": "IMPORT_MSNL",
+        "requestSubject": "(ticket-title)",
+        "status": "CLOSED",
+        "statusErp": "1",
+        "noteInfo": {
+            "ticketId": "(-0)",
+            "files": [
+                {
+                    "link": "(-1,-70,-1)",
+                    "type": "2",
+                    "numberVote": "(-8550)",
+                    "createUser": "(-10000)"
+                }
+            ]
+        }
+    },
+    "approval": {
+        "ticketCode": "(-0)",
+        "status": "CLOSED",
+        "flowName": "Bước 7. Thủ kho nhận hàng, ký số phiếu nhập kho",
+        "action": "APPROVE",
+        "approvalUser": "(phase-owner,-70)"
+    }
+}

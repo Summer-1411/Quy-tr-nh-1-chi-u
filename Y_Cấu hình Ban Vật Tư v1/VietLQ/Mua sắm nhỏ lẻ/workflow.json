@@ -1,0 +1,957 @@
+{
+    "relatives": [
+        {
+            "customNote": "Bước 1. Lập đề nghị",
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_1C_NKMSNL_CREATE_TICKET",
+                        "name": "TICKET_EVN_SPRO_CREATE"
+                    },
+                    "requireAuthenAPI": false
+                },
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_1C_NKMSNL_CREATE_TICKET",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "triggerOn": "update-ticket",
+                    "requireAuthenAPI": false
+                },
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_NHAP_KHO_MSNL_CANCEL_TICKET",
+                        "name": "TICKET_EVN_SPRO_DELETE"
+                    },
+                    "triggerOn": "cancel",
+                    "requireAuthenAPI": false
+                }
+            ],
+            "id": -10,
+            "type": "ticket",
+            "isDone": false,
+            "status": "Opened"
+        },
+        {
+            "summary": "Bước 2. Chuyên viên phòng KHVT trình ký phiếu nhập kho",
+            "owner": "",
+            "customNote": "Bước 2",
+            "sla": {
+                "res": 7.99,
+                "fix": 8
+            },
+            "id": -20,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -10000,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "status": "Responding"
+        },
+        {
+            "summary": "Bước 3. Người lập phiếu ký số phiếu nhập kho",
+            "customNote": "Bước 3",
+            "id": -30,
+            "type": "phase",
+            "printable": true,
+            "isDone": false,
+            "phaseType": "Implement",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -10000,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "status": "Responding"
+        },
+        {
+            "summary": "Bước 4. Trưởng/phó phòng KHVT ký số phiếu nhập kho",
+            "customNote": "Bước 4",
+            "id": -40,
+            "type": "phase",
+            "printable": true,
+            "isDone": false,
+            "phaseType": "Implement",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -5400,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "status": "Responding"
+        },
+        {
+            "summary": "Bước 5. Kế toán vật tư ký số phiếu nhập kho",
+            "customNote": "Bước 5",
+            "id": -50,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -5200,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "status": "Responding"
+        },
+        {
+            "summary": "Bước 6. Người giao hàng xuống kho nhập vật tư và ký số",
+            "customNote": "Bước 6",
+            "sla": {
+                "res": 15.99,
+                "fix": 16
+            },
+            "id": -60,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -5550,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Bước 7. Thủ kho nhận hàng, ký số phiếu nhập kho",
+            "customNote": "Bước 7",
+            "id": -70,
+            "type": "phase",
+            "printable": true,
+            "isDone": false,
+            "phaseType": "Implement",
+            "status": "Responding",
+            "role_config": {
+                "functions": [
+                    {
+                        "role_type_to_add": "implementer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -5600,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    },
+                    {
+                        "role_type_to_add": "viewer",
+                        "id": 3,
+                        "params": [
+                            {
+                                "infoId": -5200,
+                                "name": "info",
+                                "type": "INPUT",
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "summary": "Kết thúc",
+            "id": -1,
+            "type": "phase",
+            "isDone": false,
+            "phaseType": "Close",
+            "status": "Waiting"
+        }
+    ],
+    "relationships": [
+        {
+            "customNote": "Bước 1",
+            "from": -10,
+            "id": -1020,
+            "to": -20,
+            "type": "default",
+            "status": "finished"
+        },
+        {
+            "customNote": "Bước 2",
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_1C_NKMSNL_PARAM_UPDATE_PHASE_2",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -20,
+            "id": -2030,
+            "to": -30,
+            "detail": {
+                "individual": [
+                    {
+                        "apiWebConfig": {
+                            "apiConfig": {
+                                "param": "B6_MSNL_GET_FILE_IMPORT_TICKET",
+                                "hostnameKey": "EVN_B6_PHIEU_GIAO_HANG",
+                                "urlFilter": "/export-report/saveFileImport/PhieuNhap/pdf",
+                                "returnKey": "MT_GET_VENDOR_RP_S"
+                            },
+                            "searchConfig": {
+                                "idField": "type",
+                                "minimumSearch": 0,
+                                "displayField": "type"
+                            }
+                        },
+                        "display": true,
+                        "name": "Loại phiếu",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9700,
+                        "position": -9700,
+                        "type": "apiweb",
+                        "conditions": {
+                            "feedTo": [
+                                {
+                                    "fieldName": "name",
+                                    "id": -9240,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "keySignTCKT",
+                                    "id": -2206,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "keySignLapPhieu",
+                                    "id": -2201,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "keySignKHVT",
+                                    "id": -2202,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "keySignNguoiGiaoHang",
+                                    "id": -2204,
+                                    "dataset": "INDIVIDUAL"
+                                },
+                                {
+                                    "fieldName": "keySignThuKho",
+                                    "id": -2205,
+                                    "dataset": "INDIVIDUAL"
+                                }
+                            ],
+                            "required": false
+                        },
+                        "value": ""
+                    },
+                    {
+                        "staticContent": "<p style='font-size: 12px; color: #3617FF'><i></i></p>",
+                        "display": true,
+                        "name": "Link file ",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "placeholder": "",
+                        "id": -9240,
+                        "position": -9240,
+                        "type": "link",
+                        "conditions": {
+                            "required": false,
+                            "min-length": 1,
+                            "height": 5
+                        },
+                        "value": ""
+                    },
+                    {
+                        "staticContent": "<p style='font-size: 12px; color: #33ACFF'><i>Người dùng đính kèm biên bản đánh giá chất lượng vật tư</i></p>",
+                        "display": true,
+                        "name": "Đính kèm",
+                        "additionalDisplayClass": "left-info",
+                        "id": -9200,
+                        "position": -9200,
+                        "type": "upload",
+                        "conditions": {
+                            "required": false,
+                            "min-length": 1
+                        }
+                    },
+                    {
+                        "display": false,
+                        "name": "Key ký người lập phiếu",
+                        "additionalDisplayClass": "left-info",
+                        "id": -2201,
+                        "position": -2,
+                        "type": "text",
+                        "value": "NGUOI_LAP_PHIEU_"
+                    },
+                    {
+                        "display": false,
+                        "name": "Key ký trưởng phó phòng khvt",
+                        "additionalDisplayClass": "left-info",
+                        "id": -2202,
+                        "position": -3,
+                        "type": "text",
+                        "value": "PHONG_KHVT_"
+                    },
+                    {
+                        "display": false,
+                        "name": "Key ký người giao hàng",
+                        "additionalDisplayClass": "left-info",
+                        "id": -2204,
+                        "position": -5,
+                        "type": "text",
+                        "value": "NGUOI_GIAO_HANG_"
+                    },
+                    {
+                        "display": false,
+                        "name": "Key ký thủ kho",
+                        "additionalDisplayClass": "left-info",
+                        "id": -2205,
+                        "position": -6,
+                        "type": "text",
+                        "value": "THU_KHO_"
+                    },
+                    {
+                        "display": false,
+                        "name": "Key ký kế toán TCKT",
+                        "additionalDisplayClass": "left-info",
+                        "id": -2206,
+                        "position": -7,
+                        "type": "text",
+                        "value": "PHONG_TCKT_"
+                    }
+                ]
+            },
+            "type": "default",
+            "status": "waiting"
+        },
+        {
+            "buttonConfig": {
+                "cancel": {
+                    "enable": false,
+                    "text": "Hủy yêu cầu"
+                }
+            },
+            "customNote": "Bước 3: Người lập phiếu ký số phiếu nhập kho",
+            "advancedConfig": {
+                "signature_evn": [
+                    {
+                        "filesToSign": [
+                            {
+                                "infoId": -9240,
+                                "relaId": -2030,
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ],
+                        "whereToSave": {
+                            "infoId": -1,
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "suffix": "-(Người lập phiếu đã ký số)",
+                        "key": {
+                            "infoId": -2201,
+                            "relaId": -2030,
+                            "dataset": "INDIVIDUAL"
+                        }
+                    }
+                ]
+            },
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_1C_NKMSNL_PARAM_UPDATE_PHASE_2",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -30,
+            "id": -3040,
+            "to": -40,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -10000,
+                        "position": -10000,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "Phiếu nhập kho đã ký số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "infoId": -1,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "buttonConfig": {
+                "cancel": {
+                    "enable": false,
+                    "text": "Hủy yêu cầu"
+                }
+            },
+            "customNote": "Bước 4: Trưởng/Phó phòng KHVT ký số phiếu nhập kho",
+            "advancedConfig": {
+                "signature_evn": [
+                    {
+                        "filesToSign": [
+                            {
+                                "infoId": -1,
+                                "relaId": -3040,
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ],
+                        "whereToSave": {
+                            "infoId": -1,
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "suffix": "-(Phòng KHVT đã ký số)",
+                        "key": {
+                            "infoId": -2202,
+                            "relaId": -2030,
+                            "dataset": "INDIVIDUAL"
+                        }
+                    }
+                ]
+            },
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_1C_NKMSNL_PARAM_UPDATE_PHASE_4",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -40,
+            "id": -4050,
+            "to": -50,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -10000,
+                        "position": -10000,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "Phiếu nhập kho đã ký số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "infoId": -1,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "buttonConfig": {
+                "cancel": {
+                    "enable": false,
+                    "text": "Hủy yêu cầu"
+                }
+            },
+            "customNote": "Bước 5: Kế toán vật tư ký số",
+            "advancedConfig": {
+                "signature_evn": [
+                    {
+                        "filesToSign": [
+                            {
+                                "infoId": -1,
+                                "relaId": -4050,
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ],
+                        "whereToSave": {
+                            "infoId": -1,
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "suffix": "-(Kế toán vật tư đã ký số)",
+                        "key": {
+                            "infoId": -2206,
+                            "relaId": -2030,
+                            "dataset": "INDIVIDUAL"
+                        }
+                    }
+                ]
+            },
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_1C_NKMSNL_PARAM_UPDATE_PHASE_5",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -50,
+            "id": -5060,
+            "to": -60,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -10000,
+                        "position": -10000,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "Phiếu nhập kho đã ký số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "infoId": -1,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "buttonConfig": {
+                "cancel": {
+                    "enable": false,
+                    "text": "Hủy yêu cầu"
+                }
+            },
+            "advancedConfig": {
+                "signature_evn": [
+                    {
+                        "filesToSign": [
+                            {
+                                "infoId": -1,
+                                "relaId": -5060,
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ],
+                        "whereToSave": {
+                            "infoId": -1,
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "suffix": "-(Người giao hàng đã ký số)",
+                        "key": {
+                            "infoId": -2204,
+                            "relaId": -2030,
+                            "dataset": "INDIVIDUAL"
+                        }
+                    }
+                ]
+            },
+            "customNote": "Bước 6: Người giao hàng xuống kho nhập vật tư và ký số",
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_1C_NKMSNL_PARAM_UPDATE_PHASE_6",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -60,
+            "id": -6070,
+            "to": -70,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -10000,
+                        "position": -10000,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "Phiếu nhập kho đã ký số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "infoId": -1,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        },
+        {
+            "buttonConfig": {
+                "cancel": {
+                    "enable": false,
+                    "text": "Hủy yêu cầu"
+                }
+            },
+            "customNote": "Bước 7: Thủ kho nhận hàng, ký số phiếu nhập kho",
+            "advancedConfig": {
+                "signature_evn": [
+                    {
+                        "filesToSign": [
+                            {
+                                "infoId": -1,
+                                "relaId": -6070,
+                                "dataset": "INDIVIDUAL"
+                            }
+                        ],
+                        "whereToSave": {
+                            "infoId": -1,
+                            "dataset": "INDIVIDUAL"
+                        },
+                        "suffix": "-(Thủ kho đã ký số)",
+                        "key": {
+                            "infoId": -2205,
+                            "relaId": -2030,
+                            "dataset": "INDIVIDUAL"
+                        }
+                    }
+                ]
+            },
+            "api_config": [
+                {
+                    "executeAPI": {
+                        "paramType": "regex",
+                        "number": 0,
+                        "param": "B6_1C_NKMSNL_PARAM_UPDATE_PHASE_7",
+                        "name": "TICKET_EVN_SPRO_UPDATE"
+                    },
+                    "requireAuthenAPI": false
+                }
+            ],
+            "from": -70,
+            "id": -701,
+            "to": -1,
+            "detail": {
+                "individual": [
+                    {
+                        "name": "Ghi chú",
+                        "additionalDisplayClass": "left-info",
+                        "id": -10000,
+                        "position": -10000,
+                        "type": "textarea",
+                        "conditions": {
+                            "max-length": 1000,
+                            "height": 5
+                        }
+                    },
+                    {
+                        "name": "Phiếu nhập kho đã ký số",
+                        "additionalDisplayClass": "left-info",
+                        "disabled": true,
+                        "id": -1,
+                        "position": -1,
+                        "conditions": {
+                            "filetype": "all/*",
+                            "advanced": {
+                                "files": {
+                                    "name": "File ký",
+                                    "value": ""
+                                },
+                                "text": "Gắn chữ ký số",
+                                "params": [
+                                    {
+                                        "infoId": -1,
+                                        "name": "File ký",
+                                        "type": "text",
+                                        "dataset": "INDIVIDUAL"
+                                    }
+                                ],
+                                "type": "signature"
+                            },
+                            "max-size": 20,
+                            "multiple": true,
+                            "required": false
+                        },
+                        "type": "upload",
+                        "value": ""
+                    }
+                ]
+            },
+            "type": "approval",
+            "status": "waiting"
+        }
+    ],
+    "notification_config": {
+        "approvers_pending_mail_template": 59,
+        "ticket_response_mail_template": 47,
+        "comment_mail_template": 66,
+        "viewers_assignment_mail_template": 68,
+        "watchers_ticket_rejection_mail_template": 21,
+        "ticket_result_reject_mail_template": 54,
+        "new_performer_phase_reassignment_mail_template": 56,
+        "creator_rejected_mail_template": 65,
+        "ticket_share_mail_template": 71,
+        "ticket_creation_mail_template": 45,
+        "relationship_result_reject_mail_template": 55,
+        "creator_approved_mail_template": 67,
+        "mention_mail_template": 53,
+        "co_execute_rejection_mail_template": 69,
+        "implementation_reminder_mail_template": 63,
+        "ticket_cancellation_mail_template": 49,
+        "creator_requested_update_mail_template": 58,
+        "approval_input_finish_mail_template": 61,
+        "co_execute_request_to_update_mail_template": 70,
+        "old_performer_phase_reassignment_mail_template": 57,
+        "watchers_ticket_auto_closing_mail_template": 52,
+        "approval_reminder_no_token_mail_template": 73,
+        "watchers_ticket_creation_mail_template": 46,
+        "send_notification_mail_template": 85,
+        "watchers_ticket_cancellation_mail_template": 50,
+        "approval_reminder_mail_template": 62,
+        "confirmation_reminder_mail_template": 64,
+        "phase_input_finish_mail_template": 60,
+        "phase_finished_mail_template": 74,
+        "watchers_ticket_closing_mail_template": 51,
+        "watchers_ticket_response_mail_template": 48,
+        "phase_approve_finished_mail_template": 75
+    },
+    "display": [
+        {
+            "positions": [
+                250,
+                15
+            ],
+            "id": -10
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                0,
+                150
+            ],
+            "id": -20
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                250,
+                150
+            ],
+            "id": -30
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                500,
+                150
+            ],
+            "id": -40
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                500,
+                300
+            ],
+            "id": -50
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                250,
+                300
+            ],
+            "id": -60
+        },
+        {
+            "image": "/images/workflowimage/User_male.png",
+            "positions": [
+                0,
+                300
+            ],
+            "id": -70
+        },
+        {
+            "positions": [
+                0,
+                450
+            ],
+            "id": -1
+        }
+    ]
+}

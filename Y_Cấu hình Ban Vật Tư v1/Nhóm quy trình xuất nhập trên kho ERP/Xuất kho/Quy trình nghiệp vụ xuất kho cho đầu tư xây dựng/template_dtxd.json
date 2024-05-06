@@ -324,6 +324,14 @@
             "value": "http://10.9.195.57:8989/qlvt/category/linventory?urlPathId=7912"
         },
         {
+            "id": -9835,
+            "name": "Nơi nhận",
+            "type": "textarea",
+            "additionalDisplayClass": "right-info",
+            "position": -9835,
+            "value": "- Lưu VT, đơn vị"
+        },
+        {
             "display": false,
             "name": "Họ tên trưởng phòng",
             "additionalDisplayClass": "left-info",
@@ -642,6 +650,17 @@
             "type": "text",
             "value": "PHONG_KHVT_",
             "additionalDisplayClass": "right-info"
+        },
+        {
+            "id": -1111,
+            "position": -1111,
+            "name": "Địa chỉ đơn vị",
+            "display": false,
+            "type": "master_data_load_user_info_diachidonvi",
+            "conditions": {
+                "required": true
+            },
+            "additionalDisplayClass": "left-info"
         },
         {
             "id": -100,
